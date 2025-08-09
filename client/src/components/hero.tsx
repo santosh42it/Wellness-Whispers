@@ -10,21 +10,20 @@ function getContentValue(contentBlocks: any[], key: string, defaultValue: string
 }
 
 // Fallback images for when gallery is not available
-// Import hero images from attached assets
-import hero1Image from "@assets/hero1.jpg";
-import hero2Image from "@assets/hero2.jpg";
-
 const fallbackImages = {
-  "hero-1": hero1Image,
-  "hero-2": hero2Image,
+  "hero-1": "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+  "hero-2": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
   "hero-3": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
 };
 
 function getImageUrl(galleryImages: any, imageId: string, fallbackUrl: string) {
   // Ensure galleryImages is an array
   if (!Array.isArray(galleryImages)) {
+    console.log(`⚠️ No gallery images available for ${imageId}, using fallback`);
     return fallbackUrl;
   }
+  
+  console.log(`🔍 Looking for image match for ${imageId} among ${galleryImages.length} images`);
   
   // Find image by title keywords
   let galleryImage;
@@ -32,21 +31,28 @@ function getImageUrl(galleryImages: any, imageId: string, fallbackUrl: string) {
   if (imageId === "hero-1") {
     galleryImage = galleryImages.find(img => {
       const title = img.title?.toLowerCase() || '';
-      return title.includes("healing") || title.includes("forest");
+      const match = title.includes("healing") || title.includes("forest");
+      if (match) console.log(`✅ Found ${imageId} match: "${img.title}"`);
+      return match;
     });
   } else if (imageId === "hero-2") {
     galleryImage = galleryImages.find(img => {
       const title = img.title?.toLowerCase() || '';
-      return title.includes("mountain") || title.includes("reflection");
+      const match = title.includes("mountain") || title.includes("reflection");
+      if (match) console.log(`✅ Found ${imageId} match: "${img.title}"`);
+      return match;
     });
   } else if (imageId === "hero-3") {
     galleryImage = galleryImages.find(img => {
       const title = img.title?.toLowerCase() || '';
-      return title.includes("rainy") || title.includes("window") || title.includes("reflection");
+      const match = title.includes("rainy") || title.includes("window") || title.includes("reflection");
+      if (match) console.log(`✅ Found ${imageId} match: "${img.title}"`);
+      return match;
     });
   }
   
   if (galleryImage?.imageUrl) {
+    console.log(`🎯 Using uploaded image for ${imageId}: "${galleryImage.title}" -> ${galleryImage.imageUrl}`);
     // Use the imageUrl directly if it's already a path, or convert from storage URL
     if (galleryImage.imageUrl.startsWith('/objects/')) {
       return galleryImage.imageUrl;
@@ -55,11 +61,13 @@ function getImageUrl(galleryImages: any, imageId: string, fallbackUrl: string) {
       const pathParts = url.pathname.split('/');
       const objectPath = pathParts.slice(3).join('/'); // Remove bucket name
       const finalUrl = `/objects/${objectPath}`;
+      console.log(`🔄 Converted storage URL to: ${finalUrl}`);
       return finalUrl;
     }
     return galleryImage.imageUrl;
   }
   
+  console.log(`❌ No match found for ${imageId}, using fallback: ${fallbackUrl}`);
   return fallbackUrl;
 }
 
@@ -95,17 +103,27 @@ export default function Hero() {
         const normalizedUrl = latestImage.imageUrl.match(/\.private\/(.+)/)?.[1];
         if (normalizedUrl) {
           const testUrl = `/objects/${normalizedUrl}`;
+          console.log("Testing image accessibility:", testUrl);
           
           // Test if the image loads
           const testImg = new Image();
+          testImg.onload = () => console.log("✅ Image loads successfully:", testUrl);
+          testImg.onerror = () => console.error("❌ Image failed to load:", testUrl);
           testImg.src = testUrl;
         }
       }
     }
   }, [safeGalleryImages]);
 
+  // Debug: Check current gallery state
+  console.log("Current gallery images count:", safeGalleryImages.length);
+  console.log("Gallery data:", safeGalleryImages);
+  console.log("Content blocks:", safeContentBlocks);
+
   const heroImage1 = getImageUrl(safeGalleryImages, "hero-1", fallbackImages["hero-1"]);
   const heroImage2 = getImageUrl(safeGalleryImages, "hero-2", fallbackImages["hero-2"]);
+
+  console.log("Final hero URLs:", { heroImage1, heroImage2 });
 
   // Get dynamic content values
   const heroTitle = getContentValue(safeContentBlocks, "hero_title", "Welcome to Your Healing Space");
@@ -162,7 +180,7 @@ export default function Hero() {
                   className="w-full h-64 object-cover rounded-lg"
                   onError={(e) => {
                     console.error("Hero image 1 failed to load:", heroImage1);
-                    e.currentTarget.src = hero1Image;
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400";
                   }}
                   onLoad={() => console.log("Hero image 1 loaded successfully:", heroImage1)}
                 />
@@ -181,7 +199,7 @@ export default function Hero() {
                   className="w-full h-64 object-cover rounded-lg"
                   onError={(e) => {
                     console.error("Hero image 2 failed to load:", heroImage2);
-                    e.currentTarget.src = hero2Image;
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
                   }}
                   onLoad={() => console.log("Hero image 2 loaded successfully:", heroImage2)}
                 />

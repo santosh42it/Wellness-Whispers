@@ -1,0 +1,75 @@
+12:32:28 PM: Netlify Build                                                 
+12:32:28 PM: ────────────────────────────────────────────────────────────────
+12:32:28 PM: ​
+12:32:28 PM: ❯ Version
+12:32:28 PM:   @netlify/build 35.0.0
+12:32:28 PM: ​
+12:32:28 PM: ❯ Flags
+12:32:28 PM:   accountId: 688c0bb9a869ce472d23c737
+12:32:28 PM:   baseRelDir: true
+12:32:28 PM:   buildId: 68905af39c083e05f0af3767
+12:32:28 PM:   deployId: 68905af39c083e05f0af3769
+12:32:28 PM: ​
+12:32:28 PM: ❯ Current directory
+12:32:28 PM:   /opt/build/repo
+12:32:28 PM: ​
+12:32:28 PM: ❯ Config file
+12:32:28 PM:   /opt/build/repo/netlify.toml
+12:32:28 PM: ​
+12:32:28 PM: ❯ Context
+12:32:28 PM:   production
+12:32:28 PM: ​
+12:32:28 PM: build.command from netlify.toml                               
+12:32:28 PM: ────────────────────────────────────────────────────────────────
+12:32:28 PM: ​
+12:32:28 PM: $ npm run build
+12:32:28 PM: > rest-express@1.0.0 build
+12:32:28 PM: > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+12:32:28 PM: sh: 1: vite: not found
+12:32:28 PM: ​
+12:32:28 PM: "build.command" failed                                        
+12:32:28 PM: ────────────────────────────────────────────────────────────────
+12:32:28 PM: ​
+12:32:28 PM:   Error message
+12:32:28 PM:   Command failed with exit code 127: npm run build (https://ntl.fyi/exit-code-127)
+12:32:28 PM: ​
+12:32:28 PM:   Error location
+12:32:28 PM:   In build.command from netlify.toml:
+12:32:28 PM:   npm run build
+12:32:28 PM: ​
+12:32:28 PM:   Resolved config
+12:32:28 PM:   build:
+12:32:28 PM:     command: npm run build
+12:32:28 PM:     commandOrigin: config
+12:32:28 PM:     environment:
+12:32:28 PM:       - DATABASE_URL
+12:32:28 PM:       - SESSION_SECRET
+12:32:28 PM:       - USE_DATABASE
+12:32:28 PM:       - NODE_VERSION
+12:32:28 PM:       - ADMIN_EMAIL
+12:32:28 PM:       - ADMIN_PASSWORD
+12:32:28 PM:       - ADMIN_NAME
+12:32:28 PM:       - NODE_ENV
+12:32:28 PM:     publish: /opt/build/repo/dist
+12:32:28 PM:     publishOrigin: config
+12:32:28 PM:   functionsDirectory: /opt/build/repo/netlify/functions
+12:32:28 PM:   headers:
+12:32:29 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+12:32:29 PM:     - for: /objects/*
+      values:
+        Cache-Control: public, max-age=31536000
+    - for: /public-objects/*
+      values:
+        Cache-Control: public, max-age=31536000
+  headersOrigin: config
+  redirects:
+    - from: /api/*
+      status: 200
+      to: /.netlify/functions/server/:splat
+    - from: /*
+      status: 200
+      to: /index.html
+  redirectsOrigin: config
+12:32:29 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+12:32:29 PM: Failing build: Failed to build site
+12:32:29 PM: Finished processing build request in 16.631s

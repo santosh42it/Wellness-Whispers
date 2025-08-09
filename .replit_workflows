@@ -1,3 +1,0 @@
-[workflows."Start application"]
-language = "bash"
-command = "npm run dev"

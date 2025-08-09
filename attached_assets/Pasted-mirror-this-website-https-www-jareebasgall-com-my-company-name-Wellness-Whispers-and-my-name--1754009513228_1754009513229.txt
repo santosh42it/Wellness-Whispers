@@ -1,0 +1,176 @@
+mirror this website https://www.jareebasgall.com/
+my company name : Wellness Whispers.
+and my name : Mrs. Pavan Chowdhary. about me . I’m a Gold Medalist in MPA and have completed my Postgraduate Diploma in Guidance & Counselling including several short term certified courses done,  with over 6 years of emotional support experience and 45+ years of people-focused leadership and mentoring.
+underdstand that i am a talk therpist who giving service here .
+I offer online therapy especially suited for young adults who may be facing:
+– Low motivation or loss of interest in goals or daily functioning
+– Emotional confusion, identity fatigue, or unresolved grief
+– Strained relationships or growing social withdrawal
+– Productivity blocks, indecisiveness, or difficulty staying consistent
+– Past emotional pain or a sense of inner stuckness
+
+My sessions are gentle, reflective, and deeply practical — with flexible timing and extremely affordable consultation.
+
+Healing matters most .
+Care begins with Healing - from wounds to wisdom, money is the  least  priority”
+
+Feel free to reach out if I can support in any way.
+
+i need to integrate whatsapp web api direct chat option for the user and whatsapp screen shot to add on testimonial section to make it more trust for user.
+
+🌿 WEBSITE PLAN FOR Heal with Whispers
+🌐 Inspired by: Jaree Basgall + Anjali Mahalke
+🎨 Aesthetic: Pastel shades (peach, soft beige, sage, cream)
+🖥️ Format: Online-only but must feel offline (calm, warm, human)
+
+Landing Banner (Home Hero Section) TEXT:
+pgsql
+Copy
+Edit
+Heal with Whispers
+gentle talk therapy for your tired heart.
+“You don’t have to be strong all the time.
+This is a space to feel seen, heard, and softly begin again.”
+BUTTON:
+[ Start Your Healing Session ] → WhatsApp or Google Form
+
+IMAGERY:
+
+Calm online session visual
+
+Therapist from side view
+
+Warm room, candle, plant, or sunlight
+(Avoid empty screen graphics — show “real-feel” online scenes)
+
+About the Therapist (About Me) HEADING: Meet Mrs. Pavan Chowdhary
+TEXT:
+
+I’m a Gold Medalist in MPA with a Postgraduate Diploma in Guidance & Counselling.
+With over 6 years of therapy experience and 45+ years in people-centered mentoring and leadership, I offer affordable, online therapy focused on emotional clarity, self-worth, and personal healing.
+I’ve also trained in Inner Child Healing, Butterfly Hugs, Guided Imagery, Somatic Grounding, and Relaxation Techniques — always blending science with care.
+
+STYLE:
+Minimal font, warm background
+
+IMAGES:
+
+Calm Indian therapist in action
+
+Healing objects (journal, shawl, candle, laptop with therapy screen)
+
+Who I Work With (Therapy is for…) HEADING: You’re not broken — just tired from carrying it all alone.
+TEXT:
+
+I work with young adults, working professionals, and individuals in emotional transition who are dealing with:
+
+Low motivation or decision fatigue
+
+Emotional numbness or overthinking
+
+Heartbreak, breakups, or toxic relationships
+
+Social media addiction or burnout
+
+Grief, loss, or past wounds
+
+Relationship stress or couple disharmony
+
+IMAGES:
+
+Visual metaphors:
+
+Phone addiction → person on screen
+
+Relationship breakup → tearful FaceTime
+
+Grief → flower with falling petal
+
+Inner child → safe hands/journal
+
+My Tools & Approach (Healing Toolkit) HEADING: What You’ll Experience in Session
+TEXT:
+
+Every session is gentle, reflective, and deeply practical.
+You’ll find yourself slowly returning to your own rhythm, with support tools such as:
+
+Mindfulness & Somatic Grounding
+
+Breathwork & Guided Imagery
+
+Butterfly Hug technique (EMDR-style)
+
+Safe-space visualizations
+
+Emotion mapping
+
+Values clarity and non-judgmental reflection
+
+Complex clinical needs are referred to senior supervisors. I focus on what I know heals — care, attention, space.
+
+IMAGES:
+
+Butterfly Hug visual
+
+Calm breath / hand on heart
+
+Journal pages, breathing exercises
+
+Person grounding with plants around
+
+Session Info (How It Works) HEADING: Online… but it won’t feel distant.
+TEXT:
+
+Sessions are 1-on-1, fully online (Google Meet or WhatsApp Video)
+Flexible timing options
+No rigid format — come as you are
+No focus on diagnosis — only on healing
+Fees are minimal — Healing matters more than money.
+
+🛑 No price section required
+✅ Say: “Fees are minimal and flexible — let’s begin where you are.”
+
+IMAGES:
+
+Online session visuals (with real-feel therapist setup)
+
+Someone holding tea while in call
+
+Notebook and phone — healing comfort objects
+
+Contact / Start Therapy HEADING: Ready for a conversation that heals?
+BUTTON:
+📞 [ Start Session on WhatsApp ]
+📧 [ healwithwhispers@gmail.com ]
+📋 [ Intake Form ] (optional)
+
+Footer Line:
+
+"You don’t have to walk this alone. Let’s talk — gently, honestly, and at your pace."
+
+✅ IMAGES TO INCLUDE / STYLE TIPS
+Theme	Suggested Images
+Breakup	Boy/girl on screen with soft tears
+Anxiety	Hands on forehead / tight chest metaphor
+Couple Therapy	Couple in video session, calm reflection
+Guided Imagery	Closed eyes, peaceful candle
+Healing Journal	Open notebook, candle, tea
+
+General Image Style:
+
+No loud colors
+
+Prefer warm natural lighting
+
+Candle, plants, books, light wooden tables
+
+Every image must feel soft, slow, emotionally safe
+
+Would you like me to also:
+✅ Provide a Canva Homepage Template with editable text?
+✅ Guide your designer on Wix section-wise build?
+
+Let me know next steps — you're nearly website-ready 🌱
+i need mobile resposonsive as well
+
+
