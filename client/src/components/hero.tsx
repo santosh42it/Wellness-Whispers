@@ -10,9 +10,13 @@ function getContentValue(contentBlocks: any[], key: string, defaultValue: string
 }
 
 // Fallback images for when gallery is not available
+// Import hero images from attached assets
+import hero1Image from "@assets/hero1.jpg";
+import hero2Image from "@assets/hero2.jpg";
+
 const fallbackImages = {
-  "hero-1": "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-  "hero-2": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+  "hero-1": hero1Image,
+  "hero-2": hero2Image,
   "hero-3": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
 };
 
@@ -158,7 +162,7 @@ export default function Hero() {
                   className="w-full h-64 object-cover rounded-lg"
                   onError={(e) => {
                     console.error("Hero image 1 failed to load:", heroImage1);
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400";
+                    e.currentTarget.src = hero1Image;
                   }}
                   onLoad={() => console.log("Hero image 1 loaded successfully:", heroImage1)}
                 />
@@ -177,7 +181,7 @@ export default function Hero() {
                   className="w-full h-64 object-cover rounded-lg"
                   onError={(e) => {
                     console.error("Hero image 2 failed to load:", heroImage2);
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
+                    e.currentTarget.src = hero2Image;
                   }}
                   onLoad={() => console.log("Hero image 2 loaded successfully:", heroImage2)}
                 />

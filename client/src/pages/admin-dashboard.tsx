@@ -19,18 +19,18 @@ const websiteImages = [
   {
     id: "hero-1",
     title: "Healing Forest Path",
-    currentUrl: "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    currentUrl: "/assets/hero1.jpg",
     description: "Main hero section background image",
     section: "Hero Section",
-    altText: "Healing does not shout it whispers - Misty green leaves in peaceful nature"
+    altText: "Healing does not shout it whispers - Peaceful therapy space"
   },
   {
     id: "hero-2", 
-    title: "Rainy Window Reflection",
-    currentUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+    title: "Rainy Window Reflection", 
+    currentUrl: "/assets/hero2.jpg",
     description: "Emotional validation image in hero section",
     section: "Hero Section",
-    altText: "You are not too much - Rainy window with gentle reflection and emotional validation"
+    altText: "You are not too much - Gentle therapy moment"
   },
   {
     id: "hero-3",
