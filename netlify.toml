@@ -1,0 +1,48 @@
+[build]
+  command = "./build.sh"
+  publish = "dist/public"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_FLAGS = "--production=false"
+  SECRETS_SCAN_OMIT_PATHS = "SUPABASE_SETUP.md,CHECK_SUPABASE.md,NETLIFY_DEPLOYMENT_FIX.md"
+
+# Admin credentials and database config for production
+[context.production.environment]
+  ADMIN_EMAIL = "admin@wellnesswhispers.in"
+  ADMIN_PASSWORD = "admin123"
+  ADMIN_NAME = "Wellness Whispers Admin"
+  USE_DATABASE = "true"
+  NODE_ENV = "production"
+
+[context.deploy-preview.environment]
+  ADMIN_EMAIL = "admin@wellnesswhispers.in"
+  ADMIN_PASSWORD = "admin123"
+  ADMIN_NAME = "Wellness Whispers Admin"
+  USE_DATABASE = "true"
+
+[[headers]]
+  for = "/objects/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/public-objects/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[redirects]]
+  from = "/objects/*"
+  to = "/.netlify/functions/server/objects/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/server/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

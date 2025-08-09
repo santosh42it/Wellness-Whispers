@@ -1,0 +1,190 @@
+import { useQuery } from "@tanstack/react-query";
+
+// Helper function to get content from content blocks
+function getContentValue(contentBlocks: any[], key: string, defaultValue: string): string {
+  if (!Array.isArray(contentBlocks)) return defaultValue;
+  const block = contentBlocks.find(block => block.blockKey === key);
+  return block?.content || defaultValue;
+}
+
+export default function Services() {
+  // Fetch content blocks for dynamic text
+  const { data: contentBlocks } = useQuery({
+    queryKey: ["/api/content"],
+    retry: false,
+    refetchOnWindowFocus: true,
+    staleTime: 0,
+    gcTime: 0,
+  });
+
+  const safeContentBlocks = Array.isArray(contentBlocks) ? contentBlocks : [];
+
+  // Get dynamic content values
+  const servicesTitle = getContentValue(safeContentBlocks, "services_title", "Who I Work With");
+  const servicesSubtitle = getContentValue(safeContentBlocks, "services_subtitle", "Every emotional experience is valid. Here's how we can work together on your healing journey.");
+  const services = [
+    {
+      title: "Anxiety Support",
+      description: "Gentle techniques for managing overwhelming feelings and racing thoughts",
+      image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Gentle hands offering support for anxiety management"
+    },
+    {
+      title: "Relationship Healing", 
+      description: "Support for breakups, toxic relationships, and building healthier connections",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Two people supporting each other in relationship healing"
+    },
+    {
+      title: "Emotional Confusion",
+      description: "Clarity when feelings feel tangled and emotions seem overwhelming",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Person finding clarity through emotional confusion"
+    },
+    {
+      title: "Social Withdrawal",
+      description: "Gentle encouragement to reconnect with yourself and others",
+      image: "https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Person gently reconnecting with social connections"
+    },
+    {
+      title: "Grief Processing",
+      description: "Compassionate support through loss and life transitions",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Peaceful nature scene representing grief healing journey"
+    },
+    {
+      title: "Depression Support",
+      description: "Understanding and gentle movement through difficult emotional landscapes",
+      image: "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Light breaking through darkness representing hope in depression"
+    },
+    {
+      title: "Life Transitions",
+      description: "Support during major changes, career shifts, and new life phases",
+      image: "https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Path leading forward representing life transitions"
+    },
+    {
+      title: "Self-Worth Issues",
+      description: "Building confidence and understanding your inherent value",
+      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Person looking confidently ahead representing self-worth"
+    },
+    {
+      title: "Stress Management",
+      description: "Practical tools for handling life's pressures with grace",
+      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Peaceful meditation scene for stress management"
+    },
+    {
+      title: "Family Dynamics",
+      description: "Navigating complex family relationships and boundaries",
+      image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Family silhouettes representing healthy family dynamics"
+    },
+    {
+      title: "Work-Life Balance",
+      description: "Finding harmony between professional and personal wellbeing",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Balanced stones representing work-life harmony"
+    },
+    {
+      title: "Inner Child Healing",
+      description: "Reconnecting with and healing past emotional wounds",
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      alt: "Child's hands holding a flower representing inner child healing"
+    }
+  ];
+
+  return (
+    <section id="services" className="py-20 relative bg-gradient-to-br from-warm-misty-beige/20 via-peach-blush/10 to-sage-green/5">
+      {/* Visual separator from hero section */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sage-green/20 to-transparent"></div>
+      
+      <div className="container mx-auto px-6">
+        
+        {/* Section Title */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-earthy-brown mb-6">
+            {servicesTitle}
+          </h2>
+          <p className="text-xl text-sage-green font-medium max-w-3xl mx-auto">
+            {servicesSubtitle}
+          </p>
+        </div>
+
+        {/* Services Grid - 4x3 layout */}
+        <div className="services-grid max-w-7xl mx-auto">
+          {services.map((service, index) => (
+            <div 
+              key={index}
+              className="bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-soft hover:shadow-warm transition-all duration-300 hover:scale-105 group"
+            >
+              {/* Title on top */}
+              <h3 className="text-xl font-playfair font-semibold text-earthy-brown mb-4 text-center group-hover:text-sage-green transition-colors duration-300">
+                {service.title}
+              </h3>
+              
+              {/* Image in middle */}
+              <div className="mb-4 overflow-hidden rounded-lg">
+                <img 
+                  src={service.image}
+                  alt={service.alt}
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+              
+              {/* Text at bottom - centered and full text */}
+              <p className="text-charcoal-grey font-lato text-sm leading-relaxed text-center">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Transition Block - Therapy in Everyday Moments with Falling Leaves */}
+        <div className="mt-20 max-w-5xl mx-auto">
+          <div className="bg-peach-blush/40 backdrop-blur-sm p-12 rounded-3xl shadow-warm relative">
+            
+            {/* Content overlay */}
+            <div className="relative z-10">
+              <h3 className="text-3xl font-playfair font-bold text-earthy-brown text-center mb-8">
+                Therapy in Everyday Moments
+              </h3>
+              
+              <div className="flex flex-wrap justify-center items-center gap-8">
+                {/* Image 3: Healing begins in quiet corner */}
+                <div className="pasted-image">
+                  <img 
+                    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=200" 
+                    alt="Healing begins in quiet corner - book, glasses, candle creating peaceful therapy moment" 
+                    className="w-72 h-48 object-cover rounded-lg"
+                  />
+                </div>
+
+                {/* Image 4: It's ok to reach out */}
+                <div className="pasted-image">
+                  <img 
+                    src="https://images.unsplash.com/photo-1516575334481-f85287c2c82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=200" 
+                    alt="It's ok to reach out - phone connection showing therapeutic support accessibility" 
+                    className="w-64 h-44 object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <p className="text-center text-charcoal-grey font-lato text-lg mt-8 leading-relaxed">
+                Healing doesn't require grand gestures. Sometimes it begins with a quiet moment, 
+                a gentle conversation, or simply reaching out when you're ready.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Subtle nature texture overlay */}
+      <div className="nature-texture absolute inset-0 pointer-events-none opacity-25"></div>
+    </section>
+  );
+}

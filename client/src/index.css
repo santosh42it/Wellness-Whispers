@@ -1,0 +1,464 @@
+/* Import fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lato:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(45, 100%, 97%);
+  --foreground: hsl(25, 32%, 24%);
+  --muted: hsl(39, 21%, 94%);
+  --muted-foreground: hsl(25, 13%, 50%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(25, 32%, 24%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(25, 32%, 24%);
+  --border: hsl(39, 21%, 87%);
+  --input: hsl(39, 21%, 87%);
+  --primary: hsl(149, 33%, 58%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(39, 21%, 94%);
+  --secondary-foreground: hsl(25, 32%, 24%);
+  --accent: hsl(39, 21%, 94%);
+  --accent-foreground: hsl(25, 32%, 24%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(60, 9%, 98%);
+  --ring: hsl(25, 32%, 24%);
+  --radius: 0.75rem;
+
+  /* Wellness Whispers Color Palette - Jaree Basgall Inspired */
+  --warm-misty-beige: 35 30% 90%; /* Warm Beige Misty #EDE7DE */
+  --soft-sage-green: 95 15% 45%; /* Sage Green #708670 */
+  --soft-sage-misty: 95 10% 88%; /* Soft Sage Misty #E3E6E1 */
+  --peach-blush: 24 50% 88%; /* #F5D7C6 */
+  --terracotta: 24 41% 51%; /* #B5744C */
+  --olive-green: 95 20% 40%;
+  --earthy-brown: 25 25% 30%; /* Earthy Brown #4B3B2B */
+  --sage-green: 95 15% 45%; /* Sage Green #708670 */
+  --charcoal-grey: 0 0% 29%; /* Charcoal Grey #4A4A4A */
+  --lavender-sage: 250 20% 85%; /* for pricing section */
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 4%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  --primary: hsl(149, 33%, 58%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 5%, 84%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-cormorant {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  /* Authentic Crushed Paper Background Texture */
+  .crushed-paper-bg {
+    background-image: url('@assets/image_1754253374919.png');
+    background-repeat: repeat;
+    background-size: 400px 400px;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  /* Apply crushed paper background globally */
+  body {
+    @apply font-sans antialiased bg-background text-foreground crushed-paper-bg;
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+/* Typography Classes */
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Custom Wellness Whispers colors */
+.bg-warm-misty-beige {
+  background-color: hsl(var(--warm-misty-beige));
+}
+
+.bg-soft-sage-green {
+  background-color: hsl(var(--soft-sage-green));
+}
+
+.bg-peach-blush {
+  background-color: hsl(var(--peach-blush));
+}
+
+.bg-terracotta {
+  background-color: hsl(var(--terracotta));
+}
+
+.bg-olive-green {
+  background-color: hsl(var(--olive-green));
+}
+
+.bg-earthy-brown {
+  background-color: hsl(var(--earthy-brown));
+}
+
+.bg-sage-green {
+  background-color: hsl(var(--sage-green));
+}
+
+.bg-charcoal-grey {
+  background-color: hsl(var(--charcoal-grey));
+}
+
+.bg-lavender-sage {
+  background-color: hsl(var(--lavender-sage));
+}
+
+.text-warm-misty-beige {
+  color: hsl(var(--warm-misty-beige));
+}
+
+.text-soft-sage-green {
+  color: hsl(var(--soft-sage-green));
+}
+
+.text-peach-blush {
+  color: hsl(var(--peach-blush));
+}
+
+.text-terracotta {
+  color: hsl(var(--terracotta));
+}
+
+.text-olive-green {
+  color: hsl(var(--olive-green));
+}
+
+.text-earthy-brown {
+  color: hsl(var(--earthy-brown));
+}
+
+.text-sage-green {
+  color: hsl(var(--sage-green));
+}
+
+.text-charcoal-grey {
+  color: hsl(var(--charcoal-grey));
+}
+
+/* Misty background textures */
+.misty-beige-bg {
+  background: linear-gradient(135deg, 
+    hsl(var(--warm-misty-beige)) 0%, 
+    rgba(234, 226, 215, 0.8) 50%, 
+    hsl(var(--warm-misty-beige)) 100%),
+    radial-gradient(circle at 25% 25%, rgba(245, 215, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(245, 215, 198, 0.2) 0%, transparent 50%);
+  background-size: 100% 100%, 60px 60px, 40px 40px;
+}
+
+.misty-sage-bg {
+  background: linear-gradient(135deg, 
+    hsl(var(--soft-sage-green)) 0%, 
+    rgba(221, 231, 222, 0.8) 50%, 
+    hsl(var(--soft-sage-green)) 100%),
+    radial-gradient(circle at 30% 70%, rgba(109, 127, 99, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(109, 127, 99, 0.1) 0%, transparent 50%);
+  background-size: 100% 100%, 80px 80px, 50px 50px;
+}
+
+.lavender-sage-gradient {
+  background: linear-gradient(135deg, 
+    hsl(var(--lavender-sage)) 0%, 
+    hsl(var(--soft-sage-green)) 100%);
+}
+
+/* Polaroid-style image effects */
+.polaroid-image {
+  position: relative;
+  background: white;
+  padding: 12px 12px 40px 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transform: rotate(-2deg);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.polaroid-image:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.polaroid-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.polaroid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Pasted/overlapping image styles */
+.pasted-image {
+  position: relative;
+  display: inline-block;
+  transform: rotate(-1deg);
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+.pasted-image:nth-child(2) {
+  transform: rotate(1.5deg);
+  margin-left: -20px;
+  z-index: 2;
+}
+
+.pasted-image:nth-child(3) {
+  transform: rotate(-0.5deg);
+  margin-left: -30px;
+  z-index: 3;
+}
+
+/* Dried flower/leaf texture overlay */
+.nature-texture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(181, 116, 76, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(110, 126, 85, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(109, 127, 99, 0.05) 0%, transparent 50%);
+  background-size: 120px 120px, 80px 80px, 60px 60px;
+  pointer-events: none;
+}
+
+/* Falling leaves shadow effects */
+.falling-leaves-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.falling-leaves-container::before,
+.falling-leaves-container::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* First set of leaf shadows */
+.falling-leaves-container::before {
+  top: -10px;
+  left: 10%;
+  width: 40px;
+  height: 60px;
+  background: radial-gradient(ellipse at center, rgba(109, 127, 99, 0.15) 0%, rgba(109, 127, 99, 0.08) 50%, transparent 100%);
+  border-radius: 50% 10% 50% 10%;
+  transform: rotate(-25deg);
+  animation: gentle-sway 6s ease-in-out infinite;
+}
+
+/* Second set of leaf shadows */
+.falling-leaves-container::after {
+  top: 20px;
+  right: 15%;
+  width: 35px;
+  height: 50px;
+  background: radial-gradient(ellipse at center, rgba(181, 116, 76, 0.12) 0%, rgba(181, 116, 76, 0.06) 50%, transparent 100%);
+  border-radius: 10% 50% 10% 50%;
+  transform: rotate(20deg);
+  animation: gentle-sway 8s ease-in-out infinite reverse;
+}
+
+
+
+/* Animation for gentle leaf movement */
+@keyframes gentle-sway {
+  0%, 100% {
+    transform: rotate(-25deg) translateX(0) translateY(0);
+  }
+  25% {
+    transform: rotate(-20deg) translateX(3px) translateY(-2px);
+  }
+  50% {
+    transform: rotate(-30deg) translateX(-2px) translateY(1px);
+  }
+  75% {
+    transform: rotate(-22deg) translateX(1px) translateY(-1px);
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0) rotate(var(--rotation, 0deg)) scale(1);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translateY(-3px) rotate(calc(var(--rotation, 0deg) + 3deg)) scale(1.05);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-1px) rotate(calc(var(--rotation, 0deg) - 2deg)) scale(0.95);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translateY(-2px) rotate(calc(var(--rotation, 0deg) + 1deg)) scale(1.02);
+    opacity: 0.7;
+  }
+}
+
+/* Enhanced shadows for depth */
+.shadow-soft {
+  box-shadow: 0 4px 12px rgba(75, 59, 43, 0.1);
+}
+
+.shadow-warm {
+  box-shadow: 0 6px 20px rgba(181, 116, 76, 0.15);
+}
+
+.shadow-strong {
+  box-shadow: 0 8px 30px rgba(75, 59, 43, 0.2);
+}
+
+/* Button contrast improvements */
+.bg-sage-green {
+  background-color: hsl(var(--sage-green)) !important;
+  color: white !important;
+}
+
+.bg-olive-green {
+  background-color: hsl(var(--olive-green)) !important;
+  color: white !important;
+}
+
+/* Ensure WhatsApp buttons are always visible */
+.whatsapp-button {
+  background-color: #567A4B !important;
+  color: white !important;
+  border: 2px solid #567A4B !important;
+  font-weight: 600 !important;
+}
+
+.whatsapp-button:hover {
+  background-color: #5D6E4A !important;
+  border-color: #5D6E4A !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 8px 25px rgba(86, 122, 75, 0.3) !important;
+}
+
+/* Gentle animations */
+.float-gentle {
+  animation: floatGentle 3s ease-in-out infinite;
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px) rotate(-1deg); }
+  50% { transform: translateY(-5px) rotate(0deg); }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness for overlapping images */
+@media (max-width: 768px) {
+  .pasted-image:nth-child(2) {
+    margin-left: -10px;
+  }
+  
+  .pasted-image:nth-child(3) {
+    margin-left: -15px;
+  }
+  
+  .polaroid-image {
+    padding: 8px 8px 24px 8px;
+  }
+}
+
+/* Grid layouts for services and approaches */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.approaches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.after-therapy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .approaches-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .after-therapy-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
