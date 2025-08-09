@@ -26,55 +26,55 @@ export default function Approach() {
     {
       title: "Mindfulness & Somatic Grounding",
       description: "Gentle body-awareness techniques to reconnect with your inner wisdom and calm",
-      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/a1.jpg",
       alt: "Peaceful meditation pose representing mindfulness and grounding"
     },
     {
       title: "Breathwork & Guided Imagery",
       description: "Simple breathing exercises and visualization to ease anxiety and stress",
-      image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/a2.jpg",
       alt: "Person practicing deep breathing in natural setting"
     },
     {
       title: "Butterfly Hug (EMDR-style)",
       description: "Self-soothing technique for emotional regulation and trauma processing",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/a3.jpg",
       alt: "Gentle hands in self-soothing butterfly hug position"
     },
     {
       title: "Inner Child Healing",
       description: "Compassionate exploration of early emotional patterns and healing",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/a4.jpg",
       alt: "Child's perspective showing innocence and inner child healing"
     },
     {
       title: "Person-Centered Approach",
       description: "Your experience is the guide - gentle, non-directive therapeutic support",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/a5.jpg",
       alt: "Warm, empathetic therapist listening with person-centered focus"
     },
     {
       title: "Strengths-Based Therapy",
       description: "Building on your existing resilience and natural coping abilities",
-      image: "https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/a6.jpg",
       alt: "Strong tree roots representing inner strength and resilience"
     },
     {
       title: "Emotional Clarity Work",
       description: "Untangling complex feelings and finding your emotional truth",
-      image: "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/a7.jpg",
       alt: "Clear water reflection representing emotional clarity"
     },
     {
       title: "Gentle Talk Therapy",
       description: "Safe space for processing thoughts without pressure or judgment",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/a8.jpg",
       alt: "Comfortable therapy space with gentle conversation atmosphere"
     },
     {
       title: "Flexible Online Support",
       description: "WhatsApp or Google Meet sessions that fit into your life naturally",
-      image: "https://images.unsplash.com/photo-1516575334481-f85287c2c82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/a9.jpg",
       alt: "Modern technology connecting people for online therapy support"
     }
   ];

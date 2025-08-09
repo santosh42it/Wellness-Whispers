@@ -26,73 +26,73 @@ export default function Services() {
     {
       title: "Anxiety Support",
       description: "Gentle techniques for managing overwhelming feelings and racing thoughts",
-      image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s1.jpg",
       alt: "Gentle hands offering support for anxiety management"
     },
     {
       title: "Relationship Healing", 
       description: "Support for breakups, toxic relationships, and building healthier connections",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s2.jpg",
       alt: "Two people supporting each other in relationship healing"
     },
     {
       title: "Emotional Confusion",
       description: "Clarity when feelings feel tangled and emotions seem overwhelming",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s3.jpg",
       alt: "Person finding clarity through emotional confusion"
     },
     {
       title: "Social Withdrawal",
       description: "Gentle encouragement to reconnect with yourself and others",
-      image: "https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s4.jpg",
       alt: "Person gently reconnecting with social connections"
     },
     {
       title: "Grief Processing",
       description: "Compassionate support through loss and life transitions",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s5.jpg",
       alt: "Peaceful nature scene representing grief healing journey"
     },
     {
       title: "Depression Support",
       description: "Understanding and gentle movement through difficult emotional landscapes",
-      image: "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s6.jpg",
       alt: "Light breaking through darkness representing hope in depression"
     },
     {
       title: "Life Transitions",
       description: "Support during major changes, career shifts, and new life phases",
-      image: "https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s7.jpg",
       alt: "Path leading forward representing life transitions"
     },
     {
       title: "Self-Worth Issues",
       description: "Building confidence and understanding your inherent value",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s8.jpg",
       alt: "Person looking confidently ahead representing self-worth"
     },
     {
       title: "Stress Management",
       description: "Practical tools for handling life's pressures with grace",
-      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s9.jpg",
       alt: "Peaceful meditation scene for stress management"
     },
     {
       title: "Family Dynamics",
       description: "Navigating complex family relationships and boundaries",
-      image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s10.jpg",
       alt: "Family silhouettes representing healthy family dynamics"
     },
     {
       title: "Work-Life Balance",
       description: "Finding harmony between professional and personal wellbeing",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s11.jpg",
       alt: "Balanced stones representing work-life harmony"
     },
     {
       title: "Inner Child Healing",
       description: "Reconnecting with and healing past emotional wounds",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/assets/s12.jpg",
       alt: "Child's hands holding a flower representing inner child healing"
     }
   ];
