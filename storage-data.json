@@ -1,5 +1,14 @@
 {
-  "contacts": [],
+  "contacts": [
+    {
+      "id": "8j1ct5k1y",
+      "name": "Test User",
+      "email": "test@example.com",
+      "message": "Test message",
+      "phone": null,
+      "createdAt": "2025-08-09T14:30:17.293Z"
+    }
+  ],
   "adminUsers": [
     {
       "id": "uqwsga6j9",
