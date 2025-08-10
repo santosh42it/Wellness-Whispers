@@ -136,76 +136,86 @@ export default function Hero() {
   const heroQuote2 = getContentValue(safeContentBlocks, "hero_quote_2", "You are not too much");
 
   return (
-    <section className="relative overflow-hidden py-16 lg:py-24">
-      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12">
+    <section className="relative overflow-hidden py-20 lg:py-32">
+      <div className="container mx-auto px-6">
         
-        {/* Text Content */}
-        <div className="lg:w-1/2 space-y-8 fade-in-up">
-          <div className="space-y-6">
-            <h1 className="text-5xl lg:text-6xl font-playfair font-bold text-dark-brown leading-tight tracking-tight">
+        {/* Hero Content - Single Column Layout */}
+        <div className="max-w-4xl mx-auto text-center space-y-12">
+          
+          {/* Main Hero Text */}
+          <div className="space-y-8">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-dark-brown leading-tight">
               {heroTitle}
             </h1>
             
-            <p className="text-3xl lg:text-4xl italic text-dark-brown font-normal" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+            <p className="text-2xl md:text-3xl lg:text-4xl italic text-dark-brown font-light max-w-3xl mx-auto" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               {heroSubtitle}
             </p>
             
-            <p className="text-lg lg:text-xl text-dark-brown font-lato leading-relaxed">
+            <p className="text-lg md:text-xl text-dark-brown font-lato leading-relaxed max-w-2xl mx-auto">
               {heroDescription}
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center sm:justify-start">
-            <WhatsAppButton className="bg-sage hover:bg-olive text-white px-8 py-4 text-lg font-medium shadow-warm hover:shadow-strong transition-all duration-300 border-2 border-sage hover:border-olive">
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <WhatsAppButton className="bg-sage hover:bg-olive text-white px-10 py-5 text-lg font-medium rounded-2xl shadow-warm hover:shadow-strong transition-all duration-300 border-2 border-sage hover:border-olive transform hover:scale-105">
               {heroButtonText}
             </WhatsAppButton>
             
             <a 
               href="#services" 
-              className="text-dark-brown hover:text-sage font-medium text-lg underline decoration-2 underline-offset-4 transition-colors duration-300 text-center sm:text-left"
+              className="text-dark-brown hover:text-sage font-medium text-lg underline decoration-2 underline-offset-4 transition-colors duration-300"
             >
               Explore Services First
             </a>
           </div>
-        </div>
 
-        {/* Hero Images - Staggered Layout with Equal Sizes */}
-        <div className="lg:w-1/2">
-          <div className="relative max-w-md mx-auto lg:mx-0 h-80">
+          {/* Hero Images - Clean Grid Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-3xl mx-auto">
             
             {/* First Hero Image */}
-            <div className="absolute top-0 left-0 w-64 h-48">
+            <div className="relative group">
               <img 
                 src={heroImage1} 
                 alt="Healing does not shout it whispers - Peaceful therapy space" 
-                className="w-full h-full object-cover rounded-3xl shadow-xl"
+                className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300"
                 onError={(e) => {
                   console.error("Hero image 1 failed to load:", heroImage1);
                   e.currentTarget.src = "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400";
                 }}
                 onLoad={() => console.log("Hero image 1 loaded successfully:", heroImage1)}
               />
+              <div className="absolute inset-0 bg-dark-brown/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
 
-            {/* Second Hero Image - Same exact size, offset position */}
-            <div className="absolute top-20 right-0 w-64 h-48">
+            {/* Second Hero Image */}
+            <div className="relative group">
               <img 
                 src={heroImage2} 
                 alt={`${heroQuote2} - Gentle therapy moment`}
-                className="w-full h-full object-cover rounded-3xl shadow-xl"
+                className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300"
                 onError={(e) => {
                   console.error("Hero image 2 failed to load:", heroImage2);
                   e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
                 }}
                 onLoad={() => console.log("Hero image 2 loaded successfully:", heroImage2)}
               />
+              <div className="absolute inset-0 bg-dark-brown/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
+          </div>
+
+          {/* Inspirational Quote */}
+          <div className="pt-8">
+            <p className="text-xl md:text-2xl italic text-dark-brown/80 font-light" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+              "{heroQuote1}"
+            </p>
           </div>
         </div>
       </div>
 
       {/* Subtle nature texture overlay */}
-      <div className="nature-texture absolute inset-0 pointer-events-none opacity-30"></div>
+      <div className="nature-texture absolute inset-0 pointer-events-none opacity-20"></div>
     </section>
   );
 }
