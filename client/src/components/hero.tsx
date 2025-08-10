@@ -171,9 +171,9 @@ export default function Hero() {
 
         {/* Hero Images - Elegant Staggered Layout */}
         <div className="lg:w-1/2 mt-12 lg:mt-0">
-          <div className="space-y-6 max-w-md mx-auto lg:mx-0">
+          <div className="space-y-6 max-w-xl mx-auto lg:mx-0">
             
-            {/* First Hero Image - Larger */}
+            {/* First Hero Image */}
             <div className="relative">
               <img 
                 src={heroImage1} 
@@ -187,8 +187,8 @@ export default function Hero() {
               />
             </div>
 
-            {/* Second Hero Image - Same size, offset */}
-            <div className="relative ml-12">
+            {/* Second Hero Image - Offset right */}
+            <div className="relative ml-8">
               <img 
                 src={heroImage2} 
                 alt={`${heroQuote2} - Gentle therapy moment`}
