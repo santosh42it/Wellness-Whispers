@@ -169,16 +169,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero Images - Clean Overlapped Layout */}
-        <div className="lg:w-1/2 mt-12 lg:mt-0 relative">
-          <div className="relative max-w-lg mx-auto lg:mx-0">
+        {/* Hero Images - Elegant Staggered Layout */}
+        <div className="lg:w-1/2 mt-12 lg:mt-0">
+          <div className="space-y-6 max-w-md mx-auto lg:mx-0">
             
-            {/* First Hero Image - Main image */}
-            <div className="relative z-10">
+            {/* First Hero Image - Larger */}
+            <div className="relative">
               <img 
                 src={heroImage1} 
                 alt="Healing does not shout it whispers - Peaceful therapy space" 
-                className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                className="w-full h-72 object-cover rounded-3xl shadow-xl"
                 onError={(e) => {
                   console.error("Hero image 1 failed to load:", heroImage1);
                   e.currentTarget.src = "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400";
@@ -187,12 +187,12 @@ export default function Hero() {
               />
             </div>
 
-            {/* Second Hero Image - Overlapped on top-right */}
-            <div className="absolute -top-8 -right-6 z-20 w-48">
+            {/* Second Hero Image - Smaller, offset */}
+            <div className="relative ml-12">
               <img 
                 src={heroImage2} 
                 alt={`${heroQuote2} - Gentle therapy moment`}
-                className="w-full h-36 object-cover rounded-xl shadow-lg"
+                className="w-3/4 h-48 object-cover rounded-2xl shadow-lg"
                 onError={(e) => {
                   console.error("Hero image 2 failed to load:", heroImage2);
                   e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
