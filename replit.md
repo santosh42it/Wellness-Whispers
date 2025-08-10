@@ -25,6 +25,7 @@ The site features a warm, calming design with a therapy-focused color palette (p
 - **✅ Navigation Updated**: Header menu now includes direct links to About and After Therapy pages
 - **✅ Production Ready**: Complete deployment pipeline working with admin login functionality
 - **✅ Supabase Integration**: Database connection ready with fallback authentication system
+- **✅ Build Fix August 2025**: Fixed critical Netlify deployment failure by updating CSS background image reference to use existing assets
 
 # User Preferences
 

@@ -79,11 +79,12 @@
   
   /* Authentic Crushed Paper Background Texture */
   .crushed-paper-bg {
-    background-image: url('@assets/image_1754253374919.png');
+    background-image: url('@assets/beige-dry-flowersfloral.jpg');
     background-repeat: repeat;
     background-size: 400px 400px;
     background-attachment: fixed;
     position: relative;
+    opacity: 0.1;
   }
   
   /* Apply crushed paper background globally */
