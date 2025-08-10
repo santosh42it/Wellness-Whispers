@@ -169,40 +169,36 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero Images - Overlapped Layout */}
+        {/* Hero Images - Clean Overlapped Layout */}
         <div className="lg:w-1/2 mt-12 lg:mt-0 relative">
           <div className="relative max-w-lg mx-auto lg:mx-0">
             
-            {/* First Hero Image - Larger and in back */}
+            {/* First Hero Image - Main image */}
             <div className="relative z-10">
-              <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-warm hover:shadow-strong transition-all duration-500 transform hover:-translate-y-2">
-                <img 
-                  src={heroImage1} 
-                  alt="Healing does not shout it whispers - Peaceful therapy space" 
-                  className="w-full h-80 object-cover rounded-lg"
-                  onError={(e) => {
-                    console.error("Hero image 1 failed to load:", heroImage1);
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400";
-                  }}
-                  onLoad={() => console.log("Hero image 1 loaded successfully:", heroImage1)}
-                />
-              </div>
+              <img 
+                src={heroImage1} 
+                alt="Healing does not shout it whispers - Peaceful therapy space" 
+                className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                onError={(e) => {
+                  console.error("Hero image 1 failed to load:", heroImage1);
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400";
+                }}
+                onLoad={() => console.log("Hero image 1 loaded successfully:", heroImage1)}
+              />
             </div>
 
-            {/* Second Hero Image - Smaller and overlapped */}
-            <div className="absolute top-40 right-4 z-20 w-56">
-              <div className="bg-white/95 backdrop-blur-sm p-3 rounded-lg shadow-strong hover:shadow-warm transition-all duration-500 transform hover:-translate-y-1 hover:scale-105">
-                <img 
-                  src={heroImage2} 
-                  alt={`${heroQuote2} - Gentle therapy moment`}
-                  className="w-full h-40 object-cover rounded-md"
-                  onError={(e) => {
-                    console.error("Hero image 2 failed to load:", heroImage2);
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
-                  }}
-                  onLoad={() => console.log("Hero image 2 loaded successfully:", heroImage2)}
-                />
-              </div>
+            {/* Second Hero Image - Overlapped on top-right */}
+            <div className="absolute -top-8 -right-6 z-20 w-48">
+              <img 
+                src={heroImage2} 
+                alt={`${heroQuote2} - Gentle therapy moment`}
+                className="w-full h-36 object-cover rounded-xl shadow-lg"
+                onError={(e) => {
+                  console.error("Hero image 2 failed to load:", heroImage2);
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
+                }}
+                onLoad={() => console.log("Hero image 2 loaded successfully:", heroImage2)}
+              />
             </div>
           </div>
         </div>
