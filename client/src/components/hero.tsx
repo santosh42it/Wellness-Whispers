@@ -1,6 +1,8 @@
 import WhatsAppButton from "./whatsapp-button";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
+import hero1Image from "@assets/hero1.jpg";
+import hero2Image from "@assets/hero2.jpg";
 
 // Helper function to get content from content blocks
 function getContentValue(contentBlocks: any[], key: string, defaultValue: string): string {
@@ -9,11 +11,10 @@ function getContentValue(contentBlocks: any[], key: string, defaultValue: string
   return block?.content || defaultValue;
 }
 
-// Fallback images for when gallery is not available
-const fallbackImages = {
-  "hero-1": "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-  "hero-2": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-  "hero-3": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+// Use uploaded images directly
+const heroImages = {
+  "hero-1": hero1Image,
+  "hero-2": hero2Image,
 };
 
 function getImageUrl(galleryImages: any, imageId: string, fallbackUrl: string) {
@@ -120,8 +121,9 @@ export default function Hero() {
   console.log("Gallery data:", safeGalleryImages);
   console.log("Content blocks:", safeContentBlocks);
 
-  const heroImage1 = getImageUrl(safeGalleryImages, "hero-1", fallbackImages["hero-1"]);
-  const heroImage2 = getImageUrl(safeGalleryImages, "hero-2", fallbackImages["hero-2"]);
+  // Use uploaded images directly instead of gallery system
+  const heroImage1 = heroImages["hero-1"];
+  const heroImage2 = heroImages["hero-2"];
 
   console.log("Final hero URLs:", { heroImage1, heroImage2 });
 
@@ -140,27 +142,27 @@ export default function Hero() {
         {/* Text Content */}
         <div className="lg:w-1/2 space-y-8 fade-in-up">
           <div className="space-y-6">
-            <h1 className="text-5xl lg:text-6xl font-playfair font-bold text-earthy-brown leading-tight tracking-tight">
+            <h1 className="text-5xl lg:text-6xl font-playfair font-bold text-dark-brown leading-tight tracking-tight">
               {heroTitle}
             </h1>
             
-            <p className="text-3xl lg:text-4xl italic text-sage-green font-normal" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+            <p className="text-3xl lg:text-4xl italic text-sage font-normal" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               {heroSubtitle}
             </p>
             
-            <p className="text-lg lg:text-xl text-charcoal-grey font-lato leading-relaxed">
+            <p className="text-lg lg:text-xl text-warm-gray font-lato leading-relaxed">
               {heroDescription}
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center sm:justify-start">
-            <WhatsAppButton className="bg-sage-green hover:bg-olive-green text-white px-8 py-4 text-lg font-medium shadow-warm hover:shadow-strong transition-all duration-300 border-2 border-sage-green hover:border-olive-green">
+            <WhatsAppButton className="bg-sage hover:bg-olive text-white px-8 py-4 text-lg font-medium shadow-warm hover:shadow-strong transition-all duration-300 border-2 border-sage hover:border-olive">
               {heroButtonText}
             </WhatsAppButton>
             
             <a 
               href="#services" 
-              className="text-earthy-brown hover:text-sage-green font-medium text-lg underline decoration-2 underline-offset-4 transition-colors duration-300 text-center sm:text-left"
+              className="text-dark-brown hover:text-sage font-medium text-lg underline decoration-2 underline-offset-4 transition-colors duration-300 text-center sm:text-left"
             >
               Explore Services First
             </a>
