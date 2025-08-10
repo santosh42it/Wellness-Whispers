@@ -136,8 +136,8 @@ export default function Hero() {
   const heroQuote2 = getContentValue(safeContentBlocks, "hero_quote_2", "You are not too much");
 
   return (
-    <section className="min-h-screen relative overflow-hidden">
-      <div className="container mx-auto px-6 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen">
+    <section className="relative overflow-hidden py-16 lg:py-24">
+      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12">
         
         {/* Text Content */}
         <div className="lg:w-1/2 space-y-8 fade-in-up">
@@ -170,11 +170,11 @@ export default function Hero() {
         </div>
 
         {/* Hero Images - Staggered Layout with Equal Sizes */}
-        <div className="lg:w-1/2 mt-12 lg:mt-0">
-          <div className="relative max-w-lg mx-auto lg:mx-0 h-[600px]">
+        <div className="lg:w-1/2">
+          <div className="relative max-w-md mx-auto lg:mx-0 h-80">
             
             {/* First Hero Image */}
-            <div className="absolute top-0 left-0 w-80 h-72">
+            <div className="absolute top-0 left-0 w-64 h-48">
               <img 
                 src={heroImage1} 
                 alt="Healing does not shout it whispers - Peaceful therapy space" 
@@ -188,7 +188,7 @@ export default function Hero() {
             </div>
 
             {/* Second Hero Image - Same exact size, offset position */}
-            <div className="absolute top-32 right-0 w-80 h-72">
+            <div className="absolute top-20 right-0 w-64 h-48">
               <img 
                 src={heroImage2} 
                 alt={`${heroQuote2} - Gentle therapy moment`}
