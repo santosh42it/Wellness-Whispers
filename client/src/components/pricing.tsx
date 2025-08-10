@@ -44,7 +44,7 @@ export default function Pricing() {
           <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-earthy-brown mb-6">
             Gentle, Accessible Emotional Wellness
           </h2>
-          <p className="text-xl text-charcoal-grey font-lato max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-dark-brown font-lato max-w-4xl mx-auto leading-relaxed">
             This space was created for those who need a soft pause, a listening ear, and a safe 
             place to untangle their thoughts. Sessions are offered in the spirit of care and service, 
             so support can remain within reach for anyone who needs it.
@@ -75,7 +75,7 @@ export default function Pricing() {
                 <div className="text-3xl font-bold text-terracotta mb-2">
                   {plan.price}
                 </div>
-                <p className="text-sage-green font-medium">
+                <p className="text-dark-brown font-medium">
                   {plan.description}
                 </p>
               </div>
@@ -84,7 +84,7 @@ export default function Pricing() {
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-sage-green rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-charcoal-grey font-lato text-sm leading-relaxed">
+                    <span className="text-dark-brown font-lato text-sm leading-relaxed">
                       {feature}
                     </span>
                   </li>

@@ -121,7 +121,7 @@ export default function Services() {
           <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-dark-brown mb-6">
             {servicesTitle}
           </h2>
-          <p className="text-xl text-sage font-medium max-w-3xl mx-auto">
+          <p className="text-xl text-dark-brown font-medium max-w-3xl mx-auto">
             {servicesSubtitle}
           </p>
         </div>

@@ -10,7 +10,7 @@ export default function Contact() {
           <div className="mb-16">
             <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-earthy-brown mb-8 leading-tight">
               Healing begins in quiet moments, 
-              <span className="block text-sage-green">one breath, one step at a time.</span>
+              <span className="block text-dark-brown">one breath, one step at a time.</span>
             </h2>
           </div>
 
@@ -25,10 +25,10 @@ export default function Contact() {
               <div className="relative z-10 text-center space-y-6">
                 {/* Refined messaging */}
                 <div className="space-y-3">
-                  <p className="text-lg text-charcoal-grey font-lato leading-relaxed">
+                  <p className="text-lg text-dark-brown font-lato leading-relaxed">
                     Ready to take the first step toward healing?
                   </p>
-                  <p className="text-sm text-sage-green font-medium">
+                  <p className="text-sm text-sage font-medium">
                     Start with a gentle conversation
                   </p>
                 </div>
@@ -59,7 +59,7 @@ export default function Contact() {
                 <h3 className="text-2xl font-playfair font-bold text-earthy-brown mb-4">
                   How We Connect
                 </h3>
-                <div className="space-y-4 text-charcoal-grey font-lato">
+                <div className="space-y-4 text-dark-brown font-lato">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-sage-green rounded-full"></div>
                     <span>WhatsApp: +91 98806 07355</span>
@@ -79,7 +79,7 @@ export default function Contact() {
                 <h3 className="text-2xl font-playfair font-bold text-earthy-brown mb-4">
                   What to Expect
                 </h3>
-                <div className="space-y-4 text-charcoal-grey font-lato">
+                <div className="space-y-4 text-dark-brown font-lato">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-peach-blush rounded-full"></div>
                     <span>Warm, non-judgmental conversation</span>
@@ -98,12 +98,12 @@ export default function Contact() {
 
             {/* Closing Message */}
             <div className="bg-peach-blush/30 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
-              <p className="text-lg text-charcoal-grey font-lato leading-relaxed italic">
+              <p className="text-lg text-dark-brown font-lato leading-relaxed italic">
                 "Sometimes the most courageous thing you can do is simply reach out. 
                 Your emotional well-being matters, and there's no 'right' time to start healing 
                 except now, if you feel ready."
               </p>
-              <p className="text-sage-green font-playfair text-lg mt-4">
+              <p className="text-sage font-playfair text-lg mt-4">
                 — Mrs. Pavan Chowdhary
               </p>
             </div>

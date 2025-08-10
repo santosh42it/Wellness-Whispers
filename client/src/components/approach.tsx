@@ -104,7 +104,7 @@ export default function Approach() {
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-sage via-peach to-sage rounded-full"></div>
             </h2>
           </div>
-          <p className="text-xl text-sage font-medium max-w-4xl mx-auto leading-relaxed mt-8">
+          <p className="text-xl text-dark-brown font-medium max-w-4xl mx-auto leading-relaxed mt-8">
             {approachSubtitle}
           </p>
         </div>
