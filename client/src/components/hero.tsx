@@ -169,16 +169,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero Images - Elegant Staggered Layout */}
+        {/* Hero Images - Staggered Layout with Equal Sizes */}
         <div className="lg:w-1/2 mt-12 lg:mt-0">
-          <div className="space-y-6 max-w-xl mx-auto lg:mx-0">
+          <div className="relative max-w-lg mx-auto lg:mx-0 h-[600px]">
             
             {/* First Hero Image */}
-            <div className="relative">
+            <div className="absolute top-0 left-0 w-80 h-72">
               <img 
                 src={heroImage1} 
                 alt="Healing does not shout it whispers - Peaceful therapy space" 
-                className="w-full h-72 object-cover rounded-3xl shadow-xl"
+                className="w-full h-full object-cover rounded-3xl shadow-xl"
                 onError={(e) => {
                   console.error("Hero image 1 failed to load:", heroImage1);
                   e.currentTarget.src = "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400";
@@ -187,12 +187,12 @@ export default function Hero() {
               />
             </div>
 
-            {/* Second Hero Image - Offset right */}
-            <div className="relative ml-8">
+            {/* Second Hero Image - Same exact size, offset position */}
+            <div className="absolute top-32 right-0 w-80 h-72">
               <img 
                 src={heroImage2} 
                 alt={`${heroQuote2} - Gentle therapy moment`}
-                className="w-full h-72 object-cover rounded-3xl shadow-xl"
+                className="w-full h-full object-cover rounded-3xl shadow-xl"
                 onError={(e) => {
                   console.error("Hero image 2 failed to load:", heroImage2);
                   e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
