@@ -187,12 +187,12 @@ export default function Hero() {
               />
             </div>
 
-            {/* Second Hero Image - Smaller, offset */}
+            {/* Second Hero Image - Same size, offset */}
             <div className="relative ml-12">
               <img 
                 src={heroImage2} 
                 alt={`${heroQuote2} - Gentle therapy moment`}
-                className="w-3/4 h-48 object-cover rounded-2xl shadow-lg"
+                className="w-full h-72 object-cover rounded-3xl shadow-xl"
                 onError={(e) => {
                   console.error("Hero image 2 failed to load:", heroImage2);
                   e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
