@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import mentorPhoto from "@assets/WhatsApp Image 2025-08-09 at 3.09.59 PM_1754793958983.jpeg";
 
 // Helper function to get content from content blocks
 function getContentValue(contentBlocks: any[], key: string, defaultValue: string): string {
@@ -43,7 +44,7 @@ export default function About() {
             <div className="lg:col-span-1 flex justify-center">
               <div className="polaroid-image">
                 <img 
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=500" 
+                  src={mentorPhoto} 
                   alt="Mrs. Pavan Chowdhary - Professional therapist in warm, welcoming environment" 
                   className="w-64 h-80 object-cover"
                 />
