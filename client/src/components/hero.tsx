@@ -146,11 +146,11 @@ export default function Hero() {
               {heroTitle}
             </h1>
             
-            <p className="text-3xl lg:text-4xl italic text-sage font-normal" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
+            <p className="text-3xl lg:text-4xl italic text-dark-brown font-normal" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
               {heroSubtitle}
             </p>
             
-            <p className="text-lg lg:text-xl text-warm-gray font-lato leading-relaxed">
+            <p className="text-lg lg:text-xl text-dark-brown font-lato leading-relaxed">
               {heroDescription}
             </p>
           </div>
