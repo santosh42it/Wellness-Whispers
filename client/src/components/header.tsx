@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Heart, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import WhatsAppButton from "./whatsapp-button";
 
 export default function Header() {
@@ -18,7 +19,7 @@ export default function Header() {
     <header className="bg-white/95 backdrop-blur-sm fixed w-full top-0 z-50 border-b border-warm-misty-beige/30 shadow-soft">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300">
             <div className="w-12 h-12 bg-sage-green rounded-xl flex items-center justify-center shadow-soft">
               <Heart className="text-white h-6 w-6" />
             </div>
@@ -26,16 +27,22 @@ export default function Header() {
               <h1 className="text-xl font-playfair font-bold text-earthy-brown">Wellness Whispers</h1>
               <p className="text-sm text-sage-green font-lato">Gentle Talk Therapy</p>
             </div>
-          </div>
+          </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a 
+            <Link 
+              href="/"
+              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
+            >
+              Home
+            </Link>
+            <Link 
               href="/about"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
             >
               About
-            </a>
+            </Link>
             <button
               onClick={() => scrollToSection("services")}
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
@@ -48,12 +55,12 @@ export default function Header() {
             >
               Approach
             </button>
-            <a 
+            <Link 
               href="/after-therapy"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
             >
               After Therapy
-            </a>
+            </Link>
             <button
               onClick={() => scrollToSection("pricing")}
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
@@ -84,13 +91,20 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-warm-misty-beige/30">
             <div className="px-4 py-4 space-y-3">
-              <a
+              <Link
+                href="/"
+                className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
                 href="/about"
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
-              </a>
+              </Link>
               <button
                 onClick={() => scrollToSection("services")}
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
@@ -103,13 +117,13 @@ export default function Header() {
               >
                 Approach
               </button>
-              <a
+              <Link
                 href="/after-therapy"
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 After Therapy
-              </a>
+              </Link>
               <button
                 onClick={() => scrollToSection("testimonials")}
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
