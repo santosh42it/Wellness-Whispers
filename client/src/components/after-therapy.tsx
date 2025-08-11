@@ -57,13 +57,13 @@ export default function AfterTherapy() {
           {transformations.map((item, index) => (
             <div 
               key={index}
-              className="polaroid-image float-gentle group cursor-pointer"
+              className="polaroid-image float-gentle"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <img 
                 src={item.image}
                 alt={item.caption}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-48 object-cover"
               />
               <div className="polaroid-overlay"></div>
               <p className="absolute bottom-2 left-2 right-2 text-xs text-charcoal-grey font-lato text-center italic">
