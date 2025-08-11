@@ -114,10 +114,10 @@ export default function Approach() {
           {approaches.map((approach, index) => (
             <div 
               key={index}
-              className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-soft hover:shadow-warm transition-all duration-300 hover:scale-105 group border border-sage/10"
+              className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-soft border border-sage/10"
             >
               {/* Title on top */}
-              <h3 className="text-xl font-playfair font-semibold text-dark-brown mb-4 text-center group-hover:text-sage transition-colors duration-300">
+              <h3 className="text-xl font-playfair font-semibold text-dark-brown mb-4 text-center">
                 {approach.title}
               </h3>
               
@@ -126,7 +126,7 @@ export default function Approach() {
                 <img 
                   src={approach.image}
                   alt={approach.alt}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 filter saturate-90"
+                  className="w-full h-48 object-cover filter saturate-90"
                   loading="lazy"
                 />
               </div>

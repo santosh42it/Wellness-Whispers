@@ -131,10 +131,10 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-soft hover:shadow-warm transition-all duration-300 hover:scale-105 group"
+              className="bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-soft"
             >
               {/* Title on top */}
-              <h3 className="text-xl font-playfair font-semibold text-dark-brown mb-4 text-center group-hover:text-sage transition-colors duration-300">
+              <h3 className="text-xl font-playfair font-semibold text-dark-brown mb-4 text-center">
                 {service.title}
               </h3>
               
@@ -143,7 +143,7 @@ export default function Services() {
                 <img 
                   src={service.image}
                   alt={service.alt}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 object-cover"
                   loading="lazy"
                 />
               </div>
