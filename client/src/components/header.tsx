@@ -29,11 +29,28 @@ export default function Header() {
     setIsMobileMenuOpen(false);
   };
 
+  const goToHome = () => {
+    if (location !== "/") {
+      navigate("/");
+      // Wait for navigation to complete, then scroll to top
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 100);
+    } else {
+      // If we're already on homepage, just scroll to top
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className="bg-white/95 backdrop-blur-sm fixed w-full top-0 z-50 border-b border-warm-misty-beige/30 shadow-soft">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300">
+          <button 
+            onClick={goToHome}
+            className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300"
+          >
             <div className="w-12 h-12 bg-sage-green rounded-xl flex items-center justify-center shadow-soft">
               <Heart className="text-white h-6 w-6" />
             </div>
@@ -41,16 +58,16 @@ export default function Header() {
               <h1 className="text-xl font-playfair font-bold text-earthy-brown">Wellness Whispers</h1>
               <p className="text-sm text-sage-green font-lato">Gentle Talk Therapy</p>
             </div>
-          </Link>
+          </button>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              href="/"
+            <button
+              onClick={goToHome}
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
             >
               Home
-            </Link>
+            </button>
             <Link 
               href="/about"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
@@ -105,13 +122,12 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-warm-misty-beige/30">
             <div className="px-4 py-4 space-y-3">
-              <Link
-                href="/"
+              <button
+                onClick={goToHome}
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
-              </Link>
+              </button>
               <Link
                 href="/about"
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
