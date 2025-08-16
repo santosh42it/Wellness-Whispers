@@ -225,7 +225,7 @@ const textBlocks = [
     key: "approach_title",
     title: "Approach Section Title",
     section: "Approach Section",
-    defaultContent: "What You'll Experience in Session",
+    defaultContent: "Gentle Tools for Healing",
     type: "text"
   },
   {

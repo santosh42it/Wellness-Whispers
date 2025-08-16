@@ -29,7 +29,7 @@ export default function Approach() {
   const safeContentBlocks = Array.isArray(contentBlocks) ? contentBlocks : [];
 
   // Get dynamic content values
-  const approachTitle = getContentValue(safeContentBlocks, "approach_title", "What You'll Experience in Session");
+  const approachTitle = getContentValue(safeContentBlocks, "approach_title", "Gentle Tools for Healing");
   const approachSubtitle = getContentValue(safeContentBlocks, "approach_subtitle", "Every session is gentle, reflective, and deeply practical. You'll find yourself slowly returning to your own rhythm.");
   const approaches = [
     {
