@@ -30,7 +30,7 @@ export default function Approach() {
 
   // Get dynamic content values
   const approachTitle = getContentValue(safeContentBlocks, "approach_title", "Gentle Tools for Healing");
-  const approachSubtitle = getContentValue(safeContentBlocks, "approach_subtitle", "Every session is gentle, reflective, and deeply practical. You'll find yourself slowly returning to your own rhythm.");
+  const approachSubtitle = getContentValue(safeContentBlocks, "approach_subtitle", "Simple, compassionate methods to help you find balance again.");
   const approaches = [
     {
       title: "Mindfulness & Somatic Grounding",

@@ -232,7 +232,7 @@ const textBlocks = [
     key: "approach_subtitle",
     title: "Approach Subtitle",
     section: "Approach Section", 
-    defaultContent: "Every session is gentle, reflective, and deeply practical. You'll find yourself slowly returning to your own rhythm.",
+    defaultContent: "Simple, compassionate methods to help you find balance again.",
     type: "textarea"
   }
 ];
