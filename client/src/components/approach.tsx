@@ -79,12 +79,6 @@ export default function Approach() {
       description: "Safe space for processing thoughts without pressure or judgment",
       image: a8Image,
       alt: "Comfortable therapy space with gentle conversation atmosphere"
-    },
-    {
-      title: "Flexible Online Support",
-      description: "WhatsApp or Google Meet sessions that fit into your life naturally",
-      image: a8Image,
-      alt: "Modern technology connecting people for online therapy support"
     }
   ];
 

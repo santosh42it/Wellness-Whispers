@@ -31,39 +31,60 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Testimonials - Polaroid Style */}
-        <div className="flex flex-wrap justify-center items-center gap-8 max-w-6xl mx-auto">
+        {/* Testimonials - Paper Tiered Style */}
+        <div className="relative max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="polaroid-image float-gentle bg-gradient-to-b from-white to-warm-misty-beige"
-              style={{ animationDelay: `${index * 0.5}s` }}
+              className={`relative mb-8 transform ${
+                index === 0 ? 'rotate-1 z-30' : 
+                index === 1 ? '-rotate-1 z-20' : 
+                'rotate-0.5 z-10'
+              } ${index > 0 ? '-mt-4' : ''}`}
             >
-              {/* Stars */}
-              <div className="flex justify-center mb-4">
-                {[...Array(testimonial.rating)].map((_, starIndex) => (
-                  <svg
-                    key={starIndex}
-                    className="w-5 h-5 text-terracotta"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
+              {/* Paper Background with Tiered Effect */}
+              <div className="bg-gradient-to-br from-white via-cream/95 to-soft-beige/90 p-8 md:p-12 rounded-lg shadow-2xl border border-sage/20 relative overflow-hidden">
+                
+                {/* Subtle Paper Texture */}
+                <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
+                
+                {/* Content */}
+                <div className="relative z-10">
+                  {/* Decorative Quote Mark */}
+                  <div className="text-6xl text-sage/30 font-serif leading-none mb-4">"</div>
+                  
+                  {/* Testimonial Text */}
+                  <blockquote className="mb-6">
+                    <p className="text-dark-brown font-lato text-lg md:text-xl leading-relaxed italic mb-6">
+                      {testimonial.text}
+                    </p>
+                  </blockquote>
+
+                  {/* Author & Stars */}
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <cite className="text-sage font-playfair font-semibold text-lg not-italic">
+                      — {testimonial.name}
+                    </cite>
+                    
+                    {/* Stars */}
+                    <div className="flex mt-2 md:mt-0">
+                      {[...Array(testimonial.rating)].map((_, starIndex) => (
+                        <svg
+                          key={starIndex}
+                          className="w-5 h-5 text-peach"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Torn Paper Edge Effect */}
+                <div className="absolute -bottom-1 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-sage/10 to-transparent"></div>
               </div>
-
-              {/* Quote */}
-              <blockquote className="text-center mb-6">
-                <p className="text-charcoal-grey font-lato italic text-lg leading-relaxed mb-4">
-                  "{testimonial.text}"
-                </p>
-                <cite className="text-sage-green font-playfair font-semibold text-base">
-                  — {testimonial.name}
-                </cite>
-              </blockquote>
-
-              <div className="polaroid-overlay"></div>
             </div>
           ))}
         </div>
