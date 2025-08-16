@@ -171,47 +171,30 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Hero Images - Clean Grid Layout with Overlaid Text */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-3xl mx-auto">
+          {/* Inspirational Quotes Section - Smooth & Calm Design */}
+          <div className="mt-16 max-w-4xl mx-auto">
             
-            {/* First Hero Image with H1 Text */}
-            <div className="relative">
-              <img 
-                src={heroImage1} 
-                alt="Healing does not shout it whispers - Misty green leaves and peaceful nature" 
-                className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg"
-                onError={(e) => {
-                  console.error("Hero image 1 failed to load:", heroImage1);
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400";
-                }}
-                onLoad={() => console.log("Hero image 1 loaded successfully:", heroImage1)}
-              />
-              <div className="absolute inset-0 bg-dark-brown/30 rounded-2xl"></div>
-              <div className="absolute inset-0 flex items-center justify-center p-6">
-                <h2 className="text-lg md:text-xl lg:text-2xl font-playfair font-bold text-white text-center leading-tight italic">
-                  "Healing does not shout, it whispers."
-                </h2>
-              </div>
+            {/* First Quote */}
+            <div className="text-center mb-12 p-8 bg-gradient-to-r from-sage/10 via-peach/15 to-sage/10 rounded-3xl backdrop-blur-sm border border-sage/20">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-playfair italic text-dark-brown leading-relaxed">
+                "Healing does not shout, it whispers."
+              </h2>
+              <div className="mt-4 w-16 h-px bg-gradient-to-r from-transparent via-sage to-transparent mx-auto"></div>
             </div>
 
-            {/* Second Hero Image with H2 Text */}
-            <div className="relative">
-              <img 
-                src={heroImage2} 
-                alt="Healing begins in a quiet corner where there are untold stories - Book, glasses, rose, candle"
-                className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg"
-                onError={(e) => {
-                  console.error("Hero image 2 failed to load:", heroImage2);
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
-                }}
-                onLoad={() => console.log("Hero image 2 loaded successfully:", heroImage2)}
-              />
-              <div className="absolute inset-0 bg-dark-brown/30 rounded-2xl"></div>
-              <div className="absolute inset-0 flex items-center justify-center p-6">
-                <h2 className="text-lg md:text-xl lg:text-2xl font-playfair font-bold text-white text-center leading-tight italic">
-                  "Healing begins in a quiet corner where there are untold stories."
-                </h2>
-              </div>
+            {/* Second Quote */}
+            <div className="text-center p-8 bg-gradient-to-r from-peach/10 via-sage/15 to-peach/10 rounded-3xl backdrop-blur-sm border border-peach/20">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-playfair italic text-dark-brown leading-relaxed">
+                "Healing begins in a quiet corner where there are untold stories."
+              </h3>
+              <div className="mt-4 w-16 h-px bg-gradient-to-r from-transparent via-peach to-transparent mx-auto"></div>
+            </div>
+
+            {/* Gentle Nature Elements */}
+            <div className="flex justify-center items-center mt-12 gap-4 opacity-60">
+              <div className="w-2 h-2 bg-sage rounded-full animate-pulse"></div>
+              <div className="w-1.5 h-1.5 bg-peach rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+              <div className="w-2 h-2 bg-soft-beige rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
             </div>
           </div>
 

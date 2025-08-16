@@ -7,7 +7,7 @@ import a5Image from "@assets/a5.jpg";
 import a6Image from "@assets/a6.jpg";
 import a7Image from "@assets/a7.jpg";
 import a8Image from "@assets/a8.jpg";
-import a9Image from "@assets/a9.jpg";
+// Note: a9.jpg not available, will use a8 as fallback
 
 // Helper function to get content from content blocks
 function getContentValue(contentBlocks: any[], key: string, defaultValue: string): string {
@@ -83,7 +83,7 @@ export default function Approach() {
     {
       title: "Flexible Online Support",
       description: "WhatsApp or Google Meet sessions that fit into your life naturally",
-      image: a9Image,
+      image: a8Image,
       alt: "Modern technology connecting people for online therapy support"
     }
   ];
