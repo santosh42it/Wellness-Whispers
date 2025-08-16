@@ -36,76 +36,76 @@ export default function Services() {
   const servicesSubtitle = getContentValue(safeContentBlocks, "services_subtitle", "From heartbreak to burnout — you're not alone in this journey.");
   const services = [
     {
-      title: "Anxiety Support",
-      description: "Gentle techniques for managing overwhelming feelings and racing thoughts",
+      title: "Low Motivation & Decision Fatigue",
+      description: "When even small tasks feel too heavy.",
       image: s1Image,
-      alt: "Gentle hands offering support for anxiety management"
+      alt: "Support for low motivation and decision fatigue"
     },
     {
-      title: "Relationship Healing", 
-      description: "Support for breakups, toxic relationships, and building healthier connections",
+      title: "Emotional Confusion & Identity",
+      description: "When you can't name what you feel.",
       image: s2Image,
-      alt: "Two people supporting each other in relationship healing"
+      alt: "Understanding emotional confusion and identity"
     },
     {
-      title: "Emotional Confusion",
-      description: "Clarity when feelings feel tangled and emotions seem overwhelming",
+      title: "When Love Turns into Hurt",
+      description: "Sometimes closeness fades, and hearts drift apart.",
       image: s3Image,
-      alt: "Person finding clarity through emotional confusion"
+      alt: "Healing when love becomes painful"
     },
     {
-      title: "Social Withdrawal",
-      description: "Gentle encouragement to reconnect with yourself and others",
+      title: "Social Withdrawal & Isolation",
+      description: "When silence feels safer than people.",
       image: s4Image,
-      alt: "Person gently reconnecting with social connections"
+      alt: "Support for social withdrawal and isolation"
     },
     {
-      title: "Grief Processing",
-      description: "Compassionate support through loss and life transitions",
+      title: "Grief, Loss & Past Wounds",
+      description: "When memories weigh more than moments.",
       image: s5Image,
-      alt: "Peaceful nature scene representing grief healing journey"
+      alt: "Healing grief, loss and past wounds"
     },
     {
-      title: "Depression Support",
-      description: "Understanding and gentle movement through difficult emotional landscapes",
+      title: "Social Media & Digital Burnout",
+      description: "When online life drains your real energy.",
       image: s6Image,
-      alt: "Light breaking through darkness representing hope in depression"
+      alt: "Recovery from social media and digital burnout"
     },
     {
-      title: "Life Transitions",
-      description: "Support during major changes, career shifts, and new life phases",
+      title: "Love Under Strain",
+      description: "When conflict changes how you connect.",
       image: s7Image,
-      alt: "Path leading forward representing life transitions"
+      alt: "Healing love relationships under strain"
     },
     {
-      title: "Self-Worth Issues",
-      description: "Building confidence and understanding your inherent value",
+      title: "Overthinking",
+      description: "it is emotional traffic …",
       image: s8Image,
-      alt: "Person looking confidently ahead representing self-worth"
+      alt: "Managing overthinking patterns"
     },
     {
-      title: "Stress Management",
-      description: "Practical tools for handling life's pressures with grace",
+      title: "Repetitive Thoughts & OCD Patterns",
+      description: "When rituals and thoughts won't let you rest.",
       image: s9Image,
-      alt: "Peaceful meditation scene for stress management"
+      alt: "Support for repetitive thoughts and OCD patterns"
     },
     {
-      title: "Family Dynamics",
-      description: "Navigating complex family relationships and boundaries",
+      title: "Rebuilding Inner Confidence",
+      description: "When believing in yourself feels impossible.",
       image: s10Image,
-      alt: "Family silhouettes representing healthy family dynamics"
+      alt: "Rebuilding inner confidence and self-belief"
     },
     {
-      title: "Work-Life Balance",
-      description: "Finding harmony between professional and personal wellbeing",
+      title: "Loneliness & Disconnection",
+      description: "When you long for closeness but feel apart.",
       image: s11Image,
-      alt: "Balanced stones representing work-life harmony"
+      alt: "Healing loneliness and disconnection"
     },
     {
-      title: "Inner Child Healing",
-      description: "Reconnecting with and healing past emotional wounds",
+      title: "Sleep & Energy Disturbance",
+      description: "When restful nights feel out of reach.",
       image: s12Image,
-      alt: "Child's hands holding a flower representing inner child healing"
+      alt: "Support for sleep and energy disturbances"
     }
   ];
 
