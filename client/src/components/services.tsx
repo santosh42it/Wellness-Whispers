@@ -32,8 +32,8 @@ export default function Services() {
   const safeContentBlocks = Array.isArray(contentBlocks) ? contentBlocks : [];
 
   // Get dynamic content values
-  const servicesTitle = getContentValue(safeContentBlocks, "services_title", "Who I Work With");
-  const servicesSubtitle = getContentValue(safeContentBlocks, "services_subtitle", "Every emotional experience is valid. Here's how we can work together on your healing journey.");
+  const servicesTitle = getContentValue(safeContentBlocks, "services_title", "Support for Life's Difficult Moments");
+  const servicesSubtitle = getContentValue(safeContentBlocks, "services_subtitle", "From heartbreak to burnout — you're not alone in this journey.");
   const services = [
     {
       title: "Anxiety Support",
