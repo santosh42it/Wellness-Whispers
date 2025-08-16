@@ -166,23 +166,35 @@ export default function Services() {
                 Therapy in Everyday Moments
               </h3>
               
-              <div className="flex flex-wrap justify-center items-center gap-8">
-                {/* Image 3: Healing begins in quiet corner */}
-                <div className="pasted-image">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                {/* H3: It's ok to reach out when you're ready */}
+                <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=200" 
-                    alt="Healing begins in quiet corner - book, glasses, candle creating peaceful therapy moment" 
-                    className="w-72 h-48 object-cover rounded-lg"
+                    src="https://images.unsplash.com/photo-1516575334481-f85287c2c82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300" 
+                    alt="It's ok to reach out when you're ready - phone connection showing therapeutic support accessibility" 
+                    className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg"
                   />
+                  <div className="absolute inset-0 bg-dark-brown/40 rounded-2xl"></div>
+                  <div className="absolute inset-0 flex items-center justify-center p-6">
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-playfair font-bold text-white text-center leading-tight italic">
+                      "It's ok to reach out when you're ready."
+                    </h3>
+                  </div>
                 </div>
 
-                {/* Image 4: It's ok to reach out */}
-                <div className="pasted-image">
+                {/* H4: I looked anxious but chose to tap my heart */}
+                <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1516575334481-f85287c2c82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=200" 
-                    alt="It's ok to reach out - phone connection showing therapeutic support accessibility" 
-                    className="w-64 h-44 object-cover rounded-lg"
+                    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300" 
+                    alt="I looked anxious but chose to tap my heart - person on laptop with therapeutic support" 
+                    className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg"
                   />
+                  <div className="absolute inset-0 bg-dark-brown/40 rounded-2xl"></div>
+                  <div className="absolute inset-0 flex items-center justify-center p-6">
+                    <h4 className="text-lg md:text-xl lg:text-2xl font-playfair font-bold text-white text-center leading-tight italic">
+                      "I looked anxious but chose to tap my heart."
+                    </h4>
+                  </div>
                 </div>
               </div>
 
