@@ -126,7 +126,7 @@ export default function Approach() {
                 <img 
                   src={approach.image}
                   alt={approach.alt}
-                  className="w-full h-48 object-cover filter saturate-90"
+                  className="w-full h-64 object-cover filter saturate-90"
                   loading="lazy"
                 />
               </div>
