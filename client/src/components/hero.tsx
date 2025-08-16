@@ -171,37 +171,47 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Hero Images - Clean Grid Layout */}
+          {/* Hero Images - Clean Grid Layout with Overlaid Text */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-3xl mx-auto">
             
-            {/* First Hero Image */}
-            <div className="relative group">
+            {/* First Hero Image with H1 Text */}
+            <div className="relative">
               <img 
                 src={heroImage1} 
-                alt="Healing does not shout it whispers - Peaceful therapy space" 
-                className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300"
+                alt="Healing does not shout it whispers - Misty green leaves and peaceful nature" 
+                className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg"
                 onError={(e) => {
                   console.error("Hero image 1 failed to load:", heroImage1);
                   e.currentTarget.src = "https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400";
                 }}
                 onLoad={() => console.log("Hero image 1 loaded successfully:", heroImage1)}
               />
-              <div className="absolute inset-0 bg-dark-brown/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-dark-brown/30 rounded-2xl"></div>
+              <div className="absolute inset-0 flex items-center justify-center p-6">
+                <h2 className="text-lg md:text-xl lg:text-2xl font-playfair font-bold text-white text-center leading-tight italic">
+                  "Healing does not shout, it whispers."
+                </h2>
+              </div>
             </div>
 
-            {/* Second Hero Image */}
-            <div className="relative group">
+            {/* Second Hero Image with H2 Text */}
+            <div className="relative">
               <img 
                 src={heroImage2} 
-                alt={`${heroQuote2} - Gentle therapy moment`}
-                className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300"
+                alt="Healing begins in a quiet corner where there are untold stories - Book, glasses, rose, candle"
+                className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg"
                 onError={(e) => {
                   console.error("Hero image 2 failed to load:", heroImage2);
                   e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
                 }}
                 onLoad={() => console.log("Hero image 2 loaded successfully:", heroImage2)}
               />
-              <div className="absolute inset-0 bg-dark-brown/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-dark-brown/30 rounded-2xl"></div>
+              <div className="absolute inset-0 flex items-center justify-center p-6">
+                <h2 className="text-lg md:text-xl lg:text-2xl font-playfair font-bold text-white text-center leading-tight italic">
+                  "Healing begins in a quiet corner where there are untold stories."
+                </h2>
+              </div>
             </div>
           </div>
 
