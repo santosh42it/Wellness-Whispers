@@ -52,57 +52,22 @@ export default function AfterTherapy() {
           </p>
         </div>
 
-        {/* Collage Style Images with Torn Paper Effect */}
-        <div className="relative max-w-7xl mx-auto h-[1200px] md:h-[1100px] lg:h-[1200px] overflow-hidden">
-          {transformations.map((item, index) => {
-            // Random positioning and sizing for collage effect
-            const sizes = [
-              { width: 'w-96', height: 'h-64' },
-              { width: 'w-80', height: 'h-96' },
-              { width: 'w-88', height: 'h-72' },
-              { width: 'w-84', height: 'h-80' },
-              { width: 'w-76', height: 'h-88' },
-              { width: 'w-100', height: 'h-76' },
-              { width: 'w-72', height: 'h-84' },
-              { width: 'w-92', height: 'h-68' },
-              { width: 'w-80', height: 'h-80' }
-            ];
-
-            const positions = [
-              { top: '5%', left: '8%', rotation: 'rotate-3' },
-              { top: '12%', right: '15%', rotation: '-rotate-2' },
-              { top: '25%', left: '5%', rotation: 'rotate-1' },
-              { top: '8%', left: '45%', rotation: '-rotate-3' },
-              { top: '35%', right: '8%', rotation: 'rotate-2' },
-              { top: '50%', left: '12%', rotation: '-rotate-1' },
-              { top: '45%', left: '55%', rotation: 'rotate-4' },
-              { top: '65%', right: '25%', rotation: '-rotate-2' },
-              { top: '70%', left: '25%', rotation: 'rotate-1' }
-            ];
-
-            const sizeClass = sizes[index % sizes.length];
-            const positionClass = positions[index % positions.length];
-
-            return (
-              <div 
-                key={index}
-                className={`absolute ${sizeClass.width} ${sizeClass.height} ${positionClass.rotation} shadow-2xl transform transition-all duration-300 hover:scale-105 hover:z-10`}
-                style={{
-                  top: positionClass.top,
-                  left: positionClass.left,
-                  right: positionClass.right,
-                  zIndex: 10 + index
-                }}
-              >
-                {/* Clean straight photo without torn effects */}
-                <img 
-                  src={item.image}
-                  alt={item.caption}
-                  className="w-full h-full object-cover filter saturate-90 shadow-xl"
-                />
-              </div>
-            );
-          })}
+        {/* Clean Grid Layout for Photos */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {transformations.map((item, index) => (
+            <div 
+              key={index}
+              className="group relative overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
+            >
+              <img 
+                src={item.image}
+                alt={item.caption}
+                className="w-full h-80 object-cover filter saturate-90 group-hover:saturate-100 transition-all duration-300"
+              />
+              {/* Subtle overlay on hover */}
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
+            </div>
+          ))}
         </div>
 
         {/* Closing Reflection */}
