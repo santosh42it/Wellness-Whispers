@@ -126,7 +126,7 @@ export default function Approach() {
               </div>
               
               {/* Description at bottom - centered and full text */}
-              <p className="text-warm-gray font-lato text-sm leading-relaxed text-center">
+              <p className="text-dark-brown font-lato text-base leading-relaxed text-center font-medium">
                 {approach.description}
               </p>
             </div>
