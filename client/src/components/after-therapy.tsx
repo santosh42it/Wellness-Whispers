@@ -83,21 +83,6 @@ export default function AfterTherapy() {
             const sizeClass = sizes[index % sizes.length];
             const positionClass = positions[index % positions.length];
 
-            // Define different torn paper effects
-            const tornEffects = [
-              'polygon(0% 0%, 95% 0%, 100% 8%, 98% 100%, 0% 100%)', // Right side torn
-              'polygon(0% 0%, 100% 0%, 100% 100%, 5% 95%, 0% 85%)', // Bottom left torn  
-              'polygon(2% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 5%)', // Top left torn
-              'polygon(0% 0%, 100% 0%, 100% 92%, 95% 100%, 0% 100%)', // Bottom right torn
-              'polygon(0% 8%, 5% 0%, 100% 0%, 100% 100%, 0% 100%)', // Top torn
-              'polygon(0% 0%, 100% 0%, 100% 100%, 2% 92%, 0% 85%)', // Bottom torn irregular
-              'polygon(0% 0%, 98% 0%, 100% 5%, 95% 100%, 0% 100%)', // Top right torn
-              'polygon(8% 0%, 100% 0%, 100% 100%, 0% 95%, 0% 5%)', // Left side torn
-              'polygon(0% 2%, 95% 0%, 100% 8%, 98% 95%, 5% 100%, 0% 92%)', // Multiple tears
-            ];
-
-            const currentTornEffect = tornEffects[index % tornEffects.length];
-
             return (
               <div 
                 key={index}
@@ -109,15 +94,11 @@ export default function AfterTherapy() {
                   zIndex: 10 + index
                 }}
               >
-                {/* No white border, direct torn paper effect on image */}
+                {/* Clean straight photo without torn effects */}
                 <img 
                   src={item.image}
                   alt={item.caption}
-                  className="w-full h-full object-cover filter saturate-90"
-                  style={{
-                    clipPath: currentTornEffect,
-                    filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.3)) saturate(90%)'
-                  }}
+                  className="w-full h-full object-cover filter saturate-90 shadow-xl"
                 />
               </div>
             );
