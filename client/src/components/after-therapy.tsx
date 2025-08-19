@@ -57,15 +57,15 @@ export default function AfterTherapy() {
           {transformations.map((item, index) => {
             // Random positioning and sizing for collage effect
             const sizes = [
-              { width: 'w-48', height: 'h-32' },
-              { width: 'w-56', height: 'h-40' },
-              { width: 'w-40', height: 'h-56' },
-              { width: 'w-52', height: 'h-36' },
-              { width: 'w-44', height: 'h-60' },
-              { width: 'w-60', height: 'h-44' },
-              { width: 'w-36', height: 'h-48' },
-              { width: 'w-50', height: 'h-38' },
-              { width: 'w-42', height: 'h-54' }
+              { width: 'w-64', height: 'h-44' },
+              { width: 'w-72', height: 'h-52' },
+              { width: 'w-56', height: 'h-72' },
+              { width: 'w-68', height: 'h-48' },
+              { width: 'w-60', height: 'h-80' },
+              { width: 'w-80', height: 'h-60' },
+              { width: 'w-52', height: 'h-64' },
+              { width: 'w-66', height: 'h-50' },
+              { width: 'w-58', height: 'h-70' }
             ];
 
             const positions = [
