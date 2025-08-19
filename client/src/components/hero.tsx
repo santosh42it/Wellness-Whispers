@@ -136,79 +136,87 @@ export default function Hero() {
   const heroQuote2 = getContentValue(safeContentBlocks, "hero_quote_2", "You are not too much");
 
   return (
-    <section className="relative overflow-hidden py-20 lg:py-32">
-      <div className="container mx-auto px-6">
+    <section className="min-h-screen flex items-center relative overflow-hidden">
+      {/* Split Screen Layout */}
+      <div className="w-full h-screen flex">
         
-        {/* Hero Content - Single Column Layout */}
-        <div className="max-w-4xl mx-auto text-center space-y-12">
+        {/* Left Panel - Text Content */}
+        <div className="w-1/2 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige flex items-center justify-center p-12 relative">
+          {/* Subtle background texture */}
+          <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
           
-          {/* Main Hero Text */}
-          <div className="space-y-8">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-dark-brown leading-tight">
-              {heroTitle}
+          <div className="relative z-10 max-w-md text-center">
+            <p className="text-sm text-sage font-lato tracking-wider uppercase mb-8 opacity-70">
+              SOMATIC TRAUMA THERAPY
+            </p>
+            
+            <h1 className="text-4xl lg:text-5xl font-playfair font-light text-dark-brown leading-tight tracking-wide">
+              RECONNECT<br />
+              WITH YOUR<br />
+              INTUITION
             </h1>
-            
-            <p className="text-2xl md:text-3xl lg:text-4xl italic text-dark-brown font-light max-w-3xl mx-auto" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-              {heroSubtitle}
-            </p>
-            
-            <p className="text-lg md:text-xl text-dark-brown font-lato leading-relaxed max-w-2xl mx-auto">
-              {heroDescription}
-            </p>
-          </div>
-
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <WhatsAppButton className="bg-sage hover:bg-olive text-white px-10 py-5 text-lg font-medium rounded-2xl shadow-warm hover:shadow-strong transition-all duration-300 border-2 border-sage hover:border-olive transform hover:scale-105">
-              {heroButtonText}
-            </WhatsAppButton>
-            
-            <a 
-              href="#services" 
-              className="text-dark-brown hover:text-sage font-medium text-lg underline decoration-2 underline-offset-4 transition-colors duration-300"
-            >
-              Explore Services First
-            </a>
-          </div>
-
-          {/* Inspirational Quotes Section - Smooth & Calm Design */}
-          <div className="mt-16 max-w-4xl mx-auto">
-            
-            {/* First Quote */}
-            <div className="text-center mb-12 p-8 bg-gradient-to-r from-sage/10 via-peach/15 to-sage/10 rounded-3xl backdrop-blur-sm border border-sage/20">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-playfair italic text-dark-brown leading-relaxed">
-                "Healing does not shout, it whispers."
-              </h2>
-              <div className="mt-4 w-16 h-px bg-gradient-to-r from-transparent via-sage to-transparent mx-auto"></div>
-            </div>
-
-            {/* Second Quote */}
-            <div className="text-center p-8 bg-gradient-to-r from-peach/10 via-sage/15 to-peach/10 rounded-3xl backdrop-blur-sm border border-peach/20">
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-playfair italic text-dark-brown leading-relaxed">
-                "Healing begins in a quiet corner where there are untold stories."
-              </h3>
-              <div className="mt-4 w-16 h-px bg-gradient-to-r from-transparent via-peach to-transparent mx-auto"></div>
-            </div>
-
-            {/* Gentle Nature Elements */}
-            <div className="flex justify-center items-center mt-12 gap-4 opacity-60">
-              <div className="w-2 h-2 bg-sage rounded-full animate-pulse"></div>
-              <div className="w-1.5 h-1.5 bg-peach rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-              <div className="w-2 h-2 bg-soft-beige rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-            </div>
-          </div>
-
-          {/* Inspirational Quote */}
-          <div className="pt-8">
-            <p className="text-xl md:text-2xl italic text-dark-brown/80 font-light" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-              "{heroQuote1}"
-            </p>
           </div>
         </div>
+        
+        {/* Right Panel - Image Content */}
+        <div className="w-1/2 relative">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img 
+              src={heroImage2}
+              alt="Peaceful therapy environment"
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/10 to-white/30"></div>
+          </div>
+          
+          {/* Center Portrait Card */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="bg-white/95 backdrop-blur-sm p-8 shadow-2xl max-w-sm">
+              <img 
+                src={heroImage1}
+                alt="Wellness professional portrait"
+                className="w-full h-80 object-cover mb-6"
+                loading="eager"
+              />
+            </div>
+          </div>
+          
+          {/* Quote Overlay */}
+          <div className="absolute top-16 right-16 max-w-xs">
+            <div className="bg-white/90 backdrop-blur-sm p-6 shadow-lg">
+              <p className="text-sage font-playfair text-lg leading-relaxed italic">
+                "OF ALL THE ROADS SHE
+                TRAVELED, THE JOURNEY
+                BACK TO HERSELF WAS
+                THE MOST MAGNIFICENT."
+              </p>
+            </div>
+          </div>
+          
+          {/* Decorative Bottom Right Elements */}
+          <div className="absolute bottom-16 right-16">
+            <img 
+              src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=150"
+              alt="Dried flowers decoration"
+              className="w-32 h-24 object-cover opacity-80"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        
       </div>
 
-      {/* Subtle nature texture overlay */}
-      <div className="nature-texture absolute inset-0 pointer-events-none opacity-20"></div>
+      {/* WhatsApp Button - Floating */}
+      <div className="absolute bottom-8 left-8 z-20">
+        <WhatsAppButton 
+          message="Hi, I'd like to know more about your therapy services."
+          className="bg-sage hover:bg-sage/90 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300"
+        >
+          Start Your Journey
+        </WhatsAppButton>
+      </div>
     </section>
   );
 }
