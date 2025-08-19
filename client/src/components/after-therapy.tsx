@@ -62,7 +62,8 @@ export default function AfterTherapy() {
               <img 
                 src={item.image}
                 alt={item.caption}
-                className="w-full h-80 object-cover filter saturate-90 group-hover:saturate-100 transition-all duration-300"
+                className="w-full h-60 object-cover filter saturate-90 group-hover:saturate-100 transition-all duration-300"
+                style={{ aspectRatio: '4/3' }}
               />
               {/* Subtle overlay on hover */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
