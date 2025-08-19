@@ -171,16 +171,14 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/10 to-white/30"></div>
           </div>
           
-          {/* Center Portrait Card */}
+          {/* Center Portrait Image - No Border */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-white/95 backdrop-blur-sm p-8 shadow-2xl max-w-sm">
-              <img 
-                src={heroImage1}
-                alt="Wellness professional portrait"
-                className="w-full h-80 object-cover mb-6"
-                loading="eager"
-              />
-            </div>
+            <img 
+              src={heroImage1}
+              alt="Wellness professional portrait"
+              className="w-80 h-96 object-cover shadow-2xl"
+              loading="eager"
+            />
           </div>
           
           {/* Quote Overlay */}
