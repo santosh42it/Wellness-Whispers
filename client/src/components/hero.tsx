@@ -145,16 +145,46 @@ export default function Hero() {
           {/* Subtle background texture */}
           <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
           
-          <div className="relative z-10 max-w-md text-center">
-            <p className="text-sm text-sage font-lato tracking-wider uppercase mb-8 opacity-70">
-              SOMATIC TRAUMA THERAPY
+          <div className="relative z-10 max-w-lg text-left">
+            <h1 className="text-4xl lg:text-5xl font-playfair font-light text-dark-brown leading-tight mb-6">
+              Welcome to Your Healing Space
+            </h1>
+            
+            <p className="text-lg text-dark-brown/80 font-lato mb-2">
+              Here, you're safe to heal.
             </p>
             
-            <h1 className="text-4xl lg:text-5xl font-playfair font-light text-dark-brown leading-tight tracking-wide">
-              RECONNECT<br />
-              WITH YOUR<br />
-              INTUITION
-            </h1>
+            <p className="text-base text-dark-brown/70 font-lato mb-8 leading-relaxed">
+              Begin therapy today, in a space built on trust, warmth, and healing.
+            </p>
+            
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <WhatsAppButton 
+                message="Hi, I'd like to start a therapy session."
+                className="bg-sage hover:bg-sage/90 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 text-center"
+              >
+                Start Session
+              </WhatsAppButton>
+              
+              <button className="bg-transparent border-2 border-sage text-sage hover:bg-sage hover:text-white px-6 py-3 rounded-full font-semibold transition-all duration-300">
+                Explore Services First
+              </button>
+            </div>
+            
+            {/* Healing Quote */}
+            <div className="text-center">
+              <p className="text-sage font-playfair text-lg italic">
+                "Healing does not shout, it whispers."
+              </p>
+            </div>
+            
+            {/* Additional Quote */}
+            <div className="mt-6 text-center">
+              <p className="text-sage/80 font-playfair text-base italic">
+                "Healing begins in a quiet corner where there are untold stories."
+              </p>
+            </div>
           </div>
         </div>
         
@@ -186,11 +216,8 @@ export default function Hero() {
           {/* Quote Overlay */}
           <div className="absolute top-16 right-16 max-w-xs">
             <div className="bg-white/90 backdrop-blur-sm p-6 shadow-lg">
-              <p className="text-sage font-playfair text-lg leading-relaxed italic">
-                "OF ALL THE ROADS SHE
-                TRAVELED, THE JOURNEY
-                BACK TO HERSELF WAS
-                THE MOST MAGNIFICENT."
+              <p className="text-sage font-playfair text-xl leading-relaxed italic">
+                "Healing does not shout it whispers"
               </p>
             </div>
           </div>
@@ -200,15 +227,7 @@ export default function Hero() {
         
       </div>
 
-      {/* WhatsApp Button - Floating */}
-      <div className="absolute bottom-8 left-8 z-20">
-        <WhatsAppButton 
-          message="Hi, I'd like to know more about your therapy services."
-          className="bg-sage hover:bg-sage/90 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300"
-        >
-          Start Your Journey
-        </WhatsAppButton>
-      </div>
+
     </section>
   );
 }
