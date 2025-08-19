@@ -52,20 +52,20 @@ export default function AfterTherapy() {
           </p>
         </div>
 
-        {/* Collage Style Images */}
-        <div className="relative max-w-7xl mx-auto h-[1000px] md:h-[800px] lg:h-[900px] overflow-hidden">
+        {/* Collage Style Images with Torn Paper Effect */}
+        <div className="relative max-w-7xl mx-auto h-[1200px] md:h-[1100px] lg:h-[1200px] overflow-hidden">
           {transformations.map((item, index) => {
             // Random positioning and sizing for collage effect
             const sizes = [
-              { width: 'w-64', height: 'h-44' },
-              { width: 'w-72', height: 'h-52' },
-              { width: 'w-56', height: 'h-72' },
-              { width: 'w-68', height: 'h-48' },
-              { width: 'w-60', height: 'h-80' },
-              { width: 'w-80', height: 'h-60' },
-              { width: 'w-52', height: 'h-64' },
-              { width: 'w-66', height: 'h-50' },
-              { width: 'w-58', height: 'h-70' }
+              { width: 'w-96', height: 'h-64' },
+              { width: 'w-80', height: 'h-96' },
+              { width: 'w-88', height: 'h-72' },
+              { width: 'w-84', height: 'h-80' },
+              { width: 'w-76', height: 'h-88' },
+              { width: 'w-100', height: 'h-76' },
+              { width: 'w-72', height: 'h-84' },
+              { width: 'w-92', height: 'h-68' },
+              { width: 'w-80', height: 'h-80' }
             ];
 
             const positions = [
@@ -83,6 +83,21 @@ export default function AfterTherapy() {
             const sizeClass = sizes[index % sizes.length];
             const positionClass = positions[index % positions.length];
 
+            // Define different torn paper effects
+            const tornEffects = [
+              'polygon(0% 0%, 95% 0%, 100% 8%, 98% 100%, 0% 100%)', // Right side torn
+              'polygon(0% 0%, 100% 0%, 100% 100%, 5% 95%, 0% 85%)', // Bottom left torn  
+              'polygon(2% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 5%)', // Top left torn
+              'polygon(0% 0%, 100% 0%, 100% 92%, 95% 100%, 0% 100%)', // Bottom right torn
+              'polygon(0% 8%, 5% 0%, 100% 0%, 100% 100%, 0% 100%)', // Top torn
+              'polygon(0% 0%, 100% 0%, 100% 100%, 2% 92%, 0% 85%)', // Bottom torn irregular
+              'polygon(0% 0%, 98% 0%, 100% 5%, 95% 100%, 0% 100%)', // Top right torn
+              'polygon(8% 0%, 100% 0%, 100% 100%, 0% 95%, 0% 5%)', // Left side torn
+              'polygon(0% 2%, 95% 0%, 100% 8%, 98% 95%, 5% 100%, 0% 92%)', // Multiple tears
+            ];
+
+            const currentTornEffect = tornEffects[index % tornEffects.length];
+
             return (
               <div 
                 key={index}
@@ -94,13 +109,16 @@ export default function AfterTherapy() {
                   zIndex: 10 + index
                 }}
               >
-                <div className="bg-white p-2 rounded-lg shadow-xl border border-sage/20 h-full">
-                  <img 
-                    src={item.image}
-                    alt={item.caption}
-                    className="w-full h-full object-cover rounded filter saturate-90"
-                  />
-                </div>
+                {/* No white border, direct torn paper effect on image */}
+                <img 
+                  src={item.image}
+                  alt={item.caption}
+                  className="w-full h-full object-cover filter saturate-90"
+                  style={{
+                    clipPath: currentTornEffect,
+                    filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.3)) saturate(90%)'
+                  }}
+                />
               </div>
             );
           })}
