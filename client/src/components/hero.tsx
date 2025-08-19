@@ -171,13 +171,13 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/10 to-white/30"></div>
           </div>
           
-          {/* Center Portrait Image - On Divider Line */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="absolute left-1/2 transform -translate-x-1/2 z-30">
+          {/* Center Portrait Image - Overlapping Divider */}
+          <div className="absolute inset-0 flex items-center justify-center z-30">
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <img 
                 src={heroImage1}
                 alt="Wellness professional portrait"
-                className="w-64 h-80 object-cover shadow-2xl"
+                className="w-48 h-64 object-cover shadow-2xl border-4 border-white"
                 loading="eager"
               />
             </div>
