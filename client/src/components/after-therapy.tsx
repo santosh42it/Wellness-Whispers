@@ -52,25 +52,58 @@ export default function AfterTherapy() {
           </p>
         </div>
 
-        {/* Transformation Grid */}
-        <div className="after-therapy-grid max-w-7xl mx-auto">
-          {transformations.map((item, index) => (
-            <div 
-              key={index}
-              className="polaroid-image float-gentle"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              <img 
-                src={item.image}
-                alt={item.caption}
-                className="w-full h-48 object-cover"
-              />
-              <div className="polaroid-overlay"></div>
-              <p className="absolute bottom-2 left-2 right-2 text-xs text-charcoal-grey font-lato text-center italic">
-                {item.caption.split(' - ')[0]}
-              </p>
-            </div>
-          ))}
+        {/* Collage Style Images */}
+        <div className="relative max-w-7xl mx-auto h-[1000px] md:h-[800px] lg:h-[900px] overflow-hidden">
+          {transformations.map((item, index) => {
+            // Random positioning and sizing for collage effect
+            const sizes = [
+              { width: 'w-48', height: 'h-32' },
+              { width: 'w-56', height: 'h-40' },
+              { width: 'w-40', height: 'h-56' },
+              { width: 'w-52', height: 'h-36' },
+              { width: 'w-44', height: 'h-60' },
+              { width: 'w-60', height: 'h-44' },
+              { width: 'w-36', height: 'h-48' },
+              { width: 'w-50', height: 'h-38' },
+              { width: 'w-42', height: 'h-54' }
+            ];
+
+            const positions = [
+              { top: '5%', left: '8%', rotation: 'rotate-3' },
+              { top: '12%', right: '15%', rotation: '-rotate-2' },
+              { top: '25%', left: '5%', rotation: 'rotate-1' },
+              { top: '8%', left: '45%', rotation: '-rotate-3' },
+              { top: '35%', right: '8%', rotation: 'rotate-2' },
+              { top: '50%', left: '12%', rotation: '-rotate-1' },
+              { top: '45%', left: '55%', rotation: 'rotate-4' },
+              { top: '65%', right: '25%', rotation: '-rotate-2' },
+              { top: '70%', left: '25%', rotation: 'rotate-1' }
+            ];
+
+            const sizeClass = sizes[index % sizes.length];
+            const positionClass = positions[index % positions.length];
+
+            return (
+              <div 
+                key={index}
+                className={`absolute ${sizeClass.width} ${sizeClass.height} ${positionClass.rotation} shadow-2xl transform transition-all duration-300 hover:scale-105 hover:z-10`}
+                style={{
+                  top: positionClass.top,
+                  left: positionClass.left,
+                  right: positionClass.right,
+                  zIndex: 10 + index
+                }}
+              >
+                <div className="bg-white p-2 rounded-lg shadow-xl border border-sage/20 h-full">
+                  <img 
+                    src={item.image}
+                    alt={item.caption}
+                    className="w-full h-full object-cover rounded filter saturate-90"
+                  />
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         {/* Closing Reflection */}
