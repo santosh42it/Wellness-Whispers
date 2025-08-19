@@ -195,15 +195,7 @@ export default function Hero() {
             </div>
           </div>
           
-          {/* Decorative Bottom Right Elements */}
-          <div className="absolute bottom-16 right-16">
-            <img 
-              src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=150"
-              alt="Dried flowers decoration"
-              className="w-32 h-24 object-cover opacity-80"
-              loading="lazy"
-            />
-          </div>
+          
         </div>
         
       </div>
