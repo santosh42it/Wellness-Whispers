@@ -1,7 +1,7 @@
 import WhatsAppButton from "./whatsapp-button";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
-import hero1Image from "@assets/hero1.jpg";
+import heroMiddleImage from "@assets/hero-middle.webp";
 import hero2Image from "@assets/hero2.jpg";
 
 // Helper function to get content from content blocks
@@ -13,7 +13,7 @@ function getContentValue(contentBlocks: any[], key: string, defaultValue: string
 
 // Use uploaded images directly
 const heroImages = {
-  "hero-1": hero1Image,
+  "hero-1": heroMiddleImage,
   "hero-2": hero2Image,
 };
 
