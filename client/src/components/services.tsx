@@ -158,17 +158,28 @@ export default function Services() {
         </div>
 
         {/* Transition Block - Therapy in Everyday Moments with Falling Leaves */}
-        <div className="mt-20 max-w-5xl mx-auto">
-          <div className="relative p-12 rounded-3xl shadow-warm overflow-hidden">
-            {/* Background Image */}
-            <div className="absolute inset-0">
-              <img 
-                src={middleBgImage}
-                alt="Peaceful landscape with wildflowers"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
-            </div>
+        <div className="mt-20 relative">
+          {/* Extended Background Image for Full Width */}
+          <div className="absolute inset-0 -mx-20">
+            <img 
+              src={middleBgImage}
+              alt="Peaceful landscape with wildflowers"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-sage/30"></div>
+          </div>
+          
+          <div className="relative max-w-5xl mx-auto">
+            <div className="relative p-12 rounded-3xl shadow-warm overflow-hidden">
+              {/* Inner Background Image with Higher Opacity */}
+              <div className="absolute inset-0">
+                <img 
+                  src={middleBgImage}
+                  alt="Peaceful landscape with wildflowers"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+              </div>
             
             {/* Content overlay */}
             <div className="relative z-10">
@@ -212,6 +223,7 @@ export default function Services() {
                 Healing doesn't require grand gestures. Sometimes it begins with a quiet moment, 
                 a gentle conversation, or simply reaching out when you're ready.
               </p>
+            </div>
             </div>
           </div>
         </div>
