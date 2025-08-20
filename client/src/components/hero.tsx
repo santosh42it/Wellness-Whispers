@@ -141,11 +141,11 @@ export default function Hero() {
       <div className="hidden lg:flex w-full h-screen relative">
         
         {/* Left Panel - Text Content */}
-        <div className="w-1/2 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige flex items-center justify-center p-12 xl:p-16 relative">
+        <div className="w-1/2 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige flex items-center justify-center p-8 xl:p-12 relative">
           {/* Subtle background texture */}
           <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
           
-          <div className="relative z-10 max-w-lg xl:max-w-xl text-left">
+          <div className="relative z-10 max-w-md xl:max-w-lg text-left w-full">
             <h1 className="text-4xl xl:text-6xl font-playfair font-light text-dark-brown leading-tight mb-8">
               {heroTitle}
             </h1>
@@ -173,13 +173,13 @@ export default function Hero() {
             
             {/* Healing Quotes */}
             <div className="space-y-4">
-              <div className="text-left">
+              <div className="text-center">
                 <p className="text-sage font-playfair text-xl xl:text-2xl italic leading-relaxed">
                   "{heroQuote1}"
                 </p>
               </div>
               
-              <div className="text-left pl-6">
+              <div className="text-center">
                 <p className="text-sage/80 font-playfair text-lg xl:text-xl italic">
                   "{heroQuote2}"
                 </p>
