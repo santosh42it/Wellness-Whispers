@@ -137,59 +137,59 @@ export default function Hero() {
 
   return (
     <section className="min-h-screen flex items-center relative overflow-hidden">
-      {/* Split Screen Layout */}
-      <div className="w-full h-screen flex relative">
+      {/* Desktop Layout */}
+      <div className="hidden lg:flex w-full h-screen relative">
         
         {/* Left Panel - Text Content */}
-        <div className="w-1/2 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige flex items-center justify-center p-12 relative">
+        <div className="w-1/2 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige flex items-center justify-center p-12 xl:p-16 relative">
           {/* Subtle background texture */}
           <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
           
-          <div className="relative z-10 max-w-lg text-left">
-            <h1 className="text-4xl lg:text-5xl font-playfair font-light text-dark-brown leading-tight mb-6">
-              Welcome to Your Healing Space
+          <div className="relative z-10 max-w-lg xl:max-w-xl text-left">
+            <h1 className="text-4xl xl:text-6xl font-playfair font-light text-dark-brown leading-tight mb-8">
+              {heroTitle}
             </h1>
             
-            <p className="text-lg text-dark-brown/80 font-lato mb-2">
-              Here, you're safe to heal.
+            <p className="text-xl xl:text-2xl text-dark-brown/90 font-lato mb-4 font-medium">
+              {heroSubtitle}
             </p>
             
-            <p className="text-base text-dark-brown/70 font-lato mb-8 leading-relaxed">
-              Begin therapy today, in a space built on trust, warmth, and healing.
+            <p className="text-lg xl:text-xl text-dark-brown/70 font-lato mb-10 leading-relaxed">
+              {heroDescription}
             </p>
             
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 items-stretch sm:items-center">
+            <div className="flex flex-col sm:flex-row gap-6 mb-12 items-stretch sm:items-center">
               <WhatsAppButton 
-                className="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full font-semibold shadow-lg transition-all duration-300 text-center flex items-center justify-center min-h-[50px] whitespace-nowrap"
+                className="bg-sage hover:bg-sage/90 text-white px-10 py-5 rounded-full font-semibold shadow-xl transition-all duration-300 text-center flex items-center justify-center min-h-[60px] text-lg"
               >
-                Start Session
+                {heroButtonText}
               </WhatsAppButton>
               
-              <button className="bg-transparent border-2 border-sage text-sage hover:bg-sage hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center justify-center min-h-[50px] whitespace-nowrap">
-                Explore Services First
+              <button className="bg-transparent border-2 border-sage text-sage hover:bg-sage hover:text-white px-10 py-5 rounded-full font-semibold transition-all duration-300 flex items-center justify-center min-h-[60px] text-lg">
+                Learn More
               </button>
             </div>
             
-            {/* Healing Quote */}
-            <div className="text-center">
-              <p className="text-sage font-playfair text-lg italic">
-                "Healing does not shout, it whispers."
-              </p>
-            </div>
-            
-            {/* Additional Quote */}
-            <div className="mt-6 text-center">
-              <p className="text-sage/80 font-playfair text-base italic">
-                "Healing begins in a quiet corner where there are untold stories."
-              </p>
+            {/* Healing Quotes */}
+            <div className="space-y-4">
+              <div className="text-left">
+                <p className="text-sage font-playfair text-xl xl:text-2xl italic leading-relaxed">
+                  "{heroQuote1}"
+                </p>
+              </div>
+              
+              <div className="text-left pl-6">
+                <p className="text-sage/80 font-playfair text-lg xl:text-xl italic">
+                  "{heroQuote2}"
+                </p>
+              </div>
             </div>
           </div>
         </div>
         
-        {/* Right Panel - Image Content */}
+        {/* Right Panel - Background Image */}
         <div className="w-1/2 relative">
-          {/* Background Image */}
           <div className="absolute inset-0">
             <img 
               src={heroImage2}
@@ -201,18 +201,91 @@ export default function Hero() {
           </div>
         </div>
         
-        {/* Center Portrait Image - Positioned on the Divider Between Sections */}
+        {/* Center Portrait Image - Desktop Only */}
         <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <img 
-              src={heroImage1}
-              alt="Wellness professional portrait"
-              className="w-64 h-80 object-cover shadow-2xl rounded-lg"
-              loading="eager"
-            />
+            <div className="relative">
+              <img 
+                src={heroImage1}
+                alt="Wellness professional portrait"
+                className="w-72 h-96 xl:w-80 xl:h-[28rem] object-cover shadow-2xl rounded-2xl border-4 border-white/20"
+                loading="eager"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+            </div>
           </div>
         </div>
-        
+      </div>
+
+      {/* Mobile Layout */}
+      <div className="lg:hidden w-full min-h-screen relative">
+        {/* Mobile Background */}
+        <div className="absolute inset-0">
+          <img 
+            src={heroImage2}
+            alt="Peaceful therapy environment"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
+        </div>
+
+        {/* Mobile Content */}
+        <div className="relative z-10 flex flex-col min-h-screen">
+          {/* Top Section with Center Image */}
+          <div className="flex-1 flex items-center justify-center pt-20 pb-10">
+            <div className="text-center px-6">
+              <div className="mb-8">
+                <img 
+                  src={heroImage1}
+                  alt="Wellness professional portrait"
+                  className="w-48 h-60 sm:w-56 sm:h-72 object-cover shadow-2xl rounded-2xl mx-auto border-4 border-white/20"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Section with Text Content */}
+          <div className="bg-gradient-to-t from-white via-white/95 to-white/80 backdrop-blur-sm px-6 py-12">
+            <div className="max-w-lg mx-auto text-center">
+              <h1 className="text-3xl sm:text-4xl font-playfair font-light text-dark-brown leading-tight mb-6">
+                {heroTitle}
+              </h1>
+              
+              <p className="text-lg sm:text-xl text-dark-brown/90 font-lato mb-3 font-medium">
+                {heroSubtitle}
+              </p>
+              
+              <p className="text-base sm:text-lg text-dark-brown/70 font-lato mb-8 leading-relaxed">
+                {heroDescription}
+              </p>
+              
+              {/* Mobile Action Buttons */}
+              <div className="flex flex-col gap-4 mb-8">
+                <WhatsAppButton 
+                  className="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full font-semibold shadow-lg transition-all duration-300 text-center flex items-center justify-center min-h-[50px] w-full"
+                >
+                  {heroButtonText}
+                </WhatsAppButton>
+                
+                <button className="bg-transparent border-2 border-sage text-sage hover:bg-sage hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center justify-center min-h-[50px] w-full">
+                  Learn More
+                </button>
+              </div>
+              
+              {/* Mobile Quotes */}
+              <div className="space-y-3">
+                <p className="text-sage font-playfair text-lg italic">
+                  "{heroQuote1}"
+                </p>
+                <p className="text-sage/80 font-playfair text-base italic">
+                  "{heroQuote2}"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section>
