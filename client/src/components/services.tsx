@@ -157,8 +157,8 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Transition Block - Therapy in Everyday Moments with Falling Leaves */}
-        <div className="mt-20 relative">
+        {/* Therapy in Everyday Moments - Redesigned Section */}
+        <div className="mt-32 relative py-20">
           {/* Extended Background Image for Full Width */}
           <div className="absolute inset-0 -mx-20">
             <img 
@@ -166,64 +166,63 @@ export default function Services() {
               alt="Peaceful landscape with wildflowers"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-sage/30"></div>
+            <div className="absolute inset-0 bg-white/20"></div>
           </div>
           
-          <div className="relative max-w-5xl mx-auto">
-            <div className="relative p-12 rounded-3xl shadow-warm overflow-hidden">
-              {/* Inner Background Image with Higher Opacity */}
-              <div className="absolute inset-0">
-                <img 
-                  src={middleBgImage}
-                  alt="Peaceful landscape with wildflowers"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
-              </div>
-            
-            {/* Content overlay */}
-            <div className="relative z-10">
-              <h3 className="text-3xl font-playfair font-bold text-dark-brown text-center mb-8">
+          <div className="relative max-w-6xl mx-auto px-4">
+            {/* Section Title */}
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-playfair font-bold text-dark-brown mb-6">
                 Therapy in Everyday Moments
-              </h3>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                {/* H3: It's ok to reach out when you're ready */}
-                <div className="relative">
+              </h2>
+              <div className="w-24 h-1 bg-peach mx-auto rounded-full"></div>
+            </div>
+            
+            {/* Inspirational Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
+              {/* First Quote Card */}
+              <div className="group">
+                <div className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-300">
                   <img 
-                    src="https://images.unsplash.com/photo-1516575334481-f85287c2c82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300" 
+                    src="https://images.unsplash.com/photo-1516575334481-f85287c2c82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=350" 
                     alt="It's ok to reach out when you're ready - phone connection showing therapeutic support accessibility" 
-                    className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg"
+                    className="w-full h-72 object-cover"
                   />
-                  <div className="absolute inset-0 bg-dark-brown/40 rounded-2xl"></div>
-                  <div className="absolute inset-0 flex items-center justify-center p-6">
-                    <h3 className="text-lg md:text-xl lg:text-2xl font-playfair font-bold text-white text-center leading-tight italic">
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark-brown/80 via-dark-brown/40 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-8">
+                    <blockquote className="text-white text-xl md:text-2xl font-playfair font-medium italic text-center leading-relaxed">
                       "It's ok to reach out when you're ready."
-                    </h3>
-                  </div>
-                </div>
-
-                {/* H4: I looked anxious but chose to tap my heart */}
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300" 
-                    alt="I looked anxious but chose to tap my heart - person on laptop with therapeutic support" 
-                    className="w-full h-64 md:h-72 object-cover rounded-2xl shadow-lg"
-                  />
-                  <div className="absolute inset-0 bg-dark-brown/40 rounded-2xl"></div>
-                  <div className="absolute inset-0 flex items-center justify-center p-6">
-                    <h4 className="text-lg md:text-xl lg:text-2xl font-playfair font-bold text-white text-center leading-tight italic">
-                      "I looked anxious but chose to tap my heart."
-                    </h4>
+                    </blockquote>
                   </div>
                 </div>
               </div>
 
-              <p className="text-center text-warm-gray font-lato text-lg mt-8 leading-relaxed">
-                Healing doesn't require grand gestures. Sometimes it begins with a quiet moment, 
-                a gentle conversation, or simply reaching out when you're ready.
-              </p>
+              {/* Second Quote Card */}
+              <div className="group">
+                <div className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-300">
+                  <img 
+                    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=350" 
+                    alt="I looked anxious but chose to tap my heart - person on laptop with therapeutic support" 
+                    className="w-full h-72 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark-brown/80 via-dark-brown/40 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-8">
+                    <blockquote className="text-white text-xl md:text-2xl font-playfair font-medium italic text-center leading-relaxed">
+                      "I looked anxious but chose to tap my heart."
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            {/* Centered Message */}
+            <div className="text-center">
+              <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-xl max-w-4xl mx-auto border border-peach/20">
+                <p className="text-dark-brown font-lato text-xl leading-relaxed font-medium">
+                  Healing doesn't require grand gestures. Sometimes it begins with a quiet moment, 
+                  a gentle conversation, or simply reaching out when you're ready.
+                </p>
+              </div>
             </div>
           </div>
         </div>
