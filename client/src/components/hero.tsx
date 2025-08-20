@@ -208,7 +208,7 @@ export default function Hero() {
               <img 
                 src={heroImage1}
                 alt="Wellness professional portrait"
-                className="w-72 h-96 xl:w-80 xl:h-[28rem] object-cover shadow-2xl rounded-2xl border-4 border-white/20"
+                className="w-72 h-96 xl:w-80 xl:h-[28rem] object-cover shadow-2xl rounded-2xl"
                 loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
@@ -239,7 +239,7 @@ export default function Hero() {
                 <img 
                   src={heroImage1}
                   alt="Wellness professional portrait"
-                  className="w-48 h-60 sm:w-56 sm:h-72 object-cover shadow-2xl rounded-2xl mx-auto border-4 border-white/20"
+                  className="w-48 h-60 sm:w-56 sm:h-72 object-cover shadow-2xl rounded-2xl mx-auto"
                   loading="eager"
                 />
               </div>
