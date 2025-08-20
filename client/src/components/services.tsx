@@ -158,7 +158,7 @@ export default function Services() {
         </div>
 
         {/* Therapy in Everyday Moments - Redesigned Section */}
-        <div className="mt-32 relative py-20">
+        <div className="mt-32 relative pt-20 pb-8">
           {/* Extended Background Image for Full Width */}
           <div className="absolute inset-0 -mx-20">
             <img 
