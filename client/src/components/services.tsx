@@ -11,6 +11,7 @@ import s9Image from "@assets/s9.jpg";
 import s10Image from "@assets/s10.jpg";
 import s11Image from "@assets/s11.jpg";
 import s12Image from "@assets/s12.jpg";
+import middleBgImage from "@assets/middle-bg.jpg";
 
 // Helper function to get content from content blocks
 function getContentValue(contentBlocks: any[], key: string, defaultValue: string): string {
@@ -158,7 +159,16 @@ export default function Services() {
 
         {/* Transition Block - Therapy in Everyday Moments with Falling Leaves */}
         <div className="mt-20 max-w-5xl mx-auto">
-          <div className="bg-peach/40 backdrop-blur-sm p-12 rounded-3xl shadow-warm relative">
+          <div className="relative p-12 rounded-3xl shadow-warm overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0">
+              <img 
+                src={middleBgImage}
+                alt="Peaceful landscape with wildflowers"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+            </div>
             
             {/* Content overlay */}
             <div className="relative z-10">
