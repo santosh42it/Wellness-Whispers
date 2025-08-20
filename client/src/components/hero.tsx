@@ -208,7 +208,7 @@ export default function Hero() {
             <img 
               src={heroImage1}
               alt="Wellness professional portrait"
-              className="w-48 h-64 object-cover shadow-2xl border-4 border-white rounded-lg"
+              className="w-64 h-80 object-cover shadow-2xl rounded-lg"
               loading="eager"
             />
           </div>
