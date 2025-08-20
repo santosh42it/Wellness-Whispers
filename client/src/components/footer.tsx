@@ -1,5 +1,6 @@
 import { Heart, Mail, Phone } from "lucide-react";
 import WhatsAppButton from "./whatsapp-button";
+import logoFooterPath from "@assets/logo-footer.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -15,13 +16,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-sage-green rounded-xl flex items-center justify-center shadow-soft">
-                <Heart className="text-white h-6 w-6" />
-              </div>
-              <div>
-                <h2 className="text-xl font-playfair font-bold">Wellness Whispers</h2>
-                <p className="text-sm text-white/90 font-lato">Gentle Talk Therapy</p>
-              </div>
+              <img 
+                src={logoFooterPath}
+                alt="Wellness Whispers Footer Logo"
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-white/90 mb-6 max-w-md leading-relaxed font-lato">
               A safe space for emotional healing and personal growth. Professional online therapy 

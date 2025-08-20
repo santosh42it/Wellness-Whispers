@@ -3,6 +3,7 @@ import { Heart, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
 import WhatsAppButton from "./whatsapp-button";
+import logoPath from "@assets/logo.png";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,13 +52,11 @@ export default function Header() {
             onClick={goToHome}
             className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300"
           >
-            <div className="w-12 h-12 bg-sage-green rounded-xl flex items-center justify-center shadow-soft">
-              <Heart className="text-white h-6 w-6" />
-            </div>
-            <div>
-              <h1 className="text-xl font-playfair font-bold text-earthy-brown">Wellness Whispers</h1>
-              <p className="text-sm text-sage-green font-lato">Gentle Talk Therapy</p>
-            </div>
+            <img 
+              src={logoPath}
+              alt="Wellness Whispers Logo"
+              className="h-12 w-auto"
+            />
           </button>
           
           {/* Desktop Navigation */}

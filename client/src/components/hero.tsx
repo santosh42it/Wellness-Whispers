@@ -159,15 +159,15 @@ export default function Hero() {
             </p>
             
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 items-start sm:items-center">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8 items-stretch sm:items-center">
               <WhatsAppButton 
                 message="Hi, I'd like to start a therapy session."
-                className="bg-sage hover:bg-sage/90 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 text-center inline-block"
+                className="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full font-semibold shadow-lg transition-all duration-300 text-center flex items-center justify-center min-h-[50px] whitespace-nowrap"
               >
                 Start Session
               </WhatsAppButton>
               
-              <button className="bg-transparent border-2 border-sage text-sage hover:bg-sage hover:text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 inline-block">
+              <button className="bg-transparent border-2 border-sage text-sage hover:bg-sage hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center justify-center min-h-[50px] whitespace-nowrap">
                 Explore Services First
               </button>
             </div>
