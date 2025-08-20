@@ -138,7 +138,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center relative overflow-hidden">
       {/* Split Screen Layout */}
-      <div className="w-full h-screen flex">
+      <div className="w-full h-screen flex relative">
         
         {/* Left Panel - Text Content */}
         <div className="w-1/2 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige flex items-center justify-center p-12 relative">
@@ -200,26 +200,21 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/10 to-white/30"></div>
           </div>
-          
-          {/* Center Portrait Image - Overlapping Divider */}
-          <div className="absolute inset-0 flex items-center justify-center z-30">
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <img 
-                src={heroImage1}
-                alt="Wellness professional portrait"
-                className="w-48 h-64 object-cover shadow-2xl border-4 border-white"
-                loading="eager"
-              />
-            </div>
+        </div>
+        
+        {/* Center Portrait Image - Positioned on the Divider Between Sections */}
+        <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <img 
+              src={heroImage1}
+              alt="Wellness professional portrait"
+              className="w-48 h-64 object-cover shadow-2xl border-4 border-white rounded-lg"
+              loading="eager"
+            />
           </div>
-          
-
-          
-          
         </div>
         
       </div>
-
 
     </section>
   );
