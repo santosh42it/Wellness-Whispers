@@ -55,7 +55,7 @@ export default function Header() {
             <img 
               src={logoPath}
               alt="Wellness Whispers Logo"
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </button>
           

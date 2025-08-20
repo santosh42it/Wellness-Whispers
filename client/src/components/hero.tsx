@@ -213,14 +213,7 @@ export default function Hero() {
             </div>
           </div>
           
-          {/* Quote Overlay */}
-          <div className="absolute top-16 right-16 max-w-xs">
-            <div className="bg-white/90 backdrop-blur-sm p-6 shadow-lg">
-              <p className="text-sage font-playfair text-xl leading-relaxed italic">
-                "Healing does not shout it whispers"
-              </p>
-            </div>
-          </div>
+
           
           
         </div>
