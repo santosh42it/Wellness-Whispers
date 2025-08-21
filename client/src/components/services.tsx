@@ -12,6 +12,8 @@ import s10Image from "@assets/s10.jpg";
 import s11Image from "@assets/s11.jpg";
 import s12Image from "@assets/s12.jpg";
 import middleBgImage from "@assets/middle-bg.jpg";
+import itsOkayToReachoutImage from "@assets/itsOkayToReachout.png";
+import iLookedAnxiousImage from "@assets/iLookedAnxious.png";
 
 // Helper function to get content from content blocks
 function getContentValue(contentBlocks: any[], key: string, defaultValue: string): string {
@@ -182,35 +184,23 @@ export default function Services() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
               {/* First Quote Card */}
               <div className="group">
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-300">
+                <div className="relative overflow-hidden shadow-2xl transform transition-all duration-300">
                   <img 
-                    src="https://images.unsplash.com/photo-1516575334481-f85287c2c82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=350" 
+                    src={itsOkayToReachoutImage}
                     alt="It's ok to reach out when you're ready - phone connection showing therapeutic support accessibility" 
                     className="w-full h-72 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark-brown/80 via-dark-brown/40 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <blockquote className="text-white text-xl md:text-2xl font-playfair font-medium italic text-center leading-relaxed">
-                      "It's ok to reach out when you're ready."
-                    </blockquote>
-                  </div>
                 </div>
               </div>
 
               {/* Second Quote Card */}
               <div className="group">
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-300">
+                <div className="relative overflow-hidden shadow-2xl transform transition-all duration-300">
                   <img 
-                    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=350" 
+                    src={iLookedAnxiousImage}
                     alt="I looked anxious but chose to tap my heart - person on laptop with therapeutic support" 
                     className="w-full h-72 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark-brown/80 via-dark-brown/40 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <blockquote className="text-white text-xl md:text-2xl font-playfair font-medium italic text-center leading-relaxed">
-                      "I looked anxious but chose to tap my heart."
-                    </blockquote>
-                  </div>
                 </div>
               </div>
             </div>
