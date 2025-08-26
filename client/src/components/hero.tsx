@@ -175,15 +175,13 @@ export default function Hero() {
         </div>
 
         {/* Welcome Text Overlay - Desktop */}
-        <div className="absolute top-32 left-16 z-40 max-w-md">
-          <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-white/20">
-            <h1 className="font-kinfolk text-3xl xl:text-4xl text-dark-brown mb-4 leading-tight uppercase tracking-wide">
-              Welcome to your safe space.
-            </h1>
-            <p className="font-nunito text-base xl:text-lg text-warm-gray leading-relaxed">
-              You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
-            </p>
-          </div>
+        <div className="absolute top-24 left-12 z-40 max-w-lg">
+          <h1 className="font-kinfolk text-4xl xl:text-5xl text-dark-brown mb-6 leading-tight">
+            Welcome to your safe space.
+          </h1>
+          <p className="font-nunito text-lg xl:text-xl text-warm-gray leading-relaxed">
+            You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
+          </p>
         </div>
       </div>
 
@@ -211,15 +209,13 @@ export default function Hero() {
         </div>
 
         {/* Welcome Text Overlay - Mobile */}
-        <div className="absolute bottom-20 left-4 right-4 z-20">
-          <div className="bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/20 text-center">
-            <h1 className="font-kinfolk text-xl sm:text-2xl text-dark-brown mb-3 leading-tight uppercase tracking-wide">
-              Welcome to your safe space.
-            </h1>
-            <p className="font-nunito text-sm sm:text-base text-warm-gray leading-relaxed">
-              You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
-            </p>
-          </div>
+        <div className="absolute bottom-32 left-6 right-6 z-20 text-center">
+          <h1 className="font-kinfolk text-2xl sm:text-3xl text-white mb-4 leading-tight drop-shadow-lg">
+            Welcome to your safe space.
+          </h1>
+          <p className="font-nunito text-base sm:text-lg text-white/90 leading-relaxed drop-shadow-md">
+            You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
+          </p>
         </div>
       </div>
 
