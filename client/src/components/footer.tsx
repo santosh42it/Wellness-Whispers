@@ -37,7 +37,7 @@ export default function Footer() {
                   onClick={() => scrollToSection("about")}
                   className="text-warm-misty-beige/80 hover:text-white transition-colors"
                 >
-                  About
+                  Meet Me
                 </button>
               </li>
               <li>

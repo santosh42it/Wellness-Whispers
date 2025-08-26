@@ -41,13 +41,13 @@ const websiteImages = [
     altText: "Not all healing needs words - Girl in mountains finding peace and inner strength"
   },
 
-  // About Section Images
+  // Meet Me Section Images
   {
     id: "about-1",
     title: "Professional Photo",
     currentUrl: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=500",
     description: "Therapist professional photo in about section",
-    section: "About Section",
+    section: "Meet Me Section",
     altText: "Mrs. Pavan Chowdhary - Professional therapist with warm, welcoming presence"
   },
 
@@ -151,39 +151,39 @@ const textBlocks = [
     type: "text"
   },
   
-  // About Section
+  // Meet Me Section
   {
     key: "about_title",
-    title: "About Section Title",
-    section: "About Section",
-    defaultContent: "About Me", 
+    title: "Meet Me Section Title",
+    section: "Meet Me Section",
+    defaultContent: "Meet Me", 
     type: "text"
   },
   {
     key: "about_credentials_title",
     title: "Credentials Subtitle",
-    section: "About Section",
+    section: "Meet Me Section",
     defaultContent: "Credentials & Experience",
     type: "text"
   }, 
   {
     key: "about_credentials_text",
     title: "Credentials Text",
-    section: "About Section",
+    section: "Meet Me Section",
     defaultContent: "Gold Medalist in MPA with a Postgraduate Diploma in Guidance & Counselling, complemented by various certified courses in therapeutic methods. Over 45 years of people-focused leadership, entrepreneurship, and mentoring experience, combined with 6+ years of dedicated emotional wellness practice.",
     type: "textarea"
   },
   {
     key: "about_philosophy_title", 
     title: "Philosophy Subtitle",
-    section: "About Section",
+    section: "Meet Me Section",
     defaultContent: "Philosophy & Values",
     type: "text"
   },
   {
     key: "about_philosophy_text",
     title: "Philosophy Text",
-    section: "About Section", 
+    section: "Meet Me Section", 
     defaultContent: "At Wellness Whispers, therapy is offered as a form of service, with a focus on making emotional healing accessible and deeply personal. Guided by empathy, trust, and a genuine commitment to care, the aim is to create a safe, non-judgmental space where emotional well-being can flourish.",
     type: "textarea"
   },

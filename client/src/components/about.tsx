@@ -21,7 +21,7 @@ export default function About() {
   const safeContentBlocks = Array.isArray(contentBlocks) ? contentBlocks : [];
 
   // Get dynamic content values
-  const aboutTitle = getContentValue(safeContentBlocks, "about_title", "About Me");
+  const aboutTitle = getContentValue(safeContentBlocks, "about_title", "Meet Me");
   const credentialsTitle = getContentValue(safeContentBlocks, "about_credentials_title", "Credentials & Experience");
   const credentialsText = getContentValue(safeContentBlocks, "about_credentials_text", "Gold Medalist in MPA with a Postgraduate Diploma in Guidance & Counselling, complemented by various certified courses in therapeutic methods. Over 45 years of people-focused leadership, entrepreneurship, and mentoring experience, combined with 6+ years of dedicated emotional wellness practice.");
   const philosophyTitle = getContentValue(safeContentBlocks, "about_philosophy_title", "Philosophy & Values");
