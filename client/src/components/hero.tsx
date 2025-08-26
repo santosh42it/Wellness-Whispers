@@ -173,6 +173,16 @@ export default function Hero() {
             </div>
           </div>
         </div>
+
+        {/* Welcome Text Overlay - Desktop */}
+        <div className="absolute top-24 left-12 z-40 max-w-lg">
+          <h1 className="font-kinfolk text-4xl xl:text-5xl text-dark-brown mb-6 leading-tight">
+            Welcome to your safe space.
+          </h1>
+          <p className="font-nunito text-lg xl:text-xl text-warm-gray leading-relaxed">
+            You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
+          </p>
+        </div>
       </div>
 
       {/* Mobile Layout */}
@@ -196,6 +206,16 @@ export default function Hero() {
             className="w-48 h-60 sm:w-56 sm:h-72 object-cover shadow-2xl rounded-2xl"
             loading="eager"
           />
+        </div>
+
+        {/* Welcome Text Overlay - Mobile */}
+        <div className="absolute bottom-32 left-6 right-6 z-20 text-center">
+          <h1 className="font-kinfolk text-2xl sm:text-3xl text-white mb-4 leading-tight drop-shadow-lg">
+            Welcome to your safe space.
+          </h1>
+          <p className="font-nunito text-base sm:text-lg text-white/90 leading-relaxed drop-shadow-md">
+            You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
+          </p>
         </div>
       </div>
 
