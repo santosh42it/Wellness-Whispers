@@ -71,7 +71,7 @@ export default function Header() {
               href="/about"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
             >
-              About
+              Meet Me
             </Link>
             <button
               onClick={() => scrollToSection("services")}
@@ -132,7 +132,7 @@ export default function Header() {
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                About
+                Meet Me
               </Link>
               <button
                 onClick={() => scrollToSection("services")}
