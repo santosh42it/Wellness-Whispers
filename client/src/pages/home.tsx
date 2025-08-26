@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Hero from "@/components/hero";
+import MiddleQuote from "@/components/middle-quote";
 import Services from "@/components/services";
 import Approach from "@/components/approach";
 import Pricing from "@/components/pricing";
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <main className="relative z-10">
         <Hero />
+        <MiddleQuote />
         <Services />
         <Approach />
         <Pricing />
