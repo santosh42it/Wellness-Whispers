@@ -23,7 +23,7 @@ export default function Testimonials() {
         
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-earthy-brown mb-6">
+          <h2 className="text-4xl lg:text-5xl font-kinfolk font-bold text-earthy-brown mb-6">
             Stories
           </h2>
           <p className="text-xl text-sage-green font-medium max-w-3xl mx-auto">
@@ -59,7 +59,7 @@ export default function Testimonials() {
                 
                 {/* Testimonial Text */}
                 <blockquote className="text-center mb-6">
-                  <p className="text-dark-brown font-lato text-lg leading-relaxed italic mb-4">
+                  <p className="text-dark-brown font-nunito text-lg leading-relaxed italic mb-4">
                     "{testimonial.text}"
                   </p>
                 </blockquote>

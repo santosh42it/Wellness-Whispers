@@ -121,7 +121,7 @@ export default function Services() {
         
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-dark-brown mb-6">
+          <h2 className="text-4xl lg:text-5xl font-kinfolk font-bold text-dark-brown mb-6">
             {servicesTitle}
           </h2>
           <p className="text-xl text-dark-brown font-medium max-w-3xl mx-auto">
@@ -137,7 +137,7 @@ export default function Services() {
               className="bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-soft"
             >
               {/* Title on top */}
-              <h3 className="text-xl font-playfair font-semibold text-dark-brown mb-4 text-center">
+              <h3 className="text-xl font-kinfolk font-semibold text-dark-brown mb-4 text-center">
                 {service.title}
               </h3>
               
@@ -152,7 +152,7 @@ export default function Services() {
               </div>
               
               {/* Text at bottom - centered and full text */}
-              <p className="text-dark-brown font-lato text-base leading-relaxed text-center font-medium">
+              <p className="text-dark-brown font-nunito text-base leading-relaxed text-center font-medium">
                 {service.description}
               </p>
             </div>
@@ -174,7 +174,7 @@ export default function Services() {
           <div className="relative max-w-6xl mx-auto px-4">
             {/* Section Title */}
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-playfair font-bold text-dark-brown mb-6">
+              <h2 className="text-4xl md:text-5xl font-kinfolk font-bold text-dark-brown mb-6">
                 Therapy in Everyday Moments
               </h2>
               <div className="w-24 h-1 bg-peach mx-auto rounded-full"></div>
@@ -208,7 +208,7 @@ export default function Services() {
             {/* Centered Message */}
             <div className="text-center">
               <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-xl max-w-4xl mx-auto border border-peach/20">
-                <p className="text-dark-brown font-lato text-xl leading-relaxed font-medium">
+                <p className="text-dark-brown font-nunito text-xl leading-relaxed font-medium">
                   Healing doesn't require grand gestures. Sometimes it begins with a quiet moment, 
                   a gentle conversation, or simply reaching out when you're ready.
                 </p>

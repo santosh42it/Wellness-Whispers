@@ -63,47 +63,47 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={goToHome}
-              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
+              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Home
             </button>
             <Link 
               href="/about"
-              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
+              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Meet Me
             </Link>
             <button
               onClick={() => scrollToSection("services")}
-              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
+              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection("approach")}
-              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
+              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Approach
             </button>
             <Link 
               href="/after-therapy"
-              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
+              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               After Therapy
             </Link>
             <button
               onClick={() => scrollToSection("pricing")}
-              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
+              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Pricing
             </button>
             <button
               onClick={() => scrollToSection("testimonials")}
-              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-lato"
+              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Stories
             </button>
-            <WhatsAppButton className="bg-sage-green hover:bg-olive-green text-white px-6 py-2 rounded-xl transition-all duration-300 shadow-warm hover:shadow-strong font-lato border-2 border-sage-green hover:border-olive-green" />
+            <WhatsAppButton className="bg-sage-green hover:bg-olive-green text-white px-6 py-2 rounded-xl transition-all duration-300 shadow-warm hover:shadow-strong font-nunito border-2 border-sage-green hover:border-olive-green" />
           </nav>
 
           {/* Mobile Menu Button */}

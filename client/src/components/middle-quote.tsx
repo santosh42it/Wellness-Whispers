@@ -17,7 +17,7 @@ export default function MiddleQuote() {
       {/* Overlapped quote text */}
       <div className="relative z-10 flex items-center justify-center h-full px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <blockquote className="text-white text-2xl md:text-4xl lg:text-5xl font-playfair font-medium italic leading-relaxed text-shadow-lg">
+          <blockquote className="text-white text-2xl md:text-4xl lg:text-5xl font-vibes font-medium leading-relaxed text-shadow-lg">
             "Like clouds drifting across the sky, feelings don't stay fixed. They move, change, and slowly make room for new ones."
           </blockquote>
         </div>

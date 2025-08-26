@@ -33,7 +33,7 @@ export default function About() {
           
           {/* Section Title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-earthy-brown mb-6">
+            <h2 className="text-4xl lg:text-5xl font-kinfolk font-bold text-earthy-brown mb-6">
               {aboutTitle}
             </h2>
           </div>
@@ -57,20 +57,20 @@ export default function About() {
               
               {/* Paragraph 1 – Credentials & Experience */}
               <div className="bg-white/60 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
-                <h3 className="text-xl font-playfair font-semibold text-sage-green mb-4">
+                <h3 className="text-xl font-kinfolk font-semibold text-sage-green mb-4">
                   {credentialsTitle}
                 </h3>
-                <p className="text-charcoal-grey font-lato leading-relaxed text-lg">
+                <p className="text-charcoal-grey font-nunito leading-relaxed text-lg">
                   {credentialsText}
                 </p>
               </div>
 
               {/* Paragraph 2 – Philosophy & Values */}
               <div className="bg-white/60 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
-                <h3 className="text-xl font-playfair font-semibold text-sage-green mb-4">
+                <h3 className="text-xl font-kinfolk font-semibold text-sage-green mb-4">
                   {philosophyTitle}
                 </h3>
-                <p className="text-charcoal-grey font-lato leading-relaxed text-lg">
+                <p className="text-charcoal-grey font-nunito leading-relaxed text-lg">
                   {philosophyText}
                 </p>
               </div>

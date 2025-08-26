@@ -92,7 +92,7 @@ export default function Approach() {
         {/* Section Title */}
         <div className="text-center mb-16">
           <div className="inline-block">
-            <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-dark-brown mb-6 relative">
+            <h2 className="text-4xl lg:text-5xl font-kinfolk font-bold text-dark-brown mb-6 relative">
               {approachTitle}
               {/* Decorative underline */}
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-sage via-peach to-sage rounded-full"></div>
@@ -111,7 +111,7 @@ export default function Approach() {
               className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-soft border border-sage/10"
             >
               {/* Title on top */}
-              <h3 className="text-xl font-playfair font-semibold text-dark-brown mb-4 text-center">
+              <h3 className="text-xl font-kinfolk font-semibold text-dark-brown mb-4 text-center">
                 {approach.title}
               </h3>
               
@@ -126,7 +126,7 @@ export default function Approach() {
               </div>
               
               {/* Description at bottom - centered and full text */}
-              <p className="text-dark-brown font-lato text-base leading-relaxed text-center font-medium">
+              <p className="text-dark-brown font-nunito text-base leading-relaxed text-center font-medium">
                 {approach.description}
               </p>
             </div>

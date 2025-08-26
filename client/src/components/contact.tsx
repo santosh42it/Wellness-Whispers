@@ -8,7 +8,7 @@ export default function Contact() {
           
           {/* Opening Message */}
           <div className="mb-16">
-            <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-earthy-brown mb-8 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-kinfolk font-bold text-earthy-brown mb-8 leading-tight">
               Healing begins in quiet moments, 
               <span className="block text-dark-brown">one breath, one step at a time.</span>
             </h2>
@@ -56,10 +56,10 @@ export default function Contact() {
             {/* Contact Information */}
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
-                <h3 className="text-2xl font-playfair font-bold text-earthy-brown mb-4">
+                <h3 className="text-2xl font-kinfolk font-bold text-earthy-brown mb-4">
                   How We Connect
                 </h3>
-                <div className="space-y-4 text-dark-brown font-lato">
+                <div className="space-y-4 text-dark-brown font-nunito">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-sage-green rounded-full"></div>
                     <span>WhatsApp: +91 98806 07355</span>
@@ -76,10 +76,10 @@ export default function Contact() {
               </div>
 
               <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
-                <h3 className="text-2xl font-playfair font-bold text-earthy-brown mb-4">
+                <h3 className="text-2xl font-kinfolk font-bold text-earthy-brown mb-4">
                   What to Expect
                 </h3>
-                <div className="space-y-4 text-dark-brown font-lato">
+                <div className="space-y-4 text-dark-brown font-nunito">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-peach-blush rounded-full"></div>
                     <span>Warm, non-judgmental conversation</span>
@@ -98,12 +98,12 @@ export default function Contact() {
 
             {/* Closing Message */}
             <div className="bg-peach-blush/30 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
-              <p className="text-lg text-dark-brown font-lato leading-relaxed italic">
+              <p className="text-lg text-dark-brown font-nunito leading-relaxed italic">
                 "Sometimes the most courageous thing you can do is simply reach out. 
                 Your emotional well-being matters, and there's no 'right' time to start healing 
                 except now, if you feel ready."
               </p>
-              <p className="text-sage font-playfair text-lg mt-4">
+              <p className="text-sage font-kinfolk text-lg mt-4">
                 — Mrs. Pavan Chowdhary
               </p>
             </div>

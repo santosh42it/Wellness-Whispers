@@ -146,15 +146,15 @@ export default function Hero() {
           <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
           
           <div className="relative z-10 max-w-md xl:max-w-lg text-left w-full">
-            <h1 className="text-4xl xl:text-6xl font-playfair font-light text-dark-brown leading-tight mb-8">
+            <h1 className="text-4xl xl:text-6xl font-kinfolk font-light text-dark-brown leading-tight mb-8">
               {heroTitle}
             </h1>
             
-            <p className="text-xl xl:text-2xl text-dark-brown/90 font-lato mb-4 font-medium">
+            <p className="text-xl xl:text-2xl text-dark-brown/90 font-nunito mb-4 font-medium">
               {heroSubtitle}
             </p>
             
-            <p className="text-lg xl:text-xl text-dark-brown/70 font-lato mb-10 leading-relaxed">
+            <p className="text-lg xl:text-xl text-dark-brown/70 font-nunito mb-10 leading-relaxed">
               {heroDescription}
             </p>
             
@@ -174,13 +174,13 @@ export default function Hero() {
             {/* Healing Quotes */}
             <div className="space-y-4">
               <div className="text-center">
-                <p className="text-sage font-playfair text-xl xl:text-2xl italic leading-relaxed">
+                <p className="text-sage font-dancing text-xl xl:text-2xl leading-relaxed">
                   "{heroQuote1}"
                 </p>
               </div>
               
               <div className="text-center">
-                <p className="text-sage/80 font-playfair text-lg xl:text-xl italic">
+                <p className="text-sage/80 font-dancing text-lg xl:text-xl">
                   "{heroQuote2}"
                 </p>
               </div>
@@ -249,15 +249,15 @@ export default function Hero() {
           {/* Bottom Section with Text Content */}
           <div className="bg-gradient-to-t from-white via-white/95 to-white/80 backdrop-blur-sm px-6 py-12">
             <div className="max-w-lg mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl font-playfair font-light text-dark-brown leading-tight mb-6">
+              <h1 className="text-3xl sm:text-4xl font-kinfolk font-light text-dark-brown leading-tight mb-6">
                 {heroTitle}
               </h1>
               
-              <p className="text-lg sm:text-xl text-dark-brown/90 font-lato mb-3 font-medium">
+              <p className="text-lg sm:text-xl text-dark-brown/90 font-nunito mb-3 font-medium">
                 {heroSubtitle}
               </p>
               
-              <p className="text-base sm:text-lg text-dark-brown/70 font-lato mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-dark-brown/70 font-nunito mb-8 leading-relaxed">
                 {heroDescription}
               </p>
               
@@ -276,10 +276,10 @@ export default function Hero() {
               
               {/* Mobile Quotes */}
               <div className="space-y-3">
-                <p className="text-sage font-playfair text-lg italic">
+                <p className="text-sage font-dancing text-lg">
                   "{heroQuote1}"
                 </p>
-                <p className="text-sage/80 font-playfair text-base italic">
+                <p className="text-sage/80 font-dancing text-base">
                   "{heroQuote2}"
                 </p>
               </div>

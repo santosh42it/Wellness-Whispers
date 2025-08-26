@@ -44,7 +44,7 @@ export default function AfterTherapy() {
         
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-earthy-brown mb-6">
+          <h2 className="text-4xl lg:text-5xl font-kinfolk font-bold text-earthy-brown mb-6">
             After Therapy
           </h2>
           <p className="text-xl text-sage-green font-medium max-w-4xl mx-auto leading-relaxed">
@@ -74,11 +74,11 @@ export default function AfterTherapy() {
         {/* Closing Reflection */}
         <div className="mt-20 max-w-4xl mx-auto text-center">
           <div className="bg-white/50 backdrop-blur-sm p-12 rounded-3xl shadow-soft">
-            <p className="text-xl text-charcoal-grey font-lato leading-relaxed italic">
+            <p className="text-xl text-charcoal-grey font-nunito leading-relaxed italic">
               "Healing isn't about becoming someone new. It's about returning to who you've 
               always been underneath the hurt, the doubt, and the overwhelm."
             </p>
-            <p className="text-sage-green font-playfair text-lg mt-4">
+            <p className="text-sage-green font-kinfolk text-lg mt-4">
               — Your journey continues, one gentle step at a time
             </p>
           </div>

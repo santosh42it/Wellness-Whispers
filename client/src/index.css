@@ -1,5 +1,6 @@
 /* Import fonts first */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lato:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap');
+@import url('https://fonts.cdnfonts.com/css/kinfolk');
 
 @tailwind base;
 @tailwind components;
@@ -70,11 +71,11 @@
 
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Kinfolk', serif;
   }
   
-  .font-cormorant {
-    font-family: 'Cormorant Garamond', serif;
+  p, span, div {
+    font-family: 'Nunito', sans-serif;
   }
   
   /* Authentic Crushed Paper Background Texture */
@@ -89,17 +90,25 @@
   /* Apply crushed paper background globally */
   body {
     @apply font-sans antialiased bg-background text-foreground crushed-paper-bg;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
   }
 }
 
 /* Typography Classes */
-.font-playfair {
-  font-family: 'Playfair Display', serif;
+.font-kinfolk {
+  font-family: 'Kinfolk', serif;
 }
 
-.font-lato {
-  font-family: 'Lato', sans-serif;
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-vibes {
+  font-family: 'Great Vibes', cursive;
 }
 
 /* Custom Wellness Whispers colors */
