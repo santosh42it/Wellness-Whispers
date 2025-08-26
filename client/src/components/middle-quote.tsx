@@ -2,13 +2,13 @@ import middleBgImage from "@assets/middle-bg.jpg";
 
 export default function MiddleQuote() {
   return (
-    <section className="relative w-full h-[60vh] min-h-[400px] overflow-hidden">
+    <section className="relative w-full h-screen overflow-hidden">
       {/* Full-width background image */}
       <div className="absolute inset-0">
         <img 
           src={middleBgImage}
           alt="Peaceful cloudy landscape with wildflowers"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
         {/* Enhanced overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/30"></div>
