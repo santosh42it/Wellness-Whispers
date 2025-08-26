@@ -140,52 +140,10 @@ export default function Hero() {
       {/* Desktop Layout */}
       <div className="hidden lg:flex w-full h-screen relative">
         
-        {/* Left Panel - Text Content */}
-        <div className="w-1/2 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige flex items-center justify-center p-8 xl:p-12 relative">
+        {/* Left Panel - Empty Space */}
+        <div className="w-1/2 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige relative">
           {/* Subtle background texture */}
           <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
-          
-          <div className="relative z-10 max-w-md xl:max-w-lg text-left w-full">
-            <h1 className="text-4xl xl:text-6xl font-kinfolk font-light text-dark-brown leading-tight mb-8">
-              {heroTitle}
-            </h1>
-            
-            <p className="text-xl xl:text-2xl text-dark-brown/90 font-nunito mb-4 font-medium">
-              {heroSubtitle}
-            </p>
-            
-            <p className="text-lg xl:text-xl text-dark-brown/70 font-nunito mb-10 leading-relaxed">
-              {heroDescription}
-            </p>
-            
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 mb-12 items-stretch sm:items-center">
-              <WhatsAppButton 
-                className="bg-sage hover:bg-sage/90 text-white px-10 py-5 rounded-full font-semibold shadow-xl transition-all duration-300 text-center flex items-center justify-center min-h-[60px] text-lg"
-              >
-                {heroButtonText}
-              </WhatsAppButton>
-              
-              <button className="bg-transparent border-2 border-sage text-sage hover:bg-sage hover:text-white px-10 py-5 rounded-full font-semibold transition-all duration-300 flex items-center justify-center min-h-[60px] text-lg">
-                Learn More
-              </button>
-            </div>
-            
-            {/* Healing Quotes */}
-            <div className="space-y-4">
-              <div className="text-center">
-                <p className="text-sage font-dancing text-xl xl:text-2xl leading-relaxed">
-                  "{heroQuote1}"
-                </p>
-              </div>
-              
-              <div className="text-center">
-                <p className="text-sage/80 font-dancing text-lg xl:text-xl">
-                  "{heroQuote2}"
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
         
         {/* Right Panel - Background Image */}
@@ -227,64 +185,17 @@ export default function Hero() {
             className="w-full h-full object-cover"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
+
         </div>
 
-        {/* Mobile Content */}
-        <div className="relative z-10 flex flex-col min-h-screen">
-          {/* Top Section with Center Image */}
-          <div className="flex-1 flex items-center justify-center pt-20 pb-10">
-            <div className="text-center px-6">
-              <div className="mb-8">
-                <img 
-                  src={heroImage1}
-                  alt="Wellness professional portrait"
-                  className="w-48 h-60 sm:w-56 sm:h-72 object-cover shadow-2xl rounded-2xl mx-auto"
-                  loading="eager"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Section with Text Content */}
-          <div className="bg-gradient-to-t from-white via-white/95 to-white/80 backdrop-blur-sm px-6 py-12">
-            <div className="max-w-lg mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl font-kinfolk font-light text-dark-brown leading-tight mb-6">
-                {heroTitle}
-              </h1>
-              
-              <p className="text-lg sm:text-xl text-dark-brown/90 font-nunito mb-3 font-medium">
-                {heroSubtitle}
-              </p>
-              
-              <p className="text-base sm:text-lg text-dark-brown/70 font-nunito mb-8 leading-relaxed">
-                {heroDescription}
-              </p>
-              
-              {/* Mobile Action Buttons */}
-              <div className="flex flex-col gap-4 mb-8">
-                <WhatsAppButton 
-                  className="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full font-semibold shadow-lg transition-all duration-300 text-center flex items-center justify-center min-h-[50px] w-full"
-                >
-                  {heroButtonText}
-                </WhatsAppButton>
-                
-                <button className="bg-transparent border-2 border-sage text-sage hover:bg-sage hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center justify-center min-h-[50px] w-full">
-                  Learn More
-                </button>
-              </div>
-              
-              {/* Mobile Quotes */}
-              <div className="space-y-3">
-                <p className="text-sage font-dancing text-lg">
-                  "{heroQuote1}"
-                </p>
-                <p className="text-sage/80 font-dancing text-base">
-                  "{heroQuote2}"
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* Mobile Center Portrait Image */}
+        <div className="absolute inset-0 flex items-center justify-center z-10">
+          <img 
+            src={heroImage1}
+            alt="Wellness professional portrait"
+            className="w-48 h-60 sm:w-56 sm:h-72 object-cover shadow-2xl rounded-2xl"
+            loading="eager"
+          />
         </div>
       </div>
 
