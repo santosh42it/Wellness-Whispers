@@ -92,7 +92,7 @@ export default function Approach() {
         {/* Section Title */}
         <div className="text-center mb-16">
           <div className="inline-block">
-            <h2 className="text-4xl lg:text-5xl font-kinfolk font-bold text-dark-brown mb-6 relative">
+            <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-dark-brown mb-6 relative">
               {approachTitle}
               {/* Decorative underline */}
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-sage via-peach to-sage rounded-full"></div>

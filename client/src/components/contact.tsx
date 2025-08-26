@@ -8,7 +8,7 @@ export default function Contact() {
           
           {/* Opening Message */}
           <div className="mb-16">
-            <h2 className="text-4xl lg:text-5xl font-kinfolk font-bold text-earthy-brown mb-8 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown mb-8 leading-tight">
               Healing begins in quiet moments, 
               <span className="block text-dark-brown">one breath, one step at a time.</span>
             </h2>
@@ -56,7 +56,7 @@ export default function Contact() {
             {/* Contact Information */}
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
-                <h3 className="text-2xl font-kinfolk font-bold text-earthy-brown mb-4">
+                <h3 className="text-2xl font-kinfolk font-light text-earthy-brown mb-4">
                   How We Connect
                 </h3>
                 <div className="space-y-4 text-dark-brown font-nunito">
@@ -76,7 +76,7 @@ export default function Contact() {
               </div>
 
               <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
-                <h3 className="text-2xl font-kinfolk font-bold text-earthy-brown mb-4">
+                <h3 className="text-2xl font-kinfolk font-light text-earthy-brown mb-4">
                   What to Expect
                 </h3>
                 <div className="space-y-4 text-dark-brown font-nunito">

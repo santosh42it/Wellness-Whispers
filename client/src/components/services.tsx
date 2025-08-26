@@ -121,7 +121,7 @@ export default function Services() {
         
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-kinfolk font-bold text-dark-brown mb-6">
+          <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-dark-brown mb-6">
             {servicesTitle}
           </h2>
           <p className="text-xl text-dark-brown font-medium max-w-3xl mx-auto">
@@ -174,7 +174,7 @@ export default function Services() {
           <div className="relative max-w-6xl mx-auto px-4">
             {/* Section Title */}
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-kinfolk font-bold text-dark-brown mb-6">
+              <h2 className="text-4xl md:text-5xl font-kinfolk font-light text-dark-brown mb-6">
                 Therapy in Everyday Moments
               </h2>
               <div className="w-24 h-1 bg-peach mx-auto rounded-full"></div>

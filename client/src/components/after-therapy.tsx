@@ -44,7 +44,7 @@ export default function AfterTherapy() {
         
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-kinfolk font-bold text-earthy-brown mb-6">
+          <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown mb-6">
             After Therapy
           </h2>
           <p className="text-xl text-sage-green font-medium max-w-4xl mx-auto leading-relaxed">
