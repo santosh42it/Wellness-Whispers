@@ -74,6 +74,12 @@
     font-family: 'Kinfolk', serif;
   }
   
+  /* Make Kinfolk font always uppercase for better readability */
+  .font-kinfolk {
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+  
   p, span, div {
     font-family: 'Nunito', sans-serif;
   }
