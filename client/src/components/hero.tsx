@@ -1,7 +1,7 @@
 import WhatsAppButton from "./whatsapp-button";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
-import heroMiddleImage from "@assets/hero-middle.webp";
+import heroMiddleImage from "@assets/hero-middle.png";
 import heroBgImage from "@assets/hero-bg.jpg";
 
 // Helper function to get content from content blocks
