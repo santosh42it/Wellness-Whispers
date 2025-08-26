@@ -93,7 +93,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        kinfolk: ['Kinfolk', 'Playfair Display', 'serif'],
+        kinfolk: ['Cormorant Garamond', 'serif'],
         nunito: ['Nunito', 'sans-serif'],
         dancing: ['Dancing Script', 'cursive'],
         'great-vibes': ['Great Vibes', 'cursive'],

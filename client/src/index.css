@@ -69,7 +69,9 @@
 
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Kinfolk', 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    letter-spacing: 0.025em;
   }
   
   /* Make Kinfolk font always uppercase for better readability */
