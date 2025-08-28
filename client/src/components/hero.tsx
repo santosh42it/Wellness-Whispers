@@ -186,7 +186,7 @@ export default function Hero() {
       </div>
 
       {/* Mobile Layout */}
-      <div className="lg:hidden w-full min-h-screen relative">
+      <div className="lg:hidden w-full min-h-screen relative flex flex-col">
         {/* Mobile Background */}
         <div className="absolute inset-0">
           <img 
@@ -195,27 +195,32 @@ export default function Hero() {
             className="w-full h-full object-cover"
             loading="eager"
           />
-
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
         </div>
 
-        {/* Mobile Center Portrait Image */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          <img 
-            src={heroImage1}
-            alt="Wellness professional portrait"
-            className="w-48 h-60 sm:w-56 sm:h-72 object-cover shadow-2xl rounded-2xl"
-            loading="eager"
-          />
-        </div>
+        {/* Mobile Content Container */}
+        <div className="relative z-20 flex flex-col items-center justify-center flex-1 px-6 py-16 space-y-8">
+          
+          {/* Welcome Text - Top */}
+          <div className="text-center">
+            <h1 className="font-kinfolk text-3xl sm:text-4xl text-white mb-4 leading-tight drop-shadow-lg font-extralight">
+              WELCOME TO YOUR SAFE SPACE
+            </h1>
+            <p className="font-nunito text-lg sm:text-xl text-white/90 leading-relaxed drop-shadow-md max-w-md">
+              You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
+            </p>
+          </div>
 
-        {/* Welcome Text Overlay - Mobile */}
-        <div className="absolute bottom-32 left-6 right-6 z-20 text-center">
-          <h1 className="font-kinfolk text-2xl sm:text-3xl text-white mb-4 leading-tight drop-shadow-lg font-extralight">
-            WELCOME TO YOUR SAFE SPACE
-          </h1>
-          <p className="font-nunito text-base sm:text-lg text-white/90 leading-relaxed drop-shadow-md">
-            You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
-          </p>
+          {/* Mobile Center Portrait Image */}
+          <div className="flex-shrink-0">
+            <img 
+              src={heroImage1}
+              alt="Wellness professional portrait"
+              className="w-56 h-72 sm:w-64 sm:h-80 object-cover shadow-2xl rounded-2xl"
+              loading="eager"
+            />
+          </div>
+
         </div>
       </div>
 
