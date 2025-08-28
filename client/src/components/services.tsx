@@ -159,9 +159,9 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Therapy in Everyday Moments - Redesigned Section */}
+        {/* Therapy in Everyday Moments - HIDDEN FOR NOW */}
+        {/* 
         <div className="mt-32 relative pt-20 pb-8">
-          {/* Extended Background Image for Full Width */}
           <div className="absolute inset-0 -mx-20">
             <img 
               src={middleBgImage}
@@ -172,7 +172,6 @@ export default function Services() {
           </div>
           
           <div className="relative max-w-6xl mx-auto px-4">
-            {/* Section Title */}
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-kinfolk font-light text-dark-brown mb-6">
                 Therapy in Everyday Moments
@@ -180,9 +179,7 @@ export default function Services() {
               <div className="w-24 h-1 bg-peach mx-auto rounded-full"></div>
             </div>
             
-            {/* Inspirational Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
-              {/* First Quote Card */}
               <div className="group">
                 <div className="relative overflow-hidden shadow-2xl transform transition-all duration-300">
                   <img 
@@ -193,7 +190,6 @@ export default function Services() {
                 </div>
               </div>
 
-              {/* Second Quote Card */}
               <div className="group">
                 <div className="relative overflow-hidden shadow-2xl transform transition-all duration-300">
                   <img 
@@ -205,7 +201,6 @@ export default function Services() {
               </div>
             </div>
 
-            {/* Centered Message */}
             <div className="text-center">
               <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-xl max-w-4xl mx-auto border border-peach/20">
                 <p className="text-dark-brown font-nunito text-xl leading-relaxed font-medium">
@@ -216,6 +211,7 @@ export default function Services() {
             </div>
           </div>
         </div>
+        */}
       </div>
 
       {/* Subtle nature texture overlay */}
