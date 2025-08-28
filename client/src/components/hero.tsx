@@ -136,15 +136,15 @@ export default function Hero() {
   const heroQuote2 = getContentValue(safeContentBlocks, "hero_quote_2", "You are not too much");
 
   return (
-    <section className="h-screen flex items-center relative overflow-hidden">
+    <section className="min-h-screen flex items-center relative overflow-hidden">
       {/* Desktop Layout */}
-      <div className="hidden lg:flex w-full h-full relative">
+      <div className="hidden lg:flex w-full h-screen relative">
         
         {/* Left Panel - Text Area (40%) */}
-        <div className="w-2/5 relative h-full flex items-center justify-center">
+        <div className="w-2/5 relative flex items-center justify-center">
           
           {/* Hero Text Content */}
-          <div className="relative z-20 text-center px-8 xl:px-16 py-20">
+          <div className="relative z-20 text-center px-8 xl:px-16">
             <h1 className="text-4xl xl:text-6xl font-kinfolk font-extralight text-earthy-brown mb-6 leading-tight animate-fade-in-up">
               WELCOME TO YOUR SAFE SPACE
             </h1>
@@ -155,7 +155,7 @@ export default function Hero() {
         </div>
         
         {/* Right Panel - Background Image (60%) */}
-        <div className="w-3/5 relative h-full">
+        <div className="w-3/5 relative">
           <div className="absolute inset-0">
             <img 
               src={heroImage2}
@@ -168,8 +168,8 @@ export default function Hero() {
         </div>
         
         {/* Center Portrait Image - Desktop Only */}
-        <div className="absolute inset-0 h-full flex items-center justify-center z-30 pointer-events-none">
-          <div className="flex items-center justify-center h-full">
+        <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="relative">
               <img 
                 src={heroImage1}
@@ -186,7 +186,7 @@ export default function Hero() {
       </div>
 
       {/* Mobile Layout */}
-      <div className="lg:hidden w-full h-screen relative flex flex-col">
+      <div className="lg:hidden w-full min-h-screen relative flex flex-col">
         {/* Mobile Background */}
         <div className="absolute inset-0">
           <img 
@@ -199,7 +199,7 @@ export default function Hero() {
         </div>
 
         {/* Mobile Content Container */}
-        <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 space-y-8">
+        <div className="relative z-20 flex flex-col items-center justify-center flex-1 px-6 py-16 space-y-8">
           
           {/* Welcome Text - Top */}
           <div className="text-center">
