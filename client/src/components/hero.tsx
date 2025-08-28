@@ -160,11 +160,11 @@ export default function Hero() {
           
           {/* Hero Text Content */}
           <div className="relative z-20 text-center px-8 xl:px-16">
-            <h1 className="text-4xl xl:text-6xl font-cormorant font-light text-earthy-brown mb-6 leading-tight">
-              {heroTitle}
+            <h1 className="text-4xl xl:text-6xl font-cormorant font-light text-earthy-brown mb-6 leading-tight animate-fade-in-up">
+              Welcome to your safe space.
             </h1>
-            <p className="text-xl xl:text-2xl text-earthy-brown/80 font-nunito max-w-2xl mx-auto leading-relaxed">
-              {heroSubtitle}
+            <p className="text-xl xl:text-2xl text-earthy-brown/80 font-nunito max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300">
+              You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
             </p>
           </div>
         </div>
@@ -186,10 +186,10 @@ export default function Hero() {
 
         {/* Welcome Text Overlay - Desktop */}
         <div className="absolute top-24 left-12 z-40 max-w-lg">
-          <h1 className="font-kinfolk text-4xl xl:text-5xl text-dark-brown mb-6 leading-tight">
+          <h1 className="font-cormorant text-4xl xl:text-5xl text-earthy-brown mb-6 leading-tight font-light animate-fade-in-up">
             Welcome to your safe space.
           </h1>
-          <p className="font-nunito text-lg xl:text-xl text-warm-gray leading-relaxed">
+          <p className="font-nunito text-lg xl:text-xl text-earthy-brown/80 leading-relaxed animate-fade-in-up animation-delay-300">
             You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
           </p>
         </div>
