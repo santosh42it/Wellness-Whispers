@@ -141,9 +141,7 @@ export default function Hero() {
       <div className="hidden lg:flex w-full h-screen relative">
         
         {/* Left Panel - Text Area (40%) */}
-        <div className="w-2/5 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige relative flex items-center justify-center">
-          {/* Subtle background texture */}
-          <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
+        <div className="w-2/5 relative flex items-center justify-center">
           
           {/* Hero Text Content */}
           <div className="relative z-20 text-center px-8 xl:px-16">
