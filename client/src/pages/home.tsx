@@ -16,9 +16,13 @@ export default function Home() {
       <main className="relative z-10">
         <Hero />
         
-        {/* Breathing space section */}
-        <section className="py-8 lg:py-12 bg-gradient-to-b from-cream/30 to-warm-misty-beige/20 relative">
-          <div className="absolute inset-0 opacity-10 bg-gradient-to-b from-transparent via-peach/5 to-sage/5"></div>
+        {/* Gentle transition with meaningful content */}
+        <section className="py-12 bg-gradient-to-b from-cream/20 to-transparent relative">
+          <div className="container mx-auto px-6 text-center">
+            <p className="text-lg font-nunito text-earthy-brown/80 max-w-2xl mx-auto leading-relaxed">
+              Sometimes the hardest step is reaching out. You're already here — that takes courage.
+            </p>
+          </div>
         </section>
         
         <MiddleQuote />

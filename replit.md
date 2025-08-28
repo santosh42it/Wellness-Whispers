@@ -30,7 +30,7 @@ The site features a warm, calming design with a therapy-focused color palette (p
 - **✅ Nature Healing Section**: Added new full-size image section after Services using middle-bg2.jpg with healing quote about stillness
 - **✅ Therapy Section Hidden**: Temporarily hidden "Therapy in Everyday Moments" section while preserving code in comments
 - **✅ Hero Layout Updates**: Completed 40%-60% split with text on left, background on right, centered portrait image, capitalized title, removed duplicates and CTA button
-- **✅ Breathing Space Added**: Added elegant spacing section between hero and other content sections for better visual flow
+- **✅ Transition Content Added**: Replaced empty breathing space with meaningful transitional message between hero and full image section for better flow
 
 # User Preferences
 
