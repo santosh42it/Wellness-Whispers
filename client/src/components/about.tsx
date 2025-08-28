@@ -16,22 +16,22 @@ export default function About() {
             
             {/* Left Side - Photo with Overlapping Background */}
             <div className="relative">
-              {/* Overlapping Background Image */}
-              <div className="absolute -top-8 -left-8 w-96 h-80 z-0">
+              {/* Overlapping Background Image - 20% overlap top left */}
+              <div className="absolute -top-20 -left-20 w-96 h-96 z-0">
                 <img 
                   src={pavanBg}
                   alt="Peaceful floral background"
-                  className="w-full h-full object-cover rounded-3xl opacity-60"
+                  className="w-full h-full object-cover opacity-70"
                   loading="eager"
                 />
               </div>
               
               {/* Main Portrait Photo */}
-              <div className="w-80 h-96 relative mx-auto lg:ml-0 z-10">
+              <div className="w-96 h-96 relative mx-auto lg:ml-0 z-10">
                 <img 
                   src={pavanPhoto}
                   alt="Mrs. Pavan Chowdhary - Licensed Therapist"
-                  className="w-full h-full object-cover rounded-3xl shadow-2xl relative z-10"
+                  className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="eager"
                 />
               </div>
