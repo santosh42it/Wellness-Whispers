@@ -25,8 +25,8 @@ export default function Footer() {
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Footer Content Card */}
-        <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20">
+        {/* Main Footer Content */}
+        <div className="p-8 md:p-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
@@ -36,7 +36,7 @@ export default function Footer() {
                   className="h-12 w-auto"
                 />
               </div>
-              <p className="text-earthy-brown mb-6 max-w-md leading-relaxed font-nunito text-lg">
+              <p className="text-white mb-6 max-w-md leading-relaxed font-nunito text-lg drop-shadow-lg">
                 A safe space for emotional healing and personal growth. Professional online therapy 
                 that meets you wherever you are in your journey.
               </p>
@@ -44,12 +44,12 @@ export default function Footer() {
             </div>
             
             <div>
-              <h3 className="text-xl font-cormorant font-light mb-6 text-earthy-brown">Quick Links</h3>
+              <h3 className="text-xl font-cormorant font-light mb-6 text-white drop-shadow-lg">Quick Links</h3>
               <ul className="space-y-4 font-nunito">
                 <li>
                   <button
                     onClick={() => scrollToSection("about")}
-                    className="text-earthy-brown/80 hover:text-peach transition-colors font-medium"
+                    className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
                   >
                     Meet Me
                   </button>
@@ -57,7 +57,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection("services")}
-                    className="text-earthy-brown/80 hover:text-peach transition-colors font-medium"
+                    className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
                   >
                     Services
                   </button>
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection("approach")}
-                    className="text-earthy-brown/80 hover:text-peach transition-colors font-medium"
+                    className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
                   >
                     Approach
                   </button>
@@ -73,7 +73,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection("pricing")}
-                    className="text-earthy-brown/80 hover:text-peach transition-colors font-medium"
+                    className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
                   >
                     Pricing
                   </button>
@@ -81,7 +81,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection("testimonials")}
-                    className="text-earthy-brown/80 hover:text-peach transition-colors font-medium"
+                    className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
                   >
                     Stories
                   </button>
@@ -90,34 +90,34 @@ export default function Footer() {
             </div>
             
             <div>
-              <h3 className="text-xl font-cormorant font-light mb-6 text-earthy-brown">Connect</h3>
+              <h3 className="text-xl font-cormorant font-light mb-6 text-white drop-shadow-lg">Connect</h3>
               <div className="space-y-4 font-nunito">
                 <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-peach" />
-                  <span className="text-earthy-brown font-medium">+91 98806 07355</span>
+                  <Phone className="h-5 w-5 text-peach drop-shadow-sm" />
+                  <span className="text-white font-medium drop-shadow-sm">+91 98806 07355</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-peach" />
-                  <span className="text-earthy-brown font-medium">WhatsApp & Google Meet</span>
+                  <Mail className="h-5 w-5 text-peach drop-shadow-sm" />
+                  <span className="text-white font-medium drop-shadow-sm">WhatsApp & Google Meet</span>
                 </div>
-                <p className="text-earthy-brown/70 text-sm mt-4 font-medium">
+                <p className="text-white/80 text-sm mt-4 font-medium drop-shadow-sm">
                   Flexible timing • Gentle support • Professional care
                 </p>
               </div>
             </div>
           </div>
           
-          <div className="border-t border-peach/20 mt-12 pt-8">
+          <div className="border-t border-white/30 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-earthy-brown/60 text-sm font-nunito">
+              <p className="text-white/70 text-sm font-nunito drop-shadow-sm">
                 © 2025 Wellness Whispers. All rights reserved.
               </p>
-              <p className="text-earthy-brown/60 text-sm mt-4 md:mt-0 font-nunito">
+              <p className="text-white/70 text-sm mt-4 md:mt-0 font-nunito drop-shadow-sm">
                 Mrs. Pavan Chowdhary • Licensed Therapist • Online Sessions
               </p>
             </div>
             <div className="text-center mt-6">
-              <p className="text-earthy-brown/70 text-sm font-cormorant italic text-lg">
+              <p className="text-white/80 text-sm font-cormorant italic text-lg drop-shadow-lg">
                 "From wounds to wisdom — healing begins in quiet moments."
               </p>
             </div>
