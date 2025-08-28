@@ -195,7 +195,7 @@ export default function Hero() {
             className="w-full h-full object-cover"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-white/5 to-transparent"></div>
         </div>
 
         {/* Mobile Content Container */}
@@ -203,10 +203,10 @@ export default function Hero() {
           
           {/* Welcome Text - Top */}
           <div className="text-center">
-            <h1 className="font-kinfolk text-3xl sm:text-4xl text-white mb-4 leading-tight drop-shadow-lg font-extralight">
+            <h1 className="font-kinfolk text-3xl sm:text-4xl text-earthy-brown mb-4 leading-tight font-extralight">
               WELCOME TO YOUR SAFE SPACE
             </h1>
-            <p className="font-nunito text-lg sm:text-xl text-white/90 leading-relaxed drop-shadow-md max-w-md">
+            <p className="font-nunito text-lg sm:text-xl text-earthy-brown/80 leading-relaxed max-w-md">
               You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
             </p>
           </div>
