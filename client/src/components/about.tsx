@@ -87,34 +87,39 @@ export default function About() {
       </div>
 
       {/* Section 3: Hot Air Balloon */}
-      <div className="min-h-screen relative flex items-center">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img 
-            src={balloonImg}
-            alt="Hot air balloon at sunset"
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/30"></div>
-        </div>
+      <div className="min-h-screen relative flex items-center py-20">
+        {/* Content Container */}
+        <div className="relative z-20 container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+            
+            {/* Left Side - Square Balloon Image */}
+            <div className="relative flex justify-center lg:justify-start">
+              <div className="w-96 h-96">
+                <img 
+                  src={balloonImg}
+                  alt="Hot air balloon at sunset"
+                  className="w-full h-full object-cover shadow-2xl"
+                  loading="lazy"
+                />
+              </div>
+            </div>
 
-        {/* Content */}
-        <div className="relative z-20 container mx-auto px-6 py-20">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-kinfolk font-extralight text-white leading-tight uppercase">
-              GENTLE RISING
-            </h2>
-            <p className="text-2xl lg:text-3xl font-kinfolk font-extralight text-white/90 italic leading-relaxed">
-              "Like a hot air balloon, healing rises gently — not with force, but with lightness."
-            </p>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-xl font-nunito text-white/90 leading-relaxed">
-                I believe therapy should feel like a safe shoreline, a quiet space for emotions to rest without pressure. Every balloon has a quiet lift-off — so did I, by finding lightness in my own journey. Over the years, I've learned that healing comes when we pause, breathe, and allow space.
+            {/* Right Side - Text Content */}
+            <div className="space-y-8">
+              <h2 className="text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+                GENTLE RISING
+              </h2>
+              <p className="text-2xl lg:text-3xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">
+                "Like a hot air balloon, healing rises gently — not with force, but with lightness."
               </p>
-              <p className="text-xl font-nunito text-white/90 leading-relaxed mt-6">
-                This space is not about rushing — it's about gently lifting, and seeing life from a calmer height. My focus has always been on helping hearts, not counting currency. Sessions are simple, accessible, and deeply personal.
-              </p>
+              <div className="space-y-6">
+                <p className="text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  I believe therapy should feel like a safe shoreline, a quiet space for emotions to rest without pressure. Every balloon has a quiet lift-off — so did I, by finding lightness in my own journey. Over the years, I've learned that healing comes when we pause, breathe, and allow space.
+                </p>
+                <p className="text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  This space is not about rushing — it's about gently lifting, and seeing life from a calmer height. My focus has always been on helping hearts, not counting currency. Sessions are simple, accessible, and deeply personal.
+                </p>
+              </div>
             </div>
           </div>
         </div>
