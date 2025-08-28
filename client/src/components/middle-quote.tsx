@@ -16,12 +16,9 @@ export default function MiddleQuote() {
         {/* Quote text with improved readability */}
         <div className="absolute inset-0 flex items-center justify-center px-4">
           <div className="max-w-4xl mx-auto text-center">
-            {/* Text container with subtle background */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/20">
-              <blockquote className="text-white text-2xl md:text-4xl lg:text-5xl font-vibes font-medium leading-relaxed drop-shadow-2xl">
-                "Like clouds drifting across the sky, feelings don't stay fixed. They move, change, and slowly make room for new ones."
-              </blockquote>
-            </div>
+            <blockquote className="text-white text-2xl md:text-4xl lg:text-5xl font-vibes font-medium leading-relaxed drop-shadow-2xl">
+              "Like clouds drifting across the sky, feelings don't stay fixed. They move, change, and slowly make room for new ones."
+            </blockquote>
           </div>
         </div>
       </div>
