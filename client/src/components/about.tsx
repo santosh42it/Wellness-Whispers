@@ -9,29 +9,29 @@ export default function About() {
     <section id="about" className="relative">
       
       {/* Section 1: Therapist Introduction */}
-      <div className="min-h-screen relative flex items-center">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img 
-            src={pavanBg}
-            alt="Peaceful floral background"
-            className="w-full h-full object-cover"
-            loading="eager"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/30 via-white/10 to-transparent"></div>
-        </div>
-
+      <div className="min-h-screen relative flex items-center py-20">
         {/* Content Container */}
-        <div className="relative z-20 container mx-auto px-6 py-20">
+        <div className="relative z-20 container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
             
-            {/* Left Side - Photo */}
+            {/* Left Side - Photo with Overlapping Background */}
             <div className="relative">
-              <div className="w-80 h-96 relative mx-auto lg:ml-0">
+              {/* Overlapping Background Image */}
+              <div className="absolute -top-8 -left-8 w-96 h-80 z-0">
+                <img 
+                  src={pavanBg}
+                  alt="Peaceful floral background"
+                  className="w-full h-full object-cover rounded-3xl opacity-60"
+                  loading="eager"
+                />
+              </div>
+              
+              {/* Main Portrait Photo */}
+              <div className="w-80 h-96 relative mx-auto lg:ml-0 z-10">
                 <img 
                   src={pavanPhoto}
                   alt="Mrs. Pavan Chowdhary - Licensed Therapist"
-                  className="w-full h-full object-cover rounded-3xl shadow-2xl"
+                  className="w-full h-full object-cover rounded-3xl shadow-2xl relative z-10"
                   loading="eager"
                 />
               </div>
