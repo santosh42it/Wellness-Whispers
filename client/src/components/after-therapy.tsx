@@ -83,6 +83,58 @@ export default function AfterTherapy() {
             </p>
           </div>
         </div>
+
+        {/* Therapy in Everyday Moments */}
+        <div className="mt-32 relative pt-20 pb-8">
+          <div className="absolute inset-0 -mx-20">
+            <img 
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+              alt="Peaceful landscape with wildflowers"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-white/20"></div>
+          </div>
+          
+          <div className="relative max-w-6xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-kinfolk font-light text-dark-brown mb-6">
+                Therapy in Everyday Moments
+              </h2>
+              <div className="w-24 h-1 bg-peach mx-auto rounded-full"></div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
+              <div className="group">
+                <div className="relative overflow-hidden shadow-2xl transform transition-all duration-300">
+                  <img 
+                    src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80"
+                    alt="It's ok to reach out when you're ready - phone connection showing therapeutic support accessibility" 
+                    className="w-full h-72 object-cover"
+                  />
+                </div>
+              </div>
+
+              <div className="group">
+                <div className="relative overflow-hidden shadow-2xl transform transition-all duration-300">
+                  <img 
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80"
+                    alt="I looked anxious but chose to tap my heart - person on laptop with therapeutic support" 
+                    className="w-full h-72 object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-xl max-w-4xl mx-auto border border-peach/20">
+                <p className="text-dark-brown font-nunito text-xl leading-relaxed font-medium">
+                  Healing doesn't require grand gestures. Sometimes it begins with a quiet moment, 
+                  a gentle conversation, or simply reaching out when you're ready.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Subtle nature texture overlay */}
