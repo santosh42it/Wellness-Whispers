@@ -8,10 +8,12 @@ import Pricing from "@/components/pricing";
 import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import FontDemo from "@/components/font-demo";
 
 export default function Home() {
   return (
     <div className="min-h-screen relative">
+      <FontDemo />
       <Header />
       <main className="relative z-10">
         <Hero />
