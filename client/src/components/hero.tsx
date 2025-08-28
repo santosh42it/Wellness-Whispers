@@ -136,7 +136,7 @@ export default function Hero() {
   const heroQuote2 = getContentValue(safeContentBlocks, "hero_quote_2", "You are not too much");
 
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden">
+    <section className="min-h-screen flex items-center relative overflow-hidden pt-16">
       {/* Desktop Layout */}
       <div className="hidden lg:flex w-full h-screen relative">
         
