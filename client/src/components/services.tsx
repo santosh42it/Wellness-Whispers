@@ -159,8 +159,7 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Therapy in Everyday Moments - HIDDEN FOR NOW */}
-        {/* 
+        {/* Therapy in Everyday Moments */}
         <div className="mt-32 relative pt-20 pb-8">
           <div className="absolute inset-0 -mx-20">
             <img 
@@ -211,7 +210,6 @@ export default function Services() {
             </div>
           </div>
         </div>
-        */}
       </div>
 
       {/* Subtle nature texture overlay */}
