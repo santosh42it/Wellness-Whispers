@@ -21,7 +21,7 @@ export default function Footer() {
           className="w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-earthy-brown/60 via-earthy-brown/70 to-earthy-brown/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/80 to-black/85"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +34,7 @@ export default function Footer() {
                 className="h-12 w-auto"
               />
             </div>
-            <p className="text-white/90 mb-6 max-w-md leading-relaxed font-lato">
+            <p className="text-white mb-6 max-w-md leading-relaxed font-lato drop-shadow-md">
               A safe space for emotional healing and personal growth. Professional online therapy 
               that meets you wherever you are in your journey.
             </p>
@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-playfair font-semibold mb-4 text-white">Quick Links</h3>
+            <h3 className="text-lg font-playfair font-semibold mb-4 text-white drop-shadow-lg">Quick Links</h3>
             <ul className="space-y-3 font-lato">
               <li>
                 <button
@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-playfair font-semibold mb-4 text-white">Connect</h3>
+            <h3 className="text-lg font-playfair font-semibold mb-4 text-white drop-shadow-lg">Connect</h3>
             <div className="space-y-3 font-lato">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-white/70" />
