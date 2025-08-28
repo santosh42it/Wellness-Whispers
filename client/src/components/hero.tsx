@@ -169,16 +169,14 @@ export default function Hero() {
         
         {/* Center Portrait Image - Desktop Only */}
         <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
-          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="relative">
-              <img 
-                src={heroImage1}
-                alt="Wellness professional portrait"
-                className="w-72 h-96 xl:w-80 xl:h-[28rem] object-cover shadow-2xl rounded-2xl"
-                loading="eager"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
-            </div>
+          <div className="relative">
+            <img 
+              src={heroImage1}
+              alt="Wellness professional portrait"
+              className="w-72 h-96 xl:w-80 xl:h-[28rem] object-cover shadow-2xl rounded-2xl"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
           </div>
         </div>
 
