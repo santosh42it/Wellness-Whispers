@@ -19,7 +19,7 @@ export default function Home() {
         {/* Gentle transition with meaningful content */}
         <section className="py-12 bg-gradient-to-b from-cream/20 to-transparent relative">
           <div className="container mx-auto px-6 text-center">
-            <p className="text-lg font-nunito text-earthy-brown/80 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl font-light text-earthy-brown/90 max-w-2xl mx-auto leading-relaxed tracking-wide">
               Sometimes the hardest step is reaching out. You're already here — that takes courage.
             </p>
           </div>
