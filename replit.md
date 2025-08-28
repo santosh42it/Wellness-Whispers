@@ -26,6 +26,9 @@ The site features a warm, calming design with a therapy-focused color palette (p
 - **✅ Production Ready**: Complete deployment pipeline working with admin login functionality
 - **✅ Supabase Integration**: Database connection ready with fallback authentication system
 - **✅ Build Fix August 2025**: Fixed critical Netlify deployment failure by updating CSS background image reference to use existing assets
+- **✅ Footer Background Update**: Added footer-bg.jpg golden grass field background with card-based footer design for optimal text visibility
+- **✅ Nature Healing Section**: Added new full-size image section after Services using middle-bg2.jpg with healing quote about stillness
+- **✅ Therapy Section Hidden**: Temporarily hidden "Therapy in Everyday Moments" section while preserving code in comments
 
 # User Preferences
 
