@@ -67,12 +67,12 @@ export default function Header() {
             >
               Home
             </button>
-            <Link 
-              href="/about"
+            <button
+              onClick={goToHome}
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Meet Me
-            </Link>
+            </button>
             <button
               onClick={() => scrollToSection("services")}
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
@@ -127,13 +127,12 @@ export default function Header() {
               >
                 Home
               </button>
-              <Link
-                href="/about"
+              <button
+                onClick={goToHome}
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Meet Me
-              </Link>
+              </button>
               <button
                 onClick={() => scrollToSection("services")}
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
