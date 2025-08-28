@@ -27,7 +27,7 @@ export default function About() {
   const philosophyTitle = getContentValue(safeContentBlocks, "about_philosophy_title", "Philosophy & Values");
   const philosophyText = getContentValue(safeContentBlocks, "about_philosophy_text", "At Wellness Whispers, therapy is offered as a form of service, with a focus on making emotional healing accessible and deeply personal. Guided by empathy, trust, and a genuine commitment to care, the aim is to create a safe, non-judgmental space where emotional well-being can flourish.");
   return (
-    <section id="about" className="py-20 relative">
+    <section id="about" className="py-16 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           

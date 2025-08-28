@@ -17,8 +17,8 @@ export default function Home() {
         <Hero />
         
         {/* Breathing space section */}
-        <section className="py-16 lg:py-24 bg-gradient-to-b from-cream/50 to-warm-misty-beige/30 relative">
-          <div className="absolute inset-0 opacity-20 bg-gradient-to-b from-transparent via-peach/5 to-sage/5"></div>
+        <section className="py-8 lg:py-12 bg-gradient-to-b from-cream/30 to-warm-misty-beige/20 relative">
+          <div className="absolute inset-0 opacity-10 bg-gradient-to-b from-transparent via-peach/5 to-sage/5"></div>
         </section>
         
         <MiddleQuote />

@@ -18,7 +18,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-20 relative">
+    <section id="testimonials" className="py-16 relative">
       <div className="container mx-auto px-6">
         
         {/* Section Title */}

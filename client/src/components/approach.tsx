@@ -83,7 +83,7 @@ export default function Approach() {
   ];
 
   return (
-    <section id="approach" className="py-20 relative bg-gradient-to-br from-sage/5 via-soft-beige/30 to-peach/10">
+    <section id="approach" className="py-16 relative bg-gradient-to-br from-sage/5 via-soft-beige/30 to-peach/10">
       {/* Decorative section divider */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-sage/30 to-transparent"></div>
       

@@ -113,7 +113,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 relative bg-gradient-to-br from-soft-beige/30 via-peach/20 to-sage/15">
+    <section id="services" className="py-16 relative bg-gradient-to-br from-soft-beige/30 via-peach/20 to-sage/15">
       {/* Visual separator from hero section */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sage/20 to-transparent"></div>
       
