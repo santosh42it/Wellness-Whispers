@@ -92,15 +92,21 @@ export default function About() {
         <div className="relative z-20 container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
             
-            {/* Left Side - Square Balloon Image */}
+            {/* Left Side - Large Balloon Image (Half Screen) */}
             <div className="relative flex justify-center lg:justify-start">
-              <div className="w-96 h-96">
+              <div className="w-full max-w-2xl h-[50vh] lg:h-[60vh]">
                 <img 
                   src={balloonImg}
                   alt="Hot air balloon at sunset"
-                  className="w-full h-full object-cover shadow-2xl"
+                  className="w-full h-full object-cover shadow-2xl rounded-lg"
                   loading="lazy"
                 />
+                {/* Quote below the image */}
+                <div className="mt-6 text-center">
+                  <p className="text-xl lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">
+                    "Like a hot air balloon, healing rises gently — not with force, but with lightness."
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -109,9 +115,6 @@ export default function About() {
               <h2 className="text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 GENTLE RISING
               </h2>
-              <p className="text-2xl lg:text-3xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">
-                "Like a hot air balloon, healing rises gently — not with force, but with lightness."
-              </p>
               <div className="space-y-6">
                 <p className="text-xl font-nunito text-earthy-brown/90 leading-relaxed">
                   I believe therapy should feel like a safe shoreline, a quiet space for emotions to rest without pressure. Every balloon has a quiet lift-off — so did I, by finding lightness in my own journey. Over the years, I've learned that healing comes when we pause, breathe, and allow space.
