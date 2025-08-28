@@ -140,21 +140,8 @@ export default function Hero() {
       {/* Desktop Layout */}
       <div className="hidden lg:flex w-full h-screen relative">
         
-        {/* Left Panel - Background Image (40%) */}
-        <div className="w-2/5 relative">
-          <div className="absolute inset-0">
-            <img 
-              src={heroImage2}
-              alt="Peaceful therapy environment"
-              className="w-full h-full object-cover"
-              loading="eager"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-white/40"></div>
-          </div>
-        </div>
-        
-        {/* Right Panel - Text Area (60%) */}
-        <div className="w-3/5 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige relative flex items-center justify-center">
+        {/* Left Panel - Text Area (40%) */}
+        <div className="w-2/5 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige relative flex items-center justify-center">
           {/* Subtle background texture */}
           <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
           
@@ -166,6 +153,19 @@ export default function Hero() {
             <p className="text-xl xl:text-2xl text-earthy-brown/80 font-nunito max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300">
               You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
             </p>
+          </div>
+        </div>
+        
+        {/* Right Panel - Background Image (60%) */}
+        <div className="w-3/5 relative">
+          <div className="absolute inset-0">
+            <img 
+              src={heroImage2}
+              alt="Peaceful therapy environment"
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/20 to-white/40"></div>
           </div>
         </div>
         
