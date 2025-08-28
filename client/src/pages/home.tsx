@@ -2,7 +2,6 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import MiddleQuote from "@/components/middle-quote";
 import Services from "@/components/services";
-import ServiceGallery from "@/components/service-gallery";
 import NatureHealing from "@/components/nature-healing";
 import Approach from "@/components/approach";
 import Pricing from "@/components/pricing";
@@ -28,7 +27,6 @@ export default function Home() {
         
         <MiddleQuote />
         <Services />
-        <ServiceGallery />
         <NatureHealing />
         <Approach />
         <Pricing />
