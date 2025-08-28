@@ -163,16 +163,15 @@ export default function Hero() {
             <h1 className="text-4xl xl:text-6xl font-cormorant font-light text-earthy-brown mb-6 leading-tight">
               {heroTitle}
             </h1>
-            <p className="text-xl xl:text-2xl text-earthy-brown/80 font-nunito mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl xl:text-2xl text-earthy-brown/80 font-nunito max-w-2xl mx-auto leading-relaxed">
               {heroSubtitle}
             </p>
-            <WhatsAppButton className="bg-sage-green hover:bg-olive-green text-white px-8 py-4 rounded-xl text-lg font-nunito transition-all duration-300 shadow-warm hover:shadow-strong border-2 border-sage-green hover:border-olive-green" />
           </div>
         </div>
         
         {/* Center Portrait Image - Desktop Only */}
-        <div className="absolute inset-0 flex items-center z-30 pointer-events-none">
-          <div className="absolute left-2/5 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="relative">
               <img 
                 src={heroImage1}
