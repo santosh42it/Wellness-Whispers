@@ -1,6 +1,7 @@
 import { Heart, Mail, Phone } from "lucide-react";
 import WhatsAppButton from "./whatsapp-button";
 import logoFooterPath from "@assets/logo-footer.png";
+import footerBgImage from "@assets/footer-bg.jpg";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -11,8 +12,19 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-earthy-brown text-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="relative text-white py-16 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={footerBgImage}
+          alt="Golden grass field footer background"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-earthy-brown/80 via-earthy-brown/85 to-earthy-brown/90"></div>
+      </div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
