@@ -21,7 +21,7 @@ export default function Footer() {
           className="w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-earthy-brown/80 via-earthy-brown/85 to-earthy-brown/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-earthy-brown/60 via-earthy-brown/70 to-earthy-brown/75"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
