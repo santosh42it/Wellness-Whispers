@@ -31,6 +31,8 @@ The site features a warm, calming design with a therapy-focused color palette (p
 - **✅ Therapy Section Hidden**: Temporarily hidden "Therapy in Everyday Moments" section while preserving code in comments
 - **✅ Hero Layout Updates**: Completed 40%-60% split with text on left, background on right, centered portrait image, capitalized title, removed duplicates and CTA button
 - **✅ Transition Content Added**: Replaced empty breathing space with meaningful transitional message between hero and full image section for better flow
+- **✅ Hero Font Finalized**: Updated hero section to use Cormorant Garamond (Extralight) with proper capitalization "WELCOME TO YOUR SAFE SPACE" (no full stop)
+- **✅ Background Cleanup**: Removed colored background from hero left panel to use natural body background texture
 
 # User Preferences
 
