@@ -1,0 +1,15 @@
+MEET ME section I want revamp completely and use the same font which we used for home page ( extra light fonts to make smoother) and capital for titles.   section 1: therapist photo added at attached_asset folder -> pavan.png and overlapping with background image with pavan-bg.jpg in the left side top corner.  use the following text: 
+"I’m Mrs. Pavan Chowdhary, a Gold Medalist in Public Administration with a Postgraduate Diploma in Guidance & Counselling, along with multiple certified diploma courses. My journey combines 45+ years of entrepreneurial leadership and mentoring people, including experience in conflict management, with 6+ years of focused emotional support. I continue to expand my training across therapeutic approaches, ensuring every session is flexible, empathetic, and grounded in real-life understanding — bringing not just skills, but lived wisdom, patience, and care."
+
+Section 2: Cliff + Ocean Background image added at attached_asset folder -> ocean-bg.jpg  
+Caption: "Even the highest cliffs stand calm against the waves — just like your heart can find steady strength."
+Text: "I offer online therapy especially suited for young adults, providing a safe space where emotions can be explored without judgment. Healing is not about fixing what is broken, but about listening deeply and finding a gentler way forward."
+
+Section 3: Hot Air Balloon (Square Format) image added at attached_asset folder -> - hotair-balloons.jpg
+Caption: "Like a hot air balloon, healing rises gently — not with force, but with lightness."
+Text: "I believe therapy should feel like a safe shoreline, a quiet space for emotions to rest without pressure. Every balloon has a quiet lift-off — so did I, by finding lightness in my own journey. Over the years, I’ve learned that healing comes when we pause, breathe, and allow space. This space is not about rushing — it’s about gently lifting, and seeing life from a calmer height. My focus has always been on helping hearts, not counting currency. Sessions are simple, reflective, and practical — with flexible timing and highly affordable consultation. Here, therapy is a space for safety, listening, and growth — nothing else matters. ✨ That is what I bring into my sessions with you."
+
+section 4: Sunset image image added at attached_asset folder -> - sunset.jpg
+ 
+Caption: "Not every day needs answers — sometimes the soft colors of nature hold you enough."
+Text: "Every session is designed to feel simple, safe, and welcoming, using gentle approaches like mindfulness, grounding, inner child healing, and reflective talk therapy. Therapy here is a safe pause for your heart, where emotions can rest and gradually transform into understanding, resilience, and inner strength. Healing is not about rushing — it’s about finding steady, quiet steps."
