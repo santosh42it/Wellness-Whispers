@@ -147,7 +147,7 @@ export default function Hero() {
           
           {/* Hero Text Content */}
           <div className="relative z-20 text-center px-8 xl:px-16">
-            <h1 className="text-4xl xl:text-6xl font-cormorant font-light text-earthy-brown mb-6 leading-tight animate-fade-in-up">
+            <h1 className="text-4xl xl:text-6xl font-kinfolk font-light text-earthy-brown mb-6 leading-tight animate-fade-in-up">
               WELCOME TO YOUR SAFE SPACE.
             </h1>
             <p className="text-xl xl:text-2xl text-earthy-brown/80 font-nunito max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300">
@@ -213,7 +213,7 @@ export default function Hero() {
         {/* Welcome Text Overlay - Mobile */}
         <div className="absolute bottom-32 left-6 right-6 z-20 text-center">
           <h1 className="font-kinfolk text-2xl sm:text-3xl text-white mb-4 leading-tight drop-shadow-lg">
-            Welcome to your safe space.
+            WELCOME TO YOUR SAFE SPACE.
           </h1>
           <p className="font-nunito text-base sm:text-lg text-white/90 leading-relaxed drop-shadow-md">
             You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
