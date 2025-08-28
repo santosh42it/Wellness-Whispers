@@ -184,15 +184,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Welcome Text Overlay - Desktop */}
-        <div className="absolute top-24 left-12 z-40 max-w-lg">
-          <h1 className="font-cormorant text-4xl xl:text-5xl text-earthy-brown mb-6 leading-tight font-light animate-fade-in-up">
-            Welcome to your safe space.
-          </h1>
-          <p className="font-nunito text-lg xl:text-xl text-earthy-brown/80 leading-relaxed animate-fade-in-up animation-delay-300">
-            You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
-          </p>
-        </div>
+
       </div>
 
       {/* Mobile Layout */}
