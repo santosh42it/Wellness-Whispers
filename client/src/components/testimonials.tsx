@@ -1,3 +1,5 @@
+import heroBgImage from "@assets/hero-bg.jpg";
+
 export default function Testimonials() {
   const testimonials = [
     {
@@ -19,7 +21,19 @@ export default function Testimonials() {
 
   return (
     <section id="testimonials" className="py-16 relative">
-      <div className="container mx-auto px-6">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroBgImage}
+          alt="Light textured background"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        {/* Overlay for proper text visibility */}
+        <div className="absolute inset-0 bg-gradient-to-br from-white/85 via-cream/75 to-soft-beige/80"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         
         {/* Section Title */}
         <div className="text-center mb-16">
