@@ -140,14 +140,8 @@ export default function Hero() {
       {/* Desktop Layout */}
       <div className="hidden lg:flex w-full h-screen relative">
         
-        {/* Left Panel - Empty Space */}
-        <div className="w-1/2 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige relative">
-          {/* Subtle background texture */}
-          <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
-        </div>
-        
-        {/* Right Panel - Background Image */}
-        <div className="w-1/2 relative">
+        {/* Left Panel - Background Image (40%) */}
+        <div className="w-2/5 relative">
           <div className="absolute inset-0">
             <img 
               src={heroImage2}
@@ -155,13 +149,30 @@ export default function Hero() {
               className="w-full h-full object-cover"
               loading="eager"
             />
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/20 to-white/40"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-white/40"></div>
+          </div>
+        </div>
+        
+        {/* Right Panel - Text Area (60%) */}
+        <div className="w-3/5 bg-gradient-to-br from-cream via-soft-beige to-warm-misty-beige relative flex items-center justify-center">
+          {/* Subtle background texture */}
+          <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-transparent via-peach/10 to-sage/5"></div>
+          
+          {/* Hero Text Content */}
+          <div className="relative z-20 text-center px-8 xl:px-16">
+            <h1 className="text-4xl xl:text-6xl font-cormorant font-light text-earthy-brown mb-6 leading-tight">
+              {heroTitle}
+            </h1>
+            <p className="text-xl xl:text-2xl text-earthy-brown/80 font-nunito mb-8 max-w-2xl mx-auto leading-relaxed">
+              {heroSubtitle}
+            </p>
+            <WhatsAppButton className="bg-sage-green hover:bg-olive-green text-white px-8 py-4 rounded-xl text-lg font-nunito transition-all duration-300 shadow-warm hover:shadow-strong border-2 border-sage-green hover:border-olive-green" />
           </div>
         </div>
         
         {/* Center Portrait Image - Desktop Only */}
-        <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
-          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute inset-0 flex items-center z-30 pointer-events-none">
+          <div className="absolute left-2/5 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="relative">
               <img 
                 src={heroImage1}
