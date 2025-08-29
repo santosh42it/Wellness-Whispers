@@ -145,7 +145,7 @@ export default function About() {
         {/* Content */}
         <div className="relative z-20 container mx-auto px-6 py-20">
           <div className="max-w-5xl mx-auto text-center space-y-10">
-            <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-white/10">
+            <div className="p-8 lg:p-12">
               <h2 className="text-5xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight uppercase mb-8 drop-shadow-lg">
                 SOFT COLORS HOLD YOU
               </h2>
