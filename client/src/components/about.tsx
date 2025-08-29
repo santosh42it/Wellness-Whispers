@@ -202,7 +202,7 @@ export default function About() {
             </p>
             
             {/* CTA Button */}
-            <div className="pt-4">
+            <div className="pt-4 flex justify-center">
               <WhatsAppButton className="bg-gradient-to-r from-sage-green to-olive-green hover:from-olive-green hover:to-sage-green text-white px-8 py-4 text-lg font-medium rounded-2xl shadow-warm hover:shadow-strong transition-all duration-300 transform hover:scale-105 border-2 border-sage-green/20 hover:border-white/20">
                 Start Your Healing Journey
               </WhatsAppButton>
