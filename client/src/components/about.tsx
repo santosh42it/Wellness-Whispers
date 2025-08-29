@@ -173,10 +173,7 @@ export default function About() {
                   gradually transform into understanding, resilience, and inner
                   strength.
                 </p>
-                <p className="text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-sm">
-                  Healing is not about rushing — it's about finding steady,
-                  quiet steps.
-                </p>
+                
               </div>
             </div>
           </div>
