@@ -16,8 +16,8 @@ export default function About() {
             
             {/* Left Side - Photo with Overlapping Background */}
             <div className="relative">
-              {/* Overlapping Background Image - 40% overlap top left */}
-              <div className="absolute -top-40 -left-40 w-96 h-64 z-0">
+              {/* Overlapping Background Image - Reduced overlap, small part only */}
+              <div className="absolute -top-20 -left-20 w-48 h-32 z-0">
                 <img 
                   src={pavanBg}
                   alt="Peaceful floral background"
@@ -26,8 +26,8 @@ export default function About() {
                 />
               </div>
               
-              {/* Main Portrait Photo - Full aspect ratio */}
-              <div className="w-80 h-96 relative mx-auto lg:ml-0 z-10">
+              {/* Main Portrait Photo - Moved inward to cover blank spaces */}
+              <div className="w-80 h-96 relative mx-auto lg:ml-8 z-10">
                 <img 
                   src={pavanPhoto}
                   alt="Mrs. Pavan Chowdhary - Licensed Therapist"
