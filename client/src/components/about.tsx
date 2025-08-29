@@ -61,7 +61,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       {/* Section 2: Ocean Cliffs */}
       <div className="min-h-screen relative flex items-center">
         {/* Background Image */}
@@ -96,7 +95,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       {/* Section 3: Hot Air Balloon */}
       <div className="min-h-screen relative flex items-center py-20">
         {/* Content Container */}
@@ -145,7 +143,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       {/* Section 4: Sunset */}
       <div className="min-h-screen relative flex items-center">
         {/* Background Image */}
@@ -179,7 +176,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       {/* Spacer Section - Transition to Footer */}
       <div className="py-20 relative">
         <div className="container mx-auto px-6 text-center">
@@ -201,7 +197,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       {/* Nature Landscape Section */}
       <div className="min-h-screen relative flex items-center">
         {/* Background Image */}
@@ -218,13 +213,10 @@ export default function About() {
         {/* Content */}
         <div className="relative z-20 container mx-auto px-6 py-20">
           <div className="max-w-5xl mx-auto text-center">
-            <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">
-              "Not every day needs answers — sometimes the soft colors of nature hold you enough."
-            </p>
+            <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">Not every day needs answers — sometimes the soft colors of nature hold you enough.</p>
           </div>
         </div>
       </div>
-
       {/* Therapeutic Quote Transition */}
       <div className="py-16 relative bg-gradient-to-br from-cream/40 via-soft-beige/30 to-peach/20">
         <div className="container mx-auto px-6 text-center">
