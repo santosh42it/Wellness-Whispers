@@ -167,10 +167,7 @@ export default function About() {
               <h2 className="text-5xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight uppercase mb-8 drop-shadow-lg">
                 SOFT COLORS HOLD YOU
               </h2>
-              <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed mb-10 drop-shadow-md">
-                "Not every day needs answers — sometimes the soft colors of
-                nature hold you enough."
-              </p>
+              
               <div className="max-w-4xl mx-auto space-y-8">
                 <p className="text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-sm">
                   Every session is designed to feel simple, safe, and welcoming,
