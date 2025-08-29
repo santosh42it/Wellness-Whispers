@@ -24,8 +24,8 @@ export default function About() {
                 />
               </div>
 
-              {/* Main Portrait Photo - Positioned down to start at 50% of background */}
-              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-48 z-10">
+              {/* Main Portrait Photo - Positioned down to start at 30% of background */}
+              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
                 <img
                   src={pavanPhoto}
                   alt="Mrs. Pavan Chowdhary - Licensed Therapist"
