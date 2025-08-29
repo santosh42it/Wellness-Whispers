@@ -3,6 +3,7 @@ import pavanBg from "@assets/pavan-bg.jpg";
 import oceanBg from "@assets/ocean-bg.jpg";
 import balloonImg from "@assets/hotair-balloons.jpg";
 import sunsetImg from "@assets/sunset.jpg";
+import natureLandscapeImg from "@assets/nature-landscape.jpg";
 import WhatsAppButton from "./whatsapp-button";
 
 export default function About() {
@@ -207,6 +208,29 @@ export default function About() {
                 Start Your Healing Journey
               </WhatsAppButton>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Nature Landscape Section */}
+      <div className="min-h-screen relative flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src={natureLandscapeImg}
+            alt="Peaceful nature landscape"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-20 container mx-auto px-6 py-20">
+          <div className="max-w-5xl mx-auto text-center">
+            <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">
+              "Not every day needs answers — sometimes the soft colors of nature hold you enough."
+            </p>
           </div>
         </div>
       </div>
