@@ -16,8 +16,8 @@ export default function About() {
             
             {/* Left Side - Photo with Overlapping Background */}
             <div className="relative">
-              {/* Overlapping Background Image - Reduced overlap, small part only */}
-              <div className="absolute -top-20 -left-20 w-48 h-32 z-0">
+              {/* Overlapping Background Image - Small overlap only */}
+              <div className="absolute -top-10 -left-10 w-96 h-64 z-0">
                 <img 
                   src={pavanBg}
                   alt="Peaceful floral background"
