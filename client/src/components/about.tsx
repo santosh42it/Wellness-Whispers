@@ -61,6 +61,7 @@ export default function About() {
           </div>
         </div>
       </div>
+
       {/* Section 2: Ocean Cliffs */}
       <div className="min-h-screen relative flex items-center">
         {/* Background Image */}
@@ -95,6 +96,7 @@ export default function About() {
           </div>
         </div>
       </div>
+
       {/* Section 3: Hot Air Balloon */}
       <div className="min-h-screen relative flex items-center py-20">
         {/* Content Container */}
@@ -143,6 +145,7 @@ export default function About() {
           </div>
         </div>
       </div>
+
       {/* Section 4: Sunset */}
       <div className="min-h-screen relative flex items-center">
         {/* Background Image */}
@@ -161,6 +164,13 @@ export default function About() {
         <div className="relative z-20 container mx-auto px-6 py-20">
           <div className="max-w-5xl mx-auto text-center space-y-10">
             <div className="p-8 lg:p-12">
+              <h2 className="text-5xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight uppercase mb-8 drop-shadow-lg">
+                SOFT COLORS HOLD YOU
+              </h2>
+              <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed mb-10 drop-shadow-md">
+                "Not every day needs answers — sometimes the soft colors of
+                nature hold you enough."
+              </p>
               <div className="max-w-4xl mx-auto space-y-8">
                 <p className="text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-sm">
                   Every session is designed to feel simple, safe, and welcoming,
@@ -170,12 +180,16 @@ export default function About() {
                   gradually transform into understanding, resilience, and inner
                   strength.
                 </p>
-                
+                <p className="text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-sm">
+                  Healing is not about rushing — it's about finding steady,
+                  quiet steps.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* Spacer Section - Transition to Footer */}
       <div className="py-20 relative">
         <div className="container mx-auto px-6 text-center">
@@ -197,6 +211,7 @@ export default function About() {
           </div>
         </div>
       </div>
+
       {/* Nature Landscape Section */}
       <div className="min-h-screen relative flex items-center">
         {/* Background Image */}
@@ -213,10 +228,13 @@ export default function About() {
         {/* Content */}
         <div className="relative z-20 container mx-auto px-6 py-20">
           <div className="max-w-5xl mx-auto text-center">
-            <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">Not every day needs answers — sometimes the soft colors of nature hold you enough.</p>
+            <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">
+              "Not every day needs answers — sometimes the soft colors of nature hold you enough."
+            </p>
           </div>
         </div>
       </div>
+
       {/* Therapeutic Quote Transition */}
       <div className="py-16 relative bg-gradient-to-br from-cream/40 via-soft-beige/30 to-peach/20">
         <div className="container mx-auto px-6 text-center">
