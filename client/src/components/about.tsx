@@ -164,10 +164,6 @@ export default function About() {
         <div className="relative z-20 container mx-auto px-6 py-20">
           <div className="max-w-5xl mx-auto text-center space-y-10">
             <div className="p-8 lg:p-12">
-              <h2 className="text-5xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight uppercase mb-8 drop-shadow-lg">
-                SOFT COLORS HOLD YOU
-              </h2>
-              
               <div className="max-w-4xl mx-auto space-y-8">
                 <p className="text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-sm">
                   Every session is designed to feel simple, safe, and welcoming,
