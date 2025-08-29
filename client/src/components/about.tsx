@@ -14,8 +14,8 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
             {/* Left Side - Photo with Overlapping Background */}
             <div className="relative">
-              {/* Overlapping Background Image - Small overlap only */}
-              <div className="absolute -top-10 -left-10 w-96 h-64 z-0">
+              {/* Overlapping Background Image - Vertical format */}
+              <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
                 <img
                   src={pavanBg}
                   alt="Peaceful floral background"
