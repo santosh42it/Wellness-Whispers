@@ -3,6 +3,7 @@ import pavanBg from "@assets/pavan-bg.jpg";
 import oceanBg from "@assets/ocean-bg.jpg";
 import balloonImg from "@assets/hotair-balloons.jpg";
 import sunsetImg from "@assets/sunset.jpg";
+import WhatsAppButton from "./whatsapp-button";
 
 export default function About() {
   return (
@@ -191,7 +192,7 @@ export default function About() {
       {/* Spacer Section - Transition to Footer */}
       <div className="py-20 relative">
         <div className="container mx-auto px-6 text-center">
-          <div className="max-w-2xl mx-auto space-y-6">
+          <div className="max-w-2xl mx-auto space-y-8">
             <h3 className="text-3xl lg:text-4xl font-kinfolk font-extralight text-earthy-brown leading-tight">
               Ready to Begin Your Journey?
             </h3>
@@ -199,6 +200,13 @@ export default function About() {
               Take the first gentle step toward healing. Every journey starts
               with a single breath.
             </p>
+            
+            {/* CTA Button */}
+            <div className="pt-4">
+              <WhatsAppButton className="bg-gradient-to-r from-sage-green to-olive-green hover:from-olive-green hover:to-sage-green text-white px-8 py-4 text-lg font-medium rounded-2xl shadow-warm hover:shadow-strong transition-all duration-300 transform hover:scale-105 border-2 border-sage-green/20 hover:border-white/20">
+                Start Your Healing Journey
+              </WhatsAppButton>
+            </div>
           </div>
         </div>
       </div>
