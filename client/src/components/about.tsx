@@ -25,7 +25,7 @@ export default function About() {
               </div>
 
               {/* Main Portrait Photo - Positioned far right with minimal corner overlap */}
-              <div className="w-80 h-96 relative mx-auto lg:ml-24 z-10">
+              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 z-10">
                 <img
                   src={pavanPhoto}
                   alt="Mrs. Pavan Chowdhary - Licensed Therapist"
