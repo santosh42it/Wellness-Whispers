@@ -26,8 +26,8 @@ export default function About() {
                 />
               </div>
               
-              {/* Main Portrait Photo - Moved inward to cover blank spaces */}
-              <div className="w-80 h-96 relative mx-auto lg:ml-8 z-10">
+              {/* Main Portrait Photo - Moved more to the right */}
+              <div className="w-80 h-96 relative mx-auto lg:ml-16 z-10">
                 <img 
                   src={pavanPhoto}
                   alt="Mrs. Pavan Chowdhary - Licensed Therapist"
