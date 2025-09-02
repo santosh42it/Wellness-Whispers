@@ -89,13 +89,13 @@ export default function Header() {
               href="/after-therapy"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
-              After Therapy
+              Bright Days
             </Link>
             <button
               onClick={() => scrollToSection("pricing")}
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
-              Pricing
+              Gift Of Healing
             </button>
             <button
               onClick={() => scrollToSection("testimonials")}
@@ -151,7 +151,7 @@ export default function Header() {
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                After Therapy
+                Bright Days
               </Link>
               <button
                 onClick={() => scrollToSection("testimonials")}

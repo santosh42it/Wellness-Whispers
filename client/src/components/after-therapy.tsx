@@ -45,7 +45,7 @@ export default function AfterTherapy() {
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown mb-6">
-            After Therapy
+            Bright Days
           </h2>
           <p className="text-xl text-sage-green font-medium max-w-4xl mx-auto leading-relaxed">
             Small shifts that create lasting change. These are the moments that matter.

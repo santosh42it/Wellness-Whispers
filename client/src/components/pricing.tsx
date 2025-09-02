@@ -42,7 +42,7 @@ export default function Pricing() {
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown mb-6">
-            Gentle, Accessible Emotional Wellness
+            Gift Of Healing
           </h2>
           <p className="text-xl text-dark-brown font-lato max-w-4xl mx-auto leading-relaxed">
             This space was created for those who need a soft pause, a listening ear, and a safe 
