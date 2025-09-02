@@ -36,7 +36,7 @@ export default function Footer() {
                   className="h-12 w-auto"
                 />
               </div>
-              <p className="text-white mb-6 max-w-md leading-relaxed font-nunito text-lg drop-shadow-lg">
+              <p className="text-white mb-6 max-w-md leading-relaxed font-nunito text-xl font-medium drop-shadow-lg">
                 A safe space for emotional healing and personal growth. Professional online therapy 
                 that meets you wherever you are in your journey.
               </p>
@@ -44,12 +44,12 @@ export default function Footer() {
             </div>
             
             <div>
-              <h3 className="text-xl font-cormorant font-light mb-6 text-white drop-shadow-lg">Quick Links</h3>
+              <h3 className="text-2xl font-cormorant font-medium mb-6 text-white drop-shadow-lg">Quick Links</h3>
               <ul className="space-y-4 font-nunito">
                 <li>
                   <button
                     onClick={() => scrollToSection("about")}
-                    className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
+                    className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
                     Meet Me
                   </button>
@@ -57,7 +57,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection("services")}
-                    className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
+                    className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
                     Services
                   </button>
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection("approach")}
-                    className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
+                    className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
                     Approach
                   </button>
@@ -73,15 +73,15 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection("pricing")}
-                    className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
+                    className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
-                    Pricing
+                    Gift Of Healing
                   </button>
                 </li>
                 <li>
                   <button
                     onClick={() => scrollToSection("testimonials")}
-                    className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
+                    className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
                     Stories
                   </button>
@@ -90,17 +90,17 @@ export default function Footer() {
             </div>
             
             <div>
-              <h3 className="text-xl font-cormorant font-light mb-6 text-white drop-shadow-lg">Connect</h3>
+              <h3 className="text-2xl font-cormorant font-medium mb-6 text-white drop-shadow-lg">Connect</h3>
               <div className="space-y-4 font-nunito">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-peach drop-shadow-sm" />
-                  <span className="text-white font-medium drop-shadow-sm">+91 98806 07355</span>
+                  <span className="text-white font-semibold text-lg drop-shadow-sm">+91 98806 07355</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-peach drop-shadow-sm" />
-                  <span className="text-white font-medium drop-shadow-sm">WhatsApp & Google Meet</span>
+                  <span className="text-white font-semibold text-lg drop-shadow-sm">WhatsApp & Google Meet</span>
                 </div>
-                <p className="text-white/80 text-sm mt-4 font-medium drop-shadow-sm">
+                <p className="text-white/80 text-base mt-4 font-semibold drop-shadow-sm">
                   Flexible timing • Gentle support • Professional care
                 </p>
               </div>
@@ -109,15 +109,15 @@ export default function Footer() {
           
           <div className="border-t border-white/30 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-white/70 text-sm font-nunito drop-shadow-sm">
+              <p className="text-white/70 text-base font-nunito font-medium drop-shadow-sm">
                 © 2025 Wellness Whispers. All rights reserved.
               </p>
-              <p className="text-white/70 text-sm mt-4 md:mt-0 font-nunito drop-shadow-sm">
+              <p className="text-white/70 text-base mt-4 md:mt-0 font-nunito font-medium drop-shadow-sm">
                 Mrs. Pavan Chowdhary • Qualified Therapist • Online Sessions
               </p>
             </div>
             <div className="text-center mt-6">
-              <p className="text-white/80 text-sm font-cormorant italic text-lg drop-shadow-lg">
+              <p className="text-white/80 text-lg font-cormorant italic font-medium drop-shadow-lg">
                 "From wounds to wisdom — healing begins in quiet moments."
               </p>
             </div>
