@@ -16,7 +16,7 @@ export default function WhatsAppButton({ className, children }: WhatsAppButtonPr
   return (
     <Button
       onClick={handleWhatsAppClick}
-      className={cn("flex items-center space-x-2 whatsapp-button", className)}
+      className={cn("flex items-center space-x-2 wooden-cta-button px-6 py-3 rounded-xl transition-all duration-300", className)}
     >
       <MessageCircle className="h-5 w-5" />
       <span>{children || "Start Session"}</span>

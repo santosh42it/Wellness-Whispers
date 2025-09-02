@@ -40,7 +40,7 @@ export default function Footer() {
                 A safe space for emotional healing and personal growth. Professional online therapy 
                 that meets you wherever you are in your journey.
               </p>
-              <WhatsAppButton className="bg-sage-green hover:bg-olive-green text-white px-6 py-3 rounded-xl transition-all duration-300 shadow-warm hover:shadow-strong font-lato border-2 border-sage-green hover:border-olive-green" />
+              <WhatsAppButton />
             </div>
             
             <div>
@@ -75,7 +75,7 @@ export default function Footer() {
                     onClick={() => scrollToSection("pricing")}
                     className="text-white/90 hover:text-peach transition-colors font-medium drop-shadow-sm"
                   >
-                    Pricing
+                    Gift Of Healing
                   </button>
                 </li>
                 <li>
