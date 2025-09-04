@@ -61,7 +61,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       {/* Section 2: Ocean Cliffs */}
       <div className="min-h-screen relative flex items-center">
         {/* Background Image */}
@@ -89,7 +88,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       {/* Section 3: Hot Air Balloon */}
       <div className="min-h-screen relative flex items-center py-20">
         {/* Content Container */}
@@ -106,10 +104,7 @@ export default function About() {
                 />
                 {/* Quote below the image */}
                 <div className="mt-6 text-center">
-                  <p className="text-xl lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">
-                    "Like a hot air balloon, healing rises gently — not with
-                    force, but with lightness."
-                  </p>
+                  <p className="text-xl lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">Like a hot air balloon, healing rises gently — not with force, but with lightness.</p>
                 </div>
               </div>
             </div>
@@ -138,9 +133,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
-
-
       {/* Nature Landscape Section */}
       <div className="min-h-screen relative flex items-center">
         {/* Background Image */}
@@ -166,7 +158,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       {/* Therapeutic Quote Transition */}
       <div className="py-16 relative bg-gradient-to-br from-cream/40 via-soft-beige/30 to-peach/20">
         <div className="container mx-auto px-6 text-center">
