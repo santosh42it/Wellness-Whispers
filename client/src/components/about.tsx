@@ -140,27 +140,6 @@ export default function About() {
       </div>
 
 
-      {/* Spacer Section - Transition to Footer */}
-      <div className="py-20 relative">
-        <div className="container mx-auto px-6 text-center">
-          <div className="max-w-2xl mx-auto space-y-8">
-            <h3 className="text-3xl lg:text-4xl font-kinfolk font-extralight text-earthy-brown leading-tight">
-              Ready to Begin Your Journey?
-            </h3>
-            <p className="text-lg font-nunito text-earthy-brown/80 leading-relaxed">
-              Take the first gentle step toward healing. Every journey starts
-              with a single breath.
-            </p>
-            
-            {/* CTA Button */}
-            <div className="pt-4 flex justify-center">
-              <WhatsAppButton className="bg-gradient-to-r from-sage-green to-olive-green hover:from-olive-green hover:to-sage-green text-white px-8 py-4 text-lg font-medium rounded-2xl shadow-warm hover:shadow-strong transition-all duration-300 transform hover:scale-105 border-2 border-sage-green/20 hover:border-white/20">
-                Start Your Healing Journey
-              </WhatsAppButton>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Nature Landscape Section */}
       <div className="min-h-screen relative flex items-center">
