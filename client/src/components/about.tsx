@@ -78,13 +78,6 @@ export default function About() {
         {/* Content */}
         <div className="relative z-20 container mx-auto px-6 py-20">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-kinfolk font-extralight text-white leading-tight uppercase">
-              STEADY STRENGTH
-            </h2>
-            <p className="text-2xl lg:text-3xl font-kinfolk font-extralight text-white/90 italic leading-relaxed">
-              "Even the highest cliffs stand calm against the waves — just like
-              your heart can find steady strength."
-            </p>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl font-nunito text-white/90 leading-relaxed">
                 I offer online therapy especially suited for young adults,
@@ -227,9 +220,12 @@ export default function About() {
 
         {/* Content */}
         <div className="relative z-20 container mx-auto px-6 py-20">
-          <div className="max-w-5xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center space-y-8">
+            <h2 className="text-4xl lg:text-5xl font-kinfolk font-extralight text-white leading-tight uppercase drop-shadow-lg">
+              STEADY STRENGTH
+            </h2>
             <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">
-              "Not every day needs answers — sometimes the soft colors of nature hold you enough."
+              "Even the highest cliffs stand calm against the waves — just like your heart can find steady strength."
             </p>
           </div>
         </div>
