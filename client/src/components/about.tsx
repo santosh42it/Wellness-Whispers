@@ -92,7 +92,7 @@ export default function About() {
       <div className="min-h-screen relative flex items-center py-20">
         {/* Content Container */}
         <div className="relative z-20 container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-start max-w-7xl mx-auto">
             {/* Left Side - Large Balloon Image (Half Screen) */}
             <div className="relative flex justify-center lg:justify-start">
               <div className="w-full max-w-2xl h-[50vh] lg:h-[60vh]">
@@ -103,14 +103,14 @@ export default function About() {
                   loading="lazy"
                 />
                 {/* Quote below the image */}
-                <div className="mt-6 text-center">
+                <div className="mt-8 text-center">
                   <p className="text-base sm:text-lg lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">Like a hot air balloon, healing rises gently — not with force, but with lightness.</p>
                 </div>
               </div>
             </div>
 
             {/* Right Side - Text Content */}
-            <div className="space-y-8">
+            <div className="space-y-8 mt-8 lg:mt-0">
               <h2 className="text-2xl sm:text-3xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 GENTLE RISING
               </h2>
