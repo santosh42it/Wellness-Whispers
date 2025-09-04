@@ -39,11 +39,11 @@ export default function About() {
 
             {/* Right Side - Text */}
             <div className="space-y-8">
-              <h1 className="text-5xl lg:text-6xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 MEET ME
               </h1>
               <div className="space-y-6">
-                <p className="text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
                   I'm Mrs. Pavan Chowdhary, a Gold Medalist in Public
                   Administration with a Postgraduate Diploma in Guidance &
                   Counselling, along with multiple certified diploma courses. My
@@ -51,7 +51,7 @@ export default function About() {
                   mentoring people, including experience in conflict management,
                   with 6+ years of focused emotional support.
                 </p>
-                <p className="text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
                   I continue to expand my training across therapeutic
                   approaches, ensuring every session is flexible, empathetic,
                   and grounded in real-life understanding.
@@ -78,7 +78,7 @@ export default function About() {
         <div className="relative z-20 container mx-auto px-6 py-20">
           <div className="max-w-5xl mx-auto text-center space-y-10">
             <div className="max-w-4xl mx-auto">
-              <p className="text-2xl lg:text-3xl font-nunito text-white/95 leading-relaxed drop-shadow-sm font-light">
+              <p className="text-lg sm:text-xl lg:text-3xl font-nunito text-white/95 leading-relaxed drop-shadow-sm font-light">
                 I offer online therapy especially suited for young adults,
                 providing a safe space where emotions can be explored without
                 judgment. Healing is not about fixing what is broken, but about
@@ -104,25 +104,25 @@ export default function About() {
                 />
                 {/* Quote below the image */}
                 <div className="mt-6 text-center">
-                  <p className="text-xl lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">Like a hot air balloon, healing rises gently — not with force, but with lightness.</p>
+                  <p className="text-base sm:text-lg lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">Like a hot air balloon, healing rises gently — not with force, but with lightness.</p>
                 </div>
               </div>
             </div>
 
             {/* Right Side - Text Content */}
             <div className="space-y-8">
-              <h2 className="text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+              <h2 className="text-2xl sm:text-3xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 GENTLE RISING
               </h2>
               <div className="space-y-6">
-                <p className="text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
                   I believe therapy should feel like a safe shoreline, a quiet
                   space for emotions to rest without pressure. Every balloon has
                   a quiet lift-off — so did I, by finding lightness in my own
                   journey. Over the years, I've learned that healing comes when
                   we pause, breathe, and allow space.
                 </p>
-                <p className="text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
                   This space is not about rushing — it's about gently lifting,
                   and seeing life from a calmer height. My focus has always been
                   on helping hearts, not counting currency. Sessions are simple,
@@ -149,10 +149,10 @@ export default function About() {
         {/* Content */}
         <div className="relative z-20 container mx-auto px-6 py-20">
           <div className="max-w-5xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-kinfolk font-extralight text-white leading-tight uppercase drop-shadow-lg">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-kinfolk font-extralight text-white leading-tight uppercase drop-shadow-lg">
               STEADY STRENGTH
             </h2>
-            <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">Even the highest cliffs stand calm against the waves — just like your heart can find steady strength.</p>
+            <p className="text-lg sm:text-xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">Even the highest cliffs stand calm against the waves — just like your heart can find steady strength.</p>
           </div>
         </div>
       </div>
@@ -160,7 +160,7 @@ export default function About() {
       <div className="py-16 relative bg-gradient-to-br from-cream/40 via-soft-beige/30 to-peach/20">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <p className="text-2xl lg:text-3xl font-kinfolk font-extralight text-earthy-brown italic leading-relaxed">Healing is not about rushing — it's about finding steady, quiet steps.</p>
+            <p className="text-lg sm:text-xl lg:text-3xl font-kinfolk font-extralight text-earthy-brown italic leading-relaxed">Healing is not about rushing — it's about finding steady, quiet steps.</p>
           </div>
         </div>
       </div>
