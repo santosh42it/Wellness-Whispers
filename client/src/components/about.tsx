@@ -77,9 +77,9 @@ export default function About() {
 
         {/* Content */}
         <div className="relative z-20 container mx-auto px-6 py-20">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="max-w-3xl mx-auto">
-              <p className="text-xl font-nunito text-white/90 leading-relaxed">
+          <div className="max-w-5xl mx-auto text-center space-y-10">
+            <div className="max-w-4xl mx-auto">
+              <p className="text-2xl lg:text-3xl font-nunito text-white/95 leading-relaxed drop-shadow-sm font-light">
                 I offer online therapy especially suited for young adults,
                 providing a safe space where emotions can be explored without
                 judgment. Healing is not about fixing what is broken, but about
