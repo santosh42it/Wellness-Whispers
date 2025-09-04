@@ -160,9 +160,7 @@ export default function About() {
       <div className="py-16 relative bg-gradient-to-br from-cream/40 via-soft-beige/30 to-peach/20">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <p className="text-2xl lg:text-3xl font-kinfolk font-extralight text-earthy-brown italic leading-relaxed">
-              "Healing is not about rushing — it's about finding steady, quiet steps."
-            </p>
+            <p className="text-2xl lg:text-3xl font-kinfolk font-extralight text-earthy-brown italic leading-relaxed">Healing is not about rushing — it's about finding steady, quiet steps.</p>
           </div>
         </div>
       </div>
