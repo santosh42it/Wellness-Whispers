@@ -9,8 +9,7 @@ export default function Contact() {
           {/* Opening Message */}
           <div className="mb-16">
             <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown mb-8 leading-tight">
-              Healing begins in quiet moments, 
-              <span className="block text-dark-brown">one breath, one step at a time.</span>
+              Healing begins in quiet moments, one breath, one step at a time.
             </h2>
           </div>
 
