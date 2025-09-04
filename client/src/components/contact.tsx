@@ -8,9 +8,14 @@ export default function Contact() {
           
           {/* Opening Message */}
           <div className="mb-16">
-            <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown mb-8 leading-tight">
-              Healing begins in quiet moments, one breath, one step at a time.
-            </h2>
+            <div className="space-y-4">
+              <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown leading-tight">
+                Healing begins in quiet moments
+              </h2>
+              <p className="text-2xl lg:text-3xl font-kinfolk font-extralight text-sage-green italic leading-relaxed">
+                one breath, one step at a time
+              </p>
+            </div>
           </div>
 
           {/* Main CTA Section - Redesigned */}
