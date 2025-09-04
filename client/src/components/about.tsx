@@ -152,9 +152,7 @@ export default function About() {
             <h2 className="text-4xl lg:text-5xl font-kinfolk font-extralight text-white leading-tight uppercase drop-shadow-lg">
               STEADY STRENGTH
             </h2>
-            <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">
-              "Even the highest cliffs stand calm against the waves — just like your heart can find steady strength."
-            </p>
+            <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">Even the highest cliffs stand calm against the waves — just like your heart can find steady strength.</p>
           </div>
         </div>
       </div>
