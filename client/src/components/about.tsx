@@ -103,14 +103,14 @@ export default function About() {
                   loading="lazy"
                 />
                 {/* Quote below the image */}
-                <div className="mt-8 text-center">
+                <div className="mt-12 text-center">
                   <p className="text-base sm:text-lg lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">Like a hot air balloon, healing rises gently — not with force, but with lightness.</p>
                 </div>
               </div>
             </div>
 
             {/* Right Side - Text Content */}
-            <div className="space-y-8 mt-8 lg:mt-0">
+            <div className="space-y-8 mt-12 lg:mt-0">
               <h2 className="text-2xl sm:text-3xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 GENTLE RISING
               </h2>
