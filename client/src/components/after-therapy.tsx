@@ -152,7 +152,7 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10">
+              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(200px)'}}>
                 <img
                   src={h1FrontImg}
                   alt="Inner peace and gentle strength"
@@ -254,7 +254,7 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10">
+              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(200px)'}}>
                 <img
                   src={h1FrontImg}
                   alt="Relationship healing and gentle care"
@@ -353,7 +353,7 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10">
+              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(200px)'}}>
                 <img
                   src={h1FrontImg}
                   alt="Authentic connection and relationships"
