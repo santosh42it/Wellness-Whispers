@@ -91,7 +91,7 @@ export default function AfterTherapy() {
 
             {/* Right Side - Text */}
             <div className="space-y-8">
-              <p className="text-sage-green/70 mb-1 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Healing</p>
+              <p className="text-sage-green/70 -mb-2 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Healing</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 RENEWED SPIRIT
               </h3>
@@ -119,7 +119,7 @@ export default function AfterTherapy() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Text */}
             <div className="space-y-8 order-2 lg:order-1">
-              <p className="text-sage-green/70 mb-1 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Resilience</p>
+              <p className="text-sage-green/70 -mb-2 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Resilience</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 GENTLE STRENGTH
               </h3>
@@ -194,7 +194,7 @@ export default function AfterTherapy() {
 
             {/* Right Side - Text */}
             <div className="space-y-8">
-              <p className="text-sage-green/70 mb-1 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Vulnerability</p>
+              <p className="text-sage-green/70 -mb-2 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Vulnerability</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 OPEN HEART
               </h3>
@@ -223,7 +223,7 @@ export default function AfterTherapy() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Text */}
             <div className="space-y-8 order-2 lg:order-1">
-              <p className="text-sage-green/70 mb-1 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Harmony</p>
+              <p className="text-sage-green/70 -mb-2 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Harmony</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 PEACEFUL BALANCE
               </h3>
@@ -296,7 +296,7 @@ export default function AfterTherapy() {
 
             {/* Right Side - Text */}
             <div className="space-y-8">
-              <p className="text-sage-green/70 mb-1 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Intuition</p>
+              <p className="text-sage-green/70 -mb-2 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Intuition</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 INNER WISDOM
               </h3>
@@ -324,7 +324,7 @@ export default function AfterTherapy() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Text */}
             <div className="space-y-8 order-2 lg:order-1">
-              <p className="text-sage-green/70 mb-1 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Relationships</p>
+              <p className="text-sage-green/70 -mb-2 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Relationships</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 AUTHENTIC CONNECTION
               </h3>
@@ -399,7 +399,7 @@ export default function AfterTherapy() {
 
             {/* Right Side - Text */}
             <div className="space-y-8">
-              <p className="text-sage-green/70 mb-1 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Growth</p>
+              <p className="text-sage-green/70 -mb-2 font-light" style={{fontFamily: 'Feather, cursive', fontSize: '4rem'}}>Growth</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 LASTING TRANSFORMATION
               </h3>
