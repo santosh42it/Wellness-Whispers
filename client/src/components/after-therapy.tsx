@@ -101,7 +101,8 @@ export default function AfterTherapy() {
 
         {/* Photo with Overlapping Background - Copied from Meet Me section */}
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-center lg:justify-start">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Side - Photo with Overlapping Background */}
             <div className="relative">
               {/* Overlapping Background Image - Vertical format */}
               <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
@@ -121,6 +122,28 @@ export default function AfterTherapy() {
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="lazy"
                 />
+              </div>
+            </div>
+
+            {/* Right Side - Text */}
+            <div className="space-y-8">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+                BRIGHT DAYS
+              </h3>
+              <div className="space-y-6">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  These are the moments that show healing is working — when confidence 
+                  blooms naturally, when overthinking transforms into understanding, 
+                  and when self-doubt gives way to quiet inner strength.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  Small shifts create lasting change. You learn to pause instead of 
+                  react, to choose peace over perfection, and to trust the gentle 
+                  process of becoming who you truly are.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-kinfolk text-earthy-brown/80 italic leading-relaxed">
+                  "Healing is not about rushing — it's about finding steady, quiet steps."
+                </p>
               </div>
             </div>
           </div>
