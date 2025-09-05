@@ -6,9 +6,10 @@ import { openWhatsAppChat } from "@/lib/whatsapp";
 interface WhatsAppButtonProps {
   className?: string;
   children?: React.ReactNode;
+  hideIcon?: boolean;
 }
 
-export default function WhatsAppButton({ className, children }: WhatsAppButtonProps) {
+export default function WhatsAppButton({ className, children, hideIcon = false }: WhatsAppButtonProps) {
   const handleWhatsAppClick = () => {
     openWhatsAppChat();
   };
@@ -19,7 +20,7 @@ export default function WhatsAppButton({ className, children }: WhatsAppButtonPr
       onClick={handleWhatsAppClick}
       className={cn("flex items-center space-x-2 whatsapp-button", className)}
     >
-      <MessageCircle className="h-5 w-5" />
+      {!hideIcon && <MessageCircle className="h-5 w-5" />}
       <span>{children || "Start Session"}</span>
     </Button>
   );
