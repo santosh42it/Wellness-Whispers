@@ -90,9 +90,9 @@ export default function AfterTherapy() {
             </div>
 
             {/* Right Side - Text */}
-            <div className="space-y-8 relative">
-              <p className="text-8xl font-kinfolk text-sage-green/60 italic absolute -top-8 -left-4 z-0" style={{fontFamily: 'Dancing Script, cursive', fontSize: '91px'}}>Healing</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase relative z-10">
+            <div className="space-y-8">
+              <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Healing</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 RENEWED SPIRIT
               </h3>
               <div className="space-y-6">
@@ -118,9 +118,9 @@ export default function AfterTherapy() {
         <div className="max-w-7xl mx-auto mt-32">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Text */}
-            <div className="space-y-8 order-2 lg:order-1 relative">
-              <p className="text-8xl font-kinfolk text-sage-green/60 italic absolute -top-8 -left-4 z-0" style={{fontFamily: 'Dancing Script, cursive', fontSize: '91px'}}>Resilience</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase relative z-10">
+            <div className="space-y-8 order-2 lg:order-1">
+              <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Resilience</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 GENTLE STRENGTH
               </h3>
               <div className="space-y-6">
@@ -193,9 +193,9 @@ export default function AfterTherapy() {
             </div>
 
             {/* Right Side - Text */}
-            <div className="space-y-8 relative">
-              <p className="text-8xl font-kinfolk text-sage-green/60 italic absolute -top-8 -left-4 z-0" style={{fontFamily: 'Dancing Script, cursive', fontSize: '91px'}}>Vulnerability</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase relative z-10">
+            <div className="space-y-8">
+              <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Vulnerability</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 OPEN HEART
               </h3>
               <div className="space-y-6">
@@ -222,9 +222,9 @@ export default function AfterTherapy() {
         <div className="max-w-7xl mx-auto mt-32">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Text */}
-            <div className="space-y-8 order-2 lg:order-1 relative">
-              <p className="text-8xl font-kinfolk text-sage-green/60 italic absolute -top-8 -left-4 z-0" style={{fontFamily: 'Dancing Script, cursive', fontSize: '91px'}}>Harmony</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase relative z-10">
+            <div className="space-y-8 order-2 lg:order-1">
+              <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Harmony</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 PEACEFUL BALANCE
               </h3>
               <div className="space-y-6">
@@ -295,9 +295,9 @@ export default function AfterTherapy() {
             </div>
 
             {/* Right Side - Text */}
-            <div className="space-y-8 relative">
-              <p className="text-8xl font-kinfolk text-sage-green/60 italic absolute -top-8 -left-4 z-0" style={{fontFamily: 'Dancing Script, cursive', fontSize: '91px'}}>Intuition</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase relative z-10">
+            <div className="space-y-8">
+              <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Intuition</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 INNER WISDOM
               </h3>
               <div className="space-y-6">
@@ -323,9 +323,9 @@ export default function AfterTherapy() {
         <div className="max-w-7xl mx-auto mt-32">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Text */}
-            <div className="space-y-8 order-2 lg:order-1 relative">
-              <p className="text-8xl font-kinfolk text-sage-green/60 italic absolute -top-8 -left-4 z-0" style={{fontFamily: 'Dancing Script, cursive', fontSize: '91px'}}>Relationships</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase relative z-10">
+            <div className="space-y-8 order-2 lg:order-1">
+              <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Relationships</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 AUTHENTIC CONNECTION
               </h3>
               <div className="space-y-6">
@@ -398,9 +398,9 @@ export default function AfterTherapy() {
             </div>
 
             {/* Right Side - Text */}
-            <div className="space-y-8 relative">
-              <p className="text-8xl font-kinfolk text-sage-green/60 italic absolute -top-8 -left-4 z-0" style={{fontFamily: 'Dancing Script, cursive', fontSize: '91px'}}>Growth</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase relative z-10">
+            <div className="space-y-8">
+              <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Growth</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 LASTING TRANSFORMATION
               </h3>
               <div className="space-y-6">
