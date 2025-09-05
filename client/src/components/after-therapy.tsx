@@ -92,8 +92,8 @@ export default function AfterTherapy() {
             {/* Right Side - Text */}
             <div className="space-y-8">
               <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Healing</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
-                RENEWED SPIRIT
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight">
+                Renewed Spirit
               </h3>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
@@ -120,8 +120,8 @@ export default function AfterTherapy() {
             {/* Left Side - Text */}
             <div className="space-y-8 order-2 lg:order-1">
               <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Resilience</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
-                GENTLE STRENGTH
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight">
+                Gentle Strength
               </h3>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
@@ -195,8 +195,8 @@ export default function AfterTherapy() {
             {/* Right Side - Text */}
             <div className="space-y-8">
               <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Vulnerability</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
-                OPEN HEART
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight">
+                Open Heart
               </h3>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
@@ -224,8 +224,8 @@ export default function AfterTherapy() {
             {/* Left Side - Text */}
             <div className="space-y-8 order-2 lg:order-1">
               <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Harmony</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
-                PEACEFUL BALANCE
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight">
+                Peaceful Balance
               </h3>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
@@ -297,8 +297,8 @@ export default function AfterTherapy() {
             {/* Right Side - Text */}
             <div className="space-y-8">
               <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Intuition</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
-                INNER WISDOM
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight">
+                Inner Wisdom
               </h3>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
@@ -325,8 +325,8 @@ export default function AfterTherapy() {
             {/* Left Side - Text */}
             <div className="space-y-8 order-2 lg:order-1">
               <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Relationships</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
-                AUTHENTIC CONNECTION
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight">
+                Authentic Connection
               </h3>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
@@ -400,8 +400,8 @@ export default function AfterTherapy() {
             {/* Right Side - Text */}
             <div className="space-y-8">
               <p className="text-3xl font-kinfolk text-sage-green/70 italic mb-1" style={{fontFamily: 'Dancing Script, cursive'}}>Growth</p>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
-                LASTING TRANSFORMATION
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight">
+                Lasting Transformation
               </h3>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
