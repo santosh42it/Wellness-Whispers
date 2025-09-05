@@ -220,17 +220,16 @@
 
 /* Wooden Button Styling for Authentic Therapy Theme */
 .wooden-button {
-  background: linear-gradient(145deg, 
-    #8B4513 0%,    /* Saddle brown */
-    #A0522D 15%,   /* Sienna */
-    #CD853F 35%,   /* Peru */
-    #D2B48C 50%,   /* Tan */
-    #CD853F 65%,   /* Peru */
-    #A0522D 85%,   /* Sienna */
-    #8B4513 100%   /* Saddle brown */
-  );
+  background-image: url('@assets/wooden.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   
-  /* Wood grain texture using multiple box shadows */
+  /* Enhance the wooden texture with subtle overlays */
+  background-blend-mode: multiply;
+  background-color: #8B4513;
+  
+  /* Add depth and dimension */
   box-shadow: 
     inset 0 1px 0 rgba(255, 255, 255, 0.2),
     inset 0 -1px 0 rgba(0, 0, 0, 0.3),
@@ -243,36 +242,33 @@
   position: relative;
   font-weight: 600;
   letter-spacing: 0.5px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   
-  /* Wood grain pattern overlay */
-  background-image: 
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 1px,
-      rgba(0, 0, 0, 0.1) 1px,
-      rgba(0, 0, 0, 0.1) 2px
-    ),
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(255, 255, 255, 0.05) 2px,
-      rgba(255, 255, 255, 0.05) 4px
-    );
+}
+
+/* Subtle texture overlay to enhance the wood grain */
+.wooden-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.1) 25%,
+    transparent 25%,
+    transparent 75%,
+    rgba(0, 0, 0, 0.1) 75%
+  );
+  background-size: 4px 4px;
+  pointer-events: none;
+  border-radius: inherit;
 }
 
 .wooden-button:hover {
-  background: linear-gradient(145deg, 
-    #654321 0%,    /* Darker saddle brown */
-    #8B4513 15%,   /* Saddle brown */
-    #A0522D 35%,   /* Sienna */
-    #CD853F 50%,   /* Peru */
-    #A0522D 65%,   /* Sienna */
-    #8B4513 85%,   /* Saddle brown */
-    #654321 100%   /* Darker saddle brown */
-  );
+  background-color: #654321;
+  background-blend-mode: multiply;
   
   box-shadow: 
     inset 0 1px 0 rgba(255, 255, 255, 0.3),
@@ -287,8 +283,9 @@
 
 .wooden-button:active {
   transform: translateY(1px);
+  background-color: #5D3A1A;
   box-shadow: 
-    inset 0 2px 4px rgba(0, 0, 0, 0.3),
+    inset 0 2px 4px rgba(0, 0, 0, 0.4),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     0 2px 4px rgba(0, 0, 0, 0.2);
 }
