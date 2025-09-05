@@ -91,6 +91,7 @@ export default function AfterTherapy() {
 
             {/* Right Side - Text */}
             <div className="space-y-8">
+              <p className="text-2xl font-kinfolk text-sage-green/80 italic mb-2">Healing</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 BRIGHT DAYS
               </h3>
@@ -118,6 +119,7 @@ export default function AfterTherapy() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Text */}
             <div className="space-y-8 order-2 lg:order-1">
+              <p className="text-2xl font-kinfolk text-sage-green/80 italic mb-2">Resilience</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 GENTLE STRENGTH
               </h3>
@@ -192,6 +194,7 @@ export default function AfterTherapy() {
 
             {/* Right Side - Text */}
             <div className="space-y-8">
+              <p className="text-2xl font-kinfolk text-sage-green/80 italic mb-2">Vulnerability</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 OPEN HEART
               </h3>
@@ -220,6 +223,7 @@ export default function AfterTherapy() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Text */}
             <div className="space-y-8 order-2 lg:order-1">
+              <p className="text-2xl font-kinfolk text-sage-green/80 italic mb-2">Harmony</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 PEACEFUL BALANCE
               </h3>
@@ -292,6 +296,7 @@ export default function AfterTherapy() {
 
             {/* Right Side - Text */}
             <div className="space-y-8">
+              <p className="text-2xl font-kinfolk text-sage-green/80 italic mb-2">Intuition</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 INNER WISDOM
               </h3>
@@ -319,6 +324,7 @@ export default function AfterTherapy() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Text */}
             <div className="space-y-8 order-2 lg:order-1">
+              <p className="text-2xl font-kinfolk text-sage-green/80 italic mb-2">Relationships</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 AUTHENTIC CONNECTION
               </h3>
@@ -393,6 +399,7 @@ export default function AfterTherapy() {
 
             {/* Right Side - Text */}
             <div className="space-y-8">
+              <p className="text-2xl font-kinfolk text-sage-green/80 italic mb-2">Growth</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 LASTING TRANSFORMATION
               </h3>
