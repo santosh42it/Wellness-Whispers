@@ -1,4 +1,12 @@
 import sunsetImg from "@assets/sunset.jpg";
+import h1BgImg from "@assets/h1-bg.jpg";
+import h2BgImg from "@assets/h2-bg.jpg";
+import h3BgImg from "@assets/h3-bg.jpg";
+import h4BgImg from "@assets/h4-bg.jpg";
+import h5BgImg from "@assets/h5-bg.jpg";
+import h6BgImg from "@assets/h6-bg.jpg";
+import h7BgImg from "@assets/h7-bg.jpg";
+import h1FrontImg from "@assets/h1.png";
 
 export default function AfterTherapy() {
   const transformations = [
@@ -63,7 +71,7 @@ export default function AfterTherapy() {
               {/* Overlapping Background Image - Vertical format */}
               <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
                 <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=600"
+                  src={h1BgImg}
                   alt="Peaceful background for bright days"
                   className="w-full h-full object-cover opacity-70"
                   loading="lazy"
@@ -73,7 +81,7 @@ export default function AfterTherapy() {
               {/* Main Photo - Positioned down to start at 30% of background */}
               <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=800"
+                  src={h1FrontImg}
                   alt="Confidence and inner strength after therapy"
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="lazy"
@@ -136,7 +144,7 @@ export default function AfterTherapy() {
               {/* Overlapping Background Image - Vertical format */}
               <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
                 <img
-                  src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=600"
+                  src={h2BgImg}
                   alt="Peaceful background for gentle strength"
                   className="w-full h-full object-cover opacity-70"
                   loading="lazy"
@@ -146,7 +154,7 @@ export default function AfterTherapy() {
               {/* Main Photo - Positioned down to start at 30% of background */}
               <div className="w-80 h-96 relative mx-auto lg:mr-32 lg:ml-0 lg:mt-28 z-10">
                 <img
-                  src="https://images.unsplash.com/photo-1494790108755-2616c96f6cec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=800"
+                  src={h1FrontImg}
                   alt="Inner peace and gentle strength"
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="lazy"
@@ -164,7 +172,7 @@ export default function AfterTherapy() {
               {/* Overlapping Background Image - Vertical format */}
               <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
                 <img
-                  src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=600"
+                  src={h3BgImg}
                   alt="Peaceful background for mental clarity"
                   className="w-full h-full object-cover opacity-70"
                   loading="lazy"
@@ -174,7 +182,7 @@ export default function AfterTherapy() {
               {/* Main Photo - Positioned down to start at 30% of background */}
               <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
                 <img
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=800"
+                  src={h1FrontImg}
                   alt="Trust and openness in healing"
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="lazy"
@@ -238,7 +246,7 @@ export default function AfterTherapy() {
               {/* Overlapping Background Image - Vertical format */}
               <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
                 <img
-                  src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=600"
+                  src={h4BgImg}
                   alt="Peaceful background for balance"
                   className="w-full h-full object-cover opacity-70"
                   loading="lazy"
@@ -248,7 +256,7 @@ export default function AfterTherapy() {
               {/* Main Photo - Positioned down to start at 30% of background */}
               <div className="w-80 h-96 relative mx-auto lg:mr-32 lg:ml-0 lg:mt-28 z-10">
                 <img
-                  src="https://images.unsplash.com/photo-1526045478516-99145907023c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=800"
+                  src={h1FrontImg}
                   alt="Relationship healing and gentle care"
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="lazy"
@@ -256,6 +264,156 @@ export default function AfterTherapy() {
               </div>
             </div>
           </div>
+        {/* Fifth Section - Image Left, Text Right */}
+        <div className="max-w-7xl mx-auto mt-32">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Side - Photo with Overlapping Background */}
+            <div className="relative">
+              {/* Overlapping Background Image - Vertical format */}
+              <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
+                <img
+                  src={h5BgImg}
+                  alt="Peaceful background for inner wisdom"
+                  className="w-full h-full object-cover opacity-70"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Main Photo - Positioned down to start at 30% of background */}
+              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
+                <img
+                  src={h1FrontImg}
+                  alt="Inner wisdom and self-awareness"
+                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Right Side - Text */}
+            <div className="space-y-8">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+                INNER WISDOM
+              </h3>
+              <div className="space-y-6">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  Therapy awakens the wisdom that was always within you. You begin 
+                  to trust your intuition, recognize your own patterns, and make 
+                  decisions from a place of inner knowing rather than external pressure.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  This is where authentic healing happens — when you learn to listen 
+                  to your inner voice with compassion, to honor your feelings without 
+                  judgment, and to trust that you have everything you need within you.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-kinfolk text-earthy-brown/80 italic leading-relaxed">
+                  "The answers you seek are not outside you — they're waiting quietly within."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Sixth Section - Image Right, Text Left */}
+        <div className="max-w-7xl mx-auto mt-32">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Side - Text */}
+            <div className="space-y-8 order-2 lg:order-1">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+                AUTHENTIC CONNECTION
+              </h3>
+              <div className="space-y-6">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  As you heal, your relationships transform. You learn to connect 
+                  authentically — sharing your truth without losing yourself, 
+                  setting boundaries with love, and choosing relationships that 
+                  nourish rather than drain your spirit.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  This deeper connection starts with yourself and ripples outward 
+                  to touch every relationship in your life. You become magnetic 
+                  to what's meant for you and peacefully release what no longer serves.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-kinfolk text-earthy-brown/80 italic leading-relaxed">
+                  "Real connection happens when you're brave enough to be yourself."
+                </p>
+              </div>
+            </div>
+
+            {/* Right Side - Photo with Overlapping Background */}
+            <div className="relative order-1 lg:order-2">
+              {/* Overlapping Background Image - Vertical format */}
+              <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
+                <img
+                  src={h6BgImg}
+                  alt="Peaceful background for connection"
+                  className="w-full h-full object-cover opacity-70"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Main Photo - Positioned down to start at 30% of background */}
+              <div className="w-80 h-96 relative mx-auto lg:mr-32 lg:ml-0 lg:mt-28 z-10">
+                <img
+                  src={h1FrontImg}
+                  alt="Authentic connection and relationships"
+                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Seventh Section - Image Left, Text Right */}
+        <div className="max-w-7xl mx-auto mt-32">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Side - Photo with Overlapping Background */}
+            <div className="relative">
+              {/* Overlapping Background Image - Vertical format */}
+              <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
+                <img
+                  src={h7BgImg}
+                  alt="Peaceful background for lasting transformation"
+                  className="w-full h-full object-cover opacity-70"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Main Photo - Positioned down to start at 30% of background */}
+              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
+                <img
+                  src={h1FrontImg}
+                  alt="Lasting transformation and growth"
+                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Right Side - Text */}
+            <div className="space-y-8">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+                LASTING TRANSFORMATION
+              </h3>
+              <div className="space-y-6">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  The most beautiful part of therapy is witnessing your own 
+                  transformation — not into someone different, but into who you've 
+                  always been beneath the layers of protection, fear, and doubt.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  This isn't a destination but a way of being — moving through life 
+                  with greater ease, responding instead of reacting, and trusting 
+                  in your own resilience to handle whatever comes your way.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-kinfolk text-earthy-brown/80 italic leading-relaxed">
+                  "You are not broken and in need of fixing — you are whole and in the process of remembering."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
         </div>
       </section>
