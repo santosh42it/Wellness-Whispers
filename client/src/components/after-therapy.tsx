@@ -99,45 +99,28 @@ export default function AfterTherapy() {
           </p>
         </div>
 
-        {/* Overlapped Two Images Design */}
-        <div className="max-w-6xl mx-auto">
-          <div className="relative">
-            {/* Main larger image */}
-            <div className="relative w-full h-[70vh] overflow-hidden rounded-2xl shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800"
-                alt="Confidence and inner strength after therapy"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-              
-              {/* Text overlay on main image */}
-              <div className="absolute bottom-8 left-8 right-8">
-                <h3 className="text-2xl lg:text-3xl font-kinfolk font-extralight text-white mb-3 drop-shadow-lg">
-                  CONFIDENCE BLOOMS
-                </h3>
-                <p className="text-lg lg:text-xl font-nunito text-white/95 leading-relaxed drop-shadow-md">
-                  Self-doubt transforms into quiet, unshakeable confidence — radiating from within.
-                </p>
+        {/* Photo with Overlapping Background - Copied from Meet Me section */}
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-center lg:justify-start">
+            <div className="relative">
+              {/* Overlapping Background Image - Vertical format */}
+              <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
+                <img
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=600"
+                  alt="Peaceful background for bright days"
+                  className="w-full h-full object-cover opacity-70"
+                  loading="lazy"
+                />
               </div>
-            </div>
 
-            {/* Overlapping smaller image */}
-            <div className="absolute -bottom-16 -right-8 lg:-right-16 w-64 lg:w-80 h-48 lg:h-60 overflow-hidden rounded-2xl shadow-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-transform duration-300">
-              <img 
-                src="https://images.unsplash.com/photo-1494790108755-2616c96f6cec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600"
-                alt="Inner courage and peaceful strength"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-              
-              {/* Subtle text on smaller image */}
-              <div className="absolute bottom-3 left-3 right-3">
-                <p className="text-sm lg:text-base font-kinfolk font-extralight text-white italic drop-shadow-lg">
-                  Inner courage quietly grows
-                </p>
+              {/* Main Photo - Positioned down to start at 30% of background */}
+              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=800"
+                  alt="Confidence and inner strength after therapy"
+                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
