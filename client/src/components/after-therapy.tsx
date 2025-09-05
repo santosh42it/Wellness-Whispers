@@ -93,7 +93,7 @@ export default function AfterTherapy() {
             <div className="space-y-8">
               <p className="text-2xl font-kinfolk text-sage-green/80 italic mb-2">Healing</p>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
-                BRIGHT DAYS
+                RENEWED SPIRIT
               </h3>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
