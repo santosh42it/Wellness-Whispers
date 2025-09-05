@@ -258,44 +258,46 @@ export default function AfterTherapy() {
           </div>
         </div>
 
-        {/* Soft Colors Hold You Section - Moved here */}
-        <div className="min-h-screen relative flex items-center mt-32">
-          {/* Background Image */}
-          <div className="absolute inset-0">
-            <img
-              src={sunsetImg}
-              alt="Peaceful sunset over water"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30"></div>
-          </div>
+        {/* Soft Colors Hold You Section - Full Size Image */}
+        <div className="mt-32">
+          <div className="min-h-screen relative flex items-center">
+            {/* Background Image */}
+            <div className="absolute inset-0">
+              <img
+                src={sunsetImg}
+                alt="Peaceful sunset over water"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30"></div>
+            </div>
 
-          {/* Content */}
-          <div className="relative z-20 container mx-auto px-6 py-20">
-            <div className="max-w-5xl mx-auto text-center space-y-10">
-              <div className="p-8 lg:p-12">
-                <h2 className="text-5xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight uppercase mb-8 drop-shadow-lg">
-                  SOFT COLORS HOLD YOU
-                </h2>
-                <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed mb-10 drop-shadow-md">
-                  "Not every day needs answers — sometimes the soft colors of
-                  nature hold you enough."
-                </p>
-                <div className="max-w-4xl mx-auto space-y-8">
-                  <p className="text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-sm">
-                    Every session is designed to feel simple, safe, and welcoming,
-                    using gentle approaches like mindfulness, grounding, inner
-                    child healing, and reflective talk therapy. Therapy here is a
-                    safe pause for your heart, where emotions can rest and
-                    gradually transform into understanding, resilience, and inner
-                    strength.
+            {/* Content */}
+            <div className="relative z-20 container mx-auto px-6 py-20">
+              <div className="max-w-5xl mx-auto text-center space-y-10">
+                <div className="p-8 lg:p-12">
+                  <h2 className="text-5xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight uppercase mb-8 drop-shadow-lg">
+                    SOFT COLORS HOLD YOU
+                  </h2>
+                  <p className="text-3xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed mb-10 drop-shadow-md">
+                    "Not every day needs answers — sometimes the soft colors of
+                    nature hold you enough."
                   </p>
-                  <p className="text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-sm">
-                    Healing is not about rushing — it's about finding steady,
-                    quiet steps.
-                  </p>
+                  <div className="max-w-4xl mx-auto space-y-8">
+                    <p className="text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-sm">
+                      Every session is designed to feel simple, safe, and welcoming,
+                      using gentle approaches like mindfulness, grounding, inner
+                      child healing, and reflective talk therapy. Therapy here is a
+                      safe pause for your heart, where emotions can rest and
+                      gradually transform into understanding, resilience, and inner
+                      strength.
+                    </p>
+                    <p className="text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-sm">
+                      Healing is not about rushing — it's about finding steady,
+                      quiet steps.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
