@@ -43,7 +43,7 @@ export default function AfterTherapy() {
   return (
     <>
       <section className="py-20 relative">
-      <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6">
         
         {/* Section Title */}
         <div className="text-center mb-16">
@@ -294,7 +294,8 @@ export default function AfterTherapy() {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+      </section>
 
       <section className="py-20 relative">
         <div className="container mx-auto px-6">
