@@ -149,6 +149,57 @@ export default function AfterTherapy() {
           </div>
         </div>
 
+        {/* Second Section - Reversed Layout */}
+        <div className="max-w-7xl mx-auto mt-32">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Side - Text */}
+            <div className="space-y-8 order-2 lg:order-1">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+                GENTLE STRENGTH
+              </h3>
+              <div className="space-y-6">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  Therapy teaches you that strength doesn't always roar — sometimes 
+                  it's the quiet voice at the end of the day saying you'll try again 
+                  tomorrow. You learn to hold space for difficult emotions without 
+                  being overwhelmed by them.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  This is where true healing lives — in the gentle acceptance of 
+                  yourself, in choosing compassion over criticism, and in finding 
+                  peace with the journey rather than rushing toward the destination.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-kinfolk text-earthy-brown/80 italic leading-relaxed">
+                  "Sometimes the most powerful thing you can do is simply breathe and trust the process."
+                </p>
+              </div>
+            </div>
+
+            {/* Right Side - Photo with Overlapping Background */}
+            <div className="relative order-1 lg:order-2">
+              {/* Overlapping Background Image - Vertical format */}
+              <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
+                <img
+                  src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=600"
+                  alt="Peaceful background for gentle strength"
+                  className="w-full h-full object-cover opacity-70"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Main Photo - Positioned down to start at 30% of background */}
+              <div className="w-80 h-96 relative mx-auto lg:mr-32 lg:ml-0 lg:mt-28 z-10">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108755-2616c96f6cec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=800"
+                  alt="Inner peace and gentle strength"
+                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Closing Reflection */}
         <div className="mt-32 max-w-4xl mx-auto text-center">
           <div className="bg-white/50 backdrop-blur-sm p-12 rounded-3xl shadow-soft">
