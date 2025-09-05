@@ -218,6 +218,81 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+/* Wooden Button Styling for Authentic Therapy Theme */
+.wooden-button {
+  background: linear-gradient(145deg, 
+    #8B4513 0%,    /* Saddle brown */
+    #A0522D 15%,   /* Sienna */
+    #CD853F 35%,   /* Peru */
+    #D2B48C 50%,   /* Tan */
+    #CD853F 65%,   /* Peru */
+    #A0522D 85%,   /* Sienna */
+    #8B4513 100%   /* Saddle brown */
+  );
+  
+  /* Wood grain texture using multiple box shadows */
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    inset 1px 0 0 rgba(255, 255, 255, 0.1),
+    inset -1px 0 0 rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.25),
+    0 2px 4px rgba(0, 0, 0, 0.15);
+  
+  border: 2px solid #654321;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  
+  /* Wood grain pattern overlay */
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 1px,
+      rgba(0, 0, 0, 0.1) 1px,
+      rgba(0, 0, 0, 0.1) 2px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.05) 2px,
+      rgba(255, 255, 255, 0.05) 4px
+    );
+}
+
+.wooden-button:hover {
+  background: linear-gradient(145deg, 
+    #654321 0%,    /* Darker saddle brown */
+    #8B4513 15%,   /* Saddle brown */
+    #A0522D 35%,   /* Sienna */
+    #CD853F 50%,   /* Peru */
+    #A0522D 65%,   /* Sienna */
+    #8B4513 85%,   /* Saddle brown */
+    #654321 100%   /* Darker saddle brown */
+  );
+  
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.4),
+    inset 1px 0 0 rgba(255, 255, 255, 0.15),
+    inset -1px 0 0 rgba(0, 0, 0, 0.25),
+    0 6px 12px rgba(0, 0, 0, 0.3),
+    0 3px 6px rgba(0, 0, 0, 0.2);
+  
+  transform: translateY(-1px);
+}
+
+.wooden-button:active {
+  transform: translateY(1px);
+  box-shadow: 
+    inset 0 2px 4px rgba(0, 0, 0, 0.3),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 /* Animation utilities */
 @keyframes fadeInUp {
   from {

@@ -15,6 +15,7 @@ export default function WhatsAppButton({ className, children }: WhatsAppButtonPr
 
   return (
     <Button
+      variant="wooden"
       onClick={handleWhatsAppClick}
       className={cn("flex items-center space-x-2 whatsapp-button", className)}
     >
