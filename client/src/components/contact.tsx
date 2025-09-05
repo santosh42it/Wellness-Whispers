@@ -39,7 +39,7 @@ export default function Contact() {
                 
                 {/* Enhanced WhatsApp Button */}
                 <div className="flex flex-col items-center space-y-4">
-                  <WhatsAppButton className="bg-gradient-to-r from-sage-green to-olive-green hover:from-olive-green hover:to-sage-green text-white px-10 py-4 text-lg font-medium rounded-2xl shadow-warm hover:shadow-strong transition-all duration-300 transform hover:scale-105 border-2 border-sage-green/20 hover:border-white/20">
+                  <WhatsAppButton className="px-10 py-4 text-lg font-medium">
                     Begin Your Journey
                   </WhatsAppButton>
                   

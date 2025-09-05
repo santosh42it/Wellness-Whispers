@@ -123,7 +123,8 @@ export default function AdminLogin() {
 
               <Button
                 type="submit"
-                className="w-full bg-sage-green hover:bg-olive-green text-white py-2 px-4 rounded-lg font-medium shadow-warm hover:shadow-strong transition-all duration-300"
+                variant="wooden"
+                className="w-full py-2 px-4 font-medium"
                 disabled={isLoading}
               >
                 {isLoading ? (

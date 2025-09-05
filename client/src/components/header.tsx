@@ -103,7 +103,7 @@ export default function Header() {
             >
               Stories
             </button>
-            <WhatsAppButton className="bg-sage-green hover:bg-olive-green text-white px-6 py-2 rounded-xl transition-all duration-300 shadow-warm hover:shadow-strong font-nunito border-2 border-sage-green hover:border-olive-green" />
+            <WhatsAppButton className="px-6 py-2 font-nunito" />
           </nav>
 
           {/* Mobile Menu Button */}
@@ -159,7 +159,7 @@ export default function Header() {
               >
                 Testimonials
               </button>
-              <WhatsAppButton className="bg-sage-green hover:bg-olive-green text-white px-6 py-3 rounded-xl transition-all duration-300 w-full justify-center shadow-warm hover:shadow-strong border-2 border-sage-green hover:border-olive-green" />
+              <WhatsAppButton className="px-6 py-3 w-full justify-center font-nunito" />
             </div>
           </div>
         )}
