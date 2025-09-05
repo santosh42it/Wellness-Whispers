@@ -486,18 +486,9 @@
 }
 
 /* Ensure WhatsApp buttons are always visible */
+/* WhatsApp button styling now uses wooden variant only */
 .whatsapp-button {
-  background-color: #567A4B !important;
-  color: white !important;
-  border: 2px solid #567A4B !important;
-  font-weight: 600 !important;
-}
-
-.whatsapp-button:hover {
-  background-color: #5D6E4A !important;
-  border-color: #5D6E4A !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 8px 25px rgba(86, 122, 75, 0.3) !important;
+  /* Remove all !important green overrides to let wooden styling show */
 }
 
 /* Gentle animations */

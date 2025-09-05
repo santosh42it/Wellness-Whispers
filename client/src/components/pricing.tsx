@@ -91,7 +91,7 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <WhatsAppButton className="w-full bg-sage-green hover:bg-olive-green text-white py-3 px-6 font-medium shadow-warm hover:shadow-strong transition-all duration-300 border-2 border-sage-green hover:border-olive-green">
+              <WhatsAppButton className="w-full text-white py-3 px-6 font-medium shadow-warm hover:shadow-strong transition-all duration-300">
                 Choose {plan.name}
               </WhatsAppButton>
             </div>
