@@ -151,7 +151,7 @@ export default function AfterTherapy() {
                 />
               </div>
 
-              {/* Main Photo - Positioned to overlap with background */}
+              {/* Main Photo - Positioned down to start at 30% of background */}
               <div className="w-80 h-96 relative mx-auto lg:mr-32 lg:ml-0 lg:mt-28 z-10">
                 <img
                   src={h1FrontImg}
@@ -253,7 +253,7 @@ export default function AfterTherapy() {
                 />
               </div>
 
-              {/* Main Photo - Positioned to overlap with background */}
+              {/* Main Photo - Positioned down to start at 30% of background */}
               <div className="w-80 h-96 relative mx-auto lg:mr-32 lg:ml-0 lg:mt-28 z-10">
                 <img
                   src={h1FrontImg}
@@ -352,7 +352,7 @@ export default function AfterTherapy() {
                 />
               </div>
 
-              {/* Main Photo - Positioned to overlap with background */}
+              {/* Main Photo - Positioned down to start at 30% of background */}
               <div className="w-80 h-96 relative mx-auto lg:mr-32 lg:ml-0 lg:mt-28 z-10">
                 <img
                   src={h1FrontImg}
