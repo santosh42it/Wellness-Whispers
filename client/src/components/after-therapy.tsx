@@ -200,6 +200,108 @@ export default function AfterTherapy() {
           </div>
         </div>
 
+        {/* Third Section - Image Left, Text Right */}
+        <div className="max-w-7xl mx-auto mt-32">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Side - Photo with Overlapping Background */}
+            <div className="relative">
+              {/* Overlapping Background Image - Vertical format */}
+              <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
+                <img
+                  src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=600"
+                  alt="Peaceful background for mental clarity"
+                  className="w-full h-full object-cover opacity-70"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Main Photo - Positioned down to start at 30% of background */}
+              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
+                <img
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=800"
+                  alt="Trust and openness in healing"
+                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Right Side - Text */}
+            <div className="space-y-8">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+                OPEN HEART
+              </h3>
+              <div className="space-y-6">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  Learning to trust again — both yourself and others — becomes 
+                  possible when you've done the inner work. Your heart opens not 
+                  because you're naive, but because you're strong enough to be 
+                  vulnerable in healthy ways.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  This page does not judge, and neither do your feelings. You 
+                  discover that mental clarity comes not from having all the answers, 
+                  but from understanding your patterns and choosing your responses.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-kinfolk text-earthy-brown/80 italic leading-relaxed">
+                  "True strength is being soft in a world that mistakes gentleness for weakness."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Fourth Section - Image Right, Text Left */}
+        <div className="max-w-7xl mx-auto mt-32">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Side - Text */}
+            <div className="space-y-8 order-2 lg:order-1">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+                PEACEFUL BALANCE
+              </h3>
+              <div className="space-y-6">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  You learn to choose peace over perfection in your daily life 
+                  decisions. Self-regulation becomes natural — when you feel 
+                  anxious, you tap your heart and breathe instead of spiraling 
+                  into overwhelm.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  Relationships heal when you pause the blame and find understanding 
+                  instead. You allow yourself to be held, even if it's just in 
+                  small moments, and you extend that same gentle care to others.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-kinfolk text-earthy-brown/80 italic leading-relaxed">
+                  "Balance is not perfection — it's the art of returning to center when life pulls you away."
+                </p>
+              </div>
+            </div>
+
+            {/* Right Side - Photo with Overlapping Background */}
+            <div className="relative order-1 lg:order-2">
+              {/* Overlapping Background Image - Vertical format */}
+              <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
+                <img
+                  src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=600"
+                  alt="Peaceful background for balance"
+                  className="w-full h-full object-cover opacity-70"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Main Photo - Positioned down to start at 30% of background */}
+              <div className="w-80 h-96 relative mx-auto lg:mr-32 lg:ml-0 lg:mt-28 z-10">
+                <img
+                  src="https://images.unsplash.com/photo-1526045478516-99145907023c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=800"
+                  alt="Relationship healing and gentle care"
+                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Closing Reflection */}
         <div className="mt-32 max-w-4xl mx-auto text-center">
           <div className="bg-white/50 backdrop-blur-sm p-12 rounded-3xl shadow-soft">
