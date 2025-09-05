@@ -99,27 +99,52 @@ export default function AfterTherapy() {
           </p>
         </div>
 
-        {/* Clean Grid Layout for Photos */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {transformations.map((item, index) => (
-            <div 
-              key={index}
-              className="group relative overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
-            >
+        {/* Overlapped Two Images Design */}
+        <div className="max-w-6xl mx-auto">
+          <div className="relative">
+            {/* Main larger image */}
+            <div className="relative w-full h-[70vh] overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src={item.image}
-                alt={item.caption}
-                className="w-full h-60 object-cover filter saturate-90 group-hover:saturate-100 transition-all duration-300"
-                style={{ aspectRatio: '4/3' }}
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=800"
+                alt="Confidence and inner strength after therapy"
+                className="w-full h-full object-cover"
+                loading="lazy"
               />
-              {/* Subtle overlay on hover */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+              
+              {/* Text overlay on main image */}
+              <div className="absolute bottom-8 left-8 right-8">
+                <h3 className="text-2xl lg:text-3xl font-kinfolk font-extralight text-white mb-3 drop-shadow-lg">
+                  CONFIDENCE BLOOMS
+                </h3>
+                <p className="text-lg lg:text-xl font-nunito text-white/95 leading-relaxed drop-shadow-md">
+                  Self-doubt transforms into quiet, unshakeable confidence — radiating from within.
+                </p>
+              </div>
             </div>
-          ))}
+
+            {/* Overlapping smaller image */}
+            <div className="absolute -bottom-16 -right-8 lg:-right-16 w-64 lg:w-80 h-48 lg:h-60 overflow-hidden rounded-2xl shadow-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-transform duration-300">
+              <img 
+                src="https://images.unsplash.com/photo-1494790108755-2616c96f6cec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600"
+                alt="Inner courage and peaceful strength"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+              
+              {/* Subtle text on smaller image */}
+              <div className="absolute bottom-3 left-3 right-3">
+                <p className="text-sm lg:text-base font-kinfolk font-extralight text-white italic drop-shadow-lg">
+                  Inner courage quietly grows
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Closing Reflection */}
-        <div className="mt-20 max-w-4xl mx-auto text-center">
+        <div className="mt-32 max-w-4xl mx-auto text-center">
           <div className="bg-white/50 backdrop-blur-sm p-12 rounded-3xl shadow-soft">
             <p className="text-xl text-charcoal-grey font-nunito leading-relaxed italic">
               "Healing isn't about becoming someone new. It's about returning to who you've 
