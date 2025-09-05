@@ -19,6 +19,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         wooden: "wooden-button text-white hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl",
+        earthy: "bg-earthy-brown hover:bg-earthy-brown/90 text-white shadow-md hover:shadow-lg transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",

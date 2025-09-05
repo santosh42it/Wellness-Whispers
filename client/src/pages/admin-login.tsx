@@ -123,7 +123,7 @@ export default function AdminLogin() {
 
               <Button
                 type="submit"
-                variant="wooden"
+                variant="earthy"
                 className="w-full py-2 px-4 font-medium"
                 disabled={isLoading}
               >
