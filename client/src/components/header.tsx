@@ -97,12 +97,18 @@ export default function Header() {
             >
               Gift Of Healing
             </button>
-            <button
-              onClick={() => scrollToSection("testimonials")}
+            <Link 
+              href="/emotional-checkin"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
-              Stories
-            </button>
+              Emotional Check-In
+            </Link>
+            <Link 
+              href="/faq"
+              className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
+            >
+              FAQ
+            </Link>
             <WhatsAppButton className="text-white px-6 py-2 rounded-xl transition-all duration-300 shadow-warm hover:shadow-strong font-nunito" />
           </nav>
 
@@ -153,12 +159,20 @@ export default function Header() {
               >
                 Bright Days
               </Link>
-              <button
-                onClick={() => scrollToSection("testimonials")}
+              <Link
+                href="/emotional-checkin"
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                Testimonials
-              </button>
+                Emotional Check-In
+              </Link>
+              <Link
+                href="/faq"
+                className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                FAQ
+              </Link>
               <WhatsAppButton className="text-white px-6 py-3 rounded-xl transition-all duration-300 w-full justify-center shadow-warm hover:shadow-strong" />
             </div>
           </div>

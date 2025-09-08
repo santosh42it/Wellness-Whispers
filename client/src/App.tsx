@@ -6,6 +6,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import AboutPage from "@/pages/about";
 import AfterTherapyPage from "@/pages/after-therapy";
+import EmotionalCheckInPage from "@/pages/emotional-checkin";
+import FAQPage from "@/pages/faq";
 import NotFound from "@/pages/not-found";
 import AdminLogin from "@/pages/admin-login";
 import AdminDashboard from "@/pages/admin-dashboard";
@@ -24,6 +26,8 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={AboutPage} />
       <Route path="/after-therapy" component={AfterTherapyPage} />
+      <Route path="/emotional-checkin" component={EmotionalCheckInPage} />
+      <Route path="/faq" component={FAQPage} />
       <Route path="/admin/login" component={AdminLogin} />
       <Route path="/admin/dashboard" component={AdminDashboard} />
       <Route path="/admin" component={AdminDashboard} />
