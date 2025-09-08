@@ -95,7 +95,7 @@ export default function EmotionalCheckInPage() {
                     <img
                       src={emotionalCheckInImg}
                       alt="Emotional check-in and self-reflection"
-                      className="w-full h-full object-cover shadow-2xl relative z-10"
+                      className="w-full h-full object-contain shadow-2xl relative z-10"
                       loading="lazy"
                     />
                   </div>
