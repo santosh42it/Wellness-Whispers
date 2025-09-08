@@ -91,15 +91,10 @@ export default function Approach() {
         
         {/* Section Title */}
         <div className="text-center mb-20">
-          <p className="text-sage-green/70 -mb-4 font-normal" style={{fontFamily: 'Feather, cursive', fontSize: '3.5rem'}}>Gentle</p>
-          <div className="inline-block">
-            <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-dark-brown mb-6 relative">
-              {approachTitle}
-              {/* Decorative underline */}
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-sage via-peach to-sage rounded-full"></div>
-            </h2>
-          </div>
-          <p className="text-xl text-dark-brown font-medium max-w-4xl mx-auto leading-relaxed mt-8">
+          <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-dark-brown mb-4">
+            {approachTitle}
+          </h2>
+          <p className="text-xl text-dark-brown font-medium max-w-4xl mx-auto leading-relaxed">
             {approachSubtitle}
           </p>
         </div>

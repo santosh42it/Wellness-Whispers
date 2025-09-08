@@ -37,7 +37,6 @@ export default function Testimonials() {
         
         {/* Section Title */}
         <div className="text-center mb-20">
-          <p className="text-sage-green/70 -mb-4 font-normal" style={{fontFamily: 'Feather, cursive', fontSize: '3.5rem'}}>Stories</p>
           <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown mb-6">
             Stories
           </h2>

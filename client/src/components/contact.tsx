@@ -9,7 +9,6 @@ export default function Contact() {
           {/* Opening Message */}
           <div className="mb-20">
             <div className="space-y-4">
-              <p className="text-sage-green/70 -mb-4 font-normal" style={{fontFamily: 'Feather, cursive', fontSize: '3.5rem'}}>Connection</p>
               <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown leading-tight">
                 Healing begins in quiet moments
               </h2>
