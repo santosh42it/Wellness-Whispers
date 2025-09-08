@@ -75,8 +75,8 @@ export default function Approach() {
       alt: "Clear water reflection representing emotional clarity"
     },
     {
-      title: "Gentle Talk Therapy",
-      description: "Safe space for processing thoughts without pressure or judgment",
+      title: "Narrative Therapy",
+      description: "With your voice as a lantern, writing your future story — where you are the author.",
       image: a8Image,
       alt: "Comfortable therapy space with gentle conversation atmosphere"
     }
