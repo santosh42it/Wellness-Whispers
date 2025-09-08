@@ -1,6 +1,7 @@
 import pavanPhoto from "@assets/pavan.png";
 import pavanBg from "@assets/pavan-bg.jpg";
 import oceanBg from "@assets/ocean-bg.jpg";
+import dreamyNatureImg from "@assets/nature-landscape-with-dreamy.jpg";
 import balloonImg from "@assets/hotair-balloons.jpg";
 import sunsetImg from "@assets/sunset.jpg";
 import natureLandscapeImg from "@assets/nature-landscape.jpg";
@@ -88,7 +89,36 @@ export default function About() {
           </div>
         </div>
       </div>
-      {/* Section 3: Hot Air Balloon */}
+
+      {/* Section 3: Dreamy Nature - Therapy Approach */}
+      <div className="min-h-screen relative flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src={dreamyNatureImg}
+            alt="Dreamy nature landscape with peaceful therapy setting"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-20 container mx-auto px-6 py-20">
+          <div className="max-w-6xl mx-auto text-center space-y-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-kinfolk font-extralight text-white leading-tight uppercase drop-shadow-lg">
+              GENTLE HEALING
+            </h2>
+            <div className="max-w-5xl mx-auto">
+              <p className="text-lg sm:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light">
+                Every session is designed to feel simple, safe, and welcoming, using gentle approaches like mindfulness, grounding, inner child healing, and reflective talk therapy. Therapy here is a safe pause for your heart, where emotions can rest and gradually transform into understanding, resilience, and inner strength.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Section 4: Hot Air Balloon */}
       <div className="min-h-screen relative flex items-center py-20">
         {/* Content Container */}
         <div className="relative z-20 container mx-auto px-6">
@@ -133,7 +163,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      {/* Nature Landscape Section */}
+      {/* Section 5: Nature Landscape Section */}
       <div className="min-h-screen relative flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0">
