@@ -51,6 +51,12 @@ export default function Approach() {
       alt: "Gentle hands in self-soothing butterfly hug position"
     },
     {
+      title: "Narrative Therapy",
+      description: "With your voice as a lantern, writing your future story — where you are the author.",
+      image: a8Image,
+      alt: "Comfortable therapy space with gentle conversation atmosphere"
+    },
+    {
       title: "Inner Child Healing",
       description: "Compassionate exploration of early emotional patterns and healing",
       image: a4Image,
@@ -73,12 +79,6 @@ export default function Approach() {
       description: "Untangling complex feelings and finding your emotional truth",
       image: a7Image,
       alt: "Clear water reflection representing emotional clarity"
-    },
-    {
-      title: "Narrative Therapy",
-      description: "With your voice as a lantern, writing your future story — where you are the author.",
-      image: a8Image,
-      alt: "Comfortable therapy space with gentle conversation atmosphere"
     }
   ];
 
