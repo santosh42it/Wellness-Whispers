@@ -84,7 +84,7 @@ export default function Footer() {
                     onClick={() => scrollToSection("pricing")}
                     className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
-                    Pricing
+                    Gift of Healing
                   </button>
                 </li>
                 <li>

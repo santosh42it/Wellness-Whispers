@@ -95,7 +95,7 @@ export default function Header() {
               onClick={() => scrollToSection("pricing")}
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
-              Pricing
+              Gift of Healing
             </button>
             <Link 
               href="/emotional-checkin"
