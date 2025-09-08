@@ -145,10 +145,10 @@ export default function Hero() {
           
           {/* Hero Text Content */}
           <div className="relative z-20 text-center px-8 xl:px-16">
-            <h1 className="text-4xl xl:text-6xl font-kinfolk font-extralight text-earthy-brown mb-6 leading-tight animate-fade-in-up">
-              <div className="block">WELCOME</div>
-              <div className="block text-sage-green/80" style={{fontFamily: 'Feather, cursive', fontSize: '0.8em', margin: '0.2em 0'}}>TO YOUR</div>
-              <div className="block">SAFE SPACE</div>
+            <h1 className="text-4xl xl:text-6xl text-earthy-brown mb-6 leading-tight animate-fade-in-up">
+              <div className="block font-bold tracking-wide" style={{fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.1em'}}>WELCOME</div>
+              <div className="block italic text-sage-green/80" style={{fontFamily: 'Feather, cursive', fontSize: '0.8em', margin: '0.2em 0', fontStyle: 'italic'}}>TO YOUR</div>
+              <div className="block font-bold tracking-wide" style={{fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.1em'}}>SAFE SPACE</div>
             </h1>
             <p className="text-xl xl:text-2xl text-earthy-brown/80 font-nunito max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300">
               You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
@@ -203,10 +203,10 @@ export default function Hero() {
           
           {/* Welcome Text - Top */}
           <div className="text-center">
-            <h1 className="font-kinfolk text-3xl sm:text-4xl text-earthy-brown mb-4 leading-tight font-extralight">
-              <div className="block">WELCOME</div>
-              <div className="block text-sage-green/80" style={{fontFamily: 'Feather, cursive', fontSize: '0.8em', margin: '0.2em 0'}}>TO YOUR</div>
-              <div className="block">SAFE SPACE</div>
+            <h1 className="text-3xl sm:text-4xl text-earthy-brown mb-4 leading-tight">
+              <div className="block font-bold tracking-wide" style={{fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.1em'}}>WELCOME</div>
+              <div className="block italic text-sage-green/80" style={{fontFamily: 'Feather, cursive', fontSize: '0.8em', margin: '0.2em 0', fontStyle: 'italic'}}>TO YOUR</div>
+              <div className="block font-bold tracking-wide" style={{fontFamily: 'Arial, sans-serif', fontWeight: '700', letterSpacing: '0.1em'}}>SAFE SPACE</div>
             </h1>
             <p className="font-nunito text-lg sm:text-xl text-earthy-brown/80 leading-relaxed max-w-md">
               You've arrived at a space to pause and breathe. A quiet start, where you can feel safe and a little lighter.
