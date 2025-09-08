@@ -63,16 +63,16 @@ export default function Approach() {
       alt: "Child's perspective showing innocence and inner child healing"
     },
     {
-      title: "Emotional Clarity Work",
-      description: "Untangling complex feelings and finding your emotional truth",
-      image: a7Image,
-      alt: "Clear water reflection representing emotional clarity"
-    },
-    {
       title: "Person-Centered Approach",
       description: "Your experience is the guide - gentle, non-directive therapeutic support",
       image: a5Image,
       alt: "Warm, empathetic therapist listening with person-centered focus"
+    },
+    {
+      title: "Emotional Clarity Work",
+      description: "Untangling complex feelings and finding your emotional truth",
+      image: a7Image,
+      alt: "Clear water reflection representing emotional clarity"
     },
     {
       title: "Strengths-Based Therapy",
