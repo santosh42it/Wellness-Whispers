@@ -90,8 +90,8 @@ export default function EmotionalCheckInPage() {
                     />
                   </div>
 
-                  {/* Main Photo - Positioned down to start at 30% of background */}
-                  <div className="w-80 h-96 relative mx-auto lg:mr-32 lg:ml-0 lg:mt-28 z-10">
+                  {/* Main Photo - Centered and properly positioned */}
+                  <div className="w-80 h-96 relative mx-auto lg:mt-20 z-10">
                     <img
                       src={emotionalCheckInImg}
                       alt="Emotional check-in and self-reflection"
