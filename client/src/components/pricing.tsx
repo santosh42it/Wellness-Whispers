@@ -98,6 +98,14 @@ export default function Pricing() {
           ))}
         </div>
 
+        {/* Compassion Quote */}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <div className="bg-peach-blush/30 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
+            <p className="text-lg text-dark-brown font-nunito leading-relaxed italic">
+              "Every month, a few sessions are kept aside as a quiet gift — reserved for those who truly need support but cannot afford therapy. These are limited, yet always offered with compassion and trust."
+            </p>
+          </div>
+        </div>
 
       </div>
 

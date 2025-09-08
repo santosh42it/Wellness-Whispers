@@ -5,7 +5,6 @@ import Services from "@/components/services";
 import NatureHealing from "@/components/nature-healing";
 import Approach from "@/components/approach";
 import Pricing from "@/components/pricing";
-import CompassionQuote from "@/components/compassion-quote";
 import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
@@ -31,7 +30,6 @@ export default function Home() {
         <NatureHealing />
         <Approach />
         <Pricing />
-        <CompassionQuote />
         <Testimonials />
         <Contact />
       </main>
