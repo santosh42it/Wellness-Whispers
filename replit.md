@@ -1,6 +1,6 @@
 # Overview
 
-This is a therapy and wellness website called "Wellness Whispers" built for Mrs. Pavan Chowdhary, a licensed therapist offering online talk therapy services. The application is a modern full-stack web application that provides information about therapy services, allows potential clients to learn about the therapist, and facilitates contact through both traditional forms and WhatsApp integration.
+This is a therapy and wellness website called "Wellness Whispers" built for Ms. Pavan Chowdhary, a licensed therapist offering online talk therapy services. The application is a modern full-stack web application that provides information about therapy services, allows potential clients to learn about the therapist, and facilitates contact through both traditional forms and WhatsApp integration.
 
 The site features a warm, calming design with a therapy-focused color palette (peach, sage, soft beige, cream) and includes sections for services offered, therapeutic approaches, session information, testimonials, and contact forms. The primary goal is to create a welcoming online presence that helps clients feel comfortable reaching out for mental health support.
 

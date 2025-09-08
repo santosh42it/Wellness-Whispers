@@ -109,7 +109,7 @@ export default function Contact() {
                 except now, if you feel ready."
               </p>
               <p className="text-sage font-kinfolk text-lg mt-4">
-                — Mrs. Pavan Chowdhary
+                — Ms. Pavan Chowdhary
               </p>
             </div>
           </div>

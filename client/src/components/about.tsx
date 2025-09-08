@@ -30,7 +30,7 @@ export default function About() {
               <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
                 <img
                   src={pavanPhoto}
-                  alt="Mrs. Pavan Chowdhary - Licensed Therapist"
+                  alt="Ms. Pavan Chowdhary - Licensed Therapist"
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="eager"
                 />
@@ -44,7 +44,7 @@ export default function About() {
               </h1>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
-                  I'm Mrs. Pavan Chowdhary, a Gold Medalist in Public
+                  I'm Ms. Pavan Chowdhary, a Gold Medalist in Public
                   Administration with a Postgraduate Diploma in Guidance &
                   Counselling, along with multiple certified diploma courses. My
                   journey combines 45+ years of entrepreneurial leadership and

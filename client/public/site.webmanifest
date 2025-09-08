@@ -1,7 +1,7 @@
 {
   "name": "Wellness Whispers - Professional Online Therapy",
   "short_name": "Wellness Whispers",
-  "description": "Professional online talk therapy with Mrs. Pavan Chowdhary. Specializing in anxiety, relationship healing, and emotional support.",
+  "description": "Professional online talk therapy with Ms. Pavan Chowdhary. Specializing in anxiety, relationship healing, and emotional support.",
   "icons": [
     {
       "src": "/favicon-16x16.png",
@@ -56,7 +56,7 @@
     {
       "name": "About Therapist",
       "short_name": "About",
-      "description": "Learn about Mrs. Pavan Chowdhary",
+      "description": "Learn about Ms. Pavan Chowdhary",
       "url": "/#about", 
       "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
     }

@@ -10,9 +10,9 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({
-  title = "Wellness Whispers - Professional Online Therapy | Mrs. Pavan Chowdhary | Anxiety & Emotional Support",
-  description = "Professional online talk therapy with Mrs. Pavan Chowdhary, Gold Medalist MPA. Specializing in anxiety, depression, relationship healing, emotional support, mindfulness, and somatic techniques. 6+ years experience, affordable sessions via WhatsApp/Google Meet.",
-  keywords = "online therapy, talk therapy, anxiety therapy, depression support, relationship counseling, emotional healing, mindfulness therapy, somatic grounding, EMDR techniques, affordable therapy, WhatsApp therapy, Google Meet therapy, Mrs Pavan Chowdhary, licensed therapist, mental health support, emotional clarity, healing therapy, online counseling",
+  title = "Wellness Whispers - Professional Online Therapy | Ms. Pavan Chowdhary | Anxiety & Emotional Support",
+  description = "Professional online talk therapy with Ms. Pavan Chowdhary, Gold Medalist MPA. Specializing in anxiety, depression, relationship healing, emotional support, mindfulness, and somatic techniques. 6+ years experience, affordable sessions via WhatsApp/Google Meet.",
+  keywords = "online therapy, talk therapy, anxiety therapy, depression support, relationship counseling, emotional healing, mindfulness therapy, somatic grounding, EMDR techniques, affordable therapy, WhatsApp therapy, Google Meet therapy, Ms Pavan Chowdhary, licensed therapist, mental health support, emotional clarity, healing therapy, online counseling",
   image = "https://wellnesswhispers.in/og-image.jpg",
   url = "https://wellnesswhispers.in/",
   type = "website"
@@ -71,15 +71,15 @@ export default function SEOHead({
 // Page-specific SEO configurations
 export const seoConfig = {
   home: {
-    title: "Wellness Whispers - Professional Online Therapy | Mrs. Pavan Chowdhary",
-    description: "Professional online talk therapy with Mrs. Pavan Chowdhary. Specializing in anxiety, relationship healing, emotional support & mindfulness. Book your healing session today.",
-    keywords: "online therapy, anxiety support, relationship healing, emotional therapy, mindfulness, Mrs Pavan Chowdhary, professional therapist",
+    title: "Wellness Whispers - Professional Online Therapy | Ms. Pavan Chowdhary",
+    description: "Professional online talk therapy with Ms. Pavan Chowdhary. Specializing in anxiety, relationship healing, emotional support & mindfulness. Book your healing session today.",
+    keywords: "online therapy, anxiety support, relationship healing, emotional therapy, mindfulness, Ms Pavan Chowdhary, professional therapist",
     url: "https://wellnesswhispers.in/"
   },
   about: {
-    title: "About Mrs. Pavan Chowdhary - Licensed Therapist | Wellness Whispers",
-    description: "Meet Mrs. Pavan Chowdhary, Gold Medalist MPA with 6+ years therapy experience. Specialized in anxiety, relationship healing & somatic techniques. Licensed professional therapist.",
-    keywords: "Mrs Pavan Chowdhary, licensed therapist, therapy qualifications, professional counselor, anxiety specialist, relationship therapist",
+    title: "About Ms. Pavan Chowdhary - Licensed Therapist | Wellness Whispers",
+    description: "Meet Ms. Pavan Chowdhary, Gold Medalist MPA with 6+ years therapy experience. Specialized in anxiety, relationship healing & somatic techniques. Licensed professional therapist.",
+    keywords: "Ms Pavan Chowdhary, licensed therapist, therapy qualifications, professional counselor, anxiety specialist, relationship therapist",
     url: "https://wellnesswhispers.in/#about"
   },
   services: {
@@ -96,7 +96,7 @@ export const seoConfig = {
   },
   contact: {
     title: "Book Your Therapy Session - WhatsApp & Online Booking | Wellness Whispers",
-    description: "Book your online therapy session with Mrs. Pavan Chowdhary. Available via WhatsApp +91 98806 07355 or Google Meet. Flexible timing, affordable rates.",
+    description: "Book your online therapy session with Ms. Pavan Chowdhary. Available via WhatsApp +91 98806 07355 or Google Meet. Flexible timing, affordable rates.",
     keywords: "book therapy session, online therapy booking, WhatsApp therapy, Google Meet therapy, therapy appointment, mental health support",
     url: "https://wellnesswhispers.in/#contact"
   }

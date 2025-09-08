@@ -113,7 +113,7 @@ export default function Footer() {
                 © 2025 Wellness Whispers. All rights reserved.
               </p>
               <p className="text-white/70 text-base mt-4 md:mt-0 font-nunito font-medium drop-shadow-sm">
-                Mrs. Pavan Chowdhary • Qualified Therapist • Online Sessions
+                Ms. Pavan Chowdhary • Qualified Therapist • Online Sessions
               </p>
             </div>
             <div className="text-center mt-6">
