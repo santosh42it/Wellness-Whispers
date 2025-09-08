@@ -29,11 +29,11 @@ export default function SessionInfo() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-soft-beige via-cream to-sage/15 relative">
+    <section className="pt-28 pb-20 bg-gradient-to-br from-soft-beige via-cream to-sage/15 relative">
       <div className="absolute inset-0 bg-overlay-sage opacity-30"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Full-width title section */}
-        <div className="text-center space-y-6 mb-16">
+        <div className="text-center space-y-6 mb-20">
           <h2 className="text-4xl md:text-5xl font-light text-dark-brown">
             <span className="font-['Dancing_Script'] text-peach font-bold text-5xl md:text-6xl drop-shadow-lg">Online...</span> but it <br />
             <span className="text-sage font-bold drop-shadow-md">won't feel distant</span>

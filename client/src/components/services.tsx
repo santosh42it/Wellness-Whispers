@@ -113,14 +113,14 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-16 relative bg-gradient-to-br from-soft-beige/30 via-peach/20 to-sage/15">
+    <section id="services" className="pt-24 pb-16 relative bg-gradient-to-br from-soft-beige/30 via-peach/20 to-sage/15">
       {/* Visual separator from hero section */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sage/20 to-transparent"></div>
       
       <div className="container mx-auto px-6">
         
         {/* Section Title */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-dark-brown mb-6">
             {servicesTitle}
           </h2>

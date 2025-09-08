@@ -2,12 +2,12 @@ import WhatsAppButton from "./whatsapp-button";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 relative">
+    <section id="contact" className="pt-24 pb-16 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           
           {/* Opening Message */}
-          <div className="mb-16">
+          <div className="mb-20">
             <div className="space-y-4">
               <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown leading-tight">
                 Healing begins in quiet moments

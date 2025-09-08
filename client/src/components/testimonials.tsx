@@ -20,7 +20,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-16 relative">
+    <section id="testimonials" className="pt-24 pb-16 relative">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
@@ -36,7 +36,7 @@ export default function Testimonials() {
       <div className="container mx-auto px-6 relative z-10">
         
         {/* Section Title */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown mb-6">
             Stories
           </h2>

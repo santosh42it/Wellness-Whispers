@@ -83,14 +83,14 @@ export default function Approach() {
   ];
 
   return (
-    <section id="approach" className="py-16 relative bg-gradient-to-br from-sage/5 via-soft-beige/30 to-peach/10">
+    <section id="approach" className="pt-24 pb-16 relative bg-gradient-to-br from-sage/5 via-soft-beige/30 to-peach/10">
       {/* Decorative section divider */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-sage/30 to-transparent"></div>
       
       <div className="container mx-auto px-6">
         
         {/* Section Title */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <div className="inline-block">
             <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-dark-brown mb-6 relative">
               {approachTitle}
