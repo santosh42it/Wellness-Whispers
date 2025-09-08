@@ -1,4 +1,5 @@
 import { Heart, Mail, Phone } from "lucide-react";
+import { Link } from "wouter";
 import WhatsAppButton from "./whatsapp-button";
 import logoFooterPath from "@assets/logo-footer.png";
 import footerBgImage from "@assets/footer-bg.jpg";
@@ -71,20 +72,36 @@ export default function Footer() {
                   </button>
                 </li>
                 <li>
+                  <Link
+                    href="/after-therapy"
+                    className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
+                  >
+                    Bright Days
+                  </Link>
+                </li>
+                <li>
                   <button
                     onClick={() => scrollToSection("pricing")}
                     className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
-                    Gift Of Healing
+                    Pricing
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("testimonials")}
+                  <Link
+                    href="/emotional-checkin"
                     className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
-                    Stories
-                  </button>
+                    Check-In
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/faq"
+                    className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
+                  >
+                    FAQ
+                  </Link>
                 </li>
               </ul>
             </div>
