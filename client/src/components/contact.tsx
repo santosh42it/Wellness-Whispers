@@ -107,9 +107,6 @@ export default function Contact() {
                 Your emotional well-being matters, and there's no 'right' time to start healing 
                 except now, if you feel ready."
               </p>
-              <p className="text-sage font-kinfolk text-lg mt-4">
-                — Ms. Pavan Chowdhary
-              </p>
             </div>
           </div>
         </div>
