@@ -56,7 +56,7 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div 
               key={index}
-              className={`bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-soft hover:shadow-warm transition-all duration-300 relative ${
+              className={`bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-soft hover:shadow-warm transition-all duration-300 relative flex flex-col ${
                 plan.popular ? 'ring-2 ring-sage-green scale-105' : ''
               }`}
             >
@@ -80,7 +80,7 @@ export default function Pricing() {
                 </p>
               </div>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex-grow">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start space-x-2">
                     <div className="w-2 h-2 bg-sage-green rounded-full mt-2 flex-shrink-0"></div>
