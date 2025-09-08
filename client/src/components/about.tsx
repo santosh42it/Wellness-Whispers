@@ -105,10 +105,7 @@ export default function About() {
 
         {/* Content */}
         <div className="relative z-20 container mx-auto px-6 py-20">
-          <div className="max-w-6xl mx-auto text-center space-y-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-kinfolk font-extralight text-white leading-tight uppercase drop-shadow-lg">
-              GENTLE HEALING
-            </h2>
+          <div className="max-w-6xl mx-auto text-center">
             <div className="max-w-5xl mx-auto">
               <p className="text-lg sm:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light">
                 Every session is designed to feel simple, safe, and welcoming, using gentle approaches like mindfulness, grounding, inner child healing, and reflective talk therapy. Therapy here is a safe pause for your heart, where emotions can rest and gradually transform into understanding, resilience, and inner strength.
