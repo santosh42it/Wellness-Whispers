@@ -3,6 +3,8 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import SEOHead from "@/components/seo-head";
 import dreamyNatureImg from "@assets/nature-landscape-with-dreamy.jpg";
+import h4BgImg from "@assets/h4-bg.jpg";
+import emotionalCheckInImg from "@assets/emotional-check-in.png";
 
 export default function EmotionalCheckInPage() {
   // Scroll to top when the component mounts
@@ -49,29 +51,55 @@ export default function EmotionalCheckInPage() {
         {/* Questions Section */}
         <section className="pt-24 pb-16 relative bg-gradient-to-br from-sage/5 via-soft-beige/30 to-peach/10">
           <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               
               <h2 className="text-3xl lg:text-4xl font-kinfolk font-light text-dark-brown mb-12 text-center">
                 Questions
               </h2>
 
-              <div className="space-y-8">
-                {[
-                  "How is your mood today? (😊 😐 😞)",
-                  "Do you feel more energized or tired lately?",
-                  "Have you been able to focus on daily tasks?",
-                  "Are you feeling connected to others or more withdrawn?",
-                  "What is one emotion that shows up most often for you?",
-                  "Do you feel hopeful about the future, or more uncertain?",
-                  "How well are you sleeping these days?",
-                  "Are you able to show kindness to yourself when things go wrong?"
-                ].map((question, index) => (
-                  <div key={index} className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-soft border border-sage/10">
-                    <p className="text-lg font-nunito text-dark-brown leading-relaxed">
-                      <span className="font-semibold text-sage-green">{index + 1}.</span> {question}
-                    </p>
+              <div className="grid lg:grid-cols-2 gap-16 items-start">
+                {/* Left Side - Questions */}
+                <div className="space-y-8">
+                  {[
+                    "How is your mood today? (😊 😐 😞)",
+                    "Do you feel more energized or tired lately?",
+                    "Have you been able to focus on daily tasks?",
+                    "Are you feeling connected to others or more withdrawn?",
+                    "What is one emotion that shows up most often for you?",
+                    "Do you feel hopeful about the future, or more uncertain?",
+                    "How well are you sleeping these days?",
+                    "Are you able to show kindness to yourself when things go wrong?"
+                  ].map((question, index) => (
+                    <div key={index} className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-soft border border-sage/10">
+                      <p className="text-lg font-nunito text-dark-brown leading-relaxed">
+                        <span className="font-semibold text-sage-green">{index + 1}.</span> {question}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Right Side - Overlapping Images */}
+                <div className="relative lg:block hidden">
+                  {/* Overlapping Background Image - Vertical format */}
+                  <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
+                    <img
+                      src={h4BgImg}
+                      alt="Peaceful background for emotional reflection"
+                      className="w-full h-full object-cover opacity-70"
+                      loading="lazy"
+                    />
                   </div>
-                ))}
+
+                  {/* Main Photo - Positioned down to start at 30% of background */}
+                  <div className="w-80 h-96 relative mx-auto lg:mr-32 lg:ml-0 lg:mt-28 z-10">
+                    <img
+                      src={emotionalCheckInImg}
+                      alt="Emotional check-in and self-reflection"
+                      className="w-full h-full object-cover shadow-2xl relative z-10"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* Reflection Section */}
