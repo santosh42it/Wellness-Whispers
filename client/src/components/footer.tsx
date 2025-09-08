@@ -1,4 +1,5 @@
 import { Heart, Mail, Phone } from "lucide-react";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { Link } from "wouter";
 import WhatsAppButton from "./whatsapp-button";
 import logoFooterPath from "@assets/logo-footer.png";
@@ -120,6 +121,31 @@ export default function Footer() {
                 <p className="text-white/80 text-base mt-4 font-semibold drop-shadow-sm">
                   Flexible timing • Gentle support • Professional care
                 </p>
+                
+                {/* Social Media Links */}
+                <div className="mt-6 pt-4 border-t border-white/20">
+                  <p className="text-white/90 font-semibold text-lg mb-3 drop-shadow-sm">Follow Us</p>
+                  <div className="flex space-x-4">
+                    <a 
+                      href="https://www.instagram.com/healwithwhispers?igsh=MTJwYXBueXVzajR3OA%3D%3D" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-white/80 hover:text-peach transition-colors duration-300 p-2 rounded-full hover:bg-white/10"
+                      aria-label="Follow us on Instagram"
+                    >
+                      <FaInstagram className="h-6 w-6" />
+                    </a>
+                    <a 
+                      href="https://facebook.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-white/80 hover:text-peach transition-colors duration-300 p-2 rounded-full hover:bg-white/10"
+                      aria-label="Follow us on Facebook"
+                    >
+                      <FaFacebook className="h-6 w-6" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
