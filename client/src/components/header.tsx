@@ -60,7 +60,7 @@ export default function Header() {
           </button>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-4 xl:space-x-6">
             <button
               onClick={goToHome}
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
@@ -95,13 +95,13 @@ export default function Header() {
               onClick={() => scrollToSection("pricing")}
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
-              Gift Of Healing
+              Pricing
             </button>
             <Link 
               href="/emotional-checkin"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
-              Emotional Check-In
+              Check-In
             </Link>
             <Link 
               href="/faq"
@@ -109,7 +109,7 @@ export default function Header() {
             >
               FAQ
             </Link>
-            <WhatsAppButton className="text-white px-6 py-2 rounded-xl transition-all duration-300 shadow-warm hover:shadow-strong font-nunito" />
+            <WhatsAppButton className="text-white px-4 py-2 rounded-xl transition-all duration-300 shadow-warm hover:shadow-strong font-nunito text-sm" />
           </nav>
 
           {/* Mobile Menu Button */}
