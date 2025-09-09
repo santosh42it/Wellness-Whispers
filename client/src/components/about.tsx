@@ -90,9 +90,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* Spacing Between Sections */}
-      <div className="py-16"></div>
-
       {/* Section 3: Dreamy Nature - Therapy Approach */}
       <div className="min-h-screen relative flex items-center py-20">
         {/* Content Container */}
