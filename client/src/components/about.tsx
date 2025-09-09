@@ -94,25 +94,39 @@ export default function About() {
       <div className="py-16"></div>
 
       {/* Section 3: Dreamy Nature - Therapy Approach */}
-      <div className="min-h-screen relative flex items-center">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img
-            src={dreamyNatureImg}
-            alt="Dreamy nature landscape with peaceful therapy setting"
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
-        </div>
+      <div className="min-h-screen relative flex items-center py-20">
+        {/* Content Container */}
+        <div className="relative z-20 container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-start max-w-7xl mx-auto">
+            {/* Left Side - Text Content */}
+            <div className="space-y-8 mt-12 lg:mt-0">
+              <h2 className="text-2xl sm:text-3xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
+                MY APPROACH
+              </h2>
+              <div className="space-y-6">
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  Every session is designed to feel simple, safe, and welcoming, using gentle approaches like mindfulness, grounding, inner child healing, and reflective talk therapy.
+                </p>
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  Therapy here is a safe pause for your heart, where emotions can rest and gradually transform into understanding, resilience, and inner strength.
+                </p>
+              </div>
+            </div>
 
-        {/* Content */}
-        <div className="relative z-20 container mx-auto px-6 py-20">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="max-w-5xl mx-auto">
-              <p className="text-lg sm:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light">
-                Every session is designed to feel simple, safe, and welcoming, using gentle approaches like mindfulness, grounding, inner child healing, and reflective talk therapy. Therapy here is a safe pause for your heart, where emotions can rest and gradually transform into understanding, resilience, and inner strength.
-              </p>
+            {/* Right Side - Large Nature Image */}
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="w-full max-w-2xl h-[50vh] lg:h-[60vh]">
+                <img
+                  src={dreamyNatureImg}
+                  alt="Dreamy nature landscape with peaceful therapy setting"
+                  className="w-full h-full object-cover shadow-2xl rounded-lg"
+                  loading="lazy"
+                />
+                {/* Quote below the image */}
+                <div className="mt-12 text-center">
+                  <p className="text-base sm:text-lg lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">A safe pause for your heart — where healing quietly unfolds.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
