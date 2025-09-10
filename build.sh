@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Building frontend with Vite..."
-npx vite build
-echo "Frontend build completed successfully!"
+echo "Building frontend and server..."
+npm run build
+echo "Build completed successfully!"
