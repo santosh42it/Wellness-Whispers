@@ -49,7 +49,7 @@ export default function EmotionalCheckInPage() {
         </div>
 
         {/* Questions Section */}
-        <section className="pt-24 pb-16 relative">
+        <section className="pt-24 pb-16 relative bg-gradient-to-br from-white/95 via-soft-beige/90 to-peach/20">
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto">
               
