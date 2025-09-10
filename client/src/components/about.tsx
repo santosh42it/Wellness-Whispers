@@ -98,7 +98,7 @@ export default function About() {
             {/* Left Side - Text Content */}
             <div className="space-y-8 mt-12 lg:mt-0">
               <h2 className="text-2xl sm:text-3xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
-                MY APPROACH
+                Path to Healing
               </h2>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
