@@ -102,6 +102,13 @@ export default function EmotionalCheckInPage() {
     const score = Object.values(answers).reduce((sum, value) => sum + value, 0);
     setTotalScore(score);
     setShowResults(true);
+    // Scroll to results section
+    setTimeout(() => {
+      const resultsSection = document.getElementById('quiz-results');
+      if (resultsSection) {
+        resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
   };
 
   const getResultMessage = (score: number) => {
@@ -221,7 +228,7 @@ export default function EmotionalCheckInPage() {
                                 data-testid={`radio-question-${question.id}-${option.value}`}
                               />
                               <span className="text-base font-nunito text-dark-brown group-hover:text-sage-green transition-colors">
-                                ☐ {option.text} <span className="text-sage-green font-semibold">({option.value})</span>
+                                {option.text}
                               </span>
                             </label>
                           ))}
@@ -235,17 +242,24 @@ export default function EmotionalCheckInPage() {
                     <button
                       onClick={handleSubmit}
                       disabled={!isQuizComplete}
-                      className={`px-8 py-4 rounded-xl font-nunito font-semibold text-lg transition-all duration-300 ${
+                      className={`relative px-12 py-5 rounded-2xl font-nunito font-bold text-xl transition-all duration-300 transform ${
                         isQuizComplete
-                          ? "bg-sage-green text-white hover:bg-sage-green/90 shadow-lg hover:shadow-xl"
+                          ? "bg-gradient-to-r from-sage-green to-sage-green/80 text-white hover:from-sage-green/90 hover:to-sage-green/70 shadow-2xl hover:shadow-3xl hover:scale-105 hover:-translate-y-1"
                           : "bg-gray-300 text-gray-500 cursor-not-allowed"
                       }`}
                       data-testid="button-submit-quiz"
                     >
-                      ✅ Calculate My Score
+                      {isQuizComplete && (
+                        <span className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-2xl"></span>
+                      )}
+                      <span className="relative flex items-center justify-center space-x-2">
+                        <span>✨</span>
+                        <span>Calculate My Score</span>
+                        <span>✨</span>
+                      </span>
                     </button>
                     {!isQuizComplete && (
-                      <p className="text-sm font-nunito text-dark-brown/70 mt-2">
+                      <p className="text-sm font-nunito text-dark-brown/70 mt-3">
                         Please answer all questions to see your results
                       </p>
                     )}
@@ -254,17 +268,14 @@ export default function EmotionalCheckInPage() {
               ) : (
                 <>
                   {/* Results Section */}
-                  <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-soft border border-sage/20 mb-8">
+                  <div id="quiz-results" className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-soft border border-sage/20 mb-8">
                     <h3 className="text-2xl font-kinfolk font-semibold text-earthy-brown mb-6 text-center">
                       ✅ Your Score
                     </h3>
                     <div className="text-center mb-6">
-                      <div className="text-4xl font-nunito font-bold text-sage-green mb-2">
+                      <div className="text-5xl font-nunito font-bold text-sage-green mb-4">
                         {totalScore}/24
                       </div>
-                      <p className="text-sm font-nunito text-dark-brown/70">
-                        Add up all your numbers (max = 24, min = 8)
-                      </p>
                     </div>
                     
                     {(() => {
@@ -279,15 +290,22 @@ export default function EmotionalCheckInPage() {
                     })()}
                   </div>
 
-                  {/* Reset Button */}
-                  <div className="text-center mb-8">
+                  {/* Action Buttons */}
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                     <button
                       onClick={resetQuiz}
-                      className="px-6 py-3 rounded-xl bg-peach text-white font-nunito font-semibold hover:bg-peach/90 transition-all duration-300"
+                      className="px-8 py-4 rounded-xl bg-gradient-to-r from-peach to-peach/80 text-white font-nunito font-semibold hover:from-peach/90 hover:to-peach/70 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                       data-testid="button-reset-quiz"
                     >
-                      Take Quiz Again
+                      🔄 Take Quiz Again
                     </button>
+                    <a
+                      href="/contact"
+                      className="px-8 py-4 rounded-xl bg-gradient-to-r from-sage-green to-sage-green/80 text-white font-nunito font-semibold hover:from-sage-green/90 hover:to-sage-green/70 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 no-underline"
+                      data-testid="button-contact-me"
+                    >
+                      💬 Contact Me
+                    </a>
                   </div>
                 </>
               )}
