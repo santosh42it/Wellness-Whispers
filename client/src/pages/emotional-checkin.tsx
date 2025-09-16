@@ -170,11 +170,14 @@ export default function EmotionalCheckInPage() {
           {/* Content */}
           <div className="relative z-20 container mx-auto px-6 py-20">
             <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight uppercase drop-shadow-lg">
-                EMOTIONAL CHECK-IN
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight drop-shadow-lg mb-6">
+                🌿 EMOTIONAL CHECK-IN 🌿
               </h1>
-              <p className="text-lg sm:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto">
-                Take a moment to pause and reflect on how you're really feeling today. There are no right or wrong answers — this is only for you.
+              <p className="text-lg sm:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto mb-4">
+                Take a deep breath — this is your safe space to notice how you truly feel today.
+              </p>
+              <p className="text-base sm:text-lg lg:text-xl font-nunito text-white/90 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto">
+                There are no right or wrong answers, only honesty for your own reflection and well-being.
               </p>
             </div>
           </div>
@@ -188,14 +191,8 @@ export default function EmotionalCheckInPage() {
               {/* Introduction */}
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-kinfolk font-light text-earthy-brown mb-6">
-                  🌿 Emotional Check-In 🌿
+                  Interactive Wellness Quiz
                 </h2>
-                <p className="text-lg font-nunito text-dark-brown leading-relaxed mb-4">
-                  Take a deep breath — this is your safe space to notice how you truly feel today.
-                </p>
-                <p className="text-base font-nunito text-dark-brown/80 leading-relaxed">
-                  There are no right or wrong answers, only honesty for your own reflection and well-being.
-                </p>
               </div>
 
               {!showResults ? (
@@ -242,16 +239,17 @@ export default function EmotionalCheckInPage() {
                     <button
                       onClick={handleSubmit}
                       disabled={!isQuizComplete}
-                      className={`relative px-12 py-5 rounded-2xl font-nunito font-bold text-xl transition-all duration-300 transform ${
+                      className={`relative px-12 py-5 rounded-xl font-nunito font-bold text-xl transition-all duration-300 transform border-2 ${
                         isQuizComplete
-                          ? "bg-gradient-to-r from-sage-green to-sage-green/80 text-white hover:from-sage-green/90 hover:to-sage-green/70 shadow-2xl hover:shadow-3xl hover:scale-105 hover:-translate-y-1"
-                          : "bg-gray-300 text-gray-500 cursor-not-allowed"
+                          ? "bg-gradient-to-br from-amber-100 via-yellow-50 to-amber-200 text-amber-900 border-amber-400 hover:from-amber-200 hover:to-amber-300 shadow-[0_8px_16px_rgba(0,0,0,0.2),inset_0_1px_2px_rgba(255,255,255,0.5)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.3)] hover:scale-105 hover:-translate-y-1"
+                          : "bg-gray-200 text-gray-400 border-gray-300 cursor-not-allowed shadow-[0_4px_8px_rgba(0,0,0,0.1)]"
                       }`}
+                      style={{
+                        backgroundImage: isQuizComplete ? 'radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 70%)' : 'none',
+                        textShadow: isQuizComplete ? '0 1px 2px rgba(0,0,0,0.2)' : 'none'
+                      }}
                       data-testid="button-submit-quiz"
                     >
-                      {isQuizComplete && (
-                        <span className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-2xl"></span>
-                      )}
                       <span className="relative flex items-center justify-center space-x-2">
                         <span>✨</span>
                         <span>Calculate My Score</span>
@@ -291,17 +289,27 @@ export default function EmotionalCheckInPage() {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                  <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
                     <button
                       onClick={resetQuiz}
-                      className="px-8 py-4 rounded-xl bg-gradient-to-r from-peach to-peach/80 text-white font-nunito font-semibold hover:from-peach/90 hover:to-peach/70 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                      className="px-8 py-4 rounded-xl font-nunito font-bold text-lg transition-all duration-300 transform border-2 bg-gradient-to-br from-amber-100 via-yellow-50 to-amber-200 text-amber-900 border-amber-400 hover:from-amber-200 hover:to-amber-300 shadow-[0_8px_16px_rgba(0,0,0,0.2),inset_0_1px_2px_rgba(255,255,255,0.5)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.3)] hover:scale-105 hover:-translate-y-1"
+                      style={{
+                        backgroundImage: 'radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 70%)',
+                        textShadow: '0 1px 2px rgba(0,0,0,0.2)'
+                      }}
                       data-testid="button-reset-quiz"
                     >
                       🔄 Take Quiz Again
                     </button>
                     <a
-                      href="/contact"
-                      className="px-8 py-4 rounded-xl bg-gradient-to-r from-sage-green to-sage-green/80 text-white font-nunito font-semibold hover:from-sage-green/90 hover:to-sage-green/70 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 no-underline"
+                      href="https://api.whatsapp.com/send/?phone=919880607355&text=Hello+Ms.+Chowdhary%2C+I+found+your+Wellness+Whispers+website+and+would+like+to+know+more+about+your+therapy+sessions.+I%27m+interested+in+starting+my+healing+journey+and+would+appreciate+your+gentle+support.&type=phone_number&app_absent=0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-8 py-4 rounded-xl font-nunito font-bold text-lg transition-all duration-300 transform border-2 bg-gradient-to-br from-green-100 via-emerald-50 to-green-200 text-green-900 border-green-400 hover:from-green-200 hover:to-green-300 shadow-[0_8px_16px_rgba(0,0,0,0.2),inset_0_1px_2px_rgba(255,255,255,0.5)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.3)] hover:scale-105 hover:-translate-y-1 no-underline"
+                      style={{
+                        backgroundImage: 'radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 70%)',
+                        textShadow: '0 1px 2px rgba(0,0,0,0.2)'
+                      }}
                       data-testid="button-contact-me"
                     >
                       💬 Contact Me
