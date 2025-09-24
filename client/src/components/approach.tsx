@@ -83,8 +83,8 @@ export default function Approach() {
       title: "Inner Child Healing",
       description:
         "You can reconnect with your younger self. Inner Child Healing brings compassion to early wounds and nurtures emotional growth.",
-      image: a5Image,
-      alt: "Warm, empathetic therapist listening with person-centered focus",
+      image: a6Image,
+      alt: "Strong tree roots representing inner strength and resilience",
     },
     {
       title: "Person-Centered Approach",
