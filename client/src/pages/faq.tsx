@@ -104,10 +104,14 @@ export default function FAQPage() {
 
           {/* Content */}
           <div className="relative z-20 container mx-auto px-6 py-20">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-kinfolk font-extralight text-white leading-tight uppercase drop-shadow-lg">
+            <div className="max-w-4xl mx-auto text-center space-y-8">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-kinfolk font-extralight text-white leading-tight uppercase drop-shadow-lg mb-6">
                 FAQ
               </h1>
+              <p className="text-lg sm:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto mb-4">
+                Your clarity matters. Every journey begins with curiosity —
+                and here you'll find simple answers to questions people often ask.
+              </p>
             </div>
           </div>
         </div>
