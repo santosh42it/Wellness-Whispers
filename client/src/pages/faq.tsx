@@ -10,7 +10,7 @@ export default function FAQPage() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const [openFAQ, setOpenFAQ] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? null : index);
