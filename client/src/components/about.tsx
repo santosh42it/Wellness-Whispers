@@ -59,6 +59,11 @@ export default function About() {
                   individuals with compassion and practical strategies to help
                   them navigate emotional and mental well-being challenges.
                 </p>
+                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
+                  I continue to expand my training across therapeutic approaches,
+                  ensuring every session is flexible, empathetic, and grounded in
+                  real-life understanding.
+                </p>
               </div>
             </div>
           </div>
