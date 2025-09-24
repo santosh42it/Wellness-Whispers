@@ -173,8 +173,8 @@ export default function EmotionalCheckInPage() {
                 🌿 EMOTIONAL CHECK-IN 🌿
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto mb-4">
-                Take a deep breath — this is your safe space to notice how you
-                truly feel today.
+                Take a gentle breath — you are safe here.
+                Notice what you feel inside, right now.
               </p>
             </div>
           </div>
@@ -184,6 +184,14 @@ export default function EmotionalCheckInPage() {
         <section className="pt-24 pb-16 relative bg-gradient-to-br from-white/95 via-soft-beige/90 to-peach/20">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
+              {/* Gentle Introduction */}
+              <div className="text-center mb-12">
+                <p className="text-lg sm:text-xl font-nunito text-earthy-brown leading-relaxed max-w-3xl mx-auto">
+                  There are no right or wrong answers. This reflection simply helps you notice your inner world.
+                  Answer at your own pace — it's only for your awareness and self-kindness.
+                </p>
+              </div>
+
               {/* Introduction */}
               {!showResults ? (
                 <>
