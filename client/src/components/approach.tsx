@@ -68,9 +68,9 @@ export default function Approach() {
     {
       title: "Butterfly Hug (EFT/EMDR-style)",
       description:
-        "You can soothe yourself in moments of stress. The Butterfly Hug is a gentle self-soothing practice for emotional regulation and trauma healing. (EFT/EMDR technique)",
-      image: a8Image,
-      alt: "Comfortable therapy space with gentle conversation atmosphere",
+        "You can soothe yourself in moments of stress. The Butterfly Hug is a gentle self-soothing practice for emotional regulation and trauma healing. (EFT/EMDR technique).",
+      image: a4Image,
+      alt: "Child's perspective showing innocence and inner child healing",
     },
     {
       title: "Narrative Therapy",
