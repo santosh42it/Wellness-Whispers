@@ -76,8 +76,8 @@ export default function Approach() {
       title: "Narrative Therapy",
       description:
         "With your voice as a lantern, you can re-author your story. Narrative therapy helps you explore and reshape the meaning of your life experiences.",
-      image: a8Image,
-      alt: "Comfortable therapy space with gentle conversation atmosphere",
+      image: a5Image,
+      alt: "Warm, empathetic therapist listening with person-centered focus",
     },
     {
       title: "Inner Child Healing",
