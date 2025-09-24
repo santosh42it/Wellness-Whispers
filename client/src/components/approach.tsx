@@ -97,8 +97,8 @@ export default function Approach() {
       title: "Strengths-Based Therapy",
       description:
         "You already carry strength within you. This approach helps build resilience by focusing on your inner resources and natural coping abilities.",
-      image: a6Image,
-      alt: "Strong tree roots representing inner strength and resilience",
+      image: a8Image,
+      alt: "Comfortable therapy space with gentle conversation atmosphere",
     },
   ];
 
