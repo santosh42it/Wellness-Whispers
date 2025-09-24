@@ -84,11 +84,11 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned down to start at 30% of background */}
-              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
+              <div className="w-80 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
                 <img
                   src={h1FrontImg}
                   alt="Confidence and inner strength after therapy"
-                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  className="w-full h-auto shadow-2xl relative z-10"
                   loading="lazy"
                 />
               </div>
@@ -157,11 +157,11 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
+              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
                 <img
                   src={h2FrontImg}
                   alt="Inner peace and gentle strength"
-                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  className="w-full h-auto shadow-2xl relative z-10"
                   loading="lazy"
                 />
               </div>
@@ -185,11 +185,11 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned down to start at 30% of background */}
-              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
+              <div className="w-80 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
                 <img
                   src={h3FrontImg}
                   alt="Trust and openness in healing"
-                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  className="w-full h-auto shadow-2xl relative z-10"
                   loading="lazy"
                 />
               </div>
@@ -259,11 +259,11 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
+              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
                 <img
                   src={h4FrontImg}
                   alt="Relationship healing and gentle care"
-                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  className="w-full h-auto shadow-2xl relative z-10"
                   loading="lazy"
                 />
               </div>
@@ -287,11 +287,11 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned down to start at 30% of background */}
-              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
+              <div className="w-80 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
                 <img
                   src={h6FrontImg}
                   alt="Authentic connection and relationships"
-                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  className="w-full h-auto shadow-2xl relative z-10"
                   loading="lazy"
                 />
               </div>
@@ -360,11 +360,11 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
+              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
                 <img
                   src={h7FrontImg}
                   alt="Lasting transformation and growth"
-                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  className="w-full h-auto shadow-2xl relative z-10"
                   loading="lazy"
                 />
               </div>
