@@ -121,10 +121,6 @@ export default function FAQPage() {
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               
-              <h2 className="text-3xl lg:text-4xl font-kinfolk font-light text-dark-brown mb-12 text-center">
-                Frequently Asked Questions
-              </h2>
-
               <div className="space-y-4">
                 {faqs.map((faq, index) => (
                   <div key={index} className="bg-white/80 backdrop-blur-sm rounded-xl shadow-soft border border-sage/10 overflow-hidden">
