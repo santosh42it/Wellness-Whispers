@@ -174,6 +174,7 @@ export default function EmotionalCheckInPage() {
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto mb-4">
                 Take a gentle breath — you are safe here.
+                <br />
                 Notice what you feel inside, right now.
               </p>
             </div>
