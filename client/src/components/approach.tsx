@@ -34,49 +34,49 @@ export default function Approach() {
   const approaches = [
     {
       title: "Mindfulness & Somatic Grounding",
-      description: "Gentle body-awareness techniques to reconnect with your inner wisdom and calm",
+      description: "You can gently ground yourself in the present. Mindful awareness and body-based grounding reconnect you with calm and inner balance. (Mindfulness-based practice).",
       image: a1Image,
       alt: "Peaceful meditation pose representing mindfulness and grounding"
     },
     {
       title: "Breathwork & Guided Imagery",
-      description: "Simple breathing exercises and visualization to ease anxiety and stress",
+      description: "You can find calm through your breath. Gentle breathing and guided imagery help ease stress, relax the body, and create a safe inner space. (Mindfulness & CBT-based relaxation).",
       image: a2Image,
       alt: "Person practicing deep breathing in natural setting"
     },
     {
-      title: "Butterfly Hug (EMDR-style)",
-      description: "Self-soothing technique for emotional regulation and trauma processing",
+      title: "Positive Affirmations / Self-Talk (CBT)",
+      description: "You can learn to be your own encourager. Gentle affirmations and positive self-talk help shift unhelpful thoughts and build confidence. (CBT-based practice).",
       image: a3Image,
       alt: "Gentle hands in self-soothing butterfly hug position"
     },
     {
-      title: "Narrative Therapy",
-      description: "With your voice as a lantern, writing your future story — where you are the author.",
+      title: "Butterfly Hug (EFT/EMDR-style)",
+      description: "You can soothe yourself in moments of stress. The Butterfly Hug is a gentle self-soothing practice for emotional regulation and trauma healing. (EFT/EMDR technique).",
       image: a8Image,
       alt: "Comfortable therapy space with gentle conversation atmosphere"
     },
     {
-      title: "Inner Child Healing",
-      description: "Compassionate exploration of early emotional patterns and healing",
+      title: "Narrative Therapy",
+      description: "With your voice as a lantern, you can re-author your story. Narrative therapy helps you explore and reshape the meaning of your life experiences.",
       image: a4Image,
       alt: "Child's perspective showing innocence and inner child healing"
     },
     {
-      title: "Person-Centered Approach",
-      description: "Your experience is the guide - gentle, non-directive therapeutic support",
+      title: "Inner Child Healing",
+      description: "You can reconnect with your younger self. Inner Child Healing brings compassion to early wounds and nurtures emotional growth.",
       image: a5Image,
       alt: "Warm, empathetic therapist listening with person-centered focus"
     },
     {
-      title: "Emotional Clarity Work",
-      description: "Untangling complex feelings and finding your emotional truth",
+      title: "Person-Centered Approach",
+      description: "Your experience is the guide. A person-centered approach offers gentle, non-directive support with empathy and respect.",
       image: a7Image,
       alt: "Clear water reflection representing emotional clarity"
     },
     {
       title: "Strengths-Based Therapy",
-      description: "Building on your existing resilience and natural coping abilities",
+      description: "You already carry strength within you. This approach helps build resilience by focusing on your inner resources and natural coping abilities.",
       image: a6Image,
       alt: "Strong tree roots representing inner strength and resilience"
     }
