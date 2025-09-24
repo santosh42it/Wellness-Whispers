@@ -271,11 +271,34 @@ export default function AfterTherapy() {
           </div>
         
 
-        {/* Sixth Section - Image Right, Text Left */}
+        {/* Sixth Section - Image Left, Text Right */}
         <div className="max-w-7xl mx-auto mt-32">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Side - Text */}
-            <div className="space-y-8 order-2 lg:order-1">
+            {/* Left Side - Photo with Overlapping Background */}
+            <div className="relative">
+              {/* Overlapping Background Image - Vertical format */}
+              <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
+                <img
+                  src={h6BgImg}
+                  alt="Peaceful background for connection"
+                  className="w-full h-full object-cover opacity-70"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Main Photo - Positioned down to start at 30% of background */}
+              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
+                <img
+                  src={h6FrontImg}
+                  alt="Authentic connection and relationships"
+                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Right Side - Text */}
+            <div className="space-y-8">
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 AUTHENTIC CONNECTION
               </h3>
@@ -296,60 +319,14 @@ export default function AfterTherapy() {
                 </p>
               </div>
             </div>
-
-            {/* Right Side - Photo with Overlapping Background */}
-            <div className="relative order-1 lg:order-2">
-              {/* Overlapping Background Image - Vertical format */}
-              <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
-                <img
-                  src={h6BgImg}
-                  alt="Peaceful background for connection"
-                  className="w-full h-full object-cover opacity-70"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
-                <img
-                  src={h6FrontImg}
-                  alt="Authentic connection and relationships"
-                  className="w-full h-full object-cover shadow-2xl relative z-10"
-                  loading="lazy"
-                />
-              </div>
-            </div>
           </div>
         </div>
 
-        {/* Seventh Section - Image Left, Text Right */}
+        {/* Seventh Section - Image Right, Text Left */}
         <div className="max-w-7xl mx-auto mt-32">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Side - Photo with Overlapping Background */}
-            <div className="relative">
-              {/* Overlapping Background Image - Vertical format */}
-              <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
-                <img
-                  src={h7BgImg}
-                  alt="Peaceful background for lasting transformation"
-                  className="w-full h-full object-cover opacity-70"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Main Photo - Positioned down to start at 30% of background */}
-              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
-                <img
-                  src={h7FrontImg}
-                  alt="Lasting transformation and growth"
-                  className="w-full h-full object-cover shadow-2xl relative z-10"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            {/* Right Side - Text */}
-            <div className="space-y-8">
+            {/* Left Side - Text */}
+            <div className="space-y-8 order-2 lg:order-1">
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 LASTING TRANSFORMATION
               </h3>
@@ -367,6 +344,29 @@ export default function AfterTherapy() {
                 <p className="text-base sm:text-lg lg:text-xl font-kinfolk text-earthy-brown/80 italic leading-relaxed">
                   "You are not broken and in need of fixing — you are whole and in the process of remembering."
                 </p>
+              </div>
+            </div>
+
+            {/* Right Side - Photo with Overlapping Background */}
+            <div className="relative order-1 lg:order-2">
+              {/* Overlapping Background Image - Vertical format */}
+              <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
+                <img
+                  src={h7BgImg}
+                  alt="Peaceful background for lasting transformation"
+                  className="w-full h-full object-cover opacity-70"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Main Photo - Positioned for right-side overlap */}
+              <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
+                <img
+                  src={h7FrontImg}
+                  alt="Lasting transformation and growth"
+                  className="w-full h-full object-cover shadow-2xl relative z-10"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
