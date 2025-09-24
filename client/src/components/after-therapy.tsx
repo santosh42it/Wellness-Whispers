@@ -7,6 +7,11 @@ import h5BgImg from "@assets/h5-bg.jpg";
 import h6BgImg from "@assets/h6-bg.jpg";
 import h7BgImg from "@assets/h7-bg.jpg";
 import h1FrontImg from "@assets/h1.png";
+import h2FrontImg from "@assets/h2.png";
+import h3FrontImg from "@assets/h3.png";
+import h4FrontImg from "@assets/h4.png";
+import h6FrontImg from "@assets/h6.png";
+import h7FrontImg from "@assets/h7.png";
 
 export default function AfterTherapy() {
   const transformations = [
@@ -154,7 +159,7 @@ export default function AfterTherapy() {
               {/* Main Photo - Positioned for right-side overlap */}
               <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
                 <img
-                  src={h1FrontImg}
+                  src={h2FrontImg}
                   alt="Inner peace and gentle strength"
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="lazy"
@@ -182,7 +187,7 @@ export default function AfterTherapy() {
               {/* Main Photo - Positioned down to start at 30% of background */}
               <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
                 <img
-                  src={h1FrontImg}
+                  src={h3FrontImg}
                   alt="Trust and openness in healing"
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="lazy"
@@ -256,7 +261,7 @@ export default function AfterTherapy() {
               {/* Main Photo - Positioned for right-side overlap */}
               <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
                 <img
-                  src={h1FrontImg}
+                  src={h4FrontImg}
                   alt="Relationship healing and gentle care"
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="lazy"
@@ -264,55 +269,7 @@ export default function AfterTherapy() {
               </div>
             </div>
           </div>
-        {/* Fifth Section - Image Left, Text Right */}
-        <div className="max-w-7xl mx-auto mt-32">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Side - Photo with Overlapping Background */}
-            <div className="relative">
-              {/* Overlapping Background Image - Vertical format */}
-              <div className="absolute -top-10 -left-10 w-64 h-96 z-0">
-                <img
-                  src={h5BgImg}
-                  alt="Peaceful background for inner wisdom"
-                  className="w-full h-full object-cover opacity-70"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Main Photo - Positioned down to start at 30% of background */}
-              <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
-                <img
-                  src={h1FrontImg}
-                  alt="Inner wisdom and self-awareness"
-                  className="w-full h-full object-cover shadow-2xl relative z-10"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            {/* Right Side - Text */}
-            <div className="space-y-8">
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
-                INNER WISDOM
-              </h3>
-              <div className="space-y-6">
-                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
-                  Therapy awakens the wisdom that was always within you. You begin 
-                  to trust your intuition, recognize your own patterns, and make 
-                  decisions from a place of inner knowing rather than external pressure.
-                </p>
-                <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
-                  This is where authentic healing happens — when you learn to listen 
-                  to your inner voice with compassion, to honor your feelings without 
-                  judgment, and to trust that you have everything you need within you.
-                </p>
-                <p className="text-base sm:text-lg lg:text-xl font-kinfolk text-earthy-brown/80 italic leading-relaxed">
-                  "The answers you seek are not outside you — they're waiting quietly within."
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         {/* Sixth Section - Image Right, Text Left */}
         <div className="max-w-7xl mx-auto mt-32">
@@ -355,7 +312,7 @@ export default function AfterTherapy() {
               {/* Main Photo - Positioned for right-side overlap */}
               <div className="w-80 h-96 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
                 <img
-                  src={h1FrontImg}
+                  src={h6FrontImg}
                   alt="Authentic connection and relationships"
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="lazy"
@@ -383,7 +340,7 @@ export default function AfterTherapy() {
               {/* Main Photo - Positioned down to start at 30% of background */}
               <div className="w-80 h-96 relative mx-auto lg:ml-32 lg:mr-0 lg:mt-28 z-10">
                 <img
-                  src={h1FrontImg}
+                  src={h7FrontImg}
                   alt="Lasting transformation and growth"
                   className="w-full h-full object-cover shadow-2xl relative z-10"
                   loading="lazy"
