@@ -45,17 +45,19 @@ export default function About() {
               </h1>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
-                  I'm Ms. Pavan Chowdhary, a Gold Medalist in Public
+                  I’m Ms. Pavan Chowdhary, a Gold Medalist in Master of Public
                   Administration with a Postgraduate Diploma in Guidance &
-                  Counselling, along with multiple certified diploma courses. My
-                  journey combines 45+ years of entrepreneurial leadership and
-                  mentoring people, including experience in conflict management,
-                  with 6+ years of focused emotional support.
+                  Counselling, along with multiple certified diploma courses in
+                  therapeutic approaches. Over the years, I have combined
+                  professional leadership and mentoring with extensive
+                  experience in emotional support and psychological guidance. My
+                  work draws on skills in conflict management,
+                  resilience-building, and personal growth.
                 </p>
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
-                  I continue to expand my training across therapeutic
-                  approaches, ensuring every session is flexible, empathetic,
-                  and grounded in real-life understanding.
+                  As an experienced psychologist, I am committed to supporting
+                  individuals with compassion and practical strategies to help
+                  them navigate emotional and mental well-being challenges.
                 </p>
               </div>
             </div>
@@ -102,10 +104,14 @@ export default function About() {
               </h2>
               <div className="space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
-                  Every session is designed to feel simple, safe, and welcoming, using gentle approaches like mindfulness, grounding, inner child healing, and reflective talk therapy.
+                  Every session is designed to feel simple, safe, and welcoming,
+                  using gentle approaches like mindfulness, grounding, inner
+                  child healing, and reflective talk therapy.
                 </p>
                 <p className="text-base sm:text-lg lg:text-xl font-nunito text-earthy-brown/90 leading-relaxed">
-                  Therapy here is a safe pause for your heart, where emotions can rest and gradually transform into understanding, resilience, and inner strength.
+                  Therapy here is a safe pause for your heart, where emotions
+                  can rest and gradually transform into understanding,
+                  resilience, and inner strength.
                 </p>
               </div>
             </div>
@@ -121,7 +127,9 @@ export default function About() {
                 />
                 {/* Quote below the image */}
                 <div className="mt-12 text-center">
-                  <p className="text-base sm:text-lg lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">A safe pause for your heart — where healing quietly unfolds.</p>
+                  <p className="text-base sm:text-lg lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">
+                    A safe pause for your heart — where healing quietly unfolds.
+                  </p>
                 </div>
               </div>
             </div>
@@ -145,7 +153,10 @@ export default function About() {
                 />
                 {/* Quote below the image */}
                 <div className="mt-12 text-center">
-                  <p className="text-base sm:text-lg lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">Like a hot air balloon, healing rises gently — not with force, but with lightness.</p>
+                  <p className="text-base sm:text-lg lg:text-2xl font-kinfolk font-extralight text-earthy-brown/80 italic leading-relaxed">
+                    Like a hot air balloon, healing rises gently — not with
+                    force, but with lightness.
+                  </p>
                 </div>
               </div>
             </div>
@@ -193,7 +204,10 @@ export default function About() {
             <h2 className="text-2xl sm:text-3xl lg:text-5xl font-kinfolk font-extralight text-white leading-tight uppercase drop-shadow-lg">
               STEADY STRENGTH
             </h2>
-            <p className="text-lg sm:text-xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">Even the highest cliffs stand calm against the waves — just like your heart can find steady strength.</p>
+            <p className="text-lg sm:text-xl lg:text-4xl font-kinfolk font-extralight text-white/95 italic leading-relaxed drop-shadow-md">
+              Even the highest cliffs stand calm against the waves — just like
+              your heart can find steady strength.
+            </p>
           </div>
         </div>
       </div>
@@ -201,7 +215,10 @@ export default function About() {
       <div className="py-16 relative bg-gradient-to-br from-cream/40 via-soft-beige/30 to-peach/20">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <p className="text-lg sm:text-xl lg:text-3xl font-kinfolk font-extralight text-earthy-brown italic leading-relaxed">Healing is not about rushing — it's about finding steady, quiet steps.</p>
+            <p className="text-lg sm:text-xl lg:text-3xl font-kinfolk font-extralight text-earthy-brown italic leading-relaxed">
+              Healing is not about rushing — it's about finding steady, quiet
+              steps.
+            </p>
           </div>
         </div>
       </div>

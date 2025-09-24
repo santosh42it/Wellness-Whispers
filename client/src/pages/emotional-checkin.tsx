@@ -23,8 +23,8 @@ export default function EmotionalCheckInPage() {
       options: [
         { text: "😊 Good / calm", value: 3 },
         { text: "😐 Up and down", value: 2 },
-        { text: "😞 Low / irritable", value: 1 }
-      ]
+        { text: "😞 Low / irritable", value: 1 },
+      ],
     },
     {
       id: 2,
@@ -32,8 +32,8 @@ export default function EmotionalCheckInPage() {
       options: [
         { text: "Energized", value: 3 },
         { text: "In-between", value: 2 },
-        { text: "Mostly tired", value: 1 }
-      ]
+        { text: "Mostly tired", value: 1 },
+      ],
     },
     {
       id: 3,
@@ -41,8 +41,8 @@ export default function EmotionalCheckInPage() {
       options: [
         { text: "Yes, easily", value: 3 },
         { text: "Sometimes", value: 2 },
-        { text: "Hard to focus", value: 1 }
-      ]
+        { text: "Hard to focus", value: 1 },
+      ],
     },
     {
       id: 4,
@@ -50,8 +50,8 @@ export default function EmotionalCheckInPage() {
       options: [
         { text: "Connected", value: 3 },
         { text: "Sometimes connected", value: 2 },
-        { text: "Withdrawn", value: 1 }
-      ]
+        { text: "Withdrawn", value: 1 },
+      ],
     },
     {
       id: 5,
@@ -59,8 +59,8 @@ export default function EmotionalCheckInPage() {
       options: [
         { text: "Mostly calm/Hopeful/positive", value: 3 },
         { text: "Mixed", value: 2 },
-        { text: "Mostly heavy/stress/Anger/Sadness", value: 1 }
-      ]
+        { text: "Mostly heavy/stress/Anger/Sadness", value: 1 },
+      ],
     },
     {
       id: 6,
@@ -68,8 +68,8 @@ export default function EmotionalCheckInPage() {
       options: [
         { text: "Mostly hopeful", value: 3 },
         { text: "Unsure", value: 2 },
-        { text: "Hopeless", value: 1 }
-      ]
+        { text: "Hopeless", value: 1 },
+      ],
     },
     {
       id: 7,
@@ -77,8 +77,8 @@ export default function EmotionalCheckInPage() {
       options: [
         { text: "Restful", value: 3 },
         { text: "Disturbed sometimes", value: 2 },
-        { text: "Poor", value: 1 }
-      ]
+        { text: "Poor", value: 1 },
+      ],
     },
     {
       id: 8,
@@ -86,15 +86,15 @@ export default function EmotionalCheckInPage() {
       options: [
         { text: "Yes, often", value: 3 },
         { text: "Sometimes", value: 2 },
-        { text: "Rarely", value: 1 }
-      ]
-    }
+        { text: "Rarely", value: 1 },
+      ],
+    },
   ];
 
   const handleAnswerChange = (questionId: number, value: number) => {
-    setAnswers(prev => ({
+    setAnswers((prev) => ({
       ...prev,
-      [questionId]: value
+      [questionId]: value,
     }));
   };
 
@@ -104,9 +104,9 @@ export default function EmotionalCheckInPage() {
     setShowResults(true);
     // Scroll to results section
     setTimeout(() => {
-      const resultsSection = document.getElementById('quiz-results');
+      const resultsSection = document.getElementById("quiz-results");
       if (resultsSection) {
-        resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        resultsSection.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }, 100);
   };
@@ -117,21 +117,21 @@ export default function EmotionalCheckInPage() {
         emoji: "🟢",
         title: "You seem balanced overall.",
         message: "Keep nurturing yourself.",
-        color: "text-green-600"
+        color: "text-green-600",
       };
     } else if (score >= 14 && score <= 19) {
       return {
         emoji: "🟡",
         title: "A mix of ups & downs.",
         message: "Some gentle support could help.",
-        color: "text-yellow-600"
+        color: "text-yellow-600",
       };
     } else {
       return {
         emoji: "🔴",
         title: "You may be carrying heavy stress.",
         message: "Therapy could be a safe space for relief.",
-        color: "text-red-600"
+        color: "text-red-600",
       };
     }
   };
@@ -146,14 +146,13 @@ export default function EmotionalCheckInPage() {
 
   return (
     <div className="min-h-screen relative">
-      <SEOHead 
+      <SEOHead
         title="Emotional Check-In - Wellness Whispers"
         description="Take a moment to pause and reflect on how you're really feeling today. A gentle self-reflection tool for emotional awareness."
         keywords="emotional check-in, self-reflection, mental health, emotional awareness, wellness"
       />
       <Header />
       <main className="relative z-10 pt-20">
-        
         {/* Hero Section with Background Image */}
         <div className="min-h-screen relative flex items-center">
           {/* Background Image */}
@@ -174,10 +173,8 @@ export default function EmotionalCheckInPage() {
                 🌿 EMOTIONAL CHECK-IN 🌿
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto mb-4">
-                Take a deep breath — this is your safe space to notice how you truly feel today.
-              </p>
-              <p className="text-base sm:text-lg lg:text-xl font-nunito text-white/90 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto">
-                There are no right or wrong answers, only honesty for your own reflection and well-being.
+                Take a deep breath — this is your safe space to notice how you
+                truly feel today.
               </p>
             </div>
           </div>
@@ -187,40 +184,47 @@ export default function EmotionalCheckInPage() {
         <section className="pt-24 pb-16 relative bg-gradient-to-br from-white/95 via-soft-beige/90 to-peach/20">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              
               {/* Introduction */}
-              <div className="text-center mb-12">
-                <h2 className="text-3xl lg:text-4xl font-kinfolk font-light text-earthy-brown mb-6">
-                  Interactive Wellness Quiz
-                </h2>
-              </div>
-
               {!showResults ? (
                 <>
                   {/* Instructions */}
                   <div className="bg-sage/10 backdrop-blur-sm p-6 rounded-xl border border-sage/20 mb-8">
                     <p className="text-lg font-nunito text-dark-brown leading-relaxed text-center">
-                      ✔️ <span className="font-semibold">Tick the option that feels closest to you.</span><br />
-                      ➕ <span className="font-semibold">At the end, add up your numbers to see your score.</span>
+                      ✔️{" "}
+                      <span className="font-semibold">
+                        Tick the option that feels closest to you.
+                      </span>
+                      <br />➕{" "}
+                      <span className="font-semibold">
+                        At the end, add up your numbers to see your score.
+                      </span>
                     </p>
                   </div>
 
                   {/* Quiz Questions */}
                   <div className="space-y-8 mb-8">
                     {questions.map((question) => (
-                      <div key={question.id} className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-soft border border-sage/10">
+                      <div
+                        key={question.id}
+                        className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-soft border border-sage/10"
+                      >
                         <h3 className="text-lg font-nunito font-semibold text-earthy-brown mb-4">
                           {question.id}. {question.text}
                         </h3>
                         <div className="space-y-3">
                           {question.options.map((option) => (
-                            <label key={option.value} className="flex items-center space-x-3 cursor-pointer group">
+                            <label
+                              key={option.value}
+                              className="flex items-center space-x-3 cursor-pointer group"
+                            >
                               <input
                                 type="radio"
                                 name={`question-${question.id}`}
                                 value={option.value}
                                 checked={answers[question.id] === option.value}
-                                onChange={() => handleAnswerChange(question.id, option.value)}
+                                onChange={() =>
+                                  handleAnswerChange(question.id, option.value)
+                                }
                                 className="w-4 h-4 text-sage-green focus:ring-sage-green"
                                 data-testid={`radio-question-${question.id}-${option.value}`}
                               />
@@ -245,8 +249,12 @@ export default function EmotionalCheckInPage() {
                           : "bg-gray-200 text-gray-400 border-gray-300 cursor-not-allowed shadow-[0_4px_8px_rgba(0,0,0,0.1)]"
                       }`}
                       style={{
-                        backgroundImage: isQuizComplete ? 'radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 70%)' : 'none',
-                        textShadow: isQuizComplete ? '0 1px 2px rgba(0,0,0,0.2)' : 'none'
+                        backgroundImage: isQuizComplete
+                          ? "radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 70%)"
+                          : "none",
+                        textShadow: isQuizComplete
+                          ? "0 1px 2px rgba(0,0,0,0.2)"
+                          : "none",
                       }}
                       data-testid="button-submit-quiz"
                     >
@@ -266,7 +274,10 @@ export default function EmotionalCheckInPage() {
               ) : (
                 <>
                   {/* Results Section */}
-                  <div id="quiz-results" className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-soft border border-sage/20 mb-8">
+                  <div
+                    id="quiz-results"
+                    className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-soft border border-sage/20 mb-8"
+                  >
                     <h3 className="text-2xl font-kinfolk font-semibold text-earthy-brown mb-6 text-center">
                       ✅ Your Score
                     </h3>
@@ -275,14 +286,20 @@ export default function EmotionalCheckInPage() {
                         {totalScore}/24
                       </div>
                     </div>
-                    
+
                     {(() => {
                       const result = getResultMessage(totalScore);
                       return (
-                        <div className={`text-center p-6 rounded-xl bg-gradient-to-r from-white/80 to-soft-beige/60 ${result.color}`}>
+                        <div
+                          className={`text-center p-6 rounded-xl bg-gradient-to-r from-white/80 to-soft-beige/60 ${result.color}`}
+                        >
                           <div className="text-3xl mb-3">{result.emoji}</div>
-                          <h4 className="text-xl font-nunito font-semibold mb-2">{result.title}</h4>
-                          <p className="text-lg font-nunito">{result.message}</p>
+                          <h4 className="text-xl font-nunito font-semibold mb-2">
+                            {result.title}
+                          </h4>
+                          <p className="text-lg font-nunito">
+                            {result.message}
+                          </p>
                         </div>
                       );
                     })()}
@@ -294,8 +311,9 @@ export default function EmotionalCheckInPage() {
                       onClick={resetQuiz}
                       className="px-8 py-4 rounded-xl font-nunito font-bold text-lg transition-all duration-300 transform border-2 bg-gradient-to-br from-amber-100 via-yellow-50 to-amber-200 text-amber-900 border-amber-400 hover:from-amber-200 hover:to-amber-300 shadow-[0_8px_16px_rgba(0,0,0,0.2),inset_0_1px_2px_rgba(255,255,255,0.5)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.3)] hover:scale-105 hover:-translate-y-1"
                       style={{
-                        backgroundImage: 'radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 70%)',
-                        textShadow: '0 1px 2px rgba(0,0,0,0.2)'
+                        backgroundImage:
+                          "radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 70%)",
+                        textShadow: "0 1px 2px rgba(0,0,0,0.2)",
                       }}
                       data-testid="button-reset-quiz"
                     >
@@ -307,8 +325,9 @@ export default function EmotionalCheckInPage() {
                       rel="noopener noreferrer"
                       className="px-8 py-4 rounded-xl font-nunito font-bold text-lg transition-all duration-300 transform border-2 bg-gradient-to-br from-green-100 via-emerald-50 to-green-200 text-green-900 border-green-400 hover:from-green-200 hover:to-green-300 shadow-[0_8px_16px_rgba(0,0,0,0.2),inset_0_1px_2px_rgba(255,255,255,0.5)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.3)] hover:scale-105 hover:-translate-y-1 no-underline"
                       style={{
-                        backgroundImage: 'radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 70%)',
-                        textShadow: '0 1px 2px rgba(0,0,0,0.2)'
+                        backgroundImage:
+                          "radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 70%)",
+                        textShadow: "0 1px 2px rgba(0,0,0,0.2)",
                       }}
                       data-testid="button-contact-me"
                     >
@@ -324,10 +343,12 @@ export default function EmotionalCheckInPage() {
                   🌿 Reflection
                 </h3>
                 <p className="text-lg text-dark-brown font-nunito leading-relaxed mb-6">
-                  Notice your answers — do they show balance, stress, or a mix of both? You might even want to jot them down or doodle them.
+                  Notice your answers — do they show balance, stress, or a mix
+                  of both? You might even want to jot them down or doodle them.
                 </p>
                 <p className="text-lg text-dark-brown font-nunito leading-relaxed">
-                  ✨ If your responses feel heavy, uncertain, or confusing, it may be a gentle sign that extra support could help.
+                  ✨ If your responses feel heavy, uncertain, or confusing, it
+                  may be a gentle sign that extra support could help.
                 </p>
               </div>
 
@@ -340,7 +361,9 @@ export default function EmotionalCheckInPage() {
                   <p>This check-in is for self-reflection only.</p>
                   <p>It is not a diagnosis or a substitute for therapy.</p>
                   <p className="font-semibold">
-                    If you are in crisis or experiencing overwhelming distress, please contact a mental health professional or emergency service immediately.
+                    If you are in crisis or experiencing overwhelming distress,
+                    please contact a mental health professional or emergency
+                    service immediately.
                   </p>
                 </div>
               </div>
@@ -348,17 +371,16 @@ export default function EmotionalCheckInPage() {
               {/* Call to Action */}
               <div className="mt-8 text-center">
                 <p className="text-lg font-nunito text-dark-brown leading-relaxed">
-                  👉 If you'd like to explore your score gently, therapy can be a safe place to begin.
+                  👉 If you'd like to explore your score gently, therapy can be
+                  a safe place to begin.
                 </p>
               </div>
-
             </div>
           </div>
 
           {/* Subtle nature texture overlay */}
           <div className="nature-texture absolute inset-0 pointer-events-none opacity-15"></div>
         </section>
-
       </main>
       <Footer />
     </div>
