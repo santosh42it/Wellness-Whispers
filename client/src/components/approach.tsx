@@ -126,25 +126,25 @@ export default function Approach() {
           {approaches.map((approach, index) => (
             <div
               key={index}
-              className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-soft border border-sage/10"
+              className="bg-white/80 backdrop-blur-sm p-3 md:p-6 rounded-xl shadow-soft border border-sage/10 flex flex-col"
             >
               {/* Title on top */}
-              <h3 className="text-xl font-kinfolk font-semibold text-dark-brown mb-4 text-center">
+              <h3 className="approach-title font-kinfolk font-semibold text-dark-brown mb-3 md:mb-4">
                 {approach.title}
               </h3>
 
               {/* Image in middle */}
-              <div className="mb-4 overflow-hidden rounded-lg">
+              <div className="mb-3 md:mb-4 overflow-hidden rounded-lg flex-shrink-0">
                 <img
                   src={approach.image}
                   alt={approach.alt}
-                  className="w-full h-72 md:h-80 object-cover filter saturate-90"
+                  className="w-full h-40 md:h-72 lg:h-80 object-cover filter saturate-90"
                   loading="lazy"
                 />
               </div>
 
               {/* Description at bottom - centered and full text */}
-              <p className="text-dark-brown font-nunito text-base leading-relaxed text-center font-medium">
+              <p className="approach-description text-dark-brown font-nunito leading-relaxed font-medium flex-grow">
                 {approach.description}
               </p>
             </div>

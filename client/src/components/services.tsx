@@ -134,25 +134,25 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-soft"
+              className="bg-white/70 backdrop-blur-sm p-3 md:p-6 rounded-xl shadow-soft flex flex-col"
             >
               {/* Title on top */}
-              <h3 className="text-xl font-kinfolk font-semibold text-dark-brown mb-4 text-center">
+              <h3 className="service-title font-kinfolk font-semibold text-dark-brown mb-3 md:mb-4">
                 {service.title}
               </h3>
               
               {/* Image in middle */}
-              <div className="mb-4 overflow-hidden rounded-lg">
+              <div className="mb-3 md:mb-4 overflow-hidden rounded-lg flex-shrink-0">
                 <img 
                   src={service.image}
                   alt={service.alt}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-32 md:h-48 object-cover"
                   loading="lazy"
                 />
               </div>
               
               {/* Text at bottom - centered and full text */}
-              <p className="text-dark-brown font-nunito text-base leading-relaxed text-center font-medium">
+              <p className="service-description text-dark-brown font-nunito leading-relaxed font-medium flex-grow">
                 {service.description}
               </p>
             </div>
