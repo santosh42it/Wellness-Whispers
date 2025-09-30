@@ -73,30 +73,30 @@ export default function Header() {
             >
               Meet Me
             </Link>
-            <button
-              onClick={() => scrollToSection("services")}
+            <Link 
+              href="/services"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Services
-            </button>
-            <button
-              onClick={() => scrollToSection("approach")}
+            </Link>
+            <Link 
+              href="/approach"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Approach
-            </button>
+            </Link>
             <Link 
               href="/after-therapy"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Bright Days
             </Link>
-            <button
-              onClick={() => scrollToSection("pricing")}
+            <Link 
+              href="/pricing"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
             >
               Gift of Healing
-            </button>
+            </Link>
             <Link 
               href="/emotional-checkin"
               className="text-charcoal-grey hover:text-sage-green transition-colors duration-300 font-nunito"
@@ -140,18 +140,20 @@ export default function Header() {
               >
                 Meet Me
               </Link>
-              <button
-                onClick={() => scrollToSection("services")}
+              <Link
+                href="/services"
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Services
-              </button>
-              <button
-                onClick={() => scrollToSection("approach")}
+              </Link>
+              <Link
+                href="/approach"
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Approach
-              </button>
+              </Link>
               <Link
                 href="/after-therapy"
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
@@ -160,11 +162,18 @@ export default function Header() {
                 Bright Days
               </Link>
               <Link
+                href="/pricing"
+                className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Gift of Healing
+              </Link>
+              <Link
                 href="/emotional-checkin"
                 className="block w-full text-left text-warm-gray hover:text-dark-brown transition-gentle py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Emotional Check-In
+                Check-In
               </Link>
               <Link
                 href="/faq"

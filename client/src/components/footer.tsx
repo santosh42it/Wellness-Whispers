@@ -49,28 +49,28 @@ export default function Footer() {
               <h3 className="text-2xl font-cormorant font-medium mb-6 text-white drop-shadow-lg">Quick Links</h3>
               <ul className="space-y-4 font-nunito">
                 <li>
-                  <button
-                    onClick={() => scrollToSection("about")}
+                  <Link
+                    href="/about"
                     className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
                     Meet Me
-                  </button>
+                  </Link>
                 </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("services")}
+                  <Link
+                    href="/services"
                     className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
                     Services
-                  </button>
+                  </Link>
                 </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("approach")}
+                  <Link
+                    href="/approach"
                     className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
                     Approach
-                  </button>
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -81,12 +81,12 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("pricing")}
+                  <Link
+                    href="/pricing"
                     className="text-white/90 hover:text-peach transition-colors font-semibold text-lg drop-shadow-sm"
                   >
                     Gift of Healing
-                  </button>
+                  </Link>
                 </li>
                 <li>
                   <Link
