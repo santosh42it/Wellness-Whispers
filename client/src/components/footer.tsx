@@ -153,7 +153,7 @@ export default function Footer() {
           <div className="border-t border-white/30 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-white/70 text-base font-nunito font-medium drop-shadow-sm">
-                © 2025 Wellness Whispers. All rights reserved.
+                © {new Date().getFullYear()} Wellness Whispers. All rights reserved.
               </p>
               <p className="text-white/70 text-base mt-4 md:mt-0 font-nunito font-medium drop-shadow-sm">
                 Ms. Pavan Chowdhary • Qualified Therapist • Online Sessions
