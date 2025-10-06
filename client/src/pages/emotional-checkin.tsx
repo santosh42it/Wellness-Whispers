@@ -170,7 +170,7 @@ export default function EmotionalCheckInPage() {
           <div className="relative z-20 container mx-auto px-6 py-12 md:py-16 lg:py-20">
             <div className="max-w-4xl mx-auto text-center space-y-4 md:space-y-6 lg:space-y-8">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight drop-shadow-lg mb-3 md:mb-4 lg:mb-6">
-                🌿 EMOTIONAL CHECK-IN 🌿
+                EMOTIONAL CHECK-IN
               </h1>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto">
                 Take a gentle breath — you are safe here.
@@ -188,8 +188,9 @@ export default function EmotionalCheckInPage() {
               {/* Gentle Introduction */}
               <div className="text-center mb-12">
                 <p className="text-lg sm:text-xl font-nunito text-earthy-brown leading-relaxed max-w-3xl mx-auto">
-                  There are no right or wrong answers. This reflection simply helps you notice your inner world.
-                  Answer at your own pace — it's only for your awareness and self-kindness.
+                  There are no right or wrong answers. This reflection simply
+                  helps you notice your inner world. Answer at your own pace —
+                  it's only for your awareness and self-kindness.
                 </p>
               </div>
 
