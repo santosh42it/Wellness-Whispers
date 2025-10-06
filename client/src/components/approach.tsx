@@ -1,13 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
-import a1Image from "@assets/a1.jpg";
-import a2Image from "@assets/a2.jpg";
-import a3Image from "@assets/a3.jpg";
-import a4Image from "@assets/a4.jpg";
-import a5Image from "@assets/a5.jpg";
-import a6Image from "@assets/a6.jpg";
-import a7Image from "@assets/a7.jpg";
-import a8Image from "@assets/a8.jpg";
-// Note: a9.jpg not available, will use a8 as fallback
+import a1Image from "@assets/a1c.png";
+import a2Image from "@assets/a2c.png";
+import a3Image from "@assets/a3c.png";
+import a4Image from "@assets/a4c.png";
+import a5Image from "@assets/a5c.png";
+import a6Image from "@assets/a6c.png";
+import a7Image from "@assets/a7c.png";
+import a8Image from "@assets/a8c.png";
+// Using png versions with transparent backgrounds
 
 // Helper function to get content from content blocks
 function getContentValue(
