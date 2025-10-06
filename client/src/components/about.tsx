@@ -167,7 +167,7 @@ export default function About() {
             </div>
 
             {/* Right Side - Text Content */}
-            <div className="space-y-8 mt-12 lg:mt-0">
+            <div className="space-y-8 mt-16 lg:mt-0">
               <h2 className="text-2xl sm:text-3xl lg:text-5xl font-kinfolk font-extralight text-earthy-brown leading-tight uppercase">
                 GENTLE RISING
               </h2>
