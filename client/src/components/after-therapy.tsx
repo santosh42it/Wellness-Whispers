@@ -57,7 +57,7 @@ export default function AfterTherapy() {
     <>
       <section className="py-20 relative">
         <div className="container mx-auto px-6">
-        
+
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown mb-6">
@@ -147,20 +147,20 @@ export default function AfterTherapy() {
             {/* Right Side - Photo with Overlapping Background */}
             <div className="relative order-1 lg:order-2">
               {/* Overlapping Background Image - Vertical format */}
-              <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
+              <div className="absolute -top-10 -right-10 w-64 h-96 z-0 hidden lg:block">
                 <img
                   src={h2BgImg}
-                  alt="Peaceful background for gentle strength"
+                  alt="Peaceful background for emotional presence"
                   className="w-full h-full object-cover opacity-70"
                   loading="lazy"
                 />
               </div>
 
               {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
+              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'lg:translateX(100px)'}}>
                 <img
                   src={h2FrontImg}
-                  alt="Inner peace and gentle strength"
+                  alt="Gentle self-awareness and emotional healing"
                   className="w-full h-auto shadow-2xl relative z-10"
                   loading="lazy"
                 />
@@ -269,7 +269,7 @@ export default function AfterTherapy() {
               </div>
             </div>
           </div>
-        
+
 
         {/* Sixth Section - Image Left, Text Right */}
         <div className="max-w-7xl mx-auto mt-32">
@@ -375,7 +375,7 @@ export default function AfterTherapy() {
         </div>
       </section>
 
-      
+
 
       <section className="py-20 relative">
         <div className="container mx-auto px-6">
