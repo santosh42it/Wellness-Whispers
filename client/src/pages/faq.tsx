@@ -120,12 +120,12 @@ export default function FAQPage() {
           <div className="relative z-20 container mx-auto px-6 py-12 md:py-16 lg:py-20">
             <div className="max-w-4xl mx-auto text-center space-y-4 md:space-y-6 lg:space-y-8">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight drop-shadow-lg mb-3 md:mb-4 lg:mb-6">
-                FAQ
+                💬 FAQ 💬
               </h1>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-2xl mx-auto px-4">
                 You might have questions — and that's completely okay.
-                <br />
-                Here are gentle answers to help you feel more at ease.
+                <br className="hidden sm:block" />
+                <span className="block sm:inline"> Here are gentle answers to help you feel more at ease.</span>
               </p>
             </div>
           </div>
