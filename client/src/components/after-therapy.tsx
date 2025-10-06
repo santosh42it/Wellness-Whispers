@@ -147,7 +147,7 @@ export default function AfterTherapy() {
             {/* Right Side - Photo with Overlapping Background */}
             <div className="relative order-1 lg:order-2">
               {/* Overlapping Background Image - Vertical format */}
-              <div className="absolute -top-10 -right-10 w-64 h-96 z-0 hidden lg:block">
+              <div className="absolute -top-6 -right-6 lg:-top-10 lg:-right-10 w-48 h-72 lg:w-64 lg:h-96 z-0">
                 <img
                   src={h2BgImg}
                   alt="Peaceful background for emotional presence"
@@ -157,7 +157,7 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'lg:translateX(100px)'}}>
+              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 mt-14 lg:mt-20 z-10" style={{transform: 'translateX(0px) lg:translateX(100px)'}}>
                 <img
                   src={h2FrontImg}
                   alt="Gentle self-awareness and emotional healing"
@@ -249,7 +249,7 @@ export default function AfterTherapy() {
             {/* Right Side - Photo with Overlapping Background */}
             <div className="relative order-1 lg:order-2">
               {/* Overlapping Background Image - Vertical format */}
-              <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
+              <div className="absolute -top-6 -right-6 lg:-top-10 lg:-right-10 w-48 h-72 lg:w-64 lg:h-96 z-0">
                 <img
                   src={h4BgImg}
                   alt="Peaceful background for balance"
@@ -259,7 +259,7 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
+              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 mt-14 lg:mt-20 z-10" style={{transform: 'translateX(0px) lg:translateX(100px)'}}>
                 <img
                   src={h4FrontImg}
                   alt="Relationship healing and gentle care"
@@ -350,7 +350,7 @@ export default function AfterTherapy() {
             {/* Right Side - Photo with Overlapping Background */}
             <div className="relative order-1 lg:order-2">
               {/* Overlapping Background Image - Vertical format */}
-              <div className="absolute -top-10 -right-10 w-64 h-96 z-0">
+              <div className="absolute -top-6 -right-6 lg:-top-10 lg:-right-10 w-48 h-72 lg:w-64 lg:h-96 z-0">
                 <img
                   src={h7BgImg}
                   alt="Peaceful background for lasting transformation"
@@ -360,7 +360,7 @@ export default function AfterTherapy() {
               </div>
 
               {/* Main Photo - Positioned for right-side overlap */}
-              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 lg:mt-20 z-10" style={{transform: 'translateX(100px)'}}>
+              <div className="w-80 relative mx-auto lg:-mr-28 lg:ml-0 mt-14 lg:mt-20 z-10" style={{transform: 'translateX(0px) lg:translateX(100px)'}}>
                 <img
                   src={h7FrontImg}
                   alt="Lasting transformation and growth"
