@@ -119,6 +119,13 @@ export default function Services() {
       
       <div className="container mx-auto px-6">
         
+        {/* Why Whispers Section */}
+        <div className="text-center mb-12">
+          <p className="text-lg md:text-xl text-dark-brown/80 font-nunito leading-relaxed max-w-4xl mx-auto">
+            <span className="font-semibold text-sage">Why "Whispers"?</span> Healing begins softly - in quiet pauses, gentle practices, and small steps that make space for change
+          </p>
+        </div>
+
         {/* Section Title */}
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-dark-brown mb-6">
