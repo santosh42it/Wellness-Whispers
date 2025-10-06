@@ -154,25 +154,25 @@ export default function EmotionalCheckInPage() {
       <Header />
       <main className="relative z-10 pt-20">
         {/* Hero Section with Background Image */}
-        <div className="min-h-screen relative flex items-center">
+        <div className="relative flex items-center h-[60vh] md:h-[70vh] lg:min-h-screen">
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
               src={dreamyNatureImg}
               alt="Dreamy nature landscape for emotional reflection"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
               loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
           </div>
 
           {/* Content */}
-          <div className="relative z-20 container mx-auto px-6 py-20">
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight drop-shadow-lg mb-6">
+          <div className="relative z-20 container mx-auto px-6 py-12 md:py-16 lg:py-20">
+            <div className="max-w-4xl mx-auto text-center space-y-4 md:space-y-6 lg:space-y-8">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-kinfolk font-extralight text-white leading-tight drop-shadow-lg mb-3 md:mb-4 lg:mb-6">
                 🌿 EMOTIONAL CHECK-IN 🌿
               </h1>
-              <p className="text-lg sm:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto mb-4">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-nunito text-white/95 leading-relaxed drop-shadow-md font-light max-w-3xl mx-auto">
                 Take a gentle breath — you are safe here.
                 <br />
                 Notice what you feel inside, right now.
