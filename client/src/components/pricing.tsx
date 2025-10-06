@@ -57,12 +57,12 @@ export default function Pricing() {
             <div 
               key={index}
               className={`bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-soft hover:shadow-warm transition-all duration-300 relative flex flex-col ${
-                plan.popular ? 'ring-2 ring-sage-green scale-105' : ''
+                plan.popular ? 'ring-2 ring-sage-green md:scale-105 mt-8 md:mt-0' : ''
               }`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                  <span className="bg-sage-green text-white px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap">
+                  <span className="bg-sage-green text-white px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap shadow-lg">
                     Most Popular
                   </span>
                 </div>
