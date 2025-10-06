@@ -105,10 +105,10 @@ export default function Approach() {
   return (
     <section
       id="approach"
-      className="pt-24 pb-16 relative bg-gradient-to-br from-sage/5 via-soft-beige/30 to-peach/10"
+      className="pt-24 pb-16 relative bg-gradient-to-br from-peach-blush/40 via-warm-misty-beige/60 to-peach-blush/30"
     >
       {/* Decorative section divider */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-sage/30 to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-terracotta/20 to-transparent"></div>
 
       <div className="container mx-auto px-6">
         {/* Section Title */}
