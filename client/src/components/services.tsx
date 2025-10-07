@@ -128,11 +128,11 @@ export default function Services() {
         </div>
 
         {/* Section Title */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-dark-brown mb-6">
+        <div className="text-center mb-12 md:mb-20">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-kinfolk font-light text-dark-brown mb-4 md:mb-6 leading-tight px-4">
             {servicesTitle}
           </h2>
-          <p className="text-xl text-dark-brown font-medium max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-dark-brown font-medium max-w-3xl mx-auto px-4">
             {servicesSubtitle}
           </p>
         </div>
