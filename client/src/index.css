@@ -584,6 +584,10 @@
   text-align: center;
   word-wrap: break-word;
   hyphens: auto;
+  height: 2.8rem; /* Fixed height for perfect alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .services-grid .service-description {
@@ -624,6 +628,7 @@
   
   .services-grid .service-title {
     font-size: 0.85rem;
+    height: 3rem; /* Fixed height for perfect alignment */
   }
   
   .services-grid .service-description {
@@ -657,6 +662,7 @@
   .services-grid .service-title {
     font-size: 0.95rem;
     padding: 0.75rem 0.5rem 0.5rem;
+    height: 3.5rem; /* Fixed height for perfect alignment */
   }
   
   .services-grid .service-description {
@@ -685,6 +691,7 @@
   .services-grid .service-title {
     font-size: 1.05rem;
     padding: 0.75rem 0.5rem 0.75rem;
+    height: 4rem; /* Fixed height for perfect alignment */
   }
   
   .services-grid .service-description {
