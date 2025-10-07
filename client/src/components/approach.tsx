@@ -48,6 +48,8 @@ export default function Approach() {
       title: "Mindfulness & Somatic Grounding",
       description:
         "You can gently ground yourself in the present. Mindful awareness and body-based grounding reconnect you with calm and inner balance. (Mindfulness-based practice)",
+      mobileDescription:
+        "Ground yourself in the present through mindful awareness and body-based practices. (Mindfulness-based)",
       image: a1Image,
       alt: "Peaceful meditation pose representing mindfulness and grounding",
     },
@@ -55,6 +57,8 @@ export default function Approach() {
       title: "Breathwork & Guided Imagery",
       description:
         "You can find calm through your breath. Gentle breathing and guided imagery help ease stress, relax the body, and create a safe inner space. (Mindfulness & CBT-based relaxation)",
+      mobileDescription:
+        "Find calm through gentle breathing and guided imagery to ease stress. (Mindfulness & CBT-based)",
       image: a2Image,
       alt: "Person practicing deep breathing in natural setting",
     },
@@ -62,6 +66,8 @@ export default function Approach() {
       title: "Positive Affirmations / Self-Talk (CBT)",
       description:
         "You can learn to be your own encourager. Gentle affirmations and positive self-talk help shift unhelpful thoughts and build confidence. (CBT-based practice)",
+      mobileDescription:
+        "Be your own encourager through affirmations that shift thoughts and build confidence. (CBT-based)",
       image: a3Image,
       alt: "Gentle hands in self-soothing butterfly hug position",
     },
@@ -69,6 +75,8 @@ export default function Approach() {
       title: "Butterfly Hug (EFT/EMDR-style)",
       description:
         "You can soothe yourself in moments of stress. The Butterfly Hug is a gentle self-soothing practice for emotional regulation and trauma healing. (EFT/EMDR technique).",
+      mobileDescription:
+        "Soothe yourself with gentle self-calming for emotional regulation and healing. (EFT/EMDR technique)",
       image: a4Image,
       alt: "Child's perspective showing innocence and inner child healing",
     },
@@ -76,6 +84,8 @@ export default function Approach() {
       title: "Narrative Therapy",
       description:
         "With your voice as a lantern, you can re-author your story. Narrative therapy helps you explore and reshape the meaning of your life experiences.",
+      mobileDescription:
+        "Re-author your story by exploring and reshaping your life experiences.",
       image: a5Image,
       alt: "Warm, empathetic therapist listening with person-centered focus",
     },
@@ -83,6 +93,8 @@ export default function Approach() {
       title: "Inner Child Healing",
       description:
         "You can reconnect with your younger self. Inner Child Healing brings compassion to early wounds and nurtures emotional growth.",
+      mobileDescription:
+        "Reconnect with your younger self through compassion for early wounds.",
       image: a6Image,
       alt: "Strong tree roots representing inner strength and resilience",
     },
@@ -90,6 +102,8 @@ export default function Approach() {
       title: "Person-Centered Approach",
       description:
         "Your experience is the guide. A person-centered approach offers gentle, non-directive support with empathy and respect.",
+      mobileDescription:
+        "Your experience guides gentle, empathetic support with respect.",
       image: a7Image,
       alt: "Clear water reflection representing emotional clarity",
     },
@@ -97,6 +111,8 @@ export default function Approach() {
       title: "Strengths-Based Therapy",
       description:
         "You already carry strength within you. This approach helps build resilience by focusing on your inner resources and natural coping abilities.",
+      mobileDescription:
+        "Build resilience by focusing on your inner strength and resources.",
       image: a8Image,
       alt: "Comfortable therapy space with gentle conversation atmosphere",
     },
@@ -145,8 +161,13 @@ export default function Approach() {
                 />
               </div>
 
-              {/* Description at bottom - centered and full text */}
-              <p className="approach-description text-dark-brown font-nunito leading-relaxed font-medium flex-grow">
+              {/* Description at bottom - responsive text */}
+              {/* Mobile: Shorter description */}
+              <p className="approach-description text-dark-brown font-nunito leading-relaxed font-medium flex-grow md:hidden">
+                {approach.mobileDescription}
+              </p>
+              {/* Desktop: Full description */}
+              <p className="approach-description text-dark-brown font-nunito leading-relaxed font-medium flex-grow hidden md:block">
                 {approach.description}
               </p>
             </div>
