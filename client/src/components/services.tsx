@@ -122,7 +122,9 @@ export default function Services() {
         {/* Why Whispers Section */}
         <div className="text-center mb-12">
           <p className="text-lg md:text-xl text-dark-brown/80 font-nunito leading-relaxed max-w-4xl mx-auto">
-            <span className="font-semibold text-sage">Why "Whispers"?</span> Healing begins softly - in quiet pauses, gentle practices, and small steps that make space for change
+            <span className="font-semibold" style={{ color: '#527e2a' }}>Why "Whispers"?</span>
+            <br />
+            Healing begins softly - in quiet pauses, gentle practices, and small steps that make space for change
           </p>
         </div>
 
