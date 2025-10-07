@@ -126,7 +126,8 @@ export default function Approach() {
           {approaches.map((approach, index) => (
             <div
               key={index}
-              className="bg-white/80 backdrop-blur-sm p-3 md:p-6 rounded-xl shadow-soft border border-sage/10 flex flex-col"
+              className="backdrop-blur-sm p-3 md:p-6 rounded-xl shadow-soft border border-sage/10 flex flex-col"
+              style={{ backgroundColor: '#b79d98' }}
             >
               {/* Title on top */}
               <h3 className="approach-title font-kinfolk font-semibold text-dark-brown mb-3 md:mb-4">
