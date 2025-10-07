@@ -586,12 +586,16 @@
 }
 
 .approaches-grid .approach-title {
-  font-size: 0.9rem;
-  line-height: 1.2;
+  font-size: 0.85rem;
+  line-height: 1.3;
   padding: 0.5rem;
   text-align: center;
   word-wrap: break-word;
   hyphens: auto;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .approaches-grid .approach-description {
@@ -653,8 +657,10 @@
   }
   
   .approaches-grid .approach-title {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    line-height: 1.35;
     padding: 1rem 0.5rem 0.75rem;
+    min-height: 4rem;
   }
   
   .approaches-grid .approach-description {
@@ -679,8 +685,10 @@
   }
   
   .approaches-grid .approach-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    line-height: 1.4;
     padding: 1rem 0.75rem 1rem;
+    min-height: 4.5rem;
   }
   
   .approaches-grid .approach-description {

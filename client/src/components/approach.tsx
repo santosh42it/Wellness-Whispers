@@ -72,7 +72,7 @@ export default function Approach() {
       alt: "Gentle hands in self-soothing butterfly hug position",
     },
     {
-      title: "Butterfly Hug (EFT/EMDR-style)",
+      title: "Butterfly Hug (EFT/EMDR-Style)",
       description:
         "You can soothe yourself in moments of stress. The Butterfly Hug is a gentle self-soothing practice for emotional regulation and trauma healing. (EFT/EMDR technique).",
       mobileDescription:
@@ -81,7 +81,7 @@ export default function Approach() {
       alt: "Child's perspective showing innocence and inner child healing",
     },
     {
-      title: "Narrative Therapy",
+      title: "Narrative Therapy Approach",
       description:
         "With your voice as a lantern, you can re-author your story. Narrative therapy helps you explore and reshape the meaning of your life experiences.",
       mobileDescription:
@@ -90,7 +90,7 @@ export default function Approach() {
       alt: "Warm, empathetic therapist listening with person-centered focus",
     },
     {
-      title: "Inner Child Healing",
+      title: "Inner Child Healing Practice",
       description:
         "You can reconnect with your younger self. Inner Child Healing brings compassion to early wounds and nurtures emotional growth.",
       mobileDescription:
