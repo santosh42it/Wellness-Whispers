@@ -600,7 +600,7 @@
   text-align: center;
   word-wrap: break-word;
   hyphens: auto;
-  min-height: 3rem;
+  min-height: 4rem; /* Increased to accommodate 3-line titles */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -668,7 +668,7 @@
     font-size: 1.05rem;
     line-height: 1.35;
     padding: 1rem 0.5rem 0.75rem;
-    min-height: 4rem;
+    min-height: 5rem; /* Increased for consistency */
   }
   
   .approaches-grid .approach-description {
@@ -696,7 +696,7 @@
     font-size: 1.15rem;
     line-height: 1.4;
     padding: 1rem 0.75rem 1rem;
-    min-height: 4.5rem;
+    min-height: 5.5rem; /* Increased to handle longer titles */
   }
   
   .approaches-grid .approach-description {
