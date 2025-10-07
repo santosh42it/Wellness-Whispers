@@ -546,11 +546,19 @@
   gap: 0.75rem;
 }
 
-/* Responsive approach images for mobile */
+/* Responsive approach images for mobile - maintain polaroid card style */
 @media (max-width: 768px) {
   .approaches-grid img {
     height: 10rem !important; /* 160px - smaller on mobile */
     object-fit: cover;
+    border-radius: 0.75rem; /* Rounded corners */
+  }
+  
+  /* Ensure the image container maintains the card effect */
+  .approaches-grid > div > div {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
   }
 }
 

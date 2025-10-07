@@ -134,12 +134,12 @@ export default function Approach() {
                 {approach.title}
               </h3>
 
-              {/* Image in middle */}
-              <div className="mb-3 md:mb-4 overflow-hidden rounded-lg flex-shrink-0">
+              {/* Image in middle - with polaroid card effect */}
+              <div className="mb-3 md:mb-4 bg-white p-2 rounded-xl flex-shrink-0">
                 <img
                   src={`${approach.image}?v=2`}
                   alt={approach.alt}
-                  className="w-full h-40 md:h-72 lg:h-80 object-cover filter saturate-90"
+                  className="w-full h-40 md:h-72 lg:h-80 object-cover filter saturate-90 rounded-lg"
                   loading="lazy"
                   key={approach.image}
                 />
