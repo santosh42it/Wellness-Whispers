@@ -137,10 +137,11 @@ export default function Approach() {
               {/* Image in middle */}
               <div className="mb-3 md:mb-4 overflow-hidden rounded-lg flex-shrink-0">
                 <img
-                  src={approach.image}
+                  src={`${approach.image}?v=2`}
                   alt={approach.alt}
                   className="w-full h-40 md:h-72 lg:h-80 object-cover filter saturate-90"
                   loading="lazy"
+                  key={approach.image}
                 />
               </div>
 
