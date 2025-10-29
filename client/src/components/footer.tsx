@@ -1,4 +1,4 @@
-import { Heart, Mail, Phone } from "lucide-react";
+import { Heart, Mail, Phone, MessageCircle } from "lucide-react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { Link } from "wouter";
 import WhatsAppButton from "./whatsapp-button";
@@ -121,7 +121,7 @@ export default function Footer() {
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-peach drop-shadow-sm" />
+                  <MessageCircle className="h-5 w-5 text-peach drop-shadow-sm" />
                   <span className="text-white font-semibold text-lg drop-shadow-sm">WhatsApp & Google Meet</span>
                 </div>
                 <p className="text-white/80 text-base mt-4 font-semibold drop-shadow-sm">
