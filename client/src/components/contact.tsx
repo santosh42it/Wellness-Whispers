@@ -1,5 +1,4 @@
 import WhatsAppButton from "./whatsapp-button";
-import { Mail } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -83,15 +82,6 @@ export default function Contact() {
                       className="hover:text-sage-green transition-colors duration-300"
                     >
                       Schedule Google Meet session
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-sage-green" />
-                    <a 
-                      href="mailto:wellnesswhispers.blr@gmail.com"
-                      className="hover:text-sage-green transition-colors duration-300"
-                    >
-                      wellnesswhispers.blr@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center space-x-3">
