@@ -116,6 +116,12 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-peach drop-shadow-sm" />
+                  <a href="mailto:wellnesswhispers.blr@gmail.com" className="text-white font-semibold text-lg drop-shadow-sm hover:text-peach transition-colors duration-300">
+                    wellnesswhispers.blr@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-peach drop-shadow-sm" />
                   <span className="text-white font-semibold text-lg drop-shadow-sm">WhatsApp & Google Meet</span>
                 </div>
                 <p className="text-white/80 text-base mt-4 font-semibold drop-shadow-sm">
