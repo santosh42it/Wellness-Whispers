@@ -112,7 +112,9 @@ export default function Footer() {
               <div className="space-y-4 font-nunito">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-peach drop-shadow-sm" />
-                  <span className="text-white font-semibold text-lg drop-shadow-sm">+91 98806 07355</span>
+                  <a href="tel:+919880607355" className="text-white font-semibold text-lg drop-shadow-sm hover:text-peach transition-colors duration-300">
+                    +91 98806 07355
+                  </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-peach drop-shadow-sm" />
@@ -122,7 +124,23 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <MessageCircle className="h-5 w-5 text-peach drop-shadow-sm" />
-                  <span className="text-white font-semibold text-lg drop-shadow-sm">WhatsApp & Google Meet</span>
+                  <a 
+                    href="https://api.whatsapp.com/send/?phone=919880607355&text=Hello+Ms.+Chowdhary%2C+I+found+your+Wellness+Whispers+website+and+would+like+to+know+more+about+your+therapy+sessions.&type=phone_number&app_absent=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-semibold text-lg drop-shadow-sm hover:text-peach transition-colors duration-300"
+                  >
+                    WhatsApp Chat
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <MessageCircle className="h-5 w-5 text-peach drop-shadow-sm" />
+                  <a 
+                    href="mailto:wellnesswhispers.blr@gmail.com?subject=Schedule%20Google%20Meet%20Session&body=Hello%20Ms.%20Chowdhary,%0A%0AI%20would%20like%20to%20schedule%20a%20Google%20Meet%20therapy%20session.%20Please%20let%20me%20know%20your%20available%20time%20slots.%0A%0AThank%20you"
+                    className="text-white font-semibold text-lg drop-shadow-sm hover:text-peach transition-colors duration-300"
+                  >
+                    Schedule Google Meet
+                  </a>
                 </div>
                 <p className="text-white/80 text-base mt-4 font-semibold drop-shadow-sm">
                   Flexible timing • Gentle support • Professional care

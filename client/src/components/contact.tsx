@@ -66,11 +66,32 @@ export default function Contact() {
                 <div className="space-y-4 text-dark-brown font-nunito">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-sage-green rounded-full"></div>
-                    <span>WhatsApp: +91 98806 07355</span>
+                    <a 
+                      href="https://api.whatsapp.com/send/?phone=919880607355&text=Hello+Ms.+Chowdhary%2C+I+found+your+Wellness+Whispers+website+and+would+like+to+know+more+about+your+therapy+sessions.&type=phone_number&app_absent=0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-sage-green transition-colors duration-300"
+                    >
+                      WhatsApp: +91 98806 07355
+                    </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-sage-green rounded-full"></div>
-                    <span>Google Meet sessions available</span>
+                    <a 
+                      href="mailto:wellnesswhispers.blr@gmail.com?subject=Schedule%20Google%20Meet%20Session&body=Hello%20Ms.%20Chowdhary,%0A%0AI%20would%20like%20to%20schedule%20a%20Google%20Meet%20therapy%20session.%20Please%20let%20me%20know%20your%20available%20time%20slots.%0A%0AThank%20you"
+                      className="hover:text-sage-green transition-colors duration-300"
+                    >
+                      Schedule Google Meet session
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-sage-green rounded-full"></div>
+                    <a 
+                      href="mailto:wellnesswhispers.blr@gmail.com"
+                      className="hover:text-sage-green transition-colors duration-300"
+                    >
+                      Email: wellnesswhispers.blr@gmail.com
+                    </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-sage-green rounded-full"></div>
