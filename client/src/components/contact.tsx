@@ -1,4 +1,5 @@
 import WhatsAppButton from "./whatsapp-button";
+import { Mail } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -65,7 +66,7 @@ export default function Contact() {
                 </h3>
                 <div className="space-y-4 text-dark-brown font-nunito">
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-sage-green rounded-full"></div>
+                    <Mail className="h-5 w-5 text-sage-green" />
                     <a 
                       href="mailto:wellnesswhispers.blr@gmail.com"
                       className="hover:text-sage-green transition-colors duration-300"
