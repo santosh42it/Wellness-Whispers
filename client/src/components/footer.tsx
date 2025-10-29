@@ -1,4 +1,4 @@
-import { Heart, Mail, Phone, MessageCircle } from "lucide-react";
+import { Heart, Mail, Phone } from "lucide-react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { Link } from "wouter";
 import WhatsAppButton from "./whatsapp-button";
@@ -25,7 +25,7 @@ export default function Footer() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/40"></div>
       </div>
-
+      
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="p-8 md:p-12">
@@ -44,7 +44,7 @@ export default function Footer() {
               </p>
               <WhatsAppButton className="text-white px-6 py-3 rounded-xl transition-all duration-300 shadow-warm hover:shadow-strong font-lato" />
             </div>
-
+            
             <div>
               <h3 className="text-2xl font-cormorant font-medium mb-6 text-white drop-shadow-lg">Quick Links</h3>
               <ul className="space-y-4 font-nunito">
@@ -106,29 +106,22 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-
+            
             <div>
               <h3 className="text-2xl font-cormorant font-medium mb-6 text-white drop-shadow-lg">Connect</h3>
               <div className="space-y-4 font-nunito">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-peach drop-shadow-sm" />
-                  <a href="tel:+919880607355" className="text-white font-semibold text-lg drop-shadow-sm hover:text-peach transition-colors duration-300">
-                    +91 98806 07355
-                  </a>
+                  <span className="text-white font-semibold text-lg drop-shadow-sm">+91 98806 07355</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-peach drop-shadow-sm" />
-                  <a 
-                    href="mailto:wellnesswhispers.blr@gmail.com"
-                    className="text-white font-semibold text-lg drop-shadow-sm hover:text-peach transition-colors duration-300"
-                  >
-                    wellnesswhispers.blr@gmail.com
-                  </a>
+                  <span className="text-white font-semibold text-lg drop-shadow-sm">WhatsApp & Google Meet</span>
                 </div>
                 <p className="text-white/80 text-base mt-4 font-semibold drop-shadow-sm">
                   Flexible timing • Gentle support • Professional care
                 </p>
-
+                
                 {/* Social Media Links */}
                 <div className="mt-6 pt-4 border-t border-white/20">
                   <p className="text-white/90 font-semibold text-lg mb-3 drop-shadow-sm">Follow Us</p>
@@ -156,7 +149,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
+          
           <div className="border-t border-white/30 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-white/70 text-base font-nunito font-medium drop-shadow-sm">

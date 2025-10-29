@@ -6,84 +6,58 @@ export default function Pricing() {
       name: "Comfort",
       price: "₹450",
       description: "1 Talk (50 min)",
-      features: [
-        "50-minute therapy session",
-        "WhatsApp or Google Meet",
-        "Gentle, supportive environment",
-      ],
+      features: ["50-minute therapy session", "WhatsApp or Google Meet", "Gentle, supportive environment"]
     },
     {
       name: "Gentle",
-      price: "₹950",
+      price: "₹950", 
       description: "1 Talk + 1 Check-in + 1 Booster",
-      features: [
-        "50-minute therapy session",
-        "Follow-up check-in",
-        "Booster session",
-        "Ongoing support",
-      ],
+      features: ["50-minute therapy session", "Follow-up check-in", "Booster session", "Ongoing support"]
     },
     {
       name: "Strength",
       price: "₹1800",
       description: "3 Talks + 2 Check-ins + 2 Boosters",
-      features: [
-        "3 therapy sessions",
-        "2 check-in calls",
-        "2 booster sessions",
-        "Consistent healing journey",
-      ],
-      popular: true,
+      features: ["3 therapy sessions", "2 check-in calls", "2 booster sessions", "Consistent healing journey"],
+      popular: true
     },
     {
-      name: "Reconnect",
+      name: "Reconnect", 
       price: "₹2500",
       description: "4 Talks + 3 Check-ins + 3 Boosters",
-      features: [
-        "4 therapy sessions",
-        "3 check-in calls",
-        "3 booster sessions",
-        "Deep emotional work",
-      ],
+      features: ["4 therapy sessions", "3 check-in calls", "3 booster sessions", "Deep emotional work"]
     },
     {
       name: "Deep Care",
       price: "₹3200",
       description: "5 Talks + 5 Check-ins + 5 Boosters",
-      features: [
-        "5 therapy sessions",
-        "5 check-in calls",
-        "5 booster sessions",
-        "Comprehensive support",
-      ],
-    },
+      features: ["5 therapy sessions", "5 check-in calls", "5 booster sessions", "Comprehensive support"]
+    }
   ];
 
   return (
     <section id="pricing" className="pt-24 pb-16 relative">
       <div className="container mx-auto px-6">
+        
         {/* Section Title */}
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-kinfolk font-light text-earthy-brown mb-6">
             Gift Of Healing
           </h2>
           <p className="text-xl text-dark-brown font-lato max-w-4xl mx-auto leading-relaxed">
-            This space is created for those who need a soft pause, a listening
-            ear, and a safe place to untangle their thoughts. Sessions are
-            offered in the spirit of care and service, so support can remain
-            within reach for anyone who needs it.
+            This space was created for those who need a soft pause, a listening ear, and a safe 
+            place to untangle their thoughts. Sessions are offered in the spirit of care and service, 
+            so support can remain within reach for anyone who needs it.
           </p>
         </div>
 
         {/* Pricing Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto mb-16 pt-6">
           {plans.map((plan, index) => (
-            <div
+            <div 
               key={index}
               className={`bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-soft hover:shadow-warm transition-all duration-300 relative flex flex-col ${
-                plan.popular
-                  ? "ring-2 ring-sage-green md:scale-105 mt-8 md:mt-0"
-                  : ""
+                plan.popular ? 'ring-2 ring-sage-green md:scale-105 mt-8 md:mt-0' : ''
               }`}
             >
               {plan.popular && (
@@ -93,7 +67,7 @@ export default function Pricing() {
                   </span>
                 </div>
               )}
-
+              
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-playfair font-bold text-earthy-brown mb-2">
                   {plan.name}
@@ -117,10 +91,7 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <WhatsAppButton
-                hideIcon
-                className="w-full text-white py-3 px-6 font-medium shadow-warm hover:shadow-strong transition-all duration-300"
-              >
+              <WhatsAppButton hideIcon className="w-full text-white py-3 px-6 font-medium shadow-warm hover:shadow-strong transition-all duration-300">
                 Choose {plan.name}
               </WhatsAppButton>
             </div>
@@ -131,13 +102,11 @@ export default function Pricing() {
         <div className="mt-16 max-w-4xl mx-auto">
           <div className="bg-peach-blush/30 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
             <p className="text-lg text-dark-brown font-nunito leading-relaxed italic">
-              "<b>Every month,</b> a few sessions are kept aside as a quiet gift
-              — reserved for those who truly need support but cannot afford
-              therapy. These are limited, yet always offered with compassion and
-              <b> trust.</b>"
+              "Every month, a few sessions are kept aside as a quiet gift — reserved for those who truly need support but cannot afford therapy. These are limited, yet always offered with compassion and trust."
             </p>
           </div>
         </div>
+
       </div>
 
       {/* Subtle nature texture overlay */}
