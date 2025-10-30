@@ -17,7 +17,7 @@ export default function Footer() {
     <footer className="relative overflow-hidden py-20">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
+        <img
           src={footerBgImage}
           alt="Golden grass field footer background"
           className="w-full h-full object-cover"
@@ -25,28 +25,31 @@ export default function Footer() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/40"></div>
       </div>
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="p-8 md:p-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <img 
+                <img
                   src={logoFooterPath}
                   alt="Wellness Whispers Footer Logo"
                   className="h-12 w-auto"
                 />
               </div>
               <p className="text-white mb-6 max-w-md leading-relaxed font-nunito text-xl font-medium drop-shadow-lg">
-                A safe space for emotional healing and personal growth. Professional online therapy 
-                that meets you wherever you are in your journey.
+                A safe space for emotional healing and personal growth.
+                Professional online therapy that meets you wherever you are in
+                your journey.
               </p>
               <WhatsAppButton className="text-white px-6 py-3 rounded-xl transition-all duration-300 shadow-warm hover:shadow-strong font-lato" />
             </div>
-            
+
             <div>
-              <h3 className="text-2xl font-cormorant font-medium mb-6 text-white drop-shadow-lg">Quick Links</h3>
+              <h3 className="text-2xl font-cormorant font-medium mb-6 text-white drop-shadow-lg">
+                Quick Links
+              </h3>
               <ul className="space-y-4 font-nunito">
                 <li>
                   <Link
@@ -106,38 +109,46 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            
+
             <div>
-              <h3 className="text-2xl font-cormorant font-medium mb-6 text-white drop-shadow-lg">Connect</h3>
+              <h3 className="text-2xl font-cormorant font-medium mb-6 text-white drop-shadow-lg">
+                Connect
+              </h3>
               <div className="space-y-4 font-nunito">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-peach drop-shadow-sm" />
-                  <span className="text-white font-semibold text-lg drop-shadow-sm">+91 98806 07355</span>
+                  <span className="text-white font-semibold text-lg drop-shadow-sm">
+                    +91 98806 07355
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-peach drop-shadow-sm" />
-                  <span className="text-white font-semibold text-lg drop-shadow-sm">WhatsApp & Google Meet</span>
+                  <span className="text-white font-semibold text-lg drop-shadow-sm">
+                    dd@gmail.com
+                  </span>
                 </div>
                 <p className="text-white/80 text-base mt-4 font-semibold drop-shadow-sm">
                   Flexible timing • Gentle support • Professional care
                 </p>
-                
+
                 {/* Social Media Links */}
                 <div className="mt-6 pt-4 border-t border-white/20">
-                  <p className="text-white/90 font-semibold text-lg mb-3 drop-shadow-sm">Follow Us</p>
+                  <p className="text-white/90 font-semibold text-lg mb-3 drop-shadow-sm">
+                    Follow Us
+                  </p>
                   <div className="flex space-x-4">
-                    <a 
-                      href="https://www.instagram.com/healwithwhispers?igsh=MTJwYXBueXVzajR3OA%3D%3D" 
-                      target="_blank" 
+                    <a
+                      href="https://www.instagram.com/healwithwhispers?igsh=MTJwYXBueXVzajR3OA%3D%3D"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-white/80 hover:text-peach transition-colors duration-300 p-2 rounded-full hover:bg-white/10"
                       aria-label="Follow us on Instagram"
                     >
                       <FaInstagram className="h-6 w-6" />
                     </a>
-                    <a 
-                      href="https://www.facebook.com/profile.php?id=61576971540809" 
-                      target="_blank" 
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61576971540809"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-white/80 hover:text-peach transition-colors duration-300 p-2 rounded-full hover:bg-white/10"
                       aria-label="Follow us on Facebook"
@@ -149,11 +160,12 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          
+
           <div className="border-t border-white/30 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-white/70 text-base font-nunito font-medium drop-shadow-sm">
-                © {new Date().getFullYear()} Wellness Whispers. All rights reserved.
+                © {new Date().getFullYear()} Wellness Whispers. All rights
+                reserved.
               </p>
               <p className="text-white/70 text-base mt-4 md:mt-0 font-nunito font-medium drop-shadow-sm">
                 Ms. Pavan Chowdhary • Qualified Therapist • Online Sessions
