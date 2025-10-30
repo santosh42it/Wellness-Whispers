@@ -122,10 +122,13 @@ export default function Footer() {
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-peach drop-shadow-sm" />
-                  <span className="text-white font-semibold text-lg drop-shadow-sm">
-                    dd@gmail.com
-                  </span>
+                  <Mail className="h-6 w-6 text-peach drop-shadow-sm flex-shrink-0" />
+                  <a
+                    href="mailto:wellnesswhispers.blr@gmail.com"
+                    className="text-white font-semibold text-lg drop-shadow-sm hover:text-peach transition-colors duration-300"
+                  >
+                    wellnesswhispers.blr@gmail.com
+                  </a>
                 </div>
                 <p className="text-white/80 text-base mt-4 font-semibold drop-shadow-sm">
                   Flexible timing • Gentle support • Professional care
