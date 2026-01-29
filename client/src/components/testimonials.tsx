@@ -89,8 +89,15 @@ export default function Testimonials() {
           ))}
         </div>
 
+        {/* Privacy Disclaimer */}
+        <div className="mt-8 text-center">
+          <p className="text-sm font-nunito text-dark-brown/60 italic">
+            *Names changed to protect client privacy
+          </p>
+        </div>
+
         {/* Additional Testimonial Context */}
-        <div className="mt-16 max-w-4xl mx-auto text-center">
+        <div className="mt-12 max-w-4xl mx-auto text-center">
           <div className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-soft">
             <p className="text-lg text-charcoal-grey font-lato leading-relaxed">
               Each story represents someone who took the brave step to prioritize their emotional 
